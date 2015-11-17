@@ -1,0 +1,22 @@
+﻿body {
+    height: 100vh;
+	background: #fff url("Hydra.jpg") no-repeat center center;
+	background-size: cover;
+}
+			
+#brand {
+	position: absolute;
+	right: 8%;
+	top: 34%;
+	font-family: arial, sans-serif;
+	font-size: 300%;
+	letter-spacing: 8px;
+}
+			
+#dunk {
+	color: red;
+}
+			
+#fisher {
+	color: blue;
+}

@@ -1,0 +1,8 @@
+# Folders to exclude from website project
+packages/
+App_Data/cache/
+App_Data/Logs/ 
+App_Data/[Pp]review/
+App_Data/TEMP
+App_Data/umbraco.config
+obj/

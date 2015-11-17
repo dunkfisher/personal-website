@@ -1,0 +1,8 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+
+<span id="brand">
+	<span id="dunk">@Umbraco.Field("headingPart1")</span><span id="fisher">@Umbraco.Field("headingPart2")</span>@Umbraco.Field("headingPart3")
+</span>

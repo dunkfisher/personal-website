@@ -1,0 +1,5 @@
+﻿CREATE TABLE `UCUserSettings` (
+  `User` VARCHAR(50) NOT NULL,
+  `Key` VARCHAR(250) NOT NULL,
+  `Value` VARCHAR(2500) NULL
+);
