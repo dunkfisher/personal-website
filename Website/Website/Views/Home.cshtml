@@ -1,8 +1,9 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿@using Website.UI.BL.DocumentTypes
+@inherits UmbracoViewPage<Home>
 @{
     Layout = "Master.cshtml";
 }
 
 <span id="brand">
-	<span id="dunk">@Umbraco.Field("headingPart1")</span><span id="fisher">@Umbraco.Field("headingPart2")</span>@Umbraco.Field("headingPart3")
+	<span id="dunk">@Model.HeadingPart1</span><span id="fisher">@Model.HeadingPart2</span>@Model.HeadingPart3
 </span>
