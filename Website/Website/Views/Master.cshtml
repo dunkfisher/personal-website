@@ -2,7 +2,6 @@
 @inherits UmbracoViewPage<Base>
 @{
     Layout = null;
-	//var home = @CurrentPage.Site();
 }
 
 <!DOCTYPE html>
@@ -13,7 +12,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    @*<meta name="description" content="@CurrentPage.siteDescription">*@
 		
 	<title>Beer Reviews &amp; More! - drunkan.com ...</title>
 	
@@ -42,9 +40,10 @@
   </head>
 
   <body>    
+    @Html.Partial("_Navigation", Model)
     @RenderBody()    
     
     <!-- Javascripts -->
-    <script src="/js/jquery.min.js"></script>
+    @*<script src="/js/jquery.min.js"></script>*@
   </body>
 </html>

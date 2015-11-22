@@ -3,6 +3,16 @@
 	background: #fff url("Hydra.jpg") no-repeat center center;
 	background-size: cover;
 }
+
+nav {
+    height: 40px;
+    background-color: black;
+}
+
+nav a {
+    margin-right: 20px;
+    color: white;
+}
 			
 #brand {
 	position: absolute;

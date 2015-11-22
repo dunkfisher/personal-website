@@ -335,7 +335,10 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\AppStart.cs" />
     <Compile Include="App_Start\MyPublishedContentModelFactory.cs" />
+    <Compile Include="BL\DocumentTypes\FAQs.cs" />
     <Compile Include="BL\DocumentTypes\Home.cs" />
+    <Compile Include="BL\DocumentTypes\Listing.cs" />
+    <Compile Include="BL\DocumentTypes\Map.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -455,6 +458,10 @@
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\Master.cshtml" />
+    <Content Include="Views\Shared\_Navigation.cshtml" />
+    <Content Include="Views\FAQs.cshtml" />
+    <Content Include="Views\Listing.cshtml" />
+    <Content Include="Views\Map.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

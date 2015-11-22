@@ -8,6 +8,8 @@ namespace Website.UI.BL.DocumentTypes
 {
     public class Page : Base
     {
+        public string Title { get { return Content.GetProperty("pageTitle").Value.ToString(); } }
+
         public Page(IPublishedContent content) : base(content)
         {
         }
