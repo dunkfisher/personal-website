@@ -6,9 +6,9 @@ using Umbraco.Core.Models;
 
 namespace Website.UI.BL.DocumentTypes
 {
-    public class FAQs : Page
+    public class Faq : Page
     {
-        public FAQs(IPublishedContent content) : base(content)
+        public Faq(IPublishedContent content) : base(content)
         {
         }
     }

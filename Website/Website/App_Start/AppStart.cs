@@ -15,7 +15,7 @@ namespace Website.App_Start
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             var types = PluginManager.Current.ResolveTypes<PublishedContentModel>();
-            var factory = new MyPublishedContentModelFactory(types);
+            var factory = new MyPublishedContentModelFactory(types); //new MyPublishedContentModelFactory(types);
             PublishedContentModelFactoryResolver.Current.SetFactory(factory);
         }
     }

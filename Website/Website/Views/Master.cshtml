@@ -1,5 +1,4 @@
-﻿@using Website.UI.BL.DocumentTypes
-@inherits UmbracoViewPage<Base>
+﻿@inherits UmbracoViewPage<Website.UI.BL.DocumentTypes.Page>
 @{
     Layout = null;
 }
@@ -13,11 +12,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		
-	<title>Beer Reviews &amp; More! - drunkan.com ...</title>
+	<title>@Model.Title</title>
 	
     <!-- Fonts -->
     <link href="//fonts.googleapis.com/css?family=Merriweather:400,700,300,900" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+
+    @Scripts.Render("~/bundles/jquery")
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,14 +37,28 @@
 		ga('send', 'pageview');
 	</script>
 
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: new google.maps.LatLng(55.9412083, -3.2053387),
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.SATELLITE
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+
+        $(function () {
+            initialize();
+        });
+    </script>
+
     @Styles.Render("~/Content/css")
   </head>
 
   <body>    
     @Html.Partial("_Navigation", Model)
-    @RenderBody()    
-    
-    <!-- Javascripts -->
-    @*<script src="/js/jquery.min.js"></script>*@
+    @RenderBody()
   </body>
 </html>

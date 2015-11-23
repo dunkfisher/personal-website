@@ -3,7 +3,14 @@
     var home = Model.AncestorOrSelf<IPublishedContent>(1);
 }
 <nav>
-    <a href="/">Home</a>
+    @if (Model.Id == home.Id)
+    {
+        <a href="/"><strong>Home</strong></a>
+    }
+    else
+    {
+        <a href="/">Home</a>
+    }
     @foreach (var topLevelPage in home.Children<IPublishedContent>())
     {
         if (topLevelPage.Id == Model.Id)
