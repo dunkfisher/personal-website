@@ -344,6 +344,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="BL\DocumentTypes\Base.cs" />
     <Compile Include="BL\DocumentTypes\Page.cs" />
+    <Compile Include="Extensions\UmbracoExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

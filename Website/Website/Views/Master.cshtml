@@ -37,22 +37,10 @@
 		ga('send', 'pageview');
 	</script>
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-        function initialize() {
-            var mapCanvas = document.getElementById('map');
-            var mapOptions = {
-                center: new google.maps.LatLng(55.9412083, -3.2053387),
-                zoom: 12,
-                mapTypeId: google.maps.MapTypeId.SATELLITE
-            }
-            var map = new google.maps.Map(mapCanvas, mapOptions);
-        }
-
-        $(function () {
-            initialize();
-        });
-    </script>
+    @if (IsSectionDefined("Head"))
+    {
+        @RenderSection("Head");
+    }
 
     @Styles.Render("~/Content/css")
   </head>

@@ -3,4 +3,42 @@
     Layout = "Master.cshtml";
 }
 
+@section Head {
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapCanvas = document.getElementById('map');
+            var mapOptions = {
+                center: new google.maps.LatLng(55.9412083, -3.2053387),
+                zoom: 12,
+                mapTypeId: google.maps.MapTypeId.SATELLITE
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+
+            var contentString =
+                '<h2>Beer Place</h2>' +
+                '<p>This is a great shop with loads of Belgian beers.</p>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var markerOptions = {
+                map: map,
+                label: 'Beer Title',
+                title: 'Beer Label',
+                position: new google.maps.LatLng(55.9412083, -3.2053387)
+            };
+            var marker = new google.maps.Marker(markerOptions);
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+        }
+
+        $(function () {
+            initialize();
+        });
+    </script>
+}
+
 <div id="map"></div>

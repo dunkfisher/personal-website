@@ -308,7 +308,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/12/2015 21:12:45</publishTime>
     </File>
     <File Include="bin/Website.dll">
-      <publishTime>11/15/2015 00:33:19</publishTime>
+      <publishTime>11/23/2015 23:07:45</publishTime>
     </File>
     <File Include="bin/x86/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest">
       <publishTime>11/14/2015 22:32:49</publishTime>
@@ -341,16 +341,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:32:50</publishTime>
     </File>
     <File Include="Config/applications.config">
-      <publishTime>11/14/2015 22:32:49</publishTime>
+      <publishTime>11/15/2015 17:48:22</publishTime>
     </File>
     <File Include="Config/BaseRestExtensions.config">
       <publishTime>11/14/2015 22:32:50</publishTime>
     </File>
     <File Include="Config/ClientDependency.config">
-      <publishTime>11/14/2015 22:32:50</publishTime>
+      <publishTime>11/15/2015 17:49:14</publishTime>
     </File>
     <File Include="Config/Dashboard.config">
-      <publishTime>11/14/2015 22:32:50</publishTime>
+      <publishTime>11/15/2015 17:49:14</publishTime>
     </File>
     <File Include="Config/EmbeddedMedia.config">
       <publishTime>11/14/2015 22:32:50</publishTime>
@@ -443,7 +443,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:32:49</publishTime>
     </File>
     <File Include="Config/trees.config">
-      <publishTime>11/14/2015 22:32:49</publishTime>
+      <publishTime>11/15/2015 17:48:23</publishTime>
     </File>
     <File Include="Config/umbracoSettings.config">
       <publishTime>11/14/2015 22:32:49</publishTime>
@@ -457,8 +457,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/bootstrap.min.css">
       <publishTime>11/14/2015 22:32:52</publishTime>
     </File>
+    <File Include="Content/Hydra.jpg">
+      <publishTime>11/14/2015 22:31:39</publishTime>
+    </File>
+    <File Include="Content/reset.css">
+      <publishTime>11/14/2015 23:46:55</publishTime>
+    </File>
     <File Include="Content/Site.css">
-      <publishTime>11/14/2015 22:32:52</publishTime>
+      <publishTime>11/23/2015 21:58:44</publishTime>
     </File>
     <File Include="css/reset.css">
       <publishTime>11/14/2015 23:46:55</publishTime>
@@ -470,16 +476,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:31:52</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
-      <publishTime>12/11/2015 21:05:54</publishTime>
+      <publishTime>11/14/2015 22:32:53</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.svg">
-      <publishTime>12/11/2015 21:05:54</publishTime>
+      <publishTime>11/14/2015 22:32:53</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>12/11/2015 21:05:54</publishTime>
+      <publishTime>11/14/2015 22:32:53</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff">
-      <publishTime>12/11/2015 21:05:54</publishTime>
+      <publishTime>11/14/2015 22:32:53</publishTime>
     </File>
     <File Include="Global.asax">
       <publishTime>11/14/2015 22:31:52</publishTime>
@@ -488,13 +494,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:31:52</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
-      <publishTime>11/14/2015 22:33:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>11/14/2015 22:33:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.js">
-      <publishTime>11/14/2015 22:33:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Scripts/jquery-1.10.2.min.js">
       <publishTime>11/14/2015 22:32:59</publishTime>
@@ -509,7 +515,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:32:59</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.js">
-      <publishTime>12/11/2015 21:06:00</publishTime>
+      <publishTime>11/14/2015 22:32:59</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
       <publishTime>11/14/2015 22:32:58</publishTime>
@@ -518,25 +524,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:32:58</publishTime>
     </File>
     <File Include="Scripts/respond.js">
-      <publishTime>12/11/2015 21:05:59</publishTime>
+      <publishTime>11/14/2015 22:32:58</publishTime>
     </File>
     <File Include="Scripts/respond.min.js">
-      <publishTime>12/11/2015 21:05:59</publishTime>
+      <publishTime>11/14/2015 22:32:58</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>11/14/2015 22:33:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/Actions/delete.aspx">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/Actions/editContent.aspx">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/Actions/preview.aspx">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/Actions/publish.aspx">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/assets/css/canvasdesigner.css">
       <publishTime>11/14/2015 22:35:55</publishTime>
@@ -656,16 +662,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:35:58</publishTime>
     </File>
     <File Include="umbraco/assets/less/background.less">
-      <publishTime>11/14/2015 22:36:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/assets/less/border.less">
-      <publishTime>11/14/2015 22:36:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/assets/less/color.less">
-      <publishTime>11/14/2015 22:36:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/assets/less/googlefontpicker.less">
-      <publishTime>11/14/2015 22:36:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/assets/less/gridRow.less">
       <publishTime>11/14/2015 22:35:59</publishTime>
@@ -689,16 +695,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:35:59</publishTime>
     </File>
     <File Include="umbraco/Channels/rsd.aspx">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/Channels/wlwmanifest.aspx">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/ClientRedirect.aspx">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/Config/Create/UI.xml">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>11/15/2015 17:49:14</publishTime>
     </File>
     <File Include="umbraco/Config/Lang/cs.xml">
       <publishTime>11/14/2015 22:35:02</publishTime>
@@ -710,7 +716,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:35:02</publishTime>
     </File>
     <File Include="umbraco/Config/Lang/en.xml">
-      <publishTime>11/14/2015 22:35:02</publishTime>
+      <publishTime>11/15/2015 17:49:14</publishTime>
     </File>
     <File Include="umbraco/Config/Lang/en_us.xml">
       <publishTime>11/14/2015 22:35:02</publishTime>
@@ -1028,7 +1034,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:35:07</publishTime>
     </File>
     <File Include="umbraco/endPreview.aspx">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/helpRedirect.aspx">
       <publishTime>11/14/2015 22:34:59</publishTime>
@@ -1955,55 +1961,55 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:35:29</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/nitros.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/package.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/package.png">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/repository.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingAgent.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingCss.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingCssItem.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingDatatype.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingDataTypeChild.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingDomain.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingLanguage.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingMasterDatatype.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingMasterTemplate.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingSkin.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingsScript.gif">
       <publishTime>11/14/2015 22:35:27</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingTemplate.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingView.gif">
-      <publishTime>12/11/2015 21:16:29</publishTime>
+      <publishTime>11/14/2015 22:35:28</publishTime>
     </File>
     <File Include="umbraco/Images/Umbraco/settingXML.gif">
       <publishTime>11/14/2015 22:35:27</publishTime>
@@ -2177,10 +2183,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:36:01</publishTime>
     </File>
     <File Include="umbraco/lib/angular/1.1.5/angular.js">
-      <publishTime>11/14/2015 22:36:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/lib/angular/1.1.5/angular.min.js">
-      <publishTime>11/14/2015 22:36:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/lib/angular/1.1.5/i18n/angular-locale_af-na.js">
       <publishTime>11/14/2015 22:36:21</publishTime>
@@ -3044,7 +3050,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:36:02</publishTime>
     </File>
     <File Include="umbraco/lib/angular/angular-ui-sortable.js">
-      <publishTime>11/14/2015 22:36:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/lib/blueimp-load-image/load-image.all.min.js">
       <publishTime>11/14/2015 22:36:21</publishTime>
@@ -3389,16 +3395,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:36:32</publishTime>
     </File>
     <File Include="umbraco/lib/slider/js/bootstrap-slider.js">
-      <publishTime>12/11/2015 21:16:34</publishTime>
+      <publishTime>11/14/2015 22:36:33</publishTime>
     </File>
     <File Include="umbraco/lib/slider/slider.css">
       <publishTime>11/14/2015 22:36:32</publishTime>
     </File>
     <File Include="umbraco/lib/spectrum/spectrum.css">
-      <publishTime>12/11/2015 21:16:34</publishTime>
+      <publishTime>11/14/2015 22:36:33</publishTime>
     </File>
     <File Include="umbraco/lib/spectrum/spectrum.js">
-      <publishTime>12/11/2015 21:16:34</publishTime>
+      <publishTime>11/14/2015 22:36:33</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/advlist/plugin.js">
       <publishTime>11/14/2015 22:36:33</publishTime>
@@ -3407,34 +3413,34 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:36:33</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/anchor/plugin.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/anchor/plugin.min.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/autolink/plugin.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/autolink/plugin.min.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/autoresize/plugin.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/autoresize/plugin.min.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/autosave/plugin.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/autosave/plugin.min.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/bbcode/plugin.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/bbcode/plugin.min.js">
-      <publishTime>12/11/2015 21:16:35</publishTime>
+      <publishTime>11/14/2015 22:36:34</publishTime>
     </File>
     <File Include="umbraco/lib/tinymce/plugins/charmap/plugin.js">
       <publishTime>11/14/2015 22:36:35</publishTime>
@@ -4007,7 +4013,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:36:51</publishTime>
     </File>
     <File Include="umbraco/Logout.aspx">
-      <publishTime>11/14/2015 22:35:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco/macroResultWrapper.aspx">
       <publishTime>11/14/2015 22:34:59</publishTime>
@@ -4037,7 +4043,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:35:34</publishTime>
     </File>
     <File Include="umbraco/PartialViewMacros/Templates/Breadcrumb.cshtml">
-      <publishTime>12/11/2015 21:16:37</publishTime>
+      <publishTime>11/14/2015 22:35:36</publishTime>
     </File>
     <File Include="umbraco/PartialViewMacros/Templates/EditProfile.cshtml">
       <publishTime>11/14/2015 22:35:35</publishTime>
@@ -4099,14 +4105,263 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="umbraco/ping.aspx">
       <publishTime>11/14/2015 22:34:59</publishTime>
     </File>
+    <File Include="umbraco/Plugins/courier/CompareRevision.aspx">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/dialogs.css">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/icons.gif">
+      <publishTime>11/15/2015 17:46:46</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/img/complete.png">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/img/error.png">
+      <publishTime>11/15/2015 17:46:41</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/img/pending.png">
+      <publishTime>11/15/2015 17:46:41</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/img/running.gif">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/img/x.png">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/loading.gif">
+      <publishTime>11/15/2015 17:46:42</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/pages.css">
+      <publishTime>11/15/2015 17:46:42</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/css/style.css">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/dashboard/CourierDashboard.ascx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/dialogs/addItemsToLocalRevision.aspx">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/dialogs/CommitItem.aspx">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/dialogs/transferItem.aspx">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/dialogs/transferRevision.aspx">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/dialogs/UpdateItem.aspx">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/editCourierProviderAccess.aspx">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/editCourierSecurity.aspx">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/editLocalRevision.aspx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/editRemoteRevision.aspx">
+      <publishTime>11/15/2015 17:46:46</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/editRepository.aspx">
+      <publishTime>11/15/2015 17:46:46</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/feedproxy.aspx">
+      <publishTime>11/15/2015 17:46:40</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/bug.gif">
+      <publishTime>11/15/2015 17:46:46</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/courier.jpg">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/Courier.png">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/deploy.gif">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/edit.png">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/error.png">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/extract.png">
+      <publishTime>11/15/2015 17:46:40</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/icon_form.gif">
+      <publishTime>11/15/2015 17:46:42</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/install.png">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/loading.gif">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/ok.png">
+      <publishTime>11/15/2015 17:46:40</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/package.gif">
+      <publishTime>11/15/2015 17:46:42</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/package_all.gif">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/package_selection.gif">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/transfer.gif">
+      <publishTime>11/15/2015 17:46:42</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/transfer.png">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/images/warning.png">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/License.aspx">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/LicenseError.aspx">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/masterpages/CourierDialog.Master">
+      <publishTime>11/15/2015 17:46:42</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/masterpages/CourierPage.Master">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/CompareRevision.aspx">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/editCourierProviderAccess.aspx">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/editCourierSecurity.aspx">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/editLocalRevision.aspx">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/editRemoteRevision.aspx">
+      <publishTime>11/15/2015 17:46:41</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/editRepository.aspx">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/feedproxy.aspx">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/License.aspx">
+      <publishTime>11/15/2015 17:46:39</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/LicenseError.aspx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/SimpleLocations.aspx">
+      <publishTime>11/15/2015 17:46:42</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/SimpleRevisionDeploy.aspx">
+      <publishTime>11/15/2015 17:46:46</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/simpleRevisionDeploy_broken.aspx">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/ViewRepositories.aspx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/ViewRevisionDetails.aspx">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/ViewRevisions.aspx">
+      <publishTime>11/15/2015 17:46:44</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/pages/ViewTaskManager.aspx">
+      <publishTime>11/15/2015 17:46:41</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/scripts/courier.js">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/scripts/jquery-ui.custom.min.js">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/scripts/jquery.dynatree.min.js">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/scripts/jquery.simplemodal-1.2.3.js">
+      <publishTime>11/15/2015 17:46:46</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/scripts/RevisionCompare.js">
+      <publishTime>11/15/2015 17:46:41</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/scripts/RevisionDetails.js">
+      <publishTime>11/15/2015 17:46:42</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/scripts/RevisionJsonRender.js">
+      <publishTime>11/15/2015 17:46:39</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/SimpleLocations.aspx">
+      <publishTime>11/15/2015 17:46:46</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/SimpleRevisionDeploy.aspx">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/simpleRevisionDeploy_broken.aspx">
+      <publishTime>11/15/2015 17:46:42</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/usercontrols/DependencySelector.ascx">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/usercontrols/Installer.ascx">
+      <publishTime>11/15/2015 17:46:48</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/usercontrols/ProviderSecurity.ascx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/usercontrols/RevisionContentsOverview.ascx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/usercontrols/SystemItemSelector.ascx">
+      <publishTime>11/15/2015 17:46:41</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/usercontrols/test.ascx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/ViewRepositories.aspx">
+      <publishTime>11/15/2015 17:46:41</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/ViewRevisionDetails.aspx">
+      <publishTime>11/15/2015 17:46:41</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/ViewRevisions.aspx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/ViewTaskManager.aspx">
+      <publishTime>11/15/2015 17:46:43</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/webservices/Courier.asmx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/webservices/Repository.asmx">
+      <publishTime>11/15/2015 17:46:47</publishTime>
+    </File>
+    <File Include="umbraco/Plugins/courier/webservices/TreeData.ashx">
+      <publishTime>11/15/2015 17:46:45</publishTime>
+    </File>
     <File Include="umbraco/Plugins/Tinymce3/InsertAnchor.aspx">
-      <publishTime>12/11/2015 21:16:37</publishTime>
+      <publishTime>11/14/2015 22:35:36</publishTime>
     </File>
     <File Include="umbraco/Plugins/Tinymce3/insertChar.aspx">
-      <publishTime>12/11/2015 21:16:37</publishTime>
+      <publishTime>11/14/2015 22:35:36</publishTime>
     </File>
     <File Include="umbraco/Plugins/Tinymce3/insertImage.aspx">
-      <publishTime>12/11/2015 21:16:37</publishTime>
+      <publishTime>11/14/2015 22:35:36</publishTime>
     </File>
     <File Include="umbraco/Plugins/Tinymce3/insertLink.aspx">
       <publishTime>11/14/2015 22:35:36</publishTime>
@@ -4157,31 +4412,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:34:59</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/Breadcrumb.cshtml">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/EmptyTemplate.cshtml">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/Gallery.cshtml">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/ListAncestorsFromCurrentPage.cshtml">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/ListChildPagesFromChangeableSource.cshtml">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/ListChildPagesFromCurrentPage.cshtml">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/ListChildPagesOrderedByDate.cshtml">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/ListChildPagesOrderedByName.cshtml">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/ListChildPagesOrderedByProperty.cshtml">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Scripting/templates/cshtml/ListChildPagesWithDoctype.cshtml">
       <publishTime>11/14/2015 22:35:36</publishTime>
@@ -4202,13 +4457,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:35:36</publishTime>
     </File>
     <File Include="umbraco/Search/QuickSearch.ascx">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Search/quickSearch.js">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Search/QuickSearchHandler.ashx">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Settings/DictionaryItemList.aspx">
       <publishTime>11/14/2015 22:35:38</publishTime>
@@ -4217,16 +4472,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:35:38</publishTime>
     </File>
     <File Include="umbraco/Settings/editLanguage.aspx">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Settings/EditMediaType.aspx">
       <publishTime>11/14/2015 22:35:38</publishTime>
     </File>
     <File Include="umbraco/Settings/EditNodeTypeNew.aspx">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Settings/editTemplate.aspx">
-      <publishTime>12/11/2015 21:16:38</publishTime>
+      <publishTime>11/14/2015 22:35:37</publishTime>
     </File>
     <File Include="umbraco/Settings/Modals/ShowUmbracoTags.aspx">
       <publishTime>11/14/2015 22:35:38</publishTime>
@@ -4241,22 +4496,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:35:38</publishTime>
     </File>
     <File Include="umbraco/Settings/Views/EditView.aspx">
-      <publishTime>12/11/2015 21:16:39</publishTime>
+      <publishTime>11/14/2015 22:35:38</publishTime>
     </File>
     <File Include="umbraco/Translation/default.aspx">
       <publishTime>11/14/2015 22:35:39</publishTime>
     </File>
     <File Include="umbraco/Translation/details.aspx">
-      <publishTime>12/11/2015 21:16:39</publishTime>
+      <publishTime>11/14/2015 22:35:38</publishTime>
     </File>
     <File Include="umbraco/Translation/preview.aspx">
-      <publishTime>12/11/2015 21:16:39</publishTime>
+      <publishTime>11/14/2015 22:35:38</publishTime>
     </File>
     <File Include="umbraco/Translation/translationTasks.dtd">
-      <publishTime>12/11/2015 21:16:39</publishTime>
+      <publishTime>11/14/2015 22:35:38</publishTime>
     </File>
     <File Include="umbraco/Translation/xml.aspx">
-      <publishTime>12/11/2015 21:16:39</publishTime>
+      <publishTime>11/14/2015 22:35:38</publishTime>
     </File>
     <File Include="umbraco/tree.aspx">
       <publishTime>11/14/2015 22:34:59</publishTime>
@@ -5018,10 +5273,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:38:12</publishTime>
     </File>
     <File Include="umbraco_client/Application/UmbracoClientManager.js">
-      <publishTime>11/14/2015 22:38:12</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Application/UmbracoUtils.js">
-      <publishTime>11/14/2015 22:38:12</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Application/UrlEncoder.js">
       <publishTime>11/14/2015 22:38:12</publishTime>
@@ -5996,370 +6251,370 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/fr_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/he_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/it_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/ja_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/nl_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/no_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/pl_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/pt_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/ru_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/sv_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/Langs/zh_dlg.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:42</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlink/link.htm">
       <publishTime>11/14/2015 22:38:41</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlist/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Advlist/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Autolink/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Autolink/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Autoresize/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Autoresize/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Autosave/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Autosave/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Autosave/Langs/en.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Autosave/Langs/en_us.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Bbcode/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Bbcode/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:43</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Contextmenu/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:44</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Contextmenu/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:44</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Directionality/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:44</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Directionality/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:44</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:44</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:44</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/emotions.htm">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:44</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-cool.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-cry.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-embarassed.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-foot-in-mouth.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-frown.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-innocent.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-kiss.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-laughing.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-money-mouth.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>12/11/2015 21:16:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-sealed.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>12/11/2015 21:16:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-smile.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>12/11/2015 21:16:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-surprised.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>12/11/2015 21:16:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-tongue-out.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>12/11/2015 21:16:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-undecided.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>12/11/2015 21:16:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-wink.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>12/11/2015 21:16:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Img/smiley-yell.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>12/11/2015 21:16:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Js/emotions.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/da_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/de_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/en_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/en_us_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/fi_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/fr_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/he_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/it_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/ja_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/nl_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/no_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/pl_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/pt_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/ru_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:46</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/sv_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Emotions/Langs/zh_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:45</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Example/dialog.htm">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Example/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Example/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Example/Img/example.gif">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Example/Js/dialog.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Example/Langs/en.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Example/Langs/en_dlg.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/example_dependency/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:39:13</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/example_dependency/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:39:13</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Css/fullpage.css">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/fullpage.htm">
-      <publishTime>12/11/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:47</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Js/fullpage.js">
-      <publishTime>11/12/2015 21:16:45</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/da_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/de_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/en_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/en_us_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/fi_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/fr_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/he_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/it_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/ja_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/nl_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/no_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/pl_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/pt_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/ru_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/sv_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullpage/Langs/zh_dlg.js">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:48</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullscreen/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullscreen/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Fullscreen/fullscreen.htm">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Iespell/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Iespell/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Clearlooks2/Img/alert.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Clearlooks2/Img/button.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Clearlooks2/Img/buttons.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Clearlooks2/Img/confirm.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Clearlooks2/Img/corners.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Clearlooks2/Img/horizontal.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Clearlooks2/Img/vertical.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Clearlooks2/window.css">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Umbraco/Img/alert.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:51</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Umbraco/Img/button.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Umbraco/Img/buttons.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Umbraco/Img/close.png">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Umbraco/Img/confirm.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Umbraco/Img/corners.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Umbraco/Img/horizontal.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Umbraco/Img/vertical.gif">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/Skins/Umbraco/window.css">
-      <publishTime>11/12/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:50</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Inlinepopups/template.htm">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:49</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Insertdatetime/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:51</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Insertdatetime/editor_plugin_src.js">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:51</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Layer/editor_plugin.js">
-      <publishTime>12/11/2015 21:16:46</publishTime>
+      <publishTime>11/14/2015 22:38:51</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Layer/editor_plugin_src.js">
       <publishTime>11/14/2015 22:38:51</publishTime>
@@ -6713,13 +6968,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:38:59</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Css/cell.css">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Css/row.css">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Css/table.css">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/editor_plugin.js">
       <publishTime>11/14/2015 22:38:59</publishTime>
@@ -6728,16 +6983,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:38:59</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Js/cell.js">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Js/merge_cells.js">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Js/row.js">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Js/table.js">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Langs/da_dlg.js">
       <publishTime>11/14/2015 22:39:01</publishTime>
@@ -6773,19 +7028,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:39:01</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Langs/pl_dlg.js">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Langs/pt_dlg.js">
       <publishTime>11/14/2015 22:39:01</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Langs/ru_dlg.js">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Langs/sv_dlg.js">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/Langs/zh_dlg.js">
-      <publishTime>11/14/2015 22:39:00</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="umbraco_client/Tinymce3/Plugins/Table/merge_cells.htm">
       <publishTime>11/14/2015 22:38:59</publishTime>
@@ -8014,8 +8269,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
       <publishTime>11/14/2015 22:39:31</publishTime>
     </File>
+    <File Include="Views/Faq.cshtml">
+      <publishTime>11/23/2015 22:33:28</publishTime>
+    </File>
     <File Include="Views/Home.cshtml">
-      <publishTime>11/15/2015 00:29:11</publishTime>
+      <publishTime>11/23/2015 21:40:35</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>11/14/2015 22:39:32</publishTime>
@@ -8025,6 +8283,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>11/14/2015 22:39:32</publishTime>
+    </File>
+    <File Include="Views/Listing.cshtml">
+      <publishTime>11/23/2015 22:35:08</publishTime>
     </File>
     <File Include="Views/Manage/AddPhoneNumber.cshtml">
       <publishTime>11/14/2015 22:39:32</publishTime>
@@ -8044,8 +8305,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Manage/VerifyPhoneNumber.cshtml">
       <publishTime>11/14/2015 22:39:32</publishTime>
     </File>
+    <File Include="Views/Map.cshtml">
+      <publishTime>11/23/2015 22:35:25</publishTime>
+    </File>
     <File Include="Views/Master.cshtml">
-      <publishTime>11/15/2015 00:32:59</publishTime>
+      <publishTime>11/23/2015 22:18:39</publishTime>
     </File>
     <File Include="Views/Partials/Grid/Bootstrap2.cshtml">
       <publishTime>11/14/2015 22:39:33</publishTime>
@@ -8083,6 +8347,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>11/14/2015 22:39:33</publishTime>
     </File>
+    <File Include="Views/Shared/_Navigation.cshtml">
+      <publishTime>11/23/2015 21:32:28</publishTime>
+    </File>
     <File Include="Views/Web.config">
       <publishTime>11/14/2015 22:39:30</publishTime>
     </File>
@@ -8090,7 +8357,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2015 22:39:30</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/15/2015 00:33:45</publishTime>
+      <publishTime>11/23/2015 23:08:25</publishTime>
     </File>
   </ItemGroup>
 </Project>
