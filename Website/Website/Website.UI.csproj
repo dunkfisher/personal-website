@@ -335,6 +335,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\AppStart.cs" />
     <Compile Include="App_Start\MyPublishedContentModelFactory.cs" />
+    <Compile Include="BL\DocumentTypes\Beer.cs" />
     <Compile Include="BL\DocumentTypes\Faq.cs" />
     <Compile Include="BL\DocumentTypes\Home.cs" />
     <Compile Include="BL\DocumentTypes\Listing.cs" />

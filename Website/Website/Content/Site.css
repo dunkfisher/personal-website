@@ -34,9 +34,17 @@ nav a {
 	color: blue;
 }
 
-#map {
+#map, #listing-wrapper {
     width: 90%;
     height: calc(100vh - 40px);
     margin: 0 auto;
     background-color: #ccc;
+}
+
+#listing-wrapper {
+    height: auto;
+}
+
+#listing-wrapper img {
+    width: 200px;
 }

@@ -2,3 +2,18 @@
 @{
     Layout = "Master.cshtml";
 }
+
+<div id="listing-wrapper">
+    <ul>
+        @foreach (var beer in Model.Beers)
+        {
+            <li>
+                <h2>@beer.FullName</h2>
+                <h3>@beer.Brewer</h3>
+                <p>@beer.Review</p>
+                <img src="@beer.GetImageUrl(Umbraco)" alt="Beer" />
+                <strong>RATING: @(beer.Rating)/10</strong>
+            </li>
+        }
+    </ul>
+</div>
