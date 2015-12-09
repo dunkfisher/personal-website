@@ -336,6 +336,7 @@
     <Compile Include="App_Start\AppStart.cs" />
     <Compile Include="App_Start\MyPublishedContentModelFactory.cs" />
     <Compile Include="BL\DocumentTypes\Beer.cs" />
+    <Compile Include="BL\DocumentTypes\Country.cs" />
     <Compile Include="BL\DocumentTypes\Faq.cs" />
     <Compile Include="BL\DocumentTypes\Home.cs" />
     <Compile Include="BL\DocumentTypes\Listing.cs" />
@@ -375,8 +376,6 @@
     <Content Include="Config\Lang\ru-RU.user.xml" />
     <Content Include="Config\Lang\sv-SE.user.xml" />
     <Content Include="Config\Lang\zh-CN.user.xml" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Hydra.jpg" />
     <Content Include="Content\reset.css" />
     <Content Include="default.aspx" />

@@ -25,5 +25,10 @@ namespace Website.UI.BL.DocumentTypes
             var mediaId = Content.GetProperty<int>("image");
             return umbraco.TypedMedia(mediaId).Url;
         }
+
+        public string GetCountryFlag(UmbracoHelper umbraco)
+        {
+            return Content.Parent<Country>().GetFlagImageUrl(umbraco);
+        }
     }
 }

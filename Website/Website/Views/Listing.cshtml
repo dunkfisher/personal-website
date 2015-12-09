@@ -7,12 +7,15 @@
     <ul>
         @foreach (var beer in Model.Beers)
         {
-            <li>
-                <h2>@beer.FullName</h2>
-                <h3>@beer.Brewer</h3>
-                <p>@beer.Review</p>
-                <img src="@beer.GetImageUrl(Umbraco)" alt="Beer" />
-                <strong>RATING: @(beer.Rating)/10</strong>
+            <li style="background-image: url(@beer.GetImageUrl(Umbraco))">
+                <div class="summary-wrapper">
+                    <h2>@beer.FullName</h2>
+                    <h3>@beer.Brewer</h3>
+                    @*<p>@beer.Review</p>*@
+                    @*<img src="@beer.GetImageUrl(Umbraco)" alt="Beer" />*@
+                    @*<strong>RATING: @(beer.Rating)/10</strong>*@
+                    <img class="flag" src="@beer.GetCountryFlag(Umbraco)" alt="Flag" />
+                </div>
             </li>
         }
     </ul>
