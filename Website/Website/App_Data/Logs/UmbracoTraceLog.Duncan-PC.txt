@@ -415,3 +415,4 @@ System.NullReferenceException: Object reference not set to an instance of an obj
  2015-12-09 23:25:59,210 [P12628/D2/T29] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Spain' with Id '1113' has been published.
  2015-12-09 23:26:03,410 [P12628/D2/T21] INFO  umbraco.content - Save Xml to file...
  2015-12-09 23:26:03,472 [P12628/D2/T21] INFO  umbraco.content - Saved Xml to file.
+ 2015-12-09 23:36:35,131 [P12628/D2/T9] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: dunc1981@gmail.com, IP Address: ::1

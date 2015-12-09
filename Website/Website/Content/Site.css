@@ -96,3 +96,33 @@ nav a {
     width: 22px;
     height: 14px;
 }
+
+@media(max-width: 1200px) {
+    #listing-wrapper li {
+        width: calc(100% / 5);
+    }
+}
+
+@media(max-width: 1000px) {
+    #listing-wrapper li {
+        width: calc(100% / 4);
+    }
+}
+
+@media(max-width: 800px) {
+    #listing-wrapper li {
+        width: calc(100% / 3);
+    }
+}
+
+@media(max-width: 600px) {
+    #listing-wrapper li {
+        width: calc(100% / 2);
+    }
+}
+
+@media(max-width: 400px) {
+    #listing-wrapper li {
+        width: 100%;
+    }
+}
