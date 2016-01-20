@@ -1,0 +1,53 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>3a4c8928-4701-4256-844a-d363b6ea97ee</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: 3a4c8928-4701-4256-844a-d363b6ea97ee</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>65fde7be-5f62-4c1b-8460-f9f8d5544125</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Beer</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: Beer</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>65fde7be-5f62-4c1b-8460-f9f8d5544125</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Brise-Bon-Bons!</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>Beer</DocumentTypeAlias>
+    <ParentUniqueId>3a4c8928-4701-4256-844a-d363b6ea97ee</ParentUniqueId>
+    <UniqueId>65fde7be-5f62-4c1b-8460-f9f8d5544125</UniqueId>
+    <SortOrder>0</SortOrder>
+    <Level>4</Level>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2015-12-02T23:48:21</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2015-12-03T00:02:31</UpdateDate>
+    <PublishDate>2015-12-03T00:02:31</PublishDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+    <Domains />
+</Document>

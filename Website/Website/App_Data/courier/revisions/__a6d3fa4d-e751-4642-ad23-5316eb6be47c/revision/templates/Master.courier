@@ -1,0 +1,24 @@
+﻿<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies />
+    <ItemId>
+        <Id>Master</Id>
+        <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Master</Name>
+    <ItemType>Dependency</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/views/Master.cshtml</ExtractToPath>
+            <Hash>a044c1bbb7826978e24d3af8f16766ee</Hash>
+            <Name>~/views/Master.cshtml</Name>
+            <PackageFromPath>~/views/Master.cshtml</PackageFromPath>
+            <TemporaryStoragePath>/views/Master.cshtml</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <Alias>Master</Alias>
+    <MasterPagePath>~/masterpages/Master.master</MasterPagePath>
+    <ParentTemplateId>0</ParentTemplateId>
+    <Id>1053</Id>
+</Template>

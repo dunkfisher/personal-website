@@ -1,0 +1,71 @@
+﻿<ContentPropertyData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ffdf9689-b661-4a5d-b32a-892e6d90f872</Id>
+                <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media: ffdf9689-b661-4a5d-b32a-892e6d90f872</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>ffdf9689-b661-4a5d-b32a-892e6d90f872</Id>
+        <ProviderId>e047259a-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Media nl.png Property Data</Name>
+    <ItemType>Item</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>/media/1068/nl.png</ExtractToPath>
+            <Hash>7d59ea0b40c6967a0f862521bb146be2</Hash>
+            <Name>/media/1068/nl.png</Name>
+            <PackageFromPath>/media/1068/nl.png</PackageFromPath>
+            <TemporaryStoragePath>/media/1068/nl.png</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <ContentUniqueId>ffdf9689-b661-4a5d-b32a-892e6d90f872</ContentUniqueId>
+    <Data>
+        <ContentProperty>
+            <Alias>umbracoFile</Alias>
+            <DataType>84c6b441-31df-4ffe-b67e-67d5bc3ae65a</DataType>
+            <PropertyEditorAlias>Umbraco.UploadField</PropertyEditorAlias>
+            <DBType>Nvarchar</DBType>
+            <Value xsi:type="xsd:string">/media/1068/nl.png</Value>
+        </ContentProperty>
+        <ContentProperty>
+            <Alias>umbracoWidth</Alias>
+            <DataType>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataType>
+            <PropertyEditorAlias>Umbraco.NoEdit</PropertyEditorAlias>
+            <DBType>Nvarchar</DBType>
+            <Value xsi:type="xsd:string">22</Value>
+        </ContentProperty>
+        <ContentProperty>
+            <Alias>umbracoHeight</Alias>
+            <DataType>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataType>
+            <PropertyEditorAlias>Umbraco.NoEdit</PropertyEditorAlias>
+            <DBType>Nvarchar</DBType>
+            <Value xsi:type="xsd:string">14</Value>
+        </ContentProperty>
+        <ContentProperty>
+            <Alias>umbracoBytes</Alias>
+            <DataType>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataType>
+            <PropertyEditorAlias>Umbraco.NoEdit</PropertyEditorAlias>
+            <DBType>Nvarchar</DBType>
+            <Value xsi:type="xsd:string">508</Value>
+        </ContentProperty>
+        <ContentProperty>
+            <Alias>umbracoExtension</Alias>
+            <DataType>f0bc4bfb-b499-40d6-ba86-058885a5178c</DataType>
+            <PropertyEditorAlias>Umbraco.NoEdit</PropertyEditorAlias>
+            <DBType>Nvarchar</DBType>
+            <Value xsi:type="xsd:string">png</Value>
+        </ContentProperty>
+    </Data>
+    <NodeObjectType>b796f64c-1f99-4ffb-b886-4bf4bc011a9c</NodeObjectType>
+    <ContentTypeAlias>Image</ContentTypeAlias>
+    <Published>false</Published>
+</ContentPropertyData>

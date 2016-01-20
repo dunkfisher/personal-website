@@ -1,0 +1,46 @@
+﻿<Media xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>20afffdc-209f-477f-b6c2-e4e6753d250d</Id>
+                <ProviderId>e047259a-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Image</Id>
+                <ProviderId>d8e6ad88-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Type: Image</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>bd27666b-bdbe-43bb-8d63-c8514d7331ba</Id>
+                <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Media: bd27666b-bdbe-43bb-8d63-c8514d7331ba</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>20afffdc-209f-477f-b6c2-e4e6753d250d</Id>
+        <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>apocalypse-now.jpg</Name>
+    <ItemType>Dependency</ItemType>
+    <Resources />
+    <MediaTypeAlias>Image</MediaTypeAlias>
+    <ParentUniqueId>bd27666b-bdbe-43bb-8d63-c8514d7331ba</ParentUniqueId>
+    <SortOrder>1</SortOrder>
+    <Level>3</Level>
+    <UniqueId>20afffdc-209f-477f-b6c2-e4e6753d250d</UniqueId>
+    <CreateDate>2015-12-01T23:10:08</CreateDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+</Media>

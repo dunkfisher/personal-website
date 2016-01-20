@@ -1,0 +1,46 @@
+﻿<Media xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Image</Id>
+                <ProviderId>d8e6ad88-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Type: Image</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>a2be5928-4aec-4283-a904-83135049e67a</Id>
+                <ProviderId>e047259a-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>fe0b7c05-c4d8-45dd-af1b-f640ae276793</Id>
+                <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Media: fe0b7c05-c4d8-45dd-af1b-f640ae276793</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>a2be5928-4aec-4283-a904-83135049e67a</Id>
+        <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>scotland.png</Name>
+    <ItemType>Dependency</ItemType>
+    <Resources />
+    <MediaTypeAlias>Image</MediaTypeAlias>
+    <ParentUniqueId>fe0b7c05-c4d8-45dd-af1b-f640ae276793</ParentUniqueId>
+    <SortOrder>4</SortOrder>
+    <Level>2</Level>
+    <UniqueId>a2be5928-4aec-4283-a904-83135049e67a</UniqueId>
+    <CreateDate>2015-12-09T23:25:03</CreateDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+</Media>

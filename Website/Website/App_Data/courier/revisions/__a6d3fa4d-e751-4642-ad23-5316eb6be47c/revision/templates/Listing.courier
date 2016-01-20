@@ -1,0 +1,35 @@
+﻿<Template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Master</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Master template: Master</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Listing</Id>
+        <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Listing</Name>
+    <ItemType>Dependency</ItemType>
+    <Resources>
+        <Resource>
+            <ExtractToPath>~/views/Listing.cshtml</ExtractToPath>
+            <Hash>03aa4601cc672687034518777eea0ded</Hash>
+            <Name>~/views/Listing.cshtml</Name>
+            <PackageFromPath>~/views/Listing.cshtml</PackageFromPath>
+            <TemporaryStoragePath>/views/Listing.cshtml</TemporaryStoragePath>
+            <VirtualResource>false</VirtualResource>
+            <NotFound>false</NotFound>
+        </Resource>
+    </Resources>
+    <Alias>Listing</Alias>
+    <MasterPagePath>~/masterpages/Listing.master</MasterPagePath>
+    <ParentTemplateAlias>Master</ParentTemplateAlias>
+    <ParentTemplateId>0</ParentTemplateId>
+    <Id>1086</Id>
+</Template>

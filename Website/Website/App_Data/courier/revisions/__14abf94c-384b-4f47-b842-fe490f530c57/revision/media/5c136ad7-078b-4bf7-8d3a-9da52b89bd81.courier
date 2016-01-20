@@ -1,0 +1,46 @@
+﻿<Media xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>5c136ad7-078b-4bf7-8d3a-9da52b89bd81</Id>
+                <ProviderId>e047259a-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Image</Id>
+                <ProviderId>d8e6ad88-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Type: Image</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>efe6dccf-875e-4a41-be52-d8433c74db71</Id>
+                <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Media: efe6dccf-875e-4a41-be52-d8433c74db71</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>5c136ad7-078b-4bf7-8d3a-9da52b89bd81</Id>
+        <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>hydra.jpg</Name>
+    <ItemType>Dependency</ItemType>
+    <Resources />
+    <MediaTypeAlias>Image</MediaTypeAlias>
+    <ParentUniqueId>efe6dccf-875e-4a41-be52-d8433c74db71</ParentUniqueId>
+    <SortOrder>0</SortOrder>
+    <Level>2</Level>
+    <UniqueId>5c136ad7-078b-4bf7-8d3a-9da52b89bd81</UniqueId>
+    <CreateDate>2016-01-19T23:02:16</CreateDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+</Media>

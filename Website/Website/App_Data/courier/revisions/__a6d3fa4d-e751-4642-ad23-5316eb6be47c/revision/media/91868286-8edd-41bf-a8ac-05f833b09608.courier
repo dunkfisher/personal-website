@@ -1,0 +1,46 @@
+﻿<Media xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>91868286-8edd-41bf-a8ac-05f833b09608</Id>
+                <ProviderId>e047259a-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Image</Id>
+                <ProviderId>d8e6ad88-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Type: Image</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>e5185738-683b-4471-a449-efde564df40d</Id>
+                <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Media: e5185738-683b-4471-a449-efde564df40d</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>91868286-8edd-41bf-a8ac-05f833b09608</Id>
+        <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>brise-bon-bons.jpg</Name>
+    <ItemType>Dependency</ItemType>
+    <Resources />
+    <MediaTypeAlias>Image</MediaTypeAlias>
+    <ParentUniqueId>e5185738-683b-4471-a449-efde564df40d</ParentUniqueId>
+    <SortOrder>0</SortOrder>
+    <Level>3</Level>
+    <UniqueId>91868286-8edd-41bf-a8ac-05f833b09608</UniqueId>
+    <CreateDate>2015-12-02T23:55:55</CreateDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+</Media>

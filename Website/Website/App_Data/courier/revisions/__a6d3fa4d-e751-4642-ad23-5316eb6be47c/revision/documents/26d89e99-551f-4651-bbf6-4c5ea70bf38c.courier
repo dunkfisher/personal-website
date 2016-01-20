@@ -1,0 +1,54 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>26d89e99-551f-4651-bbf6-4c5ea70bf38c</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Home</Id>
+                <ProviderId>25867200-e67e-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Template: Home</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Home</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: Home</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>26d89e99-551f-4651-bbf6-4c5ea70bf38c</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Home</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>Home</DocumentTypeAlias>
+    <ParentUniqueId>00000000-0000-0000-0000-000000000000</ParentUniqueId>
+    <UniqueId>26d89e99-551f-4651-bbf6-4c5ea70bf38c</UniqueId>
+    <SortOrder>0</SortOrder>
+    <Level>1</Level>
+    <Template>Home</Template>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2015-11-18T21:56:44</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2015-11-23T21:47:35</UpdateDate>
+    <PublishDate>2015-11-23T21:47:35</PublishDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+    <Domains />
+</Document>

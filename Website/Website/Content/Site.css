@@ -1,7 +1,10 @@
 ﻿body {
+    position: relative;
     height: 100vh;
     font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-	background: #fff url("Hydra.jpg") no-repeat center center;
+	/*background: #fff url("Hydra.jpg") no-repeat center center;*/
+    background-repeat: no-repeat;
+    background-position: center center;
 	background-size: cover;
 }
 
@@ -31,6 +34,17 @@ nav a {
     color: white;
 }
 			
+#overlay {
+    display: none;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*z-index: 1;*/
+}
+
 #brand {
 	position: absolute;
 	right: 8%;
@@ -95,6 +109,30 @@ nav a {
     bottom: 10px;
     width: 22px;
     height: 14px;
+}
+
+#beer-detail-wrapper {
+    display: none;
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    /*top: 50%;*/
+    /*left: 100vw;*/
+    /*width: 100%;*/
+    /*height: 60vh;
+    margin-top: -25vh;*/
+    /*border: 1px solid red;*/
+    background-color: white;
+    z-index: 1;
+}
+
+#beer-detail-wrapper .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
 }
 
 @media(max-width: 1200px) {

@@ -1,0 +1,53 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>81978707-5893-42c0-9d82-308c2abef4b5</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Beer</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: Beer</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ee110a57-2c3a-4c45-9466-315603b23f83</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: ee110a57-2c3a-4c45-9466-315603b23f83</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>81978707-5893-42c0-9d82-308c2abef4b5</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Ceriux</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>Beer</DocumentTypeAlias>
+    <ParentUniqueId>ee110a57-2c3a-4c45-9466-315603b23f83</ParentUniqueId>
+    <UniqueId>81978707-5893-42c0-9d82-308c2abef4b5</UniqueId>
+    <SortOrder>1</SortOrder>
+    <Level>4</Level>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2015-12-03T00:10:32</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2015-12-03T00:10:32</UpdateDate>
+    <PublishDate>2015-12-03T00:10:32</PublishDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+    <Domains />
+</Document>

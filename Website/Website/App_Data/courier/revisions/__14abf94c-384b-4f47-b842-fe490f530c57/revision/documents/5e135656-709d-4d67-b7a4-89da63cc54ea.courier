@@ -1,0 +1,53 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>598a79df-9458-4354-b038-4bfe2640601f</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: 598a79df-9458-4354-b038-4bfe2640601f</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>5e135656-709d-4d67-b7a4-89da63cc54ea</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Beer</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: Beer</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>5e135656-709d-4d67-b7a4-89da63cc54ea</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>The Cone</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>Beer</DocumentTypeAlias>
+    <ParentUniqueId>598a79df-9458-4354-b038-4bfe2640601f</ParentUniqueId>
+    <UniqueId>5e135656-709d-4d67-b7a4-89da63cc54ea</UniqueId>
+    <SortOrder>0</SortOrder>
+    <Level>4</Level>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2015-12-01T23:34:24</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2015-12-01T23:40:43</UpdateDate>
+    <PublishDate>2015-12-01T23:40:43</PublishDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+    <Domains />
+</Document>

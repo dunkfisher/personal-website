@@ -1,0 +1,46 @@
+﻿<Media xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Folder</Id>
+                <ProviderId>d8e6ad88-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Type: Folder</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>aa8a4981-9037-4180-b404-3d1c0e4f9ce6</Id>
+                <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Media: aa8a4981-9037-4180-b404-3d1c0e4f9ce6</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>f73cb32d-2db9-470a-8f21-8e97569b445c</Id>
+                <ProviderId>e047259a-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>f73cb32d-2db9-470a-8f21-8e97569b445c</Id>
+        <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Scotland</Name>
+    <ItemType>Dependency</ItemType>
+    <Resources />
+    <MediaTypeAlias>Folder</MediaTypeAlias>
+    <ParentUniqueId>aa8a4981-9037-4180-b404-3d1c0e4f9ce6</ParentUniqueId>
+    <SortOrder>3</SortOrder>
+    <Level>2</Level>
+    <UniqueId>f73cb32d-2db9-470a-8f21-8e97569b445c</UniqueId>
+    <CreateDate>2015-12-01T23:35:38</CreateDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+</Media>

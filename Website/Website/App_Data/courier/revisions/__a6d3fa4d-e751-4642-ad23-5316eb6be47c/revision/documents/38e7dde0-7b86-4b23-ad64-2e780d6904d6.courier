@@ -1,0 +1,53 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>38e7dde0-7b86-4b23-ad64-2e780d6904d6</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Country</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: Country</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>c6238320-54d3-4c13-b502-70f70afde6b5</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: c6238320-54d3-4c13-b502-70f70afde6b5</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>38e7dde0-7b86-4b23-ad64-2e780d6904d6</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>France</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>Country</DocumentTypeAlias>
+    <ParentUniqueId>c6238320-54d3-4c13-b502-70f70afde6b5</ParentUniqueId>
+    <UniqueId>38e7dde0-7b86-4b23-ad64-2e780d6904d6</UniqueId>
+    <SortOrder>1</SortOrder>
+    <Level>3</Level>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2015-12-01T23:05:11</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2015-12-09T23:25:26</UpdateDate>
+    <PublishDate>2015-12-09T23:25:26</PublishDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+    <Domains />
+</Document>

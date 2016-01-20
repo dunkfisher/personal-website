@@ -1,0 +1,61 @@
+﻿<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>598a79df-9458-4354-b038-4bfe2640601f</Id>
+                <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Country</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: Country</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>c6238320-54d3-4c13-b502-70f70afde6b5</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Document: c6238320-54d3-4c13-b502-70f70afde6b5</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>598a79df-9458-4354-b038-4bfe2640601f</Id>
+        <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Scotland</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <DocumentTypeAlias>Country</DocumentTypeAlias>
+    <ParentUniqueId>c6238320-54d3-4c13-b502-70f70afde6b5</ParentUniqueId>
+    <UniqueId>598a79df-9458-4354-b038-4bfe2640601f</UniqueId>
+    <SortOrder>3</SortOrder>
+    <Level>3</Level>
+    <Published>true</Published>
+    <Draft>false</Draft>
+    <CreateDate>2015-12-01T23:29:50</CreateDate>
+    <ExpireDate>0001-01-01T00:00:00</ExpireDate>
+    <ReleaseDate>0001-01-01T00:00:00</ReleaseDate>
+    <UpdateDate>2015-12-09T23:25:49</UpdateDate>
+    <PublishDate>2015-12-09T23:25:49</PublishDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations>
+        <Relation>
+            <ItemType>Item</ItemType>
+            <RelationTypeAlias>relateParentDocumentOnDelete</RelationTypeAlias>
+            <ChildId>3fe84b94-3414-406d-948d-7848e3b3a196</ChildId>
+            <ParentId>598a79df-9458-4354-b038-4bfe2640601f</ParentId>
+            <DateTime>2015-12-01T23:37:18</DateTime>
+        </Relation>
+    </Relations>
+    <Domains />
+</Document>

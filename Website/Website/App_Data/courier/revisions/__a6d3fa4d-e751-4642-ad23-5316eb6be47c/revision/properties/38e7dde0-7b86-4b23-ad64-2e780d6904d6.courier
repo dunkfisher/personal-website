@@ -1,0 +1,42 @@
+﻿<ContentPropertyData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>38e7dde0-7b86-4b23-ad64-2e780d6904d6</Id>
+                <ProviderId>d8e6ad83-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Node: 38e7dde0-7b86-4b23-ad64-2e780d6904d6</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>ecbcfed9-3bc3-4a00-befb-cb4d584c5935</Id>
+                <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media from picker</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>38e7dde0-7b86-4b23-ad64-2e780d6904d6</Id>
+        <ProviderId>e0472594-e73b-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Document France Property Data</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <ContentUniqueId>38e7dde0-7b86-4b23-ad64-2e780d6904d6</ContentUniqueId>
+    <Data>
+        <ContentProperty>
+            <Alias>flag</Alias>
+            <DataType>93929b9a-93a2-4e2a-b239-d99334440a59</DataType>
+            <PropertyEditorAlias>Umbraco.MediaPicker</PropertyEditorAlias>
+            <DBType>Integer</DBType>
+            <Value xsi:type="xsd:string">ecbcfed9-3bc3-4a00-befb-cb4d584c5935</Value>
+        </ContentProperty>
+    </Data>
+    <NodeObjectType>c66ba18e-eaf3-4cff-8a22-41b16d66a972</NodeObjectType>
+    <ContentTypeAlias>Country</ContentTypeAlias>
+    <Published>true</Published>
+</ContentPropertyData>

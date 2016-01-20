@@ -376,7 +376,6 @@
     <Content Include="Config\Lang\ru-RU.user.xml" />
     <Content Include="Config\Lang\sv-SE.user.xml" />
     <Content Include="Config\Lang\zh-CN.user.xml" />
-    <Content Include="Content\Hydra.jpg" />
     <Content Include="Content\reset.css" />
     <Content Include="default.aspx" />
     <Content Include="favicon.ico" />
@@ -404,6 +403,7 @@
     <Content Include="Config\404handlers.config" />
     <None Include="Properties\PublishProfiles\TSO-Host.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Custom\listing.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

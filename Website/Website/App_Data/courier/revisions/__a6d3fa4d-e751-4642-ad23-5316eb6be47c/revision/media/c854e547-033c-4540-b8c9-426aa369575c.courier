@@ -1,0 +1,46 @@
+﻿<Media xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Image</Id>
+                <ProviderId>d8e6ad88-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Type: Image</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>true</IsChild>
+            <ItemId>
+                <Id>c854e547-033c-4540-b8c9-426aa369575c</Id>
+                <ProviderId>e047259a-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Media Property data</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>e9ac2417-ef5f-4dad-b250-3d2803b7dab3</Id>
+                <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Parent Media: e9ac2417-ef5f-4dad-b250-3d2803b7dab3</Name>
+            <ForceHashCheck>false</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>c854e547-033c-4540-b8c9-426aa369575c</Id>
+        <ProviderId>d8e6ad87-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>cerieux-grape.jpg</Name>
+    <ItemType>Dependency</ItemType>
+    <Resources />
+    <MediaTypeAlias>Image</MediaTypeAlias>
+    <ParentUniqueId>e9ac2417-ef5f-4dad-b250-3d2803b7dab3</ParentUniqueId>
+    <SortOrder>0</SortOrder>
+    <Level>3</Level>
+    <UniqueId>c854e547-033c-4540-b8c9-426aa369575c</UniqueId>
+    <CreateDate>2015-12-02T23:56:34</CreateDate>
+    <User>dunc1981@gmail.com</User>
+    <Relations />
+</Media>

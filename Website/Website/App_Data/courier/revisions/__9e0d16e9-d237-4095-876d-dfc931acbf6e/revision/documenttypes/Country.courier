@@ -1,0 +1,50 @@
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>93929b9a-93a2-4e2a-b239-d99334440a59</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 93929b9a-93a2-4e2a-b239-d99334440a59</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Country</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Country</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Alias>Country</Alias>
+    <AllowedChildDocumentTypes>
+        <string>Beer</string>
+    </AllowedChildDocumentTypes>
+    <AllowedTemplates />
+    <Description />
+    <Icon>icon-globe</Icon>
+    <Properties>
+        <ContentTypeProperty>
+            <UniqueId>a0c5b7fa-fada-4b80-a067-385e2cf513be</UniqueId>
+            <Alias>flag</Alias>
+            <DataTypeDefinitionId>93929b9a-93a2-4e2a-b239-d99334440a59</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>true</Mandatory>
+            <Name>Flag</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Details</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+    </Properties>
+    <Tabs>
+        <Tab>
+            <ContentTypeAlias>Country</ContentTypeAlias>
+            <SortOrder>0</SortOrder>
+            <Text>Details</Text>
+        </Tab>
+    </Tabs>
+    <Thumbnail>folder.png</Thumbnail>
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>false</IsContainer>
+</DocumentType>
