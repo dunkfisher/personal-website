@@ -1,4 +1,10 @@
-﻿body {
+﻿.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
     position: relative;
     height: 100vh;
     font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -67,9 +73,7 @@ nav a {
 
 #map, #listing-wrapper {
     height: calc(100vh - 40px);
-    /*margin: 10px auto;*/
     padding: 20px;
-    background-color: #ccc;
 }
 
 #listing-wrapper {
@@ -122,10 +126,25 @@ nav a {
     left: calc(50% - 400px);
     right: calc(50% - 400px);
     max-width: 760px;
-    overflow: auto;
     padding: 20px;
     background-color: white;
     z-index: 1;
+}
+
+#beer-detail-wrapper .top {
+    height: 80px;
+    border-bottom: 1px solid black;
+}
+
+#beer-detail-wrapper .close {    
+    float: right;
+    font-weight: bold;
+    cursor: pointer;        
+}
+
+#beer-detail-wrapper .main {
+    height: calc(100vh - 161px);
+    overflow: auto;
 }
 
 #beer-detail-wrapper table {
@@ -163,26 +182,14 @@ nav a {
 #beer-review {
     float: left;
     width: 50%;
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-style: italic;
 }
 
 #beer-image {
     float: right;
     width: 45%;
-}
-
-#beer-detail-wrapper .close {
-    display: block;
-    position: fixed;
-    right: 30px;
-    top: 30px;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bold;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: white;
+    margin-top: 10px;
 }
 
 @media(max-width: 1200px) {
@@ -210,7 +217,10 @@ nav a {
     #beer-review {
         float: none;
         width: 100%;
-        margin-top: 10px;
+    }
+
+    #beer-image {
+        margin: 0;
     }
 }
 
@@ -224,6 +234,10 @@ nav a {
         bottom: 0;
         left: 0;
         right: 0;
+    }
+
+    #beer-detail-wrapper .main {
+        height: calc(100vh - 121px);
     }
 
     #beer-image {

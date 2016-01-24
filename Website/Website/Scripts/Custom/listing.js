@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    $('#listing-wrapper li').hover(function () {
+    $('#listing-wrapper li').mouseenter(function () {
         var beerName = $(this).find('.beer-name').data('name');
 
         ga('send', 'event', 'Beer Listing', 'Item Hover', beerName);
@@ -9,7 +9,7 @@
         var beerName = $(this).find('.beer-name').data('name');
 
         ga('send', 'event', 'Beer Listing', 'Item View', beerName);
-
+                
         $('#beer-name').text(beerName);
         $('#beer-brewer').text($(this).find('.beer-brewer').data('brewer'));
         $('#beer-country').text($(this).find('.beer-country').data('country'));
@@ -20,6 +20,8 @@
         $('#beer-rating').text($(this).find('.beer-rating').data('rating'));
         $('#beer-country-flag').attr('src', $(this).find('.beer-country-flag').data('country-flag-path'));
         $('#beer-image').attr('src', $(this).find('.beer-image').data('image-path'));
+
+        $('#beer-detail-wrapper').scrollTop(0);
 
         $('body').addClass('no-scroll');
         $('#overlay').show();
