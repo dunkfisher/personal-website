@@ -13,6 +13,8 @@ namespace Website.UI.BL.DocumentTypes
         public string FullName { get { return Content.GetProperty<string>("fullName"); } }
         public string Brewer { get { return Content.GetProperty<string>("brewer"); } }
         public string CountryOfOrigin { get { return Content.GetProperty<string>("countryOfOrigin"); } }
+        public DateTime ImageDate { get { return Content.GetProperty<DateTime>("imageDate"); } }
+        public DateTime LastTastedDate { get { return Content.GetProperty<DateTime>("lastTastedDate"); } }
         public string Review { get { return Content.GetProperty<string>("review"); } }
         public int Rating { get { return Content.GetProperty<int>("rating"); } }
 

@@ -1,0 +1,235 @@
+﻿2016-01-20 23:07:58,623 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 26] Unloading (count: 0)
+2016-01-20 23:07:58,902 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 26] Unloading (count: 0)
+2016-01-20 23:08:39,815 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 34] Unloading (count: 0)
+2016-01-20 23:09:12,405 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 29] Unloading (count: 0)
+2016-01-20 23:09:12,544 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 29] Unloading (count: 0)
+2016-01-20 23:09:12,604 [36] INFO  Umbraco.Courier.Core.TaskManager - [Thread 29] Added PackagingTask behind queue of : 0
+2016-01-20 23:09:12,612 [36] INFO  Umbraco.Courier.Core.BackgroundTaskRunner - [Thread 29]  Task added Umbraco.Courier.Core.Tasks.PackagingTask
+2016-01-20 23:09:12,738 [36] INFO  Umbraco.Courier.Core.BackgroundTaskRunner - [Thread 29] Starting
+2016-01-20 23:09:12,951 [36] INFO  Umbraco.Courier.Core.TaskManager - [Thread 31] Starting PackagingTask with id: 85d52f79-a6ba-4e93-9096-ebc1503a4231
+2016-01-20 23:09:13,361 [36] DEBUG Umbraco.Courier.Persistence.V6.NHibernate.NHibernateSessionManager - [Thread 31] Loading factory
+2016-01-20 23:09:26,519 [36] DEBUG Umbraco.Courier.Persistence.V6.NHibernate.NHibernateSessionManager - [Thread 31] Complete (took 13166ms)
+2016-01-20 23:09:29,497 [36] DEBUG Umbraco.Courier.RepositoryProviders.Local - [Thread 31] Opening session: 51c9a73d-537d-4d95-a46e-ede67fbfbf3c
+2016-01-20 23:09:29,533 [36] DEBUG Umbraco.Courier.RepositoryProviders.CourierWebserviceRepositoryProvider - [Thread 31] Opening session to http://www.dunkfisher.com
+2016-01-20 23:09:40,385 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Home Property Data 
+2016-01-20 23:09:40,386 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1129 
+2016-01-20 23:09:40,403 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Home Property Data 
+2016-01-20 23:09:40,403 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1129 
+2016-01-20 23:10:06,433 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: 26d89e99-551f-4651-bbf6-4c5ea70bf38c hash-mismatch (local/remote) ef497f0bcaa5491c6c90b5876a02aed46fa4627e07b37e384b51fa3325e02c8c / 64decb18424b886a7a3e5b4cd03dbb4b88074cfdbc613a501d5bf068d84936f4
+2016-01-20 23:10:09,740 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: 53da0476-f439-445f-b559-8159f705f522 hash-mismatch (local/remote) 3b21aa6a69f92962e888f7407b40d3729aafccddd32b6b6d07098090a51bc567 / 5008d35ecc29ede9e89b1df04bb4a53e75daea8dcfaf1acc6849dde414b8b75e
+2016-01-20 23:10:10,168 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: c6238320-54d3-4c13-b502-70f70afde6b5 hash-mismatch (local/remote) 2dd69791a8f6b77bf9629c3dc481cff18b5b1fab941a874d2808a0a7a70a750f / 2dd69791a8f6b77bf9629c3dc481cff172ed6865842beb5f71ddaae59cf2bb3b
+2016-01-20 23:10:10,493 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Belgium Property Data 
+2016-01-20 23:10:10,493 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1123 
+2016-01-20 23:10:10,496 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Belgium Property Data 
+2016-01-20 23:10:10,496 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1123 
+2016-01-20 23:10:10,949 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Brise-Bon-Bons! Property Data 
+2016-01-20 23:10:10,949 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1117 
+2016-01-20 23:10:10,954 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Brise-Bon-Bons! Property Data 
+2016-01-20 23:10:10,954 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1117 
+2016-01-20 23:10:11,144 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: 65fde7be-5f62-4c1b-8460-f9f8d5544125 hash-mismatch (local/remote) 108d3e534006358d003fe1091711386db155815d9ef78bd1e1480cb5b9f81523 / 108d3e534006358d003fe1091711386d1ec88a390d350d7f567e56f881e2d8cb
+2016-01-20 23:10:11,566 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document France Property Data 
+2016-01-20 23:10:11,566 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1124 
+2016-01-20 23:10:11,570 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document France Property Data 
+2016-01-20 23:10:11,570 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1124 
+2016-01-20 23:10:12,027 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Akerbeltz Blanche Property Data 
+2016-01-20 23:10:12,027 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1105 
+2016-01-20 23:10:12,031 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Akerbeltz Blanche Property Data 
+2016-01-20 23:10:12,031 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1105 
+2016-01-20 23:10:14,721 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: 5f9bccf6-b12a-49dd-9f04-3eea0dcd472a hash-mismatch (local/remote) 1b17baf67bd49cc7467f83f61dce3a16f0b3689f57f3f646ad498bc52a19d65e / 1b17baf67bd49cc7467f83f61dce3a16fa6deebf09d013667f33708aef289b85
+2016-01-20 23:10:14,998 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Apocalypse Now Property Data 
+2016-01-20 23:10:14,998 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1106 
+2016-01-20 23:10:15,001 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Apocalypse Now Property Data 
+2016-01-20 23:10:15,001 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1106 
+2016-01-20 23:10:15,135 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: 39e0638e-0a1f-4b33-be2d-5119d05b5f56 hash-mismatch (local/remote) ff01a88a2fe2262ea492e03f68a7037cfcfd335d22dd16d7073acc5548b619b1 / ff01a88a2fe2262ea492e03f68a7037c2d4ec414bd70fd0020260d76add7c2bb
+2016-01-20 23:10:15,397 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Netherlands Property Data 
+2016-01-20 23:10:15,397 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1126 
+2016-01-20 23:10:15,401 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Netherlands Property Data 
+2016-01-20 23:10:15,401 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1126 
+2016-01-20 23:10:15,816 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Ball & Chain Property Data 
+2016-01-20 23:10:15,816 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1098 
+2016-01-20 23:10:15,820 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Ball & Chain Property Data 
+2016-01-20 23:10:15,820 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1098 
+2016-01-20 23:10:16,099 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: ef3c58de-c8a0-40b7-9535-ed9df2cd1121 hash-mismatch (local/remote) a231ea24d704e76aa46f29850d40403b3a66563ecaf8a65efd42af7daaa719d6 / a231ea24d704e76aa46f29850d40403bb9791a7076eb8f6749ef4a315bbe3fb6
+2016-01-20 23:10:17,058 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Scotland Property Data 
+2016-01-20 23:10:17,058 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1127 
+2016-01-20 23:10:17,062 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Scotland Property Data 
+2016-01-20 23:10:17,062 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1127 
+2016-01-20 23:10:17,570 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document The Cone Property Data 
+2016-01-20 23:10:17,570 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1110 
+2016-01-20 23:10:17,574 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document The Cone Property Data 
+2016-01-20 23:10:17,574 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1110 
+2016-01-20 23:10:17,748 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: 5e135656-709d-4d67-b7a4-89da63cc54ea hash-mismatch (local/remote) 1341780db573432efbbcda2cfa9b33113bcd559665573086450e33be5401f050 / 1341780db573432efbbcda2cfa9b3311f6013f10e82403d4ee383a12fb4bfe76
+2016-01-20 23:10:17,976 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Spain Property Data 
+2016-01-20 23:10:17,976 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1125 
+2016-01-20 23:10:17,980 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Spain Property Data 
+2016-01-20 23:10:17,980 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1125 
+2016-01-20 23:10:18,379 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Inedit Damm Property Data 
+2016-01-20 23:10:18,379 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1119 
+2016-01-20 23:10:18,383 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Inedit Damm Property Data 
+2016-01-20 23:10:18,383 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1119 
+2016-01-20 23:10:18,604 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: 223b11b6-1347-4d74-b46e-5179756fef99 hash-mismatch (local/remote) 153cc63216e02df0084ba851af5c4217aae6b5c126658137aed85478fe731162 / 153cc63216e02df0084ba851af5c4217b29da14611b590a1740bb74d08aef9aa
+2016-01-20 23:10:19,095 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Ceriux Property Data 
+2016-01-20 23:10:19,095 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1118 
+2016-01-20 23:10:19,099 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Ceriux Property Data 
+2016-01-20 23:10:19,099 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1118 
+2016-01-20 23:10:19,333 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: 81978707-5893-42c0-9d82-308c2abef4b5 hash-mismatch (local/remote) 962cbbbc33b86fdd550e45eea6a477495796d40305cea8fece50c2a52a8cb7cd / 962cbbbc33b86fdd550e45eea6a47749e5929ad3f52624f8b5e66604d69398ac
+2016-01-20 23:10:19,826 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Documents: 011bc64d-05d2-462e-86c0-5acee14f4755 hash-mismatch (local/remote) 94c37d302503b09a45c34e77eb03ce0c43ac201f480d2d86b0b84650044f9510 / b6b4811c8ff5d0a6bb397cf2e519a873c813854680d530ee5dc5eabcdf3b1626
+2016-01-20 23:10:20,074 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Home Property Data 
+2016-01-20 23:10:20,074 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1129 
+2016-01-20 23:10:20,335 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: 26d89e99-551f-4651-bbf6-4c5ea70bf38c hash-mismatch (local/remote) 6fa4627e07b37e384b51fa3325e02c8c / 88074cfdbc613a501d5bf068d84936f4
+2016-01-20 23:10:24,337 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: 53da0476-f439-445f-b559-8159f705f522 hash-mismatch (local/remote) 9aafccddd32b6b6d07098090a51bc567 / 75daea8dcfaf1acc6849dde414b8b75e
+2016-01-20 23:10:25,232 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: c6238320-54d3-4c13-b502-70f70afde6b5 hash-mismatch (local/remote) 8b5b1fab941a874d2808a0a7a70a750f / 72ed6865842beb5f71ddaae59cf2bb3b
+2016-01-20 23:10:25,430 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Belgium Property Data 
+2016-01-20 23:10:25,430 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1123 
+2016-01-20 23:10:26,742 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Brise-Bon-Bons! Property Data 
+2016-01-20 23:10:26,742 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1117 
+2016-01-20 23:10:27,018 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: 65fde7be-5f62-4c1b-8460-f9f8d5544125 hash-mismatch (local/remote) b155815d9ef78bd1e1480cb5b9f81523 / 1ec88a390d350d7f567e56f881e2d8cb
+2016-01-20 23:10:27,578 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document France Property Data 
+2016-01-20 23:10:27,578 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1124 
+2016-01-20 23:10:28,432 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Akerbeltz Blanche Property Data 
+2016-01-20 23:10:28,432 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1105 
+2016-01-20 23:10:28,590 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: 5f9bccf6-b12a-49dd-9f04-3eea0dcd472a hash-mismatch (local/remote) f0b3689f57f3f646ad498bc52a19d65e / fa6deebf09d013667f33708aef289b85
+2016-01-20 23:10:30,412 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Apocalypse Now Property Data 
+2016-01-20 23:10:30,412 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1106 
+2016-01-20 23:10:30,550 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: 39e0638e-0a1f-4b33-be2d-5119d05b5f56 hash-mismatch (local/remote) fcfd335d22dd16d7073acc5548b619b1 / 2d4ec414bd70fd0020260d76add7c2bb
+2016-01-20 23:10:31,020 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Netherlands Property Data 
+2016-01-20 23:10:31,020 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1126 
+2016-01-20 23:10:31,634 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Ball & Chain Property Data 
+2016-01-20 23:10:31,634 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1098 
+2016-01-20 23:10:31,887 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: ef3c58de-c8a0-40b7-9535-ed9df2cd1121 hash-mismatch (local/remote) 3a66563ecaf8a65efd42af7daaa719d6 / b9791a7076eb8f6749ef4a315bbe3fb6
+2016-01-20 23:10:32,437 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Scotland Property Data 
+2016-01-20 23:10:32,437 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1127 
+2016-01-20 23:10:35,788 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document The Cone Property Data 
+2016-01-20 23:10:35,788 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1110 
+2016-01-20 23:10:36,064 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: 5e135656-709d-4d67-b7a4-89da63cc54ea hash-mismatch (local/remote) 3bcd559665573086450e33be5401f050 / f6013f10e82403d4ee383a12fb4bfe76
+2016-01-20 23:10:36,543 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Spain Property Data 
+2016-01-20 23:10:36,543 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1125 
+2016-01-20 23:10:37,290 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Inedit Damm Property Data 
+2016-01-20 23:10:37,290 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1119 
+2016-01-20 23:10:37,466 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: 223b11b6-1347-4d74-b46e-5179756fef99 hash-mismatch (local/remote) aae6b5c126658137aed85478fe731162 / b29da14611b590a1740bb74d08aef9aa
+2016-01-20 23:10:38,043 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] logging media picker packaging Document Ceriux Property Data 
+2016-01-20 23:10:38,043 [36] DEBUG Umbraco.Courier.DataResolvers.ItemDataResolvers.MediaPickers - [Thread 31] Adding media picker data from: 1118 
+2016-01-20 23:10:38,202 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: 81978707-5893-42c0-9d82-308c2abef4b5 hash-mismatch (local/remote) 5796d40305cea8fece50c2a52a8cb7cd / e5929ad3f52624f8b5e66604d69398ac
+2016-01-20 23:10:39,090 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] PropertyData: 011bc64d-05d2-462e-86c0-5acee14f4755 hash-mismatch (local/remote) 43ac201f480d2d86b0b84650044f9510 / c813854680d530ee5dc5eabcdf3b1626
+2016-01-20 23:10:40,719 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Templates: Listing hash-mismatch (local/remote) 5a135534abe322055604347d6b2825b6 / f9ca0aea8572f54558cf54e331d20211
+2016-01-20 23:10:42,661 [36] WARN  Umbraco.Courier.Core.ResolutionManager - [Thread 31] Finished executing resolver: Media hydra.jpg Property Data For provider: Media Property Data (took 1179ms)
+2016-01-20 23:10:43,575 [36] WARN  Umbraco.Courier.Core.ResolutionManager - [Thread 31] Finished executing resolver: Media hydra.jpg Property Data For provider: Media Property Data (took 907ms)
+2016-01-20 23:10:48,001 [36] WARN  Umbraco.Courier.Core.ResolutionManager - [Thread 31] Finished executing resolver: Map For provider: Document types (took 143ms)
+2016-01-20 23:10:49,839 [36] WARN  Umbraco.Courier.Core.ResolutionManager - [Thread 31] Finished executing resolver: Media hydra.jpg Property Data For provider: Media Property Data (took 796ms)
+2016-01-20 23:10:50,895 [36] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 31] Templates: Master hash-mismatch (local/remote) d0ca3d977e6b9751696f8e4a75677dca / a4bf0730a56514a27abb78232dfee1bd
+2016-01-20 23:10:53,757 [36] DEBUG Umbraco.Courier.RepositoryProviders.Local - [Thread 31] Closing session: 51c9a73d-537d-4d95-a46e-ede67fbfbf3c
+2016-01-20 23:10:53,758 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 31] Unloading (count: 0)
+2016-01-20 23:10:53,761 [36] INFO  Umbraco.Courier.Core.TaskManager - [Thread 31] Completed PackagingTask with id: 85d52f79-a6ba-4e93-9096-ebc1503a4231
+2016-01-20 23:10:54,673 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 33] Unloading (count: 0)
+2016-01-20 23:10:54,677 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 33] Unloading (count: 0)
+2016-01-20 23:10:54,681 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 33] Unloading (count: 0)
+2016-01-20 23:10:54,757 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 21] Unloading (count: 0)
+2016-01-20 23:10:54,917 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 26] Unloading (count: 0)
+2016-01-20 23:10:54,971 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 33] Unloading (count: 0)
+2016-01-20 23:10:55,123 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 22] Unloading (count: 0)
+2016-01-20 23:10:55,237 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 22] Unloading (count: 0)
+2016-01-20 23:10:55,328 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 26] Unloading (count: 0)
+2016-01-20 23:10:55,374 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 21] Unloading (count: 0)
+2016-01-20 23:10:58,043 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 33] Unloading (count: 0)
+2016-01-20 23:12:49,924 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 18] Unloading (count: 0)
+2016-01-20 23:12:49,933 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 18] Unloading (count: 0)
+2016-01-20 23:12:49,934 [36] INFO  Umbraco.Courier.Core.TaskManager - [Thread 18] Added ExtractionTask behind queue of : 0
+2016-01-20 23:12:49,934 [36] INFO  Umbraco.Courier.Core.BackgroundTaskRunner - [Thread 18]  Task added Umbraco.Courier.Core.Tasks.ExtractionTask
+2016-01-20 23:12:49,977 [36] INFO  Umbraco.Courier.Core.BackgroundTaskRunner - [Thread 18] Starting
+2016-01-20 23:12:50,085 [36] INFO  Umbraco.Courier.Core.TaskManager - [Thread 32] Starting ExtractionTask with id: 7860caf3-ebdb-491e-a765-332247ac0578
+2016-01-20 23:12:50,205 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Running PopulateGraph
+2016-01-20 23:12:53,406 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished PopulateGraph (took 3202ms)
+2016-01-20 23:12:53,422 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 32] Adding event DeleteContentAndMedia To Queue: DeploymentComplete for session: d4ae1ffc-6366-4732-be8c-db1920660325
+2016-01-20 23:12:53,427 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Starting extraction
+2016-01-20 23:12:53,427 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Opens database session
+2016-01-20 23:12:53,427 [36] DEBUG Umbraco.Courier.RepositoryProviders.CourierWebserviceRepositoryProvider - [Thread 32] Opening session to http://www.dunkfisher.com
+2016-01-20 23:12:54,058 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Transfering pre-extraction files
+2016-01-20 23:12:56,899 [36] ERROR Umbraco.Courier.Core.Diagnostics.Logging.RevisionLog - [Thread 32] [Error]; Item Id: 5c136ad7-078b-4bf7-8d3a-9da52b89bd81; Caller: Umbraco.Courier.RepositoryProviders.CourierWebserviceRepositoryProvider; Process: resources; Msg: System.Web.Services.Protocols.SoapException: System.Web.Services.Protocols.SoapException: There was an exception running the extensions specified in the config file. ---> System.Web.HttpException: Maximum request length exceeded.
+   at System.Web.HttpRequest.GetEntireRawContent()
+   at System.Web.HttpRequest.get_InputStream()
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   --- End of inner exception stack trace ---
+   at System.Web.Services.Protocols.SoapServerProtocol.Initialize()
+   at System.Web.Services.Protocols.ServerProtocolFactory.Create(Type type, HttpContext context, HttpRequest request, HttpResponse response, Boolean& abortProcessing)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.ReadResponse(SoapClientMessage message, WebResponse response, Stream responseStream, Boolean asyncCall)
+   at System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(String methodName, Object[] parameters)
+   at Umbraco.Courier.RepositoryProviders.WebServiceProvider.RepositoryWebservice.TransferResources(String sessionKey, ResourceTransfer[] resources, String user, String pass)
+   at Umbraco.Courier.RepositoryProviders.CourierWebserviceRepositoryProvider.TransferResources(ResourceTransfer[] resources);
+System.Exception: Error logged
+2016-01-20 23:12:56,899 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished TransferItemResources (took 2824ms)
+2016-01-20 23:12:56,899 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Running ExtractReadyRevisionBatch
+2016-01-20 23:12:56,905 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting batch of 10 items
+2016-01-20 23:12:56,905 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Home - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:12:58,826 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 1916ms)
+2016-01-20 23:12:58,828 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Inedit Damm - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:00,218 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 1390ms)
+2016-01-20 23:13:00,219 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Backgrounds - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:01,041 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 821ms)
+2016-01-20 23:13:01,041 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Apocalypse Now - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:01,783 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 741ms)
+2016-01-20 23:13:01,783 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: The Cone - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:02,603 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 820ms)
+2016-01-20 23:13:02,603 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Akerbeltz Blanche - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:03,489 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 886ms)
+2016-01-20 23:13:03,489 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Brise-Bon-Bons! - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:04,471 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 981ms)
+2016-01-20 23:13:04,471 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Ceriux - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:05,679 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 1209ms)
+2016-01-20 23:13:05,679 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Master - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:06,581 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 901ms)
+2016-01-20 23:13:06,581 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Ball & Chain - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:07,662 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 1081ms)
+2016-01-20 23:13:07,663 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting batch of 12 items
+2016-01-20 23:13:07,663 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: FAQs - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:08,804 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 1141ms)
+2016-01-20 23:13:08,804 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document Inedit Damm Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:09,492 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 692ms)
+2016-01-20 23:13:09,493 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: hydra.jpg - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:09,687 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 194ms)
+2016-01-20 23:13:09,687 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document Apocalypse Now Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:09,884 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 196ms)
+2016-01-20 23:13:09,884 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Beer Map - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:10,098 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 213ms)
+2016-01-20 23:13:10,098 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document The Cone Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:10,282 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 184ms)
+2016-01-20 23:13:10,282 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document Akerbeltz Blanche Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:10,533 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 250ms)
+2016-01-20 23:13:10,533 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document Brise-Bon-Bons! Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:10,783 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 249ms)
+2016-01-20 23:13:10,783 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document Ceriux Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:10,974 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 190ms)
+2016-01-20 23:13:10,974 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Listing - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:11,199 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 224ms)
+2016-01-20 23:13:11,199 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document Ball & Chain Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:11,543 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 344ms)
+2016-01-20 23:13:11,544 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Media Backgrounds Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:11,752 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 208ms)
+2016-01-20 23:13:11,753 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting batch of 5 items
+2016-01-20 23:13:11,753 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document FAQs Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:11,964 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 211ms)
+2016-01-20 23:13:11,964 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document Home Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:12,181 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 216ms)
+2016-01-20 23:13:12,181 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document Beer Map Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:12,349 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 168ms)
+2016-01-20 23:13:12,349 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Beer Reviews - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:12,557 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 207ms)
+2016-01-20 23:13:12,557 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Media hydra.jpg Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:12,985 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 427ms)
+2016-01-20 23:13:12,986 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting batch of 1 items
+2016-01-20 23:13:12,986 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Extracting: Document Beer Reviews Property Data - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-20 23:13:13,141 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractItem (took 155ms)
+2016-01-20 23:13:13,141 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished ExtractReadyRevisionBatch (took 16250ms)
+2016-01-20 23:13:13,141 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Completed extraction queue
+2016-01-20 23:13:13,473 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Post processing
+2016-01-20 23:13:13,477 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Post processing 0 items
+2016-01-20 23:13:13,477 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished PostProcessing (took 0ms)
+2016-01-20 23:13:13,857 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Completed post processing
+2016-01-20 23:13:13,857 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Committing to database
+2016-01-20 23:13:13,994 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Transfering post-extract resources
+2016-01-20 23:13:14,500 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished TransferItemResources (took 504ms)
+2016-01-20 23:13:14,903 [36] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Finished TransferItemResources (took 403ms)
+2016-01-20 23:13:14,903 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Completing database transaction
+2016-01-20 23:13:17,095 [36] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 32] Completing entire deployement
+2016-01-20 23:13:17,772 [36] DEBUG Umbraco.Courier.RepositoryProviders.Local - [Thread 32] Closing session: d4ae1ffc-6366-4732-be8c-db1920660325
+2016-01-20 23:13:18,000 [36] DEBUG Umbraco.Courier.Core.EventManager - [Thread 32] Unloading (count: 1)
+2016-01-20 23:13:18,000 [36] INFO  Umbraco.Courier.Core.TaskManager - [Thread 32] Completed ExtractionTask with id: 7860caf3-ebdb-491e-a765-332247ac0578
