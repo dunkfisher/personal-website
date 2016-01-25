@@ -21,16 +21,16 @@
         $('#beer-country-flag').attr('src', $(this).find('.beer-country-flag').data('country-flag-path'));
         $('#beer-image').attr('src', $(this).find('.beer-image').data('image-path'));
 
-        $('#beer-detail-wrapper').scrollTop(0);
+        //$('#beer-detail-wrapper').scrollTop(0);
 
         $('body').addClass('no-scroll');
-        $('#overlay').show();
-        $('#beer-detail-wrapper').slideToggle();
+        $('#overlay').addClass('visible');
+        $('#beer-detail-wrapper').addClass('visible');
     });
 
     $('#beer-detail-wrapper .close').click(function() {
-        $('#beer-detail-wrapper').slideToggle();
-        $('#overlay').hide();
+        $('#beer-detail-wrapper').removeClass('visible');
+        $('#overlay').removeClass('visible');
         $('body').removeClass('no-scroll');
     });
 });

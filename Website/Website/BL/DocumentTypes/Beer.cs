@@ -14,7 +14,16 @@ namespace Website.UI.BL.DocumentTypes
         public string Brewer { get { return Content.GetProperty<string>("brewer"); } }
         public string CountryOfOrigin { get { return Content.GetProperty<string>("countryOfOrigin"); } }
         public DateTime ImageDate { get { return Content.GetProperty<DateTime>("imageDate"); } }
-        public DateTime LastTastedDate { get { return Content.GetProperty<DateTime>("lastTastedDate"); } }
+
+        public DateTime LastTastedDate
+        {
+            get
+            {
+                var lastTasted = Content.GetProperty<DateTime>("lastTastedDate");
+                return lastTasted > DateTime.MinValue ? lastTasted : ImageDate;
+            }
+        }
+
         public string Review { get { return Content.GetProperty<string>("review"); } }
         public int Rating { get { return Content.GetProperty<int>("rating"); } }
 
@@ -23,7 +32,7 @@ namespace Website.UI.BL.DocumentTypes
         }
 
         public string GetImageUrl(UmbracoHelper umbraco)
-        {            
+        {
             var mediaId = Content.GetProperty<int>("image");
             return umbraco.TypedMedia(mediaId).Url;
         }
