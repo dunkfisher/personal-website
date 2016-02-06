@@ -77,7 +77,7 @@ nav a {
 
 #map, #listing-wrapper {
     height: calc(100vh - 40px);
-    padding: 20px;
+    padding: 8px 0 0 8px;
 }
 
 #listing-wrapper {
@@ -87,31 +87,41 @@ nav a {
 #listing-wrapper li {
     float: left;
     width: calc(100% / 6);
-    height: 260px;
-    color: white;
-    background-repeat: no-repeat;
-    background-position: center center;
-	background-size: cover;
-    cursor: pointer;
 }
 
 #listing-wrapper .summary-wrapper {
     position: relative;
     height: 240px;
-    padding: 10px; 
-    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0 8px 8px 0;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size: cover;
+    cursor: pointer;    
 }
 
-#listing-wrapper .summary-wrapper:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+#listing-wrapper .summary-wrapper-inner {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#listing-wrapper .summary-wrapper-inner:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #listing-wrapper img {
     width: 200px;
 }
 
+#listing-wrapper h2,
+#listing-wrapper h3 {
+    margin: 10px;
+}
+
 #listing-wrapper h2 {
     height: 64px;
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 #listing-wrapper .beer-country-flag {

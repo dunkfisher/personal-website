@@ -11,6 +11,8 @@ namespace Website.UI.BL.DocumentTypes
 {
     public class Country : PublishedContentModel
     {
+        //public string Name { get { return Content.Name; } }
+
         public Country(IPublishedContent content) : base(content)
         {
         }

@@ -12,7 +12,7 @@ namespace Website.UI.BL.DocumentTypes
     {
         public string FullName { get { return Content.GetProperty<string>("fullName"); } }
         public string Brewer { get { return Content.GetProperty<string>("brewer"); } }
-        public string CountryOfOrigin { get { return Content.GetProperty<string>("countryOfOrigin"); } }
+        public string CountryOfOrigin { get { return Content.Parent<Country>().Name; } }
         public DateTime ImageDate { get { return Content.GetProperty<DateTime>("imageDate"); } }
 
         public DateTime LastTastedDate

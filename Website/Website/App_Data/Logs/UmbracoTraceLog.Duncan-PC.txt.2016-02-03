@@ -1,0 +1,122 @@
+﻿ 2016-02-03 23:23:08,148 [P7052/D2/T16] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-02-02 23:22:26
+ 2016-02-03 23:23:23,103 [P7052/D2/T38] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-02-03 23:26:19,681 [P7052/D2/T37] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username dunc1981@gmail.com from IP address ::1
+ 2016-02-03 23:37:13,803 [P7052/D2/T82] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Australia' with Id '0' has been published.
+ 2016-02-03 23:37:24,008 [P7052/D2/T82] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:37:24,218 [P7052/D2/T48] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:37:44,111 [P7052/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Canada' with Id '0' has been published.
+ 2016-02-03 23:37:48,151 [P7052/D2/T82] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:37:48,170 [P7052/D2/T82] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:38:11,974 [P7052/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Cyprus' with Id '0' has been published.
+ 2016-02-03 23:38:16,018 [P7052/D2/T82] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:38:16,048 [P7052/D2/T48] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:39:11,000 [P7052/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Czech Republic' with Id '0' has been published.
+ 2016-02-03 23:39:15,138 [P7052/D2/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:39:15,273 [P7052/D2/T28] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:39:32,867 [P7052/D2/T28] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Denmark' with Id '0' has been published.
+ 2016-02-03 23:39:36,977 [P7052/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:39:37,057 [P7052/D2/T18] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:39:55,319 [P7052/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'England' with Id '0' has been published.
+ 2016-02-03 23:39:59,511 [P7052/D2/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:39:59,603 [P7052/D2/T34] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:41:07,279 [P7052/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Greece' with Id '0' has been published.
+ 2016-02-03 23:41:11,408 [P7052/D2/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:41:11,421 [P7052/D2/T28] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:42:36,708 [P7052/D2/T25] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Japan' with Id '0' has been published.
+ 2016-02-03 23:42:41,716 [P7052/D2/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:42:42,259 [P7052/D2/T52] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:43:08,457 [P7052/D2/T25] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Germany' with Id '1546' has been published.
+ 2016-02-03 23:43:13,977 [P7052/D2/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:43:14,447 [P7052/D2/T25] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:43:24,791 [P7052/D2/T50] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Italy' with Id '1548' has been published.
+ 2016-02-03 23:43:28,853 [P7052/D2/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:43:29,122 [P7052/D2/T28] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:44:11,846 [P7052/D2/T52] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Jersey' with Id '0' has been published.
+ 2016-02-03 23:44:16,282 [P7052/D2/T15] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:44:16,796 [P7052/D2/T15] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:45:37,459 [P7052/D2/T60] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kenya' with Id '0' has been published.
+ 2016-02-03 23:45:41,652 [P7052/D2/T60] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:45:41,713 [P7052/D2/T60] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:47:47,247 [P7052/D2/T18] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Lithuania' with Id '0' has been published.
+ 2016-02-03 23:47:51,304 [P7052/D2/T38] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:47:51,326 [P7052/D2/T38] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:48:17,848 [P7052/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mexico' with Id '0' has been published.
+ 2016-02-03 23:48:21,896 [P7052/D2/T40] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:48:22,147 [P7052/D2/T70] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:48:49,043 [P7052/D2/T48] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Namibia' with Id '0' has been published.
+ 2016-02-03 23:48:53,091 [P7052/D2/T18] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:48:53,144 [P7052/D2/T18] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:49:15,522 [P7052/D2/T49] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'New Zealand' with Id '0' has been published.
+ 2016-02-03 23:49:20,500 [P7052/D2/T18] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:49:20,538 [P7052/D2/T18] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:49:53,491 [P7052/D2/T49] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Norway' with Id '0' has been published.
+ 2016-02-03 23:49:57,799 [P7052/D2/T18] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:49:57,829 [P7052/D2/T23] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:50:22,412 [P7052/D2/T61] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Portugal' with Id '0' has been published.
+ 2016-02-03 23:50:26,515 [P7052/D2/T49] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:50:26,546 [P7052/D2/T49] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:50:41,237 [P7052/D2/T61] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sweden' with Id '0' has been published.
+ 2016-02-03 23:50:45,361 [P7052/D2/T49] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:50:45,753 [P7052/D2/T70] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:50:57,821 [P7052/D2/T18] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Turkey' with Id '0' has been published.
+ 2016-02-03 23:51:01,868 [P7052/D2/T82] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:51:01,907 [P7052/D2/T69] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:51:15,967 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'USA' with Id '0' has been published.
+ 2016-02-03 23:51:20,012 [P7052/D2/T18] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:51:20,045 [P7052/D2/T18] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:52:33,352 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Australia' with Id '1540' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Belgium' with Id '1112' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Canada' with Id '1541' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Cyprus' with Id '1542' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Czech Republic' with Id '1543' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Denmark' with Id '1544' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'England' with Id '1545' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'France' with Id '1100' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Germany' with Id '1546' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Greece' with Id '1547' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Italy' with Id '1548' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Japan' with Id '1552' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Jersey' with Id '1553' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kenya' with Id '1555' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Lithuania' with Id '1557' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mexico' with Id '1558' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Namibia' with Id '1559' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Netherlands' with Id '1101' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'New Zealand' with Id '1560' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Norway' with Id '1561' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Portugal' with Id '1562' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Scotland' with Id '1107' has been published.
+ 2016-02-03 23:52:33,354 [P7052/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Spain' with Id '1113' has been published.
+ 2016-02-03 23:52:42,508 [P7052/D2/T18] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:52:42,531 [P7052/D2/T25] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:53:43,696 [P7052/D2/T55] INFO  umbraco.content - Loading content from database...
+ 2016-02-03 23:53:47,935 [P7052/D2/T40] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:53:48,098 [P7052/D2/T61] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:53:51,579 [P7052/D2/T61] WARN  Umbraco.Web.PublishedCache.XmlPublishedCache.PublishedMediaCache - Could not retrieve media 1117 from Examine index, reverting to looking up media via legacy library.GetMedia method
+ 2016-02-03 23:53:52,594 [P7052/D2/T61] WARN  Umbraco.Web.PublishedCache.XmlPublishedCache.PublishedMediaCache - Could not retrieve media 1105 from Examine index, reverting to looking up media via legacy library.GetMedia method
+ 2016-02-03 23:53:52,913 [P7052/D2/T61] WARN  Umbraco.Web.PublishedCache.XmlPublishedCache.PublishedMediaCache - Could not retrieve media 1106 from Examine index, reverting to looking up media via legacy library.GetMedia method
+ 2016-02-03 23:53:52,937 [P7052/D2/T61] WARN  Umbraco.Web.PublishedCache.XmlPublishedCache.PublishedMediaCache - Could not retrieve media 1098 from Examine index, reverting to looking up media via legacy library.GetMedia method
+ 2016-02-03 23:53:52,986 [P7052/D2/T61] WARN  Umbraco.Web.PublishedCache.XmlPublishedCache.PublishedMediaCache - Could not retrieve media 1110 from Examine index, reverting to looking up media via legacy library.GetMedia method
+ 2016-02-03 23:53:53,173 [P7052/D2/T61] WARN  Umbraco.Web.PublishedCache.XmlPublishedCache.PublishedMediaCache - Could not retrieve media 1119 from Examine index, reverting to looking up media via legacy library.GetMedia method
+ 2016-02-03 23:53:53,397 [P7052/D2/T61] WARN  Umbraco.Web.PublishedCache.XmlPublishedCache.PublishedMediaCache - Could not retrieve media 1118 from Examine index, reverting to looking up media via legacy library.GetMedia method
+ 2016-02-03 23:54:25,271 [P7052/D2/T59] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Brise-Bon-Bons!' with Id '1114' has been unpublished.
+ 2016-02-03 23:54:29,446 [P7052/D2/T52] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:54:29,466 [P7052/D2/T52] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:54:51,598 [P7052/D2/T55] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Akerbeltz Blanche' with Id '1102' has been unpublished.
+ 2016-02-03 23:54:55,639 [P7052/D2/T52] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:54:55,672 [P7052/D2/T84] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:54:57,717 [P7052/D2/T59] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Apocalypse Now' with Id '1103' has been unpublished.
+ 2016-02-03 23:55:01,804 [P7052/D2/T70] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:55:01,820 [P7052/D2/T55] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:55:48,112 [P7052/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ball & Chain' with Id '1094' has been unpublished.
+ 2016-02-03 23:55:52,222 [P7052/D2/T23] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:55:52,250 [P7052/D2/T39] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:55:58,541 [P7052/D2/T23] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'The Cone' with Id '1108' has been unpublished.
+ 2016-02-03 23:56:02,603 [P7052/D2/T39] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:56:02,709 [P7052/D2/T39] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:56:05,813 [P7052/D2/T52] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Inedit Damm' with Id '1120' has been unpublished.
+ 2016-02-03 23:56:09,898 [P7052/D2/T23] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:56:09,921 [P7052/D2/T87] INFO  umbraco.content - Saved Xml to file.
+ 2016-02-03 23:56:11,294 [P7052/D2/T39] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ceriux' with Id '1121' has been unpublished.
+ 2016-02-03 23:56:15,366 [P7052/D2/T70] INFO  umbraco.content - Save Xml to file...
+ 2016-02-03 23:56:15,506 [P7052/D2/T70] INFO  umbraco.content - Saved Xml to file.

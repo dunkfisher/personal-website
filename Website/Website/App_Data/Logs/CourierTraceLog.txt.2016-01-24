@@ -1,0 +1,60 @@
+﻿2016-01-24 20:12:43,265 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 11] Unloading (count: 0)
+2016-01-24 20:12:43,343 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 11] Unloading (count: 0)
+2016-01-24 20:13:02,980 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 18] Unloading (count: 0)
+2016-01-24 20:13:07,616 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 18] Unloading (count: 0)
+2016-01-24 20:13:07,701 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 18] Unloading (count: 0)
+2016-01-24 20:13:07,778 [14] INFO  Umbraco.Courier.Core.TaskManager - [Thread 18] Added PackagingTask behind queue of : 0
+2016-01-24 20:13:07,782 [14] INFO  Umbraco.Courier.Core.BackgroundTaskRunner - [Thread 18]  Task added Umbraco.Courier.Core.Tasks.PackagingTask
+2016-01-24 20:13:07,849 [14] INFO  Umbraco.Courier.Core.BackgroundTaskRunner - [Thread 18] Starting
+2016-01-24 20:13:07,951 [14] INFO  Umbraco.Courier.Core.TaskManager - [Thread 20] Starting PackagingTask with id: 1eb1312f-7198-4998-a933-acc261e4c902
+2016-01-24 20:13:07,972 [14] DEBUG Umbraco.Courier.RepositoryProviders.Local - [Thread 20] Opening session: fbf79194-fa78-49cc-a592-7524c24db7b4
+2016-01-24 20:13:07,974 [14] DEBUG Umbraco.Courier.Persistence.V6.NHibernate.NHibernateSessionManager - [Thread 20] Loading factory
+2016-01-24 20:13:12,871 [14] DEBUG Umbraco.Courier.Persistence.V6.NHibernate.NHibernateSessionManager - [Thread 20] Complete (took 4902ms)
+2016-01-24 20:13:12,937 [14] DEBUG Umbraco.Courier.RepositoryProviders.CourierWebserviceRepositoryProvider - [Thread 20] Opening session to http://www.dunkfisher.com
+2016-01-24 20:13:27,654 [14] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 20] Document types: Beer hash-mismatch (local/remote) 947bf5f32429528cdec333c043772700 / b015f62c0689183e988b678bca7e676f
+2016-01-24 20:13:30,741 [14] INFO  Umbraco.Courier.Core.Packaging.RevisionPackaging - [Thread 20] Document types: Base hash-mismatch (local/remote) ec1aa17cf4f9d76ecf61ddb7e5b6c51b / ca1c37e1f6005e16a459675395f954aa
+2016-01-24 20:13:31,206 [14] DEBUG Umbraco.Courier.RepositoryProviders.Local - [Thread 20] Closing session: fbf79194-fa78-49cc-a592-7524c24db7b4
+2016-01-24 20:13:31,207 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 20] Unloading (count: 0)
+2016-01-24 20:13:31,210 [14] INFO  Umbraco.Courier.Core.TaskManager - [Thread 20] Completed PackagingTask with id: 1eb1312f-7198-4998-a933-acc261e4c902
+2016-01-24 20:13:31,369 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 22] Unloading (count: 0)
+2016-01-24 20:13:31,372 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 22] Unloading (count: 0)
+2016-01-24 20:13:31,377 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 22] Unloading (count: 0)
+2016-01-24 20:13:31,420 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 22] Unloading (count: 0)
+2016-01-24 20:13:31,465 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 22] Unloading (count: 0)
+2016-01-24 20:13:31,486 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 21] Unloading (count: 0)
+2016-01-24 20:13:32,193 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 21] Unloading (count: 0)
+2016-01-24 20:13:33,658 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 22] Unloading (count: 0)
+2016-01-24 20:13:33,666 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 22] Unloading (count: 0)
+2016-01-24 20:13:33,668 [14] INFO  Umbraco.Courier.Core.TaskManager - [Thread 22] Added ExtractionTask behind queue of : 0
+2016-01-24 20:13:33,668 [14] INFO  Umbraco.Courier.Core.BackgroundTaskRunner - [Thread 22]  Task added Umbraco.Courier.Core.Tasks.ExtractionTask
+2016-01-24 20:13:33,699 [14] INFO  Umbraco.Courier.Core.BackgroundTaskRunner - [Thread 22] Starting
+2016-01-24 20:13:33,875 [14] INFO  Umbraco.Courier.Core.TaskManager - [Thread 24] Starting ExtractionTask with id: 45c545dd-aa62-4120-bf6a-802a9201b9be
+2016-01-24 20:13:33,885 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Running PopulateGraph
+2016-01-24 20:13:33,959 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Finished PopulateGraph (took 73ms)
+2016-01-24 20:13:33,970 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 24] Adding event DeleteContentAndMedia To Queue: DeploymentComplete for session: 403feec2-c7fb-44e1-a396-7b3c3a77f20f
+2016-01-24 20:13:34,089 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Starting extraction
+2016-01-24 20:13:34,091 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Opens database session
+2016-01-24 20:13:34,091 [14] DEBUG Umbraco.Courier.RepositoryProviders.CourierWebserviceRepositoryProvider - [Thread 24] Opening session to http://www.dunkfisher.com
+2016-01-24 20:13:34,282 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Transfering pre-extraction files
+2016-01-24 20:13:34,295 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Running ExtractReadyRevisionBatch
+2016-01-24 20:13:34,298 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Extracting batch of 1 items
+2016-01-24 20:13:34,298 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Extracting: Base - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-24 20:13:37,182 [14] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Finished ExtractItem (took 2879ms)
+2016-01-24 20:13:37,184 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Extracting batch of 1 items
+2016-01-24 20:13:37,184 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Extracting: Beer - Umbraco.Courier.Core.DependencyGraph+GraphNode
+2016-01-24 20:13:38,354 [14] WARN  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Finished ExtractItem (took 1170ms)
+2016-01-24 20:13:38,355 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Finished ExtractReadyRevisionBatch (took 4060ms)
+2016-01-24 20:13:38,355 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Completed extraction queue
+2016-01-24 20:13:38,661 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Post processing
+2016-01-24 20:13:38,664 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Post processing 0 items
+2016-01-24 20:13:38,664 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Finished PostProcessing (took 0ms)
+2016-01-24 20:13:38,932 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Completed post processing
+2016-01-24 20:13:38,932 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Committing to database
+2016-01-24 20:13:39,345 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Transfering post-extract resources
+2016-01-24 20:13:39,346 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Completing database transaction
+2016-01-24 20:13:40,535 [14] INFO  Umbraco.Courier.Core.Extraction.RevisionExtraction - [Thread 24] Completing entire deployement
+2016-01-24 20:13:40,743 [14] DEBUG Umbraco.Courier.RepositoryProviders.Local - [Thread 24] Closing session: 403feec2-c7fb-44e1-a396-7b3c3a77f20f
+2016-01-24 20:13:40,915 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 24] Unloading (count: 1)
+2016-01-24 20:13:40,915 [14] INFO  Umbraco.Courier.Core.TaskManager - [Thread 24] Completed ExtractionTask with id: 45c545dd-aa62-4120-bf6a-802a9201b9be
+2016-01-24 20:20:54,339 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 8] Unloading (count: 0)
+2016-01-24 20:20:54,492 [14] DEBUG Umbraco.Courier.Core.EventManager - [Thread 8] Unloading (count: 0)

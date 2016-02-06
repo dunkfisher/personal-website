@@ -1,0 +1,77 @@
+﻿<DocumentType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Dependencies>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>93929b9a-93a2-4e2a-b239-d99334440a59</Id>
+                <ProviderId>e0472592-e73b-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Datatype: 93929b9a-93a2-4e2a-b239-d99334440a59</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+        <Dependency>
+            <IsChild>false</IsChild>
+            <ItemId>
+                <Id>Base</Id>
+                <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+            </ItemId>
+            <Name>Document type: Base</Name>
+            <ForceHashCheck>true</ForceHashCheck>
+        </Dependency>
+    </Dependencies>
+    <ItemId>
+        <Id>Page</Id>
+        <ProviderId>d8e6ad84-e73a-11df-9492-0800200c9a66</ProviderId>
+    </ItemId>
+    <Name>Page</Name>
+    <ItemType>Item</ItemType>
+    <Resources />
+    <Alias>Page</Alias>
+    <AllowedChildDocumentTypes />
+    <AllowedTemplates />
+    <Description />
+    <Icon>.sprTreeFolder</Icon>
+    <MasterDocumentType>Base</MasterDocumentType>
+    <Properties>
+        <ContentTypeProperty>
+            <UniqueId>5fa9645b-474f-4d1f-bf6f-c0fd742abf26</UniqueId>
+            <Alias>backgroundImage</Alias>
+            <DataTypeDefinitionId>93929b9a-93a2-4e2a-b239-d99334440a59</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>false</Mandatory>
+            <Name>Background Image</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Display</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+        <ContentTypeProperty>
+            <UniqueId>796a4601-1bbc-406d-970c-60ac7ea6273f</UniqueId>
+            <Alias>pageTitle</Alias>
+            <DataTypeDefinitionId>0cc0eba1-9960-42c9-bf9b-60e150b429ae</DataTypeDefinitionId>
+            <Description />
+            <Mandatory>true</Mandatory>
+            <Name>Page Title</Name>
+            <SortOrder>0</SortOrder>
+            <TabCaption>Metadata</TabCaption>
+            <Validation />
+        </ContentTypeProperty>
+    </Properties>
+    <Tabs>
+        <Tab>
+            <ContentTypeAlias>Page</ContentTypeAlias>
+            <SortOrder>1</SortOrder>
+            <Text>Display</Text>
+        </Tab>
+        <Tab>
+            <ContentTypeAlias>Page</ContentTypeAlias>
+            <SortOrder>0</SortOrder>
+            <Text>Metadata</Text>
+        </Tab>
+    </Tabs>
+    <Thumbnail>folder.png</Thumbnail>
+    <MasterDocumentTypes>
+        <string>Base</string>
+    </MasterDocumentTypes>
+    <AllowAtRoot>false</AllowAtRoot>
+    <IsContainer>false</IsContainer>
+</DocumentType>

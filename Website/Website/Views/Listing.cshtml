@@ -9,18 +9,20 @@
         {
             var imagePath = beer.GetImageUrl(Umbraco);
             var flagPath = beer.GetCountryFlag(Umbraco);
-            <li style="background-image: url(@imagePath)">
-                <div class="summary-wrapper">
-                    <h2 class="beer-name" data-name="@beer.FullName">@beer.FullName</h2>
-                    <h3 class="beer-brewer" data-brewer="@beer.Brewer">@beer.Brewer</h3>
-                    <img class="beer-country-flag" src="@flagPath" alt="Flag" data-country-flag-path="@flagPath" />
+            <li>
+                <div class="summary-wrapper" style="background-image: url(@imagePath)">
+                    <div class="summary-wrapper-inner">
+                        <h2 class="beer-name" data-name="@beer.FullName">@beer.FullName</h2>
+                        <h3 class="beer-brewer" data-brewer="@beer.Brewer">@beer.Brewer</h3>
+                        <img class="beer-country-flag" src="@flagPath" alt="Flag" data-country-flag-path="@flagPath" />
 
-                    <span class="beer-country" data-country="@beer.CountryOfOrigin" />  
-                    <span class="beer-image-taken" data-image-taken="@beer.ImageDate.ToString("dd/MM/yyyy")" />
-                    <span class="beer-last-tasted" data-last-tasted="@beer.LastTastedDate.ToString("dd/MM/yyyy")" />                  
-                    <span class="beer-review" data-review="@beer.Review" />
-                    <span class="beer-rating" data-rating="@beer.Rating" />
-                    <span class="beer-image" data-image-path="@imagePath" />                                        
+                        <span class="beer-country" data-country="@beer.CountryOfOrigin" />
+                        <span class="beer-image-taken" data-image-taken="@beer.ImageDate.ToString("dd/MM/yyyy")" />
+                        <span class="beer-last-tasted" data-last-tasted="@beer.LastTastedDate.ToString("dd/MM/yyyy")" />
+                        <span class="beer-review" data-review="@beer.Review" />
+                        <span class="beer-rating" data-rating="@beer.Rating" />
+                        <span class="beer-image" data-image-path="@imagePath" />
+                    </div>                                        
                 </div>
             </li>
         }
