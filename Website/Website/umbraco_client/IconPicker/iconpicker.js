@@ -1,5 +1,5 @@
-﻿
-//todo
-function openIconPicker(element) {
-
+﻿
+//todo
+function openIconPicker(element) {
+
 }

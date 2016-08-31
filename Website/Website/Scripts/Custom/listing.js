@@ -23,14 +23,16 @@
 
         //$('#beer-detail-wrapper').scrollTop(0);
 
-        $('body').addClass('no-scroll');
+        //$('body').addClass('no-scroll');
         $('#overlay').addClass('visible');
-        $('#beer-detail-wrapper').addClass('visible');
+        //$('#beer-detail-wrapper').addClass('visible');
+        $('#beer-detail-wrapper').animate({ width: 'toggle' }, 800, 'swing', function () { $('#beer-detail-wrapper > div').addClass('visible'); });
     });
 
     $('#beer-detail-wrapper .close').click(function() {
-        $('#beer-detail-wrapper').removeClass('visible');
-        $('#overlay').removeClass('visible');
-        $('body').removeClass('no-scroll');
+        $('#beer-detail-wrapper > div').removeClass('visible');        
+        $('#beer-detail-wrapper').animate({ width: 'toggle' }, 800, 'swing', function () { $('#overlay').removeClass('visible'); });
+        //$('#overlay').removeClass('visible');
+        //$('body').removeClass('no-scroll');
     });
 });

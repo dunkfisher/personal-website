@@ -1649,6 +1649,11 @@
             Show disabled users in the tree in the Users section in the backoffice
             </summary>
         </member>
+        <member name="P:umbraco.UmbracoSettings.AllowPasswordReset">
+            <summary>
+            Enable the UI and API to allow back-office users to reset their passwords? Default is true
+            </summary>
+        </member>
         <member name="P:umbraco.UmbracoSettings.AutoCleanLogs">
             <summary>
             Gets a value indicating whether the logs will be auto cleaned
@@ -1930,6 +1935,13 @@
             </summary>
             <value>Configured text for the default document type property</value>
             <remarks>If undefined, 'Textstring' is the default</remarks>
+        </member>
+        <member name="P:umbraco.UmbracoSettings.EnableInheritedDocumentTypes">
+            <summary>
+            Enables inherited document types.
+            This feature is not recommended and therefore is not enabled by default in new installations.
+            Inherited document types will not be supported in v8.
+            </summary>
         </member>
         <member name="P:umbraco.UmbracoSettings.SettingsFilePath">
             <summary>

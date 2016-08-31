@@ -1,3 +1,3 @@
-﻿tinyMCE.addI18n('ja.example_dlg',{
-	title : 'これはタイトルの例です'
-});
+﻿tinyMCE.addI18n('ja.example_dlg',{
+	title : 'これはタイトルの例です'
+});

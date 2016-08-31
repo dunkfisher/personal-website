@@ -1,3 +1,3 @@
-tinyMCE.addI18n('sv.example',{
-	desc : 'Detta är bara en mallknapp'
-});
+tinyMCE.addI18n('sv.example',{
+	desc : 'Detta är bara en mallknapp'
+});

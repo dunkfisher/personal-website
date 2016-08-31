@@ -1,3 +1,3 @@
-tinyMCE.addI18n('ja.umbracomacro',{
-    desc : 'マクロの挿入'
-});
+tinyMCE.addI18n('ja.umbracomacro',{
+    desc : 'マクロの挿入'
+});

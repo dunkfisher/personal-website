@@ -230,17 +230,17 @@ Timepicker.prototype = {
 
         $('#' + this._mainDivId).show();
 
-        this._visible = true;
+        this._visible = true;
 
         var dpDiv     = $('#' + $.datepicker._mainDivId);
         var dpDivPos  = dpDiv.position();
-
-        var viewWidth = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) + $(document).scrollLeft();
-        var tpRight   = this.tpDiv.offset().left + this.tpDiv.outerWidth();
-
-        if (tpRight > viewWidth) {
-            dpDiv.css('left', dpDivPos.left - (tpRight - viewWidth) - 5);
-            this.tpDiv.css('left', dpDiv.offset().left + dpDiv.outerWidth() + 'px');
+
+        var viewWidth = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth) + $(document).scrollLeft();
+        var tpRight   = this.tpDiv.offset().left + this.tpDiv.outerWidth();
+
+        if (tpRight > viewWidth) {
+            dpDiv.css('left', dpDivPos.left - (tpRight - viewWidth) - 5);
+            this.tpDiv.css('left', dpDiv.offset().left + dpDiv.outerWidth() + 'px');
         }
     },
 

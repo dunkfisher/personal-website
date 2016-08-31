@@ -51,6 +51,28 @@
 </head>
 
 <body style="background-image: @(Model.HasBackgroundImage ? string.Format("url({0})", Model.GetBackGroundImageUrl(Umbraco)) : "none")">
+    
+    <!-- Temporary display -->
+    @{        
+        var beers = Umbraco.TypedContentAtXPath("//Beer");
+        IPublishedContent latestAdded = null;
+        foreach (var beer in beers)
+        {
+            if (latestAdded == null || beer.CreateDate > latestAdded.CreateDate)
+            {
+                latestAdded = beer;
+            }
+        }
+    }
+    <div style="position: absolute;
+        right: 8px;
+        top: 8px;
+        color: white;
+        font-size: 0.8em;">
+        Total Beers: @beers.Count()<br />
+        Last Added: @latestAdded.Name
+    </div>
+
     @Html.Partial("_Navigation", Model)
     @RenderBody()
 

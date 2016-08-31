@@ -1,3 +1,3 @@
-tinyMCE.addI18n('zh.umbracomacro',{
-    desc : '插入宏'
-});
+tinyMCE.addI18n('zh.umbracomacro',{
+    desc : '插入宏'
+});

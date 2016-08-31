@@ -1,62 +1,6 @@
-﻿@inherits UmbracoViewPage<Website.UI.BL.DocumentTypes.Listing>
-@{
-    Layout = "Master.cshtml";
+﻿@{
+    Layout = "Master.cshtml";    
 }
 
-<div id="listing-wrapper" class="clearfix">
-    <ul>
-        @foreach (var beer in Model.Beers)
-        {
-            var imagePath = beer.GetImageUrl(Umbraco);
-            var flagPath = beer.GetCountryFlag(Umbraco);
-            <li>
-                <div class="summary-wrapper" style="background-image: url(@imagePath)">
-                    <div class="summary-wrapper-inner">
-                        <h2 class="beer-name" data-name="@beer.FullName">@beer.FullName</h2>
-                        <h3 class="beer-brewer" data-brewer="@beer.Brewer">@beer.Brewer</h3>
-                        <img class="beer-country-flag" src="@flagPath" alt="Flag" data-country-flag-path="@flagPath" />
-
-                        <span class="beer-country" data-country="@beer.CountryOfOrigin" />
-                        <span class="beer-image-taken" data-image-taken="@beer.ImageDate.ToString("dd/MM/yyyy")" />
-                        <span class="beer-last-tasted" data-last-tasted="@beer.LastTastedDate.ToString("dd/MM/yyyy")" />
-                        <span class="beer-review" data-review="@beer.Review" />
-                        <span class="beer-rating" data-rating="@beer.Rating" />
-                        <span class="beer-image" data-image-path="@imagePath" />
-                    </div>                                        
-                </div>
-            </li>
-        }
-    </ul>
-</div>
-
-<div id="beer-detail-wrapper">
-    <div class="top">
-        <a class="close">X</a>
-        <h2 id="beer-name"></h2>
-        <h3 id="beer-brewer"></h3>
-    </div>
-    <div class="main">
-        <p id="beer-review"></p>
-        <img id="beer-image" src="" alt="" />
-        <table>
-            <tbody>
-                <tr>
-                    <th>Country of Origin</th>
-                    <td><span id="beer-country"></span><img id="beer-country-flag" alt="" /></td>
-                </tr>
-                <tr>
-                    <th>Date Image Taken</th>
-                    <td id="beer-image-taken"></td>
-                </tr>
-                <tr>
-                    <th>Date Last Tasted</th>
-                    <td id="beer-last-tasted"></td>
-                </tr>
-                <tr>
-                    <th>Rating</th>
-                    <td><span id="beer-rating"></span>/10</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>    
-</div>
+@Html.Action("Filter", "Listing")
+@Html.Action("ListItems", "Listing")

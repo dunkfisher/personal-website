@@ -90,21 +90,6 @@
             </summary>
             <param name="type"></param>
         </member>
-        <member name="M:UmbracoExamine.BaseUmbracoIndexer.GetXDocument(System.String,System.String)">
-            <summary>
-            Returns an XDocument for the entire tree stored for the IndexType specified.
-            </summary>
-            <param name="xPath">The xpath to the node.</param>
-            <param name="type">The type of data to request from the data service.</param>
-            <returns>Either the Content or Media xml. If the type is not of those specified null is returned</returns>
-        </member>
-        <member name="M:UmbracoExamine.BaseUmbracoIndexer.AddNodesToIndex(System.String,System.String)">
-            <summary>
-            Adds all nodes with the given xPath root.
-            </summary>
-            <param name="xPath">The x path.</param>
-            <param name="type">The type.</param>
-        </member>
         <member name="P:UmbracoExamine.BaseUmbracoIndexer.EnableDefaultEventHandler">
             <summary>
             If true, the IndexingActionHandler will be run to keep the default index up to date.
@@ -249,6 +234,25 @@
             This is only used for backward compatibility to get access to the umbraco.library object but this needs to be done
             via reflection because of the circular reference we have between Umbraco.Web and UmbracoExamine. 
             </summary>
+        </member>
+        <member name="T:UmbracoExamine.LocalStorage.AzureLocalStorageDirectory">
+            <summary>
+            When running on Azure websites, we can use the local user's storage space
+            </summary>
+        </member>
+        <member name="T:UmbracoExamine.LocalStorage.ILocalStorageDirectory">
+            <summary>
+            Used to resolve the local storage folder
+            </summary>
+        </member>
+        <member name="T:UmbracoExamine.LocalStorage.CodeGenLocalStorageDirectory">
+            <summary>
+            Use the ASP.Net CodeGen folder to store the index files
+            </summary>
+            <remarks>
+            This is the default implementation - but it comes with it's own limitations - the CodeGen folder is cleared whenever new
+            DLLs are changed in the /bin folder (among other circumstances) which means the index would be re-synced (or rebuilt) there.
+            </remarks>
         </member>
         <member name="T:UmbracoExamine.LocalStorage.LocalTempStorageDirectory">
             <summary>

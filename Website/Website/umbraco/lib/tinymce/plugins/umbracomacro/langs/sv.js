@@ -1,3 +1,3 @@
-tinyMCE.addI18n('sv.umbracomacro',{
-    desc : 'Infoga makro'
-});
+tinyMCE.addI18n('sv.umbracomacro',{
+    desc : 'Infoga makro'
+});

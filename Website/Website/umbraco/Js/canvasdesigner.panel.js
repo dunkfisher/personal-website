@@ -59,7 +59,7 @@ var iframeBodyClick = function () {
 
     scope.closeFloatPanels();
 }
-
+
 
 /*********************************************************************************************************/
 /* Canvasdesigner panel app and controller */
@@ -86,7 +86,7 @@ var app = angular.module("Umbraco.canvasdesigner", ['colorpicker', 'ui.slider', 
     ];
     $scope.previewDevice = $scope.devices[0];
 
-    var apiController = "/Umbraco/Api/Canvasdesigner/";
+    var apiController = "../Api/Canvasdesigner/";
 
     /*****************************************************************************/
     /* Preview devices */
@@ -102,7 +102,7 @@ var app = angular.module("Umbraco.canvasdesigner", ['colorpicker', 'ui.slider', 
     /*****************************************************************************/
 
     $scope.exitPreview = function () {
-        window.top.location.href = "/umbraco/endPreview.aspx?redir=%2f" + $scope.pageId;
+        window.top.location.href = "../endPreview.aspx?redir=%2f" + $scope.pageId;
     };
 
     /*****************************************************************************/
@@ -163,6 +163,8 @@ var app = angular.module("Umbraco.canvasdesigner", ['colorpicker', 'ui.slider', 
 
     // Load parameters from GetLessParameters and init data of the Canvasdesigner config
     $scope.initCanvasdesigner = function () {
+
+        LazyLoad.js(['https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js']);
 
         $http.get(apiController + 'Load', { params: { pageId: $scope.pageId } })
             .success(function (data) {
@@ -481,6 +483,7 @@ var app = angular.module("Umbraco.canvasdesigner", ['colorpicker', 'ui.slider', 
 
     var webFontScriptLoaded = false;
     var loadGoogleFont = function (font) {
+
         if (!webFontScriptLoaded) {
             $.getScript('https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js')
             .done(function () {
@@ -508,6 +511,7 @@ var app = angular.module("Umbraco.canvasdesigner", ['colorpicker', 'ui.slider', 
                 }
             });
         }
+
     };
 
     /*****************************************************************************/
@@ -515,9 +519,11 @@ var app = angular.module("Umbraco.canvasdesigner", ['colorpicker', 'ui.slider', 
     /*****************************************************************************/
 
     // Preload of the google font
-    $http.get(apiController + 'GetGoogleFont').success(function (data) {
-        $scope.googleFontFamilies = data;
-    });
+    if ($scope.showStyleEditor) {
+        $http.get(apiController + 'GetGoogleFont').success(function (data) {
+            $scope.googleFontFamilies = data;
+        });
+    }
 
     // watch framLoaded, only if iframe page have enableCanvasdesigner()
     $scope.$watch("enableCanvasdesigner", function () {
@@ -569,7 +575,7 @@ var app = angular.module("Umbraco.canvasdesigner", ['colorpicker', 'ui.slider', 
         }
     };
 })
-
+
 
 /*********************************************************************************************************/
 /* Background editor */
@@ -750,7 +756,7 @@ angular.module("Umbraco.canvasdesigner")
     }
 
 })
-
+
 
 /*********************************************************************************************************/
 /* Background editor */
@@ -874,7 +880,7 @@ angular.module("Umbraco.canvasdesigner")
 
     }, true)
 
-})
+})
 
 /*********************************************************************************************************/
 /* color editor */
@@ -890,7 +896,7 @@ angular.module("Umbraco.canvasdesigner")
         };
     }
 
-})
+})
 
 /*********************************************************************************************************/
 /* google font editor */
@@ -1086,7 +1092,7 @@ angular.module("Umbraco.canvasdesigner")
         });
     }
 
-});
+});
 
 /*********************************************************************************************************/
 /* grid row editor */
@@ -1102,7 +1108,7 @@ angular.module("Umbraco.canvasdesigner")
         };
     }
 
-})
+})
 
 /*********************************************************************************************************/
 /* Layout */
@@ -1118,7 +1124,7 @@ angular.module("Umbraco.canvasdesigner")
         }
     }
 
-})
+})
 
 /*********************************************************************************************************/
 /* margin editor */
@@ -1216,7 +1222,7 @@ angular.module("Umbraco.canvasdesigner")
 
 
 
-})
+})
 
 /*********************************************************************************************************/
 /* padding editor */
@@ -1314,7 +1320,7 @@ angular.module("Umbraco.canvasdesigner")
 
 
 
-})
+})
 
 /*********************************************************************************************************/
 /* radius editor */
@@ -1410,7 +1416,7 @@ angular.module("Umbraco.canvasdesigner")
 
     }, true)
 
-})
+})
 
 /*********************************************************************************************************/
 /* shadow editor */
@@ -1426,7 +1432,7 @@ angular.module("Umbraco.canvasdesigner")
         }
     }
 
-})
+})
 
 /*********************************************************************************************************/
 /* slider editor */
@@ -1442,7 +1448,7 @@ angular.module("Umbraco.canvasdesigner")
         }
     }
 
-})
+})
 
 /*********************************************************************************************************/
 /* spectrum color picker directive */
@@ -1511,7 +1517,7 @@ angular.module('colorpicker', ['spectrumcolorpicker'])
             '</div>',
           replace: true
       };
-  }])
+  }])
 
 /*********************************************************************************************************/
 /* jQuery UI Slider plugin wrapper */
@@ -1626,7 +1632,7 @@ angular.module("Umbraco.canvasdesigner").factory('dialogService', function ($roo
     }
 
 
-});
+});
 
 /*********************************************************************************************************/
 /* jQuery UI Slider plugin wrapper */
@@ -1783,7 +1789,7 @@ angular.module('ui.slider', []).value('uiSliderConfig', {}).directive('uiSlider'
     };
 }]);
 
-
+
 
 /*********************************************************************************************************/
 /* spectrum color picker directive */

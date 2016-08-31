@@ -1,3 +1,3 @@
-tinyMCE.addI18n('en.umbracomacro',{
-    desc : 'Insert macro'
-});
+tinyMCE.addI18n('en.umbracomacro',{
+    desc : 'Insert macro'
+});
