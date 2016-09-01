@@ -75,6 +75,7 @@ namespace Website.ContentAdmin
                 Console.WriteLine("-- Options --");
                 Console.WriteLine("List content nodes: l");
                 Console.WriteLine("Create new content: c");
+                Console.WriteLine("Load beers from file: b");
                 //Console.WriteLine("Create Umbraco database schema in empty db: d");
                 Console.WriteLine("Quit application: q");
 
@@ -85,8 +86,8 @@ namespace Website.ContentAdmin
                     ListContentNodes(umbracoAccess.Services.ContentService);//Call the method that lists all the content nodes
                 else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("c"))
                     CreateNewContent(umbracoAccess.Services.ContentService, umbracoAccess.Services.ContentTypeService);//Call the method that does the actual creation and saving of the Content object
-                //else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("d"))
-                //    CreateDatabaseSchema(database, databaseContext.DatabaseProvider, application.DataDirectory);
+                else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("b"))
+                    UploadBeersFromFile(umbracoAccess.Services.ContentService);
             }
         }
 
@@ -130,14 +131,15 @@ namespace Website.ContentAdmin
             string imageCandidates = null;
             string imageChosen = null;
 
-            Console.WriteLine("Please enter the path of the input file:");
-            var inputFilePath = Console.ReadLine();
+            var inputFileDirectory = ConfigurationManager.AppSettings["BeerFileDirectory"];
+            Console.WriteLine("Please enter name of the input file:");
+            var inputFileName = Console.ReadLine();
             // TODO: check file exists
-            using (var fileReader = new StreamReader(inputFilePath))
+            using (var fileReader = new StreamReader(Path.Combine(inputFileDirectory, inputFileName)))
             {
                 var currentRow = new string[0];
                 var firstRow = true;
-                var counter = 0; // Temp restriction
+                var counter = 0; // Temp restriction                
                 while (!fileReader.EndOfStream && counter < 10)
                 {
                     currentRow = fileReader.ReadLine().Split(',');
@@ -151,18 +153,19 @@ namespace Website.ContentAdmin
                         imageCandidateIndex = currentRow.IndexOf("Matched Images");
                         imageChosenIndex = currentRow.IndexOf("Used Image");
                         firstRow = false;
+                        continue;
                     }
                     name = currentRow[nameIndex];
                     country = currentRow[countryIndex];
                     brewer = currentRow[brewerIndex];
                     notes = currentRow[notesIndex];
-                    ratingIndex = short.Parse(currentRow[ratingIndex]); // TODO: TryParse
+                    short.TryParse(currentRow[ratingIndex], out rating);
                     imageCandidates = currentRow[imageCandidateIndex];
                     imageChosen = currentRow[imageChosenIndex];
-                    
-                    if (string.IsNullOrWhiteSpace(imageChosen))
+
+                    if (string.IsNullOrWhiteSpace(imageChosen) && !string.IsNullOrWhiteSpace(country))
                     {
-                        imageChosen = FindImage(name, country, out imageCandidates);       
+                        imageChosen = FindImage(name, country, out imageCandidates);
                     }
                     //    load tasted date as image date taken
                     //    write to output file with image match list and chosen image
@@ -224,19 +227,27 @@ namespace Website.ContentAdmin
         private static string FindImage(string beerName, string country, out string candidates)
         {                        
             var imageDirectory = ConfigurationManager.AppSettings["BeerImagesRootDirectory"];
-            var possibleMatches = new SortedDictionary<int, string>();
-            foreach (var fileName in Directory.GetFiles(Path.Combine(imageDirectory, country)))
+            var possibleMatches = new SortedDictionary<int, List<string>>();
+            foreach (var filePath in Directory.GetFiles(Path.Combine(imageDirectory, country)))
             {
+                var fileName = Path.GetFileNameWithoutExtension(filePath);
                 var beerNameMatchArray = beerName.ToLower().Split(' ');
-                var fileNameMatchArray = Path.GetFileNameWithoutExtension(fileName).ToLower().Split('-');
+                var fileNameMatchArray = fileName.ToLower().Split('-');
                 var matchStrength = beerNameMatchArray.Intersect(fileNameMatchArray).Count();
                 if (matchStrength > 0)
                 {
-                    possibleMatches.Add(matchStrength, fileName);
+                    if (possibleMatches.ContainsKey(matchStrength))
+                    {
+                        possibleMatches[matchStrength].Add(fileName);
+                    }
+                    else
+                    {
+                        possibleMatches.Add(matchStrength, new List<string>(new[] { fileName }));
+                    }
                 }                
             }
-            candidates = string.Join(",", possibleMatches.Select(x => x.Value));
-            return possibleMatches.Count() > 0 ? possibleMatches.Last().Value : null;
+            candidates = string.Join(",", possibleMatches.SelectMany(x => x.Value));
+            return possibleMatches.Count() > 0 ? possibleMatches.Last().Value[0] : null;
         }
     }
 }
