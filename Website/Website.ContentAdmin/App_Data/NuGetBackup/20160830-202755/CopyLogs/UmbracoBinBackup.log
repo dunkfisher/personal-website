@@ -1,0 +1,36 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Tue Aug 30 20:27:57 2016
+
+   Source : C:\Source\test-repo\Website\Website.ContentAdmin\bin\
+     Dest : C:\Source\test-repo\Website\Website.ContentAdmin\App_Data\NuGetBackup\20160830-202755\bin\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	C:\Source\test-repo\Website\Website.ContentAdmin\bin\
+	  New Dir          4	C:\Source\test-repo\Website\Website.ContentAdmin\bin\Debug\
+	    New File  		   15400	UmbConsole.exe.config  0%   99%   99%  100%  
+	    New File  		   22688	UmbConsole.vshost.exe  0%  100%  
+	    New File  		   15400	UmbConsole.vshost.exe.config  0%   99%   99%  100%  
+	    New File  		     490	UmbConsole.vshost.exe.manifest  0%  100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         2         1         1         0         0         0
+   Files :         4         4         0         0         0         0
+   Bytes :    52.7 k    52.7 k         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :              192092 Bytes/sec.
+   Speed :              10.991 MegaBytes/min.
+
+   Ended : Tue Aug 30 20:27:57 2016
