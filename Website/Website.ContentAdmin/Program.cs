@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Security.Policy;
 using Umbraco.Core;
+using Umbraco.Core.Models;
 using Umbraco.Core.Persistence;
 using Umbraco.Core.Services;
 using IOMG.Umbraco.StandaloneServices;
@@ -73,45 +74,21 @@ namespace Website.ContentAdmin
             {
                 //List options
                 Console.WriteLine("-- Options --");
-                Console.WriteLine("List content nodes: l");
                 Console.WriteLine("Create new content: c");
                 Console.WriteLine("Load beers from file: b");
-                //Console.WriteLine("Create Umbraco database schema in empty db: d");
                 Console.WriteLine("Quit application: q");
 
                 var input = Console.ReadLine();
                 if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("q"))
                     waitOrBreak = false;//Quit the application
-                else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("l"))
-                    ListContentNodes(umbracoAccess.Services.ContentService);//Call the method that lists all the content nodes
                 else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("c"))
                     CreateNewContent(umbracoAccess.Services.ContentService, umbracoAccess.Services.ContentTypeService);//Call the method that does the actual creation and saving of the Content object
                 else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("b"))
-                    UploadBeersFromFile(umbracoAccess.Services.ContentService);
+                    UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService);
             }
         }
 
-        /// <summary>
-        /// Private method to list all content nodes
-        /// </summary>
-        /// <param name="contentService"></param>
-        private static void ListContentNodes(IContentService contentService)
-        {
-            //Get the Root Content
-            var rootContent = contentService.GetRootContent();
-            foreach (var content in rootContent)
-            {
-                Console.WriteLine("Root Content: " + content.Name + ", Id: " + content.Id);
-                //Get Descendants of the current content and write it to the console ordered by level
-                var descendants = contentService.GetDescendants(content);
-                foreach (var descendant in descendants.OrderBy(x => x.Level))
-                {
-                    Console.WriteLine("Name: " + descendant.Name + ", Id: " + descendant.Id + " - Parent Id: " + descendant.ParentId);
-                }
-            }
-        }
-
-        private static void UploadBeersFromFile(IContentService contentService)
+        private static void UploadBeersFromFile(IContentService contentService, IMediaService mediaService)
         {
             // Indices of columns
             var nameIndex = -1;
@@ -130,6 +107,8 @@ namespace Website.ContentAdmin
             short rating = 0;
             string imageCandidates = null;
             string imageChosen = null;
+            int imageId = 0;
+            DateTime imageDateTaken = DateTime.MinValue;
 
             var inputFileDirectory = ConfigurationManager.AppSettings["BeerFileDirectory"];
             Console.WriteLine("Please enter name of the input file:");
@@ -167,8 +146,15 @@ namespace Website.ContentAdmin
                     {
                         imageChosen = FindImage(name, country, out imageCandidates);
                     }
-                    //    load tasted date as image date taken
-                    //    write to output file with image match list and chosen image
+
+                    // TODO: check first that the media with given name exists
+                    if (!string.IsNullOrWhiteSpace(imageChosen))
+                    {
+                        imageId = UploadImage(imageChosen, country, mediaService);
+                    }                    
+                
+                    // TODO: create output file as input file but with image columns updated
+
                     //    if not beer exists in Umbraco (name)
                     //        call Umbraco to add content     
                     //    else
@@ -233,21 +219,37 @@ namespace Website.ContentAdmin
                 var fileName = Path.GetFileNameWithoutExtension(filePath);
                 var beerNameMatchArray = beerName.ToLower().Split(' ');
                 var fileNameMatchArray = fileName.ToLower().Split('-');
-                var matchStrength = beerNameMatchArray.Intersect(fileNameMatchArray).Count();
-                if (matchStrength > 0)
+                var matchingWords = beerNameMatchArray.Intersect(fileNameMatchArray).Count();
+                var difference = Math.Abs(beerNameMatchArray.Count() - matchingWords);
+                if (matchingWords > 0)
                 {
-                    if (possibleMatches.ContainsKey(matchStrength))
+                    if (possibleMatches.ContainsKey(difference))
                     {
-                        possibleMatches[matchStrength].Add(fileName);
+                        possibleMatches[difference].Add(fileName);
                     }
                     else
                     {
-                        possibleMatches.Add(matchStrength, new List<string>(new[] { fileName }));
+                        possibleMatches.Add(difference, new List<string>(new[] { fileName }));
                     }
                 }                
             }
             candidates = string.Join(",", possibleMatches.SelectMany(x => x.Value));
-            return possibleMatches.Count() > 0 ? possibleMatches.Last().Value[0] : null;
+            return possibleMatches.Count() > 0 ? possibleMatches.First().Value[0] : null;
+        }
+
+        private static int UploadImage(string imageName, string country, IMediaService mediaService)
+        {
+            var imageDirectory = ConfigurationManager.AppSettings["BeerImagesRootDirectory"];
+            var imageFileName = Path.ChangeExtension(imageName, ".jpg");
+            using (var fileStream = new FileStream(Path.Combine(imageDirectory, country, imageFileName), FileMode.Open))
+            {
+                var beerMediaRoot = mediaService.GetRootMedia().SingleOrDefault(x => x.Name == "Beers");
+                var countryMediaParent = mediaService.GetChildren(beerMediaRoot.Id).SingleOrDefault(x => x.Name == country);
+                var image = mediaService.CreateMedia(imageFileName, countryMediaParent, "Image");
+                image.SetValue("umbracoFile", fileStream.Name, fileStream);
+                mediaService.Save(image);
+                return image.Id;
+            }
         }
     }
 }
