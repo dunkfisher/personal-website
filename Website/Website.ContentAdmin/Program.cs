@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlServerCe;
 using System.Diagnostics;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Security.Policy;
+using System.Text;
+using System.Text.RegularExpressions;
 using Umbraco.Core;
 using Umbraco.Core.Models;
 using Umbraco.Core.Persistence;
@@ -21,23 +25,11 @@ namespace Website.ContentAdmin
     /// </summary>
     class Program
     {
+        private static Regex r = new Regex(":");
+
         static void Main(string[] args)
         {
             RunUmbraco();
-
-            //var umbracoDomain = AppDomain.CreateDomain(
-            //    "Umbraco",
-            //    new Evidence(),
-            //    new AppDomainSetup
-            //    {
-            //        ApplicationBase = Environment.CurrentDirectory,
-            //        PrivateBinPath = Path.Combine(Environment.CurrentDirectory, "bin"),
-            //        ConfigurationFile = Path.Combine(Environment.CurrentDirectory, "web.config")
-            //    }
-            //);
-            //umbracoDomain.SetData("args", args);
-
-            //umbracoDomain.DoCallBack(RunUmbraco);
         }
 
         private static void RunUmbraco()
@@ -46,43 +38,18 @@ namespace Website.ContentAdmin
 
             var umbracoAccess = new ServiceAccess();
 
-            //Initialize the application
-            //var application = new ConsoleApplicationBase();
-            //application.Start(application, new EventArgs());
-            //Console.WriteLine("Application Started");
-
-            //Console.WriteLine("--------------------");
-            ////Write status for ApplicationContext
-            //var context = ApplicationContext.Current;
-            //Console.WriteLine("ApplicationContext is available: " + (context != null).ToString());
-            ////Write status for DatabaseContext
-            //var databaseContext = context.DatabaseContext;
-            //Console.WriteLine("DatabaseContext is available: " + (databaseContext != null).ToString());
-            ////Write status for Database object
-            //var database = databaseContext.Database;
-            //Console.WriteLine("Database is available: " + (database != null).ToString());
-            //Console.WriteLine("--------------------");
-
-            //Get the ServiceContext and the two services we are going to use
-            //var serviceContext = context.Services;
-            //var contentService = serviceContext.ContentService;
-            //var contentTypeService = serviceContext.ContentTypeService;
-
             //Exit the application?
             var waitOrBreak = true;
             while (waitOrBreak)
             {
                 //List options
                 Console.WriteLine("-- Options --");
-                Console.WriteLine("Create new content: c");
                 Console.WriteLine("Load beers from file: b");
                 Console.WriteLine("Quit application: q");
 
                 var input = Console.ReadLine();
                 if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("q"))
-                    waitOrBreak = false;//Quit the application
-                else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("c"))
-                    CreateNewContent(umbracoAccess.Services.ContentService, umbracoAccess.Services.ContentTypeService);//Call the method that does the actual creation and saving of the Content object
+                    waitOrBreak = false;                
                 else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("b"))
                     UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService);
             }
@@ -136,80 +103,37 @@ namespace Website.ContentAdmin
                     }
                     name = currentRow[nameIndex];
                     country = currentRow[countryIndex];
-                    brewer = currentRow[brewerIndex];
-                    notes = currentRow[notesIndex];
-                    short.TryParse(currentRow[ratingIndex], out rating);
-                    imageCandidates = currentRow[imageCandidateIndex];
-                    imageChosen = currentRow[imageChosenIndex];
-
-                    if (string.IsNullOrWhiteSpace(imageChosen) && !string.IsNullOrWhiteSpace(country))
+                    if (!string.IsNullOrWhiteSpace(country))
                     {
-                        imageChosen = FindImage(name, country, out imageCandidates);
+                        brewer = currentRow[brewerIndex];
+                        notes = currentRow[notesIndex];
+                        short.TryParse(currentRow[ratingIndex], out rating);
+                        imageCandidates = currentRow[imageCandidateIndex];
+                        imageChosen = currentRow[imageChosenIndex];
+
+                        if (string.IsNullOrWhiteSpace(imageChosen))
+                        {
+                            imageChosen = FindImage(name, country, out imageCandidates);
+                        }
+
+                        // TODO: check first that the media with given name exists
+                        if (!string.IsNullOrWhiteSpace(imageChosen))
+                        {
+                            imageId = UploadImage(imageChosen, country, mediaService);
+                            var imageChosenPath = Path.Combine(ConfigurationManager.AppSettings["BeerImagesRootDirectory"], country, Path.ChangeExtension(imageChosen, ".jpg"));
+                            imageDateTaken = GetDateTakenFromImage(imageChosenPath);
+                        }
+
+                        UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService);
+
+                        // TODO: create output file as input file but with image columns updated
                     }
 
-                    // TODO: check first that the media with given name exists
-                    if (!string.IsNullOrWhiteSpace(imageChosen))
-                    {
-                        imageId = UploadImage(imageChosen, country, mediaService);
-                    }                    
-                
-                    // TODO: create output file as input file but with image columns updated
-
-                    //    if not beer exists in Umbraco (name)
-                    //        call Umbraco to add content     
-                    //    else
-                    //        call Umbraco to update content
+                    counter++;
                 }
             }
         }
-
-        /// <summary>
-        /// Private method to create new content
-        /// </summary>
-        /// <param name="contentService"></param>
-        /// <param name="contentTypeService"></param>
-        private static void CreateNewContent(IContentService contentService, IContentTypeService contentTypeService)
-        {
-            //We find all ContentTypes so we can show a nice list of everything that is available
-            //var contentTypes = contentTypeService.GetAllContentTypes();
-            //var contentTypeAliases = string.Join(", ", contentTypes.Select(x => x.Alias));
-
-            //Console.WriteLine("Please enter the Alias of the ContentType ({0}):", contentTypeAliases);
-            Console.WriteLine("Please enter the Alias of the ContentType (Beer):");
-            var contentTypeAlias = Console.ReadLine();
-
-            Console.WriteLine("Please enter the Id of the Parent:");
-            var strParentId = Console.ReadLine();
-            int parentId;
-            if (int.TryParse(strParentId, out parentId) == false)
-                parentId = -1;//Default to -1 which is the root
-
-            Console.WriteLine("Please enter the name of the Content to create:");
-            var name = Console.ReadLine();
-
-            //Create the Content
-            var content = contentService.CreateContent(name, parentId, contentTypeAlias);
-            foreach (var property in content.Properties)
-            {
-                Console.WriteLine("Please enter the value for the Property with Alias '{0}':", property.Alias);
-                var value = Console.ReadLine();
-                var isValid = property.IsValid(value);
-                if (isValid)
-                {
-                    property.Value = value;
-                }
-                else
-                {
-                    Console.WriteLine("The entered value was not valid and thus not saved");
-                }
-            }
-
-            //Save the Content
-            contentService.SaveAndPublishWithStatus(content);
-
-            Console.WriteLine("Content was saved: " + content.HasIdentity);
-        }  
-
+        
         private static string FindImage(string beerName, string country, out string candidates)
         {                        
             var imageDirectory = ConfigurationManager.AppSettings["BeerImagesRootDirectory"];
@@ -249,6 +173,39 @@ namespace Website.ContentAdmin
                 image.SetValue("umbracoFile", fileStream.Name, fileStream);
                 mediaService.Save(image);
                 return image.Id;
+            }
+        }
+
+        private static int UploadBeer(string name, string brewer, string country, string notes, short rating, int imageId, DateTime imageDateTaken, IContentService contentService)
+        {
+            var rootContent = contentService.GetRootContent().SingleOrDefault();
+            var beersRoot = contentService.GetChildren(rootContent.Id).SingleOrDefault(x => x.Name == "Beer Reviews");
+            var countryItem = contentService.GetChildren(beersRoot.Id).SingleOrDefault(x => x.Name == country);
+            var newBeer = contentService.CreateContent(name, countryItem.Id, "Beer");
+            newBeer.Properties["fullName"].Value = name;
+            newBeer.Properties["brewer"].Value = brewer;
+            newBeer.Properties["image"].Value = imageId;
+            newBeer.Properties["imageDate"].Value = imageDateTaken;
+            newBeer.Properties["review"].Value = notes;
+            newBeer.Properties["rating"].Value = rating;
+
+            //Save the Content
+            contentService.Save(newBeer);
+            return newBeer.Id;
+        }
+
+        private static DateTime GetDateTakenFromImage(string path)
+        {            
+            using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
+            {
+                using (Image myImage = Image.FromStream(fs, false, false))
+                {
+                    PropertyItem propItem = myImage.GetPropertyItem(36867);
+                    string dateTakenText = r.Replace(Encoding.UTF8.GetString(propItem.Value), "-", 2);
+                    DateTime dateTaken;
+                    DateTime.TryParse(dateTakenText, out dateTaken);
+                    return dateTaken;
+                }
             }
         }
     }
