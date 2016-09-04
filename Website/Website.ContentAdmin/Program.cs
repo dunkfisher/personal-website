@@ -49,6 +49,7 @@ namespace Website.ContentAdmin
                 //List options
                 Console.WriteLine("-- Options --");
                 Console.WriteLine("Load beers from file: b");
+                Console.WriteLine("Update image (tasted) date: i");
                 Console.WriteLine("Quit application: q");
 
                 var input = Console.ReadLine();
@@ -56,6 +57,8 @@ namespace Website.ContentAdmin
                     waitOrBreak = false;                
                 else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("b"))
                     UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService);
+                else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("i"))
+                    UpdateBeerImageDate(umbracoAccess.Services.ContentTypeService, umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService);
             }
         }
 
@@ -97,8 +100,7 @@ namespace Website.ContentAdmin
             {
                 var currentRow = new string[0];
                 var firstRow = true;
-                var counter = 0; // Temp restriction                
-                while (!fileReader.EndOfStream && counter < 30)
+                while (!fileReader.EndOfStream)
                 {
                     currentRow = fileReader.ReadLine().Split(',');
                     if (firstRow)
@@ -189,14 +191,69 @@ namespace Website.ContentAdmin
                     Console.WriteLine();
 
                     // TODO: create output file as input file but with image columns updated
-
-                    counter++;
                 }
             }
 
             // TODO: sort beers for each country
         }
-        
+
+        private static void UpdateBeerImageDate(IContentTypeService contentTypeService, IContentService contentService, IMediaService mediaService)
+        {
+            var beerContentType = contentTypeService.GetContentType("Beer");
+            foreach (var beer in contentService.GetContentOfContentType(beerContentType.Id))
+            {
+                Console.WriteLine();
+                Console.WriteLine("Updating image date for " + beer.Name + "..");
+
+                var country = beer.Parent();
+                if (country == null)
+                {
+                    Console.WriteLine("Parent node not found.");
+                    continue;
+                }
+
+                var mediaId = beer.Properties["image"].Value;
+                if (mediaId == null)
+                {
+                    Console.WriteLine("No image associated with beer.");
+                    continue;
+                }
+
+                var media = mediaService.GetById(Convert.ToInt32(mediaId));
+                if (media == null)
+                {
+                    Console.WriteLine("Image media of id " + mediaId + " is missing.");
+                    continue;
+                }
+
+                var mediaFilePath = media.Properties["umbracoFile"].Value;
+                if (mediaFilePath == null)
+                {
+                    Console.WriteLine("Image media path is missing.");
+                    continue;
+                }
+
+                var imageFileName = Path.GetFileName(mediaFilePath.ToString());
+                var imageFilePath = Path.Combine(BeerImagesRootDirectory, country.Name, imageFileName);
+                if (!System.IO.File.Exists(imageFilePath))
+                {
+                    Console.WriteLine("Image file " + imageFilePath + " doesn't exist.");
+                    continue;
+                }
+
+                var imageDate = GetDateTakenFromImage(imageFilePath);
+                var beerImageDate = beer.Properties["imageDate"].Value;
+                Console.WriteLine("Image date taken: " + imageDate);
+                Console.WriteLine("Date in CMS: " + beerImageDate ?? "Unspecified");
+                if (imageDate != DateTime.MinValue && (beerImageDate == null || Convert.ToDateTime(beerImageDate) != imageDate))
+                {
+                    beer.Properties["imageDate"].Value = imageDate;
+                    contentService.Save(beer);
+                    Console.WriteLine("Image date updated in CMS.");
+                }
+            }
+        }
+
         private static string FindImage(string beerName, string country, out string candidates)
         {
             var imageDirectory = BeerImagesRootDirectory;
@@ -260,7 +317,7 @@ namespace Website.ContentAdmin
                 }
 
                 var image = mediaService.CreateMedia(imageFileName, countryMediaParent, "Image");
-                image.SetValue("umbracoFile", Path.GetFileName(fileStream.Name), fileStream); // TODO: Fix
+                image.SetValue("umbracoFile", Path.GetFileName(fileStream.Name), fileStream);
                 mediaService.Save(image);
                 return image.Id;
             }
@@ -305,17 +362,25 @@ namespace Website.ContentAdmin
         }
 
         private static DateTime GetDateTakenFromImage(string path)
-        {            
-            using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
+        {
+            try
             {
-                using (Image myImage = Image.FromStream(fs, false, false))
+                using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read))
                 {
-                    PropertyItem propItem = myImage.GetPropertyItem(36867);
-                    string dateTakenText = _dateTakenRegex.Replace(Encoding.UTF8.GetString(propItem.Value), "-", 2);
-                    DateTime dateTaken;
-                    DateTime.TryParse(dateTakenText, out dateTaken);
-                    return dateTaken;
+                    using (Image myImage = Image.FromStream(fs, false, false))
+                    {
+                        PropertyItem propItem = myImage.GetPropertyItem(36867);
+                        string dateTakenText = _dateTakenRegex.Replace(Encoding.UTF8.GetString(propItem.Value), "-", 2);
+                        DateTime dateTaken;
+                        DateTime.TryParse(dateTakenText, out dateTaken);
+                        return dateTaken;
+                    }
                 }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error when getting date taken from image: " + e.Message);
+                return DateTime.MinValue;
             }
         }
     }

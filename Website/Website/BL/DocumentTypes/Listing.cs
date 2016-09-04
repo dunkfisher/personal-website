@@ -14,7 +14,7 @@ namespace Website.UI.BL.DocumentTypes
             get
             {
                 var beers = new List<Beer>();
-                foreach (var beer in Content.Descendants<Beer>().Where(x => _countryFilter == null || x.CountryOfOrigin == _countryFilter).OrderByDescending(x => x.CreateDate))
+                foreach (var beer in Content.Descendants<Beer>().Where(x => _countryFilter == null || x.CountryOfOrigin == _countryFilter).OrderByDescending(x => x.ImageDate))
                 {
                     beers.Add(beer);
                 }
