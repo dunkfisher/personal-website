@@ -1,31 +1,35 @@
-﻿using System;
+﻿using IOMG.Umbraco.StandaloneServices;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Data.SqlServerCe;
-using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
-using System.Security.Policy;
 using System.Text;
 using System.Text.RegularExpressions;
 using Umbraco.Core;
 using Umbraco.Core.Models;
-using Umbraco.Core.Persistence;
 using Umbraco.Core.Services;
-using IOMG.Umbraco.StandaloneServices;
 
 namespace Website.ContentAdmin
 {
-    /// <summary>
-    /// Before running this console app please ensure that the "umbracoDbDSN" ConnectionString is pointing to your database.
-    /// If you are using Sql Ce please replace "|DataDirectory|" with a real path or alternatively place 
-    /// your database in the debug folder before running the application in debug mode.
-    /// </summary>
     class Program
     {
-        private static Regex r = new Regex(":");
+        private static string _beerImagesRootDirectory;
+        private static Regex _dateTakenRegex = new Regex(":");
+        
+        private static string BeerImagesRootDirectory
+        {
+            get
+            {
+                if (_beerImagesRootDirectory == null)
+                {
+                    _beerImagesRootDirectory = ConfigurationManager.AppSettings["BeerImagesRootDirectory"];
+                }
+                return _beerImagesRootDirectory;
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -80,13 +84,21 @@ namespace Website.ContentAdmin
             var inputFileDirectory = ConfigurationManager.AppSettings["BeerFileDirectory"];
             Console.WriteLine("Please enter name of the input file:");
             var inputFileName = Console.ReadLine();
-            // TODO: check file exists
-            using (var fileReader = new StreamReader(Path.Combine(inputFileDirectory, inputFileName)))
+            Console.WriteLine();
+            var inputFilePath = Path.Combine(inputFileDirectory, inputFileName);
+            if (!System.IO.File.Exists(inputFilePath))
+            {
+                Console.WriteLine("Input file " + inputFilePath + " doesn't exist.");
+                Console.ReadLine();
+                return;
+            }
+
+            using (var fileReader = new StreamReader(inputFilePath))
             {
                 var currentRow = new string[0];
                 var firstRow = true;
                 var counter = 0; // Temp restriction                
-                while (!fileReader.EndOfStream && counter < 10)
+                while (!fileReader.EndOfStream && counter < 30)
                 {
                     currentRow = fileReader.ReadLine().Split(',');
                     if (firstRow)
@@ -98,45 +110,96 @@ namespace Website.ContentAdmin
                         ratingIndex = currentRow.IndexOf("Rating");
                         imageCandidateIndex = currentRow.IndexOf("Matched Images");
                         imageChosenIndex = currentRow.IndexOf("Used Image");
+
+                        if (new[] { nameIndex, countryIndex, brewerIndex, notesIndex, ratingIndex, imageCandidateIndex, imageChosenIndex }.Any(x => x < 0))
+                        {
+                            Console.WriteLine("One or more columns are missing from the input file.");
+                            Console.ReadLine();
+                            return;
+                        }
+
                         firstRow = false;
                         continue;
                     }
+
                     name = currentRow[nameIndex];
-                    country = currentRow[countryIndex];
-                    if (!string.IsNullOrWhiteSpace(country))
+                    if (string.IsNullOrWhiteSpace(name))
                     {
-                        brewer = currentRow[brewerIndex];
-                        notes = currentRow[notesIndex];
-                        short.TryParse(currentRow[ratingIndex], out rating);
-                        imageCandidates = currentRow[imageCandidateIndex];
-                        imageChosen = currentRow[imageChosenIndex];
+                        Console.WriteLine("Missing beer name.");
+                        Console.WriteLine();
+                        continue;
+                    }
 
-                        if (string.IsNullOrWhiteSpace(imageChosen))
-                        {
-                            imageChosen = FindImage(name, country, out imageCandidates);
-                        }
+                    Console.WriteLine(string.Format("Loading data for {0}", name, country));
 
-                        // TODO: check first that the media with given name exists
-                        if (!string.IsNullOrWhiteSpace(imageChosen))
+                    country = currentRow[countryIndex];
+                    if (string.IsNullOrWhiteSpace(country))
+                    {
+                        Console.WriteLine("Missing country of origin.");
+                        Console.WriteLine();
+                        continue;
+                    }
+
+                    Console.WriteLine(string.Format("Country of origin: " + country));
+
+                    brewer = currentRow[brewerIndex];
+                    Console.WriteLine("No brewer specified.");
+
+                    notes = currentRow[notesIndex];
+
+                    if (!short.TryParse(currentRow[ratingIndex], out rating))
+                    {
+                        Console.WriteLine("No rating given.");
+                    }
+
+                    imageCandidates = currentRow[imageCandidateIndex];
+                    imageChosen = currentRow[imageChosenIndex];
+
+                    if (string.IsNullOrWhiteSpace(imageChosen))
+                    {
+                        Console.WriteLine("No image specified. Searching..");
+                        imageChosen = FindImage(name, country, out imageCandidates);
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(imageChosen))
+                    {
+                        Console.WriteLine("Uploading image: " + imageChosen + "..");
+                        imageId = UploadImage(imageChosen, country, mediaService);
+                        if (imageId >= 0)
                         {
-                            imageId = UploadImage(imageChosen, country, mediaService);
-                            var imageChosenPath = Path.Combine(ConfigurationManager.AppSettings["BeerImagesRootDirectory"], country, Path.ChangeExtension(imageChosen, ".jpg"));
+                            var imageChosenPath = Path.Combine(BeerImagesRootDirectory, country, Path.ChangeExtension(imageChosen, ".jpg"));
                             imageDateTaken = GetDateTakenFromImage(imageChosenPath);
                         }
-
-                        UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService);
-
-                        // TODO: create output file as input file but with image columns updated
                     }
+                    else
+                    {
+                        Console.WriteLine("No matching image was found.");
+                    }
+
+                    Console.WriteLine("Proceeding to upload beer to CMS..");
+                    var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService);
+                    if (beerId >= 0)
+                    {
+                        Console.WriteLine("Beer successfully uploaded.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Couldn't upload beer.");
+                    }
+                    Console.WriteLine();
+
+                    // TODO: create output file as input file but with image columns updated
 
                     counter++;
                 }
             }
+
+            // TODO: sort beers for each country
         }
         
         private static string FindImage(string beerName, string country, out string candidates)
-        {                        
-            var imageDirectory = ConfigurationManager.AppSettings["BeerImagesRootDirectory"];
+        {
+            var imageDirectory = BeerImagesRootDirectory;
             var possibleMatches = new SortedDictionary<int, List<string>>();
             foreach (var filePath in Directory.GetFiles(Path.Combine(imageDirectory, country)))
             {
@@ -163,14 +226,41 @@ namespace Website.ContentAdmin
 
         private static int UploadImage(string imageName, string country, IMediaService mediaService)
         {
-            var imageDirectory = ConfigurationManager.AppSettings["BeerImagesRootDirectory"];
+            var imageDirectory = BeerImagesRootDirectory;
             var imageFileName = Path.ChangeExtension(imageName, ".jpg");
-            using (var fileStream = new FileStream(Path.Combine(imageDirectory, country, imageFileName), FileMode.Open))
+            var imagePath = Path.Combine(imageDirectory, country, imageFileName);
+            if (!System.IO.File.Exists(imagePath))
+            {
+                Console.WriteLine("Image file " + imagePath + " doesn't exist.");
+                return -1;
+            }
+
+            using (var fileStream = new FileStream(imagePath, FileMode.Open))
             {
                 var beerMediaRoot = mediaService.GetRootMedia().SingleOrDefault(x => x.Name == "Beers");
+                if (beerMediaRoot == null)
+                {
+                    Console.WriteLine("Couldn't find media folder with name \"Beers\".");
+                    return -1;
+                }
+
                 var countryMediaParent = mediaService.GetChildren(beerMediaRoot.Id).SingleOrDefault(x => x.Name == country);
+                if (countryMediaParent == null)
+                {
+                    Console.WriteLine("Couldn't find media folder with name " + country + ".");
+                    return -1;
+                }
+
+                // Check existence of media
+                var existingMedia = mediaService.GetChildren(countryMediaParent.Id).SingleOrDefault(x => x.Name.Equals(imageFileName, StringComparison.CurrentCultureIgnoreCase));
+                if (existingMedia != null)
+                {
+                    Console.WriteLine("Image media " + imageFileName + " already exists.");
+                    return existingMedia.Id;
+                }
+
                 var image = mediaService.CreateMedia(imageFileName, countryMediaParent, "Image");
-                image.SetValue("umbracoFile", fileStream.Name, fileStream);
+                image.SetValue("umbracoFile", Path.GetFileName(fileStream.Name), fileStream); // TODO: Fix
                 mediaService.Save(image);
                 return image.Id;
             }
@@ -180,7 +270,27 @@ namespace Website.ContentAdmin
         {
             var rootContent = contentService.GetRootContent().SingleOrDefault();
             var beersRoot = contentService.GetChildren(rootContent.Id).SingleOrDefault(x => x.Name == "Beer Reviews");
+            if (beersRoot == null)
+            {
+                Console.WriteLine("Couldn't find node with name \"Beer Reviews\".");
+                return -1;
+            }
+
             var countryItem = contentService.GetChildren(beersRoot.Id).SingleOrDefault(x => x.Name == country);
+            if (countryItem == null)
+            {
+                Console.WriteLine("Couldn't find country node with name " + country + ".");
+                return -1;
+            }
+
+            // Check existence of content
+            var existingBeer = contentService.GetChildren(countryItem.Id).SingleOrDefault(x => x.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase));
+            if (existingBeer != null)
+            {
+                Console.WriteLine("Beer " + name + " already exists.");
+                return existingBeer.Id;
+            }
+
             var newBeer = contentService.CreateContent(name, countryItem.Id, "Beer");
             newBeer.Properties["fullName"].Value = name;
             newBeer.Properties["brewer"].Value = brewer;
@@ -201,7 +311,7 @@ namespace Website.ContentAdmin
                 using (Image myImage = Image.FromStream(fs, false, false))
                 {
                     PropertyItem propItem = myImage.GetPropertyItem(36867);
-                    string dateTakenText = r.Replace(Encoding.UTF8.GetString(propItem.Value), "-", 2);
+                    string dateTakenText = _dateTakenRegex.Replace(Encoding.UTF8.GetString(propItem.Value), "-", 2);
                     DateTime dateTaken;
                     DateTime.TryParse(dateTakenText, out dateTaken);
                     return dateTaken;
