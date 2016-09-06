@@ -34,7 +34,7 @@ namespace Website.UI.BL.DocumentTypes
         public string GetImageUrl(UmbracoHelper umbraco)
         {
             var mediaId = Content.GetProperty<int>("image");
-            return umbraco.TypedMedia(mediaId).Url;
+            return mediaId > 0 ? umbraco.TypedMedia(mediaId).Url : null;
         }
 
         public string GetCountryFlag(UmbracoHelper umbraco)

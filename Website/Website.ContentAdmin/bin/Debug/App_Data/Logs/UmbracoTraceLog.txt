@@ -82,3 +82,21 @@ System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Sour
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
    at System.Threading.ThreadHelper.ThreadStart()
+2016-09-05 00:38:10,209 [10] ERROR Umbraco.Core.UmbracoApplicationBase - Unhandled exception in AppDomain (terminating)
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Source\test-repo\Beer Images\North Ireland'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at Website.ContentAdmin.Program.FindImage(String beerName, String country, String& candidates) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 261
+   at Website.ContentAdmin.Program.UploadBeersFromFile(IContentService contentService, IMediaService mediaService) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 163
+   at Website.ContentAdmin.Program.RunUmbraco() in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 59
+   at Website.ContentAdmin.Program.Main(String[] args) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 36
+   at System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   at System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   at Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()

@@ -257,8 +257,14 @@ namespace Website.ContentAdmin
         private static string FindImage(string beerName, string country, out string candidates)
         {
             var imageDirectory = BeerImagesRootDirectory;
+            var imageCountryPath = Path.Combine(imageDirectory, country);
+            if (!Directory.Exists(imageCountryPath))
+            {
+                Console.WriteLine("Images folder " + imageCountryPath + " doesn't exist.");
+            }
+
             var possibleMatches = new SortedDictionary<int, List<string>>();
-            foreach (var filePath in Directory.GetFiles(Path.Combine(imageDirectory, country)))
+            foreach (var filePath in Directory.GetFiles(imageCountryPath))
             {
                 var fileName = Path.GetFileNameWithoutExtension(filePath);
                 var beerNameMatchArray = beerName.ToLower().Split(' ');
