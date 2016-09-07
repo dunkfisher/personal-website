@@ -10,7 +10,15 @@ namespace Website.Controllers
 {
     public class ListingController : SurfaceController
     {
-        //[HttpPost]                
+        [ChildActionOnly]
+        public PartialViewResult CountryFilter()
+        {
+            var countries = Umbraco.TypedContentAtXPath("//Country")
+                .Select(x => x.Name)
+                .OrderBy(x => x);
+            return PartialView("_CountryFilter", countries);
+        }        
+              
         public PartialViewResult ListBeers(string country)
         {
             var beers = Umbraco.TypedContentAtXPath(string.Format("//Country[@nodeName=\"{0}\"]/Beer", country))
@@ -20,22 +28,5 @@ namespace Website.Controllers
             ViewBag.Umbraco = Umbraco; // TODO: Refactor
             return PartialView("_ListItems", beers);
         }
-
-        //[ChildActionOnly]
-        //public ActionResult Filter()
-        //{
-        //    return View("_Filter");
-        //}
-
-        //[ChildActionOnly]
-        //public ActionResult ListItems(string country)
-        //{
-        //    var currentPage = CurrentPage as Listing;
-        //    if (!string.IsNullOrEmpty(country))
-        //    {
-        //        currentPage.ApplyFilter(country);
-        //    }
-        //    return View("_ListItems", CurrentPage as Listing);
-        //}
     }
 }
