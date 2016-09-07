@@ -1,6 +1,19 @@
-﻿@{
-    Layout = "Master.cshtml";    
+﻿@*@using System.Web.Mvc.Ajax;*@
+@{
+    Layout = "Master.cshtml";
 }
 
-@*@Html.Action("Filter", "Listing")*@
-@Html.Action("ListItems", "Listing")
+@using (Ajax.BeginForm("ListBeers", "Listing", new AjaxOptions { UpdateTargetId = "listing-wrapper" }))
+{
+    <label>Country of Origin:</label>
+    @*<select name="country">
+        <option>Belgium</option>
+        <option>Canada</option>
+        <option>Scotland</option>
+    </select>*@
+    @Html.Action("CountryFilter", "Listing");
+    <input type="submit" value="Filter" />
+
+    <div id="listing-wrapper" class="clearfix">
+    </div>
+}

@@ -10,21 +10,32 @@ namespace Website.Controllers
 {
     public class ListingController : SurfaceController
     {
-        [ChildActionOnly]
-        public ActionResult Filter()
+        //[HttpPost]                
+        public PartialViewResult ListBeers(string country)
         {
-            return View("_Filter");
+            var beers = Umbraco.TypedContentAtXPath(string.Format("//Country[@nodeName=\"{0}\"]/Beer", country))
+                .OfType<Beer>()
+                .OrderByDescending(x => x.ImageDate);
+                        
+            ViewBag.Umbraco = Umbraco; // TODO: Refactor
+            return PartialView("_ListItems", beers);
         }
 
-        [ChildActionOnly]
-        public ActionResult ListItems(string country)
-        {
-            var currentPage = CurrentPage as Listing;
-            if (!string.IsNullOrEmpty(country))
-            {
-                currentPage.ApplyFilter(country);
-            }
-            return View("_ListItems", CurrentPage as Listing);
-        }
+        //[ChildActionOnly]
+        //public ActionResult Filter()
+        //{
+        //    return View("_Filter");
+        //}
+
+        //[ChildActionOnly]
+        //public ActionResult ListItems(string country)
+        //{
+        //    var currentPage = CurrentPage as Listing;
+        //    if (!string.IsNullOrEmpty(country))
+        //    {
+        //        currentPage.ApplyFilter(country);
+        //    }
+        //    return View("_ListItems", CurrentPage as Listing);
+        //}
     }
 }
