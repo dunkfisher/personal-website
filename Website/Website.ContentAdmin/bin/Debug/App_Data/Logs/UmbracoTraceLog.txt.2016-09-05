@@ -1,0 +1,102 @@
+2016-09-05 00:00:37,731 [11] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DUNCAN-PC
+2016-09-05 00:00:39,317 [11] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+2016-09-05 00:00:39,710 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Determining hash of code files on disk (took 391ms)
+2016-09-05 00:00:39,710 [11] INFO  Umbraco.Core.PluginManager - Hash determined (took 393ms)
+2016-09-05 00:00:41,862 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2016-09-05 00:00:49,832 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 7977ms)
+2016-09-05 00:00:49,832 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 7977ms)
+2016-09-05 00:00:49,973 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2016-09-05 00:00:49,985 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 11ms)
+2016-09-05 00:00:49,985 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 11ms)
+2016-09-05 00:00:49,985 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2016-09-05 00:00:50,020 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 34ms)
+2016-09-05 00:00:50,020 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 35ms)
+2016-09-05 00:00:52,812 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationInitialized (took 27ms)
+2016-09-05 00:00:52,813 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationInitialized (took 0ms)
+2016-09-05 00:00:52,813 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationInitialized (took 0ms)
+2016-09-05 00:00:52,813 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationInitialized (took 29ms)
+2016-09-05 00:00:52,814 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarting (took 0ms)
+2016-09-05 00:00:52,814 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarting (took 0ms)
+2016-09-05 00:00:52,814 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarting (took 0ms)
+2016-09-05 00:00:52,814 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarting (took 0ms)
+2016-09-05 00:00:52,835 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarted (took 0ms)
+2016-09-05 00:00:52,835 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarted (took 0ms)
+2016-09-05 00:00:52,835 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarted (took 0ms)
+2016-09-05 00:00:52,835 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarted (took 0ms)
+2016-09-05 00:00:52,859 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Umbraco 7.5.2 application starting on DUNCAN-PC (took 15128ms)
+2016-09-05 00:00:52,859 [11] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 16076ms)
+2016-09-05 00:01:07,683 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2016-09-05 00:01:07,700 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper (took 17ms)
+2016-09-05 00:01:07,700 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 17ms)
+2016-09-05 00:01:08,410 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2016-09-05 00:01:08,427 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor (took 16ms)
+2016-09-05 00:01:08,427 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 16ms)
+2016-09-05 00:06:17,239 [10] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DUNCAN-PC
+2016-09-05 00:06:18,465 [10] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+2016-09-05 00:06:18,570 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Determining hash of code files on disk (took 103ms)
+2016-09-05 00:06:18,570 [10] INFO  Umbraco.Core.PluginManager - Hash determined (took 104ms)
+2016-09-05 00:06:19,314 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2016-09-05 00:06:21,370 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 2055ms)
+2016-09-05 00:06:21,370 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 2055ms)
+2016-09-05 00:06:21,385 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2016-09-05 00:06:21,595 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 210ms)
+2016-09-05 00:06:21,595 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 210ms)
+2016-09-05 00:06:21,596 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2016-09-05 00:06:21,622 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 25ms)
+2016-09-05 00:06:21,622 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 25ms)
+2016-09-05 00:06:23,599 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationInitialized (took 12ms)
+2016-09-05 00:06:23,599 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationInitialized (took 0ms)
+2016-09-05 00:06:23,599 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationInitialized (took 0ms)
+2016-09-05 00:06:23,599 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationInitialized (took 14ms)
+2016-09-05 00:06:23,601 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarting (took 0ms)
+2016-09-05 00:06:23,601 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarting (took 0ms)
+2016-09-05 00:06:23,601 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarting (took 0ms)
+2016-09-05 00:06:23,601 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarting (took 0ms)
+2016-09-05 00:06:23,605 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarted (took 0ms)
+2016-09-05 00:06:23,605 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarted (took 0ms)
+2016-09-05 00:06:23,605 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarted (took 0ms)
+2016-09-05 00:06:23,606 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarted (took 0ms)
+2016-09-05 00:06:23,612 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Umbraco 7.5.2 application starting on DUNCAN-PC (took 6374ms)
+2016-09-05 00:06:23,612 [10] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 6739ms)
+2016-09-05 00:07:02,894 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2016-09-05 00:07:02,912 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper (took 17ms)
+2016-09-05 00:07:02,912 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 18ms)
+2016-09-05 00:07:09,142 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2016-09-05 00:07:09,147 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor (took 4ms)
+2016-09-05 00:07:09,147 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 4ms)
+2016-09-05 00:08:09,593 [10] ERROR Umbraco.Core.UmbracoApplicationBase - Unhandled exception in AppDomain (terminating)
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Source\test-repo\Beer Images\Jamaica'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at Website.ContentAdmin.Program.FindImage(String beerName, String country, String& candidates) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 261
+   at Website.ContentAdmin.Program.UploadBeersFromFile(IContentService contentService, IMediaService mediaService) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 163
+   at Website.ContentAdmin.Program.RunUmbraco() in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 59
+   at Website.ContentAdmin.Program.Main(String[] args) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 36
+   at System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   at System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   at Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
+2016-09-05 00:38:10,209 [10] ERROR Umbraco.Core.UmbracoApplicationBase - Unhandled exception in AppDomain (terminating)
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Source\test-repo\Beer Images\North Ireland'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at Website.ContentAdmin.Program.FindImage(String beerName, String country, String& candidates) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 261
+   at Website.ContentAdmin.Program.UploadBeersFromFile(IContentService contentService, IMediaService mediaService) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 163
+   at Website.ContentAdmin.Program.RunUmbraco() in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 59
+   at Website.ContentAdmin.Program.Main(String[] args) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 36
+   at System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   at System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   at Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   at System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.ThreadHelper.ThreadStart()
