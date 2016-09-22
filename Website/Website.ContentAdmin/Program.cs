@@ -109,105 +109,116 @@ namespace Website.ContentAdmin
 
             using (var fileReader = new StreamReader(inputFilePath))
             {
-                var currentRow = new string[0];
-                var firstRow = true;
-                while (!fileReader.EndOfStream)
+                var outputFilePath = string.Format("{0}_{1}.csv",
+                    Path.Combine(Path.GetDirectoryName(inputFilePath), Path.GetFileNameWithoutExtension(inputFilePath)),
+                    DateTime.Now.ToString("yyyyMMddhhmmss"));
+                using (var fileWriter = new StreamWriter(outputFilePath))
                 {
-                    currentRow = fileReader.ReadLine().Split(new[] { ',' }, 7);
-                    if (firstRow)
+                    var currentRow = new string[0];
+                    var firstRow = true;
+                    while (!fileReader.EndOfStream)
                     {
-                        nameIndex = currentRow.IndexOf("Beer");
-                        countryIndex = currentRow.IndexOf("Country");
-                        brewerIndex = currentRow.IndexOf("Brewer");
-                        notesIndex = currentRow.IndexOf("Notes");
-                        ratingIndex = currentRow.IndexOf("Rating");
-                        imageCandidateIndex = currentRow.IndexOf("Matched Images");
-                        imageChosenIndex = currentRow.IndexOf("Used Image");
-
-                        if (notesIndex != 6 || new[] { nameIndex, countryIndex, brewerIndex, notesIndex, ratingIndex, imageCandidateIndex, imageChosenIndex }.Any(x => x < 0))
+                        currentRow = fileReader.ReadLine().Split(new[] { ',' }, 7);
+                        if (firstRow)
                         {
-                            Console.WriteLine("Columns are incorrectly present in the input file.");
-                            return;
+                            nameIndex = currentRow.IndexOf("Beer");
+                            countryIndex = currentRow.IndexOf("Country");
+                            brewerIndex = currentRow.IndexOf("Brewer");
+                            notesIndex = currentRow.IndexOf("Notes");
+                            ratingIndex = currentRow.IndexOf("Rating");
+                            imageCandidateIndex = currentRow.IndexOf("Matched Images");
+                            imageChosenIndex = currentRow.IndexOf("Used Image");
+
+                            if (notesIndex != 6 || new[] { nameIndex, countryIndex, brewerIndex, notesIndex, ratingIndex, imageCandidateIndex, imageChosenIndex }.Any(x => x < 0))
+                            {
+                                Console.WriteLine("Columns are incorrectly present in the input file.");
+                                return;
+                            }
+
+                            // Write to output
+                            Console.WriteLine("Writing headers to output file: " + outputFilePath + "..");
+                            fileWriter.WriteLine("Beer,Country,Brewer,Rating,Matched Images,Used Image,Notes");
+
+                            firstRow = false;
+                            continue;
                         }
 
-                        firstRow = false;
-                        continue;
-                    }
-
-                    name = currentRow[nameIndex];
-                    if (string.IsNullOrWhiteSpace(name))
-                    {
-                        Console.WriteLine("Missing beer name.");
-                        Console.WriteLine();
-                        continue;
-                    }
-
-                    if (beerToUpdate == "All" || name.Equals(beerToUpdate, StringComparison.CurrentCultureIgnoreCase))
-                    {
-                        Console.WriteLine(string.Format("Loading data for {0}", name, country));
-
-                        country = currentRow[countryIndex];
-                        if (string.IsNullOrWhiteSpace(country))
+                        name = currentRow[nameIndex];
+                        if (string.IsNullOrWhiteSpace(name))
                         {
-                            Console.WriteLine("Missing country of origin.");
+                            Console.WriteLine("Missing beer name.");
                             Console.WriteLine();
                             continue;
                         }
 
-                        Console.WriteLine(string.Format("Country of origin: " + country));
-
-                        brewer = currentRow[brewerIndex];
-                        Console.WriteLine("No brewer specified.");
-
-                        notes = currentRow[notesIndex];
-
-                        if (!short.TryParse(currentRow[ratingIndex], out rating))
+                        if (beerToUpdate == "All" || name.Equals(beerToUpdate, StringComparison.CurrentCultureIgnoreCase))
                         {
-                            Console.WriteLine("No rating given.");
-                        }
+                            Console.WriteLine(string.Format("Loading data for {0}", name, country));
 
-                        imageCandidates = currentRow[imageCandidateIndex];
-                        imageChosen = currentRow[imageChosenIndex];
-
-                        if (string.IsNullOrWhiteSpace(imageChosen))
-                        {
-                            Console.WriteLine("No image specified. Searching..");
-                            imageChosen = FindImage(name, country, out imageCandidates);
-                        }
-
-                        if (!string.IsNullOrWhiteSpace(imageChosen))
-                        {
-                            Console.WriteLine("Uploading image: " + imageChosen + "..");
-                            imageId = UploadImage(imageChosen, country, mediaService);
-                            if (imageId >= 0)
+                            country = currentRow[countryIndex];
+                            if (string.IsNullOrWhiteSpace(country))
                             {
-                                var imageChosenPath = Path.Combine(BeerImagesRootDirectory, country, Path.ChangeExtension(imageChosen, ".jpg"));
-                                imageDateTaken = GetDateTakenFromImage(imageChosenPath);
+                                Console.WriteLine("Missing country of origin.");
+                                Console.WriteLine();
+                                continue;
+                            }
+
+                            Console.WriteLine(string.Format("Country of origin: " + country));
+
+                            brewer = currentRow[brewerIndex];
+                            Console.WriteLine("No brewer specified.");
+
+                            notes = currentRow[notesIndex];
+
+                            if (!short.TryParse(currentRow[ratingIndex], out rating))
+                            {
+                                Console.WriteLine("No rating given.");
+                            }
+
+                            imageCandidates = currentRow[imageCandidateIndex];
+                            imageChosen = currentRow[imageChosenIndex];
+
+                            if (string.IsNullOrWhiteSpace(imageChosen))
+                            {
+                                Console.WriteLine("No image specified. Searching..");
+                                imageChosen = FindImage(name, country, out imageCandidates);
+                            }
+
+                            if (!string.IsNullOrWhiteSpace(imageChosen))
+                            {
+                                Console.WriteLine("Uploading image: " + imageChosen + "..");
+                                imageId = UploadImage(imageChosen, country, mediaService);
+                                if (imageId >= 0)
+                                {
+                                    var imageChosenPath = Path.Combine(BeerImagesRootDirectory, country, Path.ChangeExtension(imageChosen, ".jpg"));
+                                    imageDateTaken = GetDateTakenFromImage(imageChosenPath);
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("No matching image was found.");
+                            }
+
+                            Console.WriteLine("Writing beer info to output file..");
+                            fileWriter.WriteLine(string.Join(",", name, country, brewer, rating, imageCandidates, imageChosen, notes));
+
+                            Console.WriteLine("Proceeding to upload beer to CMS..");
+                            var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService, updateExisting);
+                            if (beerId >= 0)
+                            {
+                                Console.WriteLine("Beer successfully updated.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Couldn't update beer.");
+                            }
+                            Console.WriteLine();
+
+                            if (name.Equals(beerToUpdate, StringComparison.CurrentCultureIgnoreCase))
+                            {
+                                return; // Updated the specified beer so exit
                             }
                         }
-                        else
-                        {
-                            Console.WriteLine("No matching image was found.");
-                        }
-
-                        Console.WriteLine("Proceeding to upload beer to CMS..");
-                        var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService, updateExisting);
-                        if (beerId >= 0)
-                        {
-                            Console.WriteLine("Beer successfully updated.");
-                        }
-                        else
-                        {
-                            Console.WriteLine("Couldn't update beer.");
-                        }
-                        Console.WriteLine();
-
-                        if (name.Equals(beerToUpdate, StringComparison.CurrentCultureIgnoreCase))
-                        {
-                            return;
-                        }
-
-                        // TODO: create output file as input file but with image columns updated
                     }
                 }
             }
@@ -301,7 +312,7 @@ namespace Website.ContentAdmin
                     }
                 }                
             }
-            candidates = string.Join(",", possibleMatches.SelectMany(x => x.Value));
+            candidates = string.Join(";", possibleMatches.SelectMany(x => x.Value));
             return possibleMatches.Count() > 0 ? possibleMatches.First().Value[0] : null;
         }
 
@@ -381,11 +392,14 @@ namespace Website.ContentAdmin
                 }
             }
 
+            var existingNotes = beerToUpdate.Properties["review"].Value as string;
+            var newNotes = notes.Trim('"', ',');
             beerToUpdate.Properties["fullName"].Value = name;
             beerToUpdate.Properties["brewer"].Value = brewer;
             beerToUpdate.Properties["image"].Value = imageId;
             beerToUpdate.Properties["imageDate"].Value = imageDateTaken;
-            beerToUpdate.Properties["review"].Value = notes;
+            beerToUpdate.Properties["review"].Value =
+                string.IsNullOrWhiteSpace(existingNotes) ? newNotes : existingNotes + Environment.NewLine + newNotes;
             beerToUpdate.Properties["rating"].Value = rating;
 
             //Save the Content
