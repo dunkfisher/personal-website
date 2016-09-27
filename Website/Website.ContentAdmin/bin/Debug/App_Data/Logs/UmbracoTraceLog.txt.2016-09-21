@@ -1,0 +1,210 @@
+2016-09-21 22:07:30,327 [9] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DUNCAN-PC
+2016-09-21 22:07:32,657 [9] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+2016-09-21 22:07:32,789 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Determining hash of code files on disk (took 130ms)
+2016-09-21 22:07:32,789 [9] INFO  Umbraco.Core.PluginManager - Hash determined (took 131ms)
+2016-09-21 22:07:34,593 [9] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2016-09-21 22:07:48,235 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 13653ms)
+2016-09-21 22:07:48,235 [9] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 13654ms)
+2016-09-21 22:07:48,385 [9] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2016-09-21 22:07:48,400 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 14ms)
+2016-09-21 22:07:48,400 [9] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 14ms)
+2016-09-21 22:07:48,401 [9] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2016-09-21 22:07:48,412 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 11ms)
+2016-09-21 22:07:48,412 [9] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 11ms)
+2016-09-21 22:07:49,942 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationInitialized (took 12ms)
+2016-09-21 22:07:49,942 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationInitialized (took 0ms)
+2016-09-21 22:07:49,942 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationInitialized (took 0ms)
+2016-09-21 22:07:49,942 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationInitialized (took 14ms)
+2016-09-21 22:07:49,944 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarting (took 0ms)
+2016-09-21 22:07:49,944 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarting (took 0ms)
+2016-09-21 22:07:49,944 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarting (took 0ms)
+2016-09-21 22:07:49,944 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarting (took 0ms)
+2016-09-21 22:07:49,951 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarted (took 0ms)
+2016-09-21 22:07:49,951 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarted (took 0ms)
+2016-09-21 22:07:49,951 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarted (took 0ms)
+2016-09-21 22:07:49,951 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarted (took 0ms)
+2016-09-21 22:07:49,958 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Umbraco 7.5.2 application starting on DUNCAN-PC (took 19643ms)
+2016-09-21 22:07:49,959 [9] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 20102ms)
+2016-09-21 22:14:32,755 [9] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2016-09-21 22:14:32,770 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper (took 14ms)
+2016-09-21 22:14:32,770 [9] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 14ms)
+2016-09-21 22:14:43,861 [9] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2016-09-21 22:14:43,878 [9] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor (took 17ms)
+2016-09-21 22:14:43,878 [9] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 17ms)
+2016-09-21 22:23:17,934 [11] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DUNCAN-PC
+2016-09-21 22:23:18,504 [11] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+2016-09-21 22:23:18,703 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Determining hash of code files on disk (took 198ms)
+2016-09-21 22:23:18,704 [11] INFO  Umbraco.Core.PluginManager - Hash determined (took 199ms)
+2016-09-21 22:23:19,206 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2016-09-21 22:23:21,304 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 2097ms)
+2016-09-21 22:23:21,304 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 2097ms)
+2016-09-21 22:23:21,320 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2016-09-21 22:23:21,351 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 31ms)
+2016-09-21 22:23:21,351 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 31ms)
+2016-09-21 22:23:21,352 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2016-09-21 22:23:21,374 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 21ms)
+2016-09-21 22:23:21,374 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 21ms)
+2016-09-21 22:23:22,156 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationInitialized (took 12ms)
+2016-09-21 22:23:22,156 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationInitialized (took 0ms)
+2016-09-21 22:23:22,156 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationInitialized (took 0ms)
+2016-09-21 22:23:22,156 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationInitialized (took 14ms)
+2016-09-21 22:23:22,158 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarting (took 0ms)
+2016-09-21 22:23:22,158 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarting (took 0ms)
+2016-09-21 22:23:22,158 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarting (took 0ms)
+2016-09-21 22:23:22,158 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarting (took 0ms)
+2016-09-21 22:23:22,163 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarted (took 0ms)
+2016-09-21 22:23:22,163 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarted (took 0ms)
+2016-09-21 22:23:22,163 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarted (took 0ms)
+2016-09-21 22:23:22,163 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarted (took 0ms)
+2016-09-21 22:23:22,190 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Umbraco 7.5.2 application starting on DUNCAN-PC (took 4252ms)
+2016-09-21 22:23:22,190 [11] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 4431ms)
+2016-09-21 22:24:45,921 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2016-09-21 22:24:45,938 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper (took 17ms)
+2016-09-21 22:24:45,938 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 17ms)
+2016-09-21 22:24:54,599 [11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2016-09-21 22:24:54,628 [11] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor (took 28ms)
+2016-09-21 22:24:54,628 [11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 28ms)
+2016-09-21 22:29:25,876 [10] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DUNCAN-PC
+2016-09-21 22:29:25,918 [10] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+2016-09-21 22:29:25,948 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Determining hash of code files on disk (took 29ms)
+2016-09-21 22:29:25,948 [10] INFO  Umbraco.Core.PluginManager - Hash determined (took 30ms)
+2016-09-21 22:29:26,164 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2016-09-21 22:29:26,985 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 820ms)
+2016-09-21 22:29:26,985 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 821ms)
+2016-09-21 22:29:27,000 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2016-09-21 22:29:27,079 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 78ms)
+2016-09-21 22:29:27,079 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 78ms)
+2016-09-21 22:29:27,079 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2016-09-21 22:29:27,100 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 21ms)
+2016-09-21 22:29:27,100 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 21ms)
+2016-09-21 22:29:28,098 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationInitialized (took 10ms)
+2016-09-21 22:29:28,098 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationInitialized (took 0ms)
+2016-09-21 22:29:28,098 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationInitialized (took 0ms)
+2016-09-21 22:29:28,098 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationInitialized (took 12ms)
+2016-09-21 22:29:28,100 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarting (took 0ms)
+2016-09-21 22:29:28,100 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarting (took 0ms)
+2016-09-21 22:29:28,100 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarting (took 0ms)
+2016-09-21 22:29:28,100 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarting (took 0ms)
+2016-09-21 22:29:28,105 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarted (took 0ms)
+2016-09-21 22:29:28,105 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarted (took 0ms)
+2016-09-21 22:29:28,105 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarted (took 0ms)
+2016-09-21 22:29:28,105 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarted (took 0ms)
+2016-09-21 22:29:28,111 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Umbraco 7.5.2 application starting on DUNCAN-PC (took 2229ms)
+2016-09-21 22:29:28,111 [10] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2418ms)
+2016-09-21 22:30:02,234 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2016-09-21 22:30:02,263 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper (took 28ms)
+2016-09-21 22:30:02,263 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 28ms)
+2016-09-21 22:30:03,818 [10] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2016-09-21 22:30:03,885 [10] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor (took 66ms)
+2016-09-21 22:30:03,885 [10] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 66ms)
+2016-09-21 22:39:05,556 [3] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DUNCAN-PC
+2016-09-21 22:39:06,383 [3] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+2016-09-21 22:39:06,580 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Determining hash of code files on disk (took 196ms)
+2016-09-21 22:39:06,580 [3] INFO  Umbraco.Core.PluginManager - Hash determined (took 197ms)
+2016-09-21 22:39:07,287 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2016-09-21 22:39:11,998 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 4714ms)
+2016-09-21 22:39:11,998 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 4714ms)
+2016-09-21 22:39:12,146 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2016-09-21 22:39:12,165 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 18ms)
+2016-09-21 22:39:12,165 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 18ms)
+2016-09-21 22:39:12,165 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2016-09-21 22:39:12,191 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 25ms)
+2016-09-21 22:39:12,191 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 25ms)
+2016-09-21 22:39:13,243 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationInitialized (took 10ms)
+2016-09-21 22:39:13,243 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationInitialized (took 0ms)
+2016-09-21 22:39:13,243 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationInitialized (took 0ms)
+2016-09-21 22:39:13,243 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationInitialized (took 12ms)
+2016-09-21 22:39:13,245 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarting (took 0ms)
+2016-09-21 22:39:13,245 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarting (took 0ms)
+2016-09-21 22:39:13,245 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarting (took 0ms)
+2016-09-21 22:39:13,245 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarting (took 0ms)
+2016-09-21 22:39:13,250 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarted (took 0ms)
+2016-09-21 22:39:13,250 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarted (took 0ms)
+2016-09-21 22:39:13,250 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarted (took 0ms)
+2016-09-21 22:39:13,251 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarted (took 0ms)
+2016-09-21 22:39:13,256 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Umbraco 7.5.2 application starting on DUNCAN-PC (took 7697ms)
+2016-09-21 22:39:13,256 [3] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 8024ms)
+2016-09-21 22:39:31,807 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2016-09-21 22:39:31,862 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper (took 54ms)
+2016-09-21 22:39:31,862 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 54ms)
+2016-09-21 22:39:35,918 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2016-09-21 22:39:35,931 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor (took 12ms)
+2016-09-21 22:39:35,931 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 12ms)
+2016-09-21 22:59:09,025 [3] ERROR Umbraco.Core.UmbracoApplicationBase - Unhandled exception in AppDomain (terminating)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Website.ContentAdmin.Program.UploadBeer(String name, String brewer, String country, String notes, Int16 rating, Int32 imageId, DateTime imageDateTaken, IContentService contentService, Boolean updateExisting) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 395
+   at Website.ContentAdmin.Program.UploadBeersFromFile(IContentService contentService, IMediaService mediaService, Boolean updateExisting) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 206
+   at Website.ContentAdmin.Program.RunUmbraco() in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 62
+   at Website.ContentAdmin.Program.Main(String[] args) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 36
+2016-09-21 23:00:35,303 [3] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DUNCAN-PC
+2016-09-21 23:00:35,807 [3] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+2016-09-21 23:00:35,849 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Determining hash of code files on disk (took 41ms)
+2016-09-21 23:00:35,850 [3] INFO  Umbraco.Core.PluginManager - Hash determined (took 42ms)
+2016-09-21 23:00:36,364 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2016-09-21 23:00:37,494 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 1130ms)
+2016-09-21 23:00:37,494 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 1130ms)
+2016-09-21 23:00:37,520 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2016-09-21 23:00:37,533 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 13ms)
+2016-09-21 23:00:37,533 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 13ms)
+2016-09-21 23:00:37,534 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2016-09-21 23:00:37,550 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 16ms)
+2016-09-21 23:00:37,550 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 16ms)
+2016-09-21 23:00:38,011 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationInitialized (took 12ms)
+2016-09-21 23:00:38,011 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationInitialized (took 0ms)
+2016-09-21 23:00:38,011 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationInitialized (took 0ms)
+2016-09-21 23:00:38,011 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationInitialized (took 14ms)
+2016-09-21 23:00:38,014 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarting (took 0ms)
+2016-09-21 23:00:38,014 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarting (took 0ms)
+2016-09-21 23:00:38,014 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarting (took 0ms)
+2016-09-21 23:00:38,014 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarting (took 0ms)
+2016-09-21 23:00:38,018 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarted (took 0ms)
+2016-09-21 23:00:38,018 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarted (took 0ms)
+2016-09-21 23:00:38,018 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarted (took 0ms)
+2016-09-21 23:00:38,018 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarted (took 0ms)
+2016-09-21 23:00:38,024 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Umbraco 7.5.2 application starting on DUNCAN-PC (took 2715ms)
+2016-09-21 23:00:38,024 [3] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2988ms)
+2016-09-21 23:01:39,087 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2016-09-21 23:01:39,104 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper (took 16ms)
+2016-09-21 23:01:39,104 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 16ms)
+2016-09-21 23:01:41,531 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2016-09-21 23:01:41,583 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor (took 51ms)
+2016-09-21 23:01:41,583 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 51ms)
+2016-09-21 23:01:43,079 [3] ERROR Umbraco.Core.UmbracoApplicationBase - Unhandled exception in AppDomain (terminating)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Website.ContentAdmin.Program.UploadBeer(String name, String brewer, String country, String notes, Int16 rating, Int32 imageId, DateTime imageDateTaken, IContentService contentService, Boolean updateExisting) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 395
+   at Website.ContentAdmin.Program.UploadBeersFromFile(IContentService contentService, IMediaService mediaService, Boolean updateExisting) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 206
+   at Website.ContentAdmin.Program.RunUmbraco() in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 62
+   at Website.ContentAdmin.Program.Main(String[] args) in C:\Source\test-repo\Website\Website.ContentAdmin\Program.cs:line 36
+2016-09-21 23:05:21,710 [3] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DUNCAN-PC
+2016-09-21 23:05:21,775 [3] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+2016-09-21 23:05:21,793 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Determining hash of code files on disk (took 17ms)
+2016-09-21 23:05:21,793 [3] INFO  Umbraco.Core.PluginManager - Hash determined (took 18ms)
+2016-09-21 23:05:22,162 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2016-09-21 23:05:22,542 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler (took 379ms)
+2016-09-21 23:05:22,542 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 380ms)
+2016-09-21 23:05:22,559 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2016-09-21 23:05:22,616 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter (took 57ms)
+2016-09-21 23:05:22,616 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 57ms)
+2016-09-21 23:05:22,617 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2016-09-21 23:05:22,636 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter (took 22ms)
+2016-09-21 23:05:22,636 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 22ms)
+2016-09-21 23:05:22,908 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationInitialized (took 14ms)
+2016-09-21 23:05:22,908 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationInitialized (took 0ms)
+2016-09-21 23:05:22,908 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationInitialized (took 0ms)
+2016-09-21 23:05:22,908 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationInitialized (took 15ms)
+2016-09-21 23:05:22,910 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarting (took 0ms)
+2016-09-21 23:05:22,910 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarting (took 0ms)
+2016-09-21 23:05:22,910 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarting (took 0ms)
+2016-09-21 23:05:22,910 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarting (took 0ms)
+2016-09-21 23:05:22,916 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Models.Identity.IdentityModelMappings in ApplicationStarted (took 0ms)
+2016-09-21 23:05:22,916 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnCopyHandler in ApplicationStarted (took 0ms)
+2016-09-21 23:05:22,916 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing Umbraco.Core.Strategies.RelateOnTrashHandler in ApplicationStarted (took 0ms)
+2016-09-21 23:05:22,916 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Executing 3 IApplicationEventHandler.OnApplicationStarted (took 0ms)
+2016-09-21 23:05:22,922 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [CoreBootManager] Umbraco 7.5.2 application starting on DUNCAN-PC (took 1209ms)
+2016-09-21 23:05:22,922 [3] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 1345ms)
+2016-09-21 23:05:32,913 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2016-09-21 23:05:33,048 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper (took 134ms)
+2016-09-21 23:05:33,048 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 135ms)
+2016-09-21 23:05:35,505 [3] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2016-09-21 23:05:35,556 [3] INFO  Umbraco.Core.Profiling.LogProfiler - [PluginManager] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor (took 50ms)
+2016-09-21 23:05:35,556 [3] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 51ms)

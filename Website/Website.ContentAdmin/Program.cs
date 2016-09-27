@@ -33,39 +33,34 @@ namespace Website.ContentAdmin
 
         static void Main(string[] args)
         {
-            RunUmbraco();
-        }
-
-        private static void RunUmbraco()
-        {
             Console.Title = "Umbraco Console";
-
+            var commandSettings = new CommandSettings(args);
             var umbracoAccess = new ServiceAccess();
 
-            //Exit the application?
-            var waitOrBreak = true;
-            while (waitOrBreak)
+            if (commandSettings.Command == Command.LoadBeerData)
             {
-                //List options
-                Console.WriteLine("-- Options --");
-                Console.WriteLine("Load beers from file: b");
-                Console.WriteLine("Update beers from file: u");
-                Console.WriteLine("Update image (tasted) date: i");
-                Console.WriteLine("Quit application: q");
-
-                var input = Console.ReadLine();
-                if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("q"))
-                    waitOrBreak = false;                
-                else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("b"))
-                    UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService);
-                else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("u"))
-                    UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, true);
-                else if (string.IsNullOrEmpty(input) == false && input.ToLowerInvariant().Equals("i"))
-                    UpdateBeerImageDate(umbracoAccess.Services.ContentTypeService, umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService);
+                UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.UpdateExisting, commandSettings.OverwriteNotes, commandSettings.OverwriteImage, commandSettings.BeerFile, commandSettings.BeerName);
             }
+            else if (commandSettings.Command == Command.RefreshImageDate)
+            {
+                UpdateBeerImageDate(umbracoAccess.Services.ContentTypeService, umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.BeerName);
+            }
+            else if (commandSettings.Command == Command.DeleteMedia)
+            {
+                DeleteMedia(umbracoAccess.Services.MediaService);
+            }
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
 
-        private static void UploadBeersFromFile(IContentService contentService, IMediaService mediaService, bool updateExisting = false)
+        private static void UploadBeersFromFile(IContentService contentService, 
+            IMediaService mediaService, 
+            bool updateExisting = false,
+            bool overwriteNotes = false,
+            bool overwriteImage = false,
+            string beerFile = null,
+            string beerName = null)
         {
             // Indices of columns
             var nameIndex = -1;
@@ -88,23 +83,12 @@ namespace Website.ContentAdmin
             DateTime imageDateTaken = DateTime.MinValue;
 
             var inputFileDirectory = ConfigurationManager.AppSettings["BeerFileDirectory"];
-            Console.WriteLine("Please enter name of the input file:");
-            var inputFileName = Console.ReadLine();
-            Console.WriteLine();
-            var inputFilePath = Path.Combine(inputFileDirectory, inputFileName);
+            var inputFilePath = Path.Combine(inputFileDirectory, beerFile);
             if (!System.IO.File.Exists(inputFilePath))
             {
                 Console.WriteLine("Input file " + inputFilePath + " doesn't exist.");
                 Console.ReadLine();
                 return;
-            }
-
-            // If it's an update, get params
-            string beerToUpdate = null;
-            if (updateExisting)
-            {
-                Console.WriteLine("Please enter name of the beer to update or \"All\":");
-                beerToUpdate = Console.ReadLine();
             }
 
             using (var fileReader = new StreamReader(inputFilePath))
@@ -137,6 +121,7 @@ namespace Website.ContentAdmin
 
                             // Write to output
                             Console.WriteLine("Writing headers to output file: " + outputFilePath + "..");
+                            Console.WriteLine();
                             fileWriter.WriteLine("Beer,Country,Brewer,Rating,Matched Images,Used Image,Notes");
 
                             firstRow = false;
@@ -151,7 +136,7 @@ namespace Website.ContentAdmin
                             continue;
                         }
 
-                        if (beerToUpdate == "All" || name.Equals(beerToUpdate, StringComparison.CurrentCultureIgnoreCase))
+                        if (beerName == null || name.Equals(beerName, StringComparison.CurrentCultureIgnoreCase))
                         {
                             Console.WriteLine(string.Format("Loading data for {0}", name, country));
 
@@ -187,7 +172,7 @@ namespace Website.ContentAdmin
                             if (!string.IsNullOrWhiteSpace(imageChosen))
                             {
                                 Console.WriteLine("Uploading image: " + imageChosen + "..");
-                                imageId = UploadImage(imageChosen, country, mediaService);
+                                imageId = UploadImage(imageChosen, country, overwriteImage, mediaService);
                                 if (imageId >= 0)
                                 {
                                     var imageChosenPath = Path.Combine(BeerImagesRootDirectory, country, Path.ChangeExtension(imageChosen, ".jpg"));
@@ -203,7 +188,7 @@ namespace Website.ContentAdmin
                             fileWriter.WriteLine(string.Join(",", name, country, brewer, rating, imageCandidates, imageChosen, notes));
 
                             Console.WriteLine("Proceeding to upload beer to CMS..");
-                            var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService, updateExisting);
+                            var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService, updateExisting, overwriteNotes);
                             if (beerId >= 0)
                             {
                                 Console.WriteLine("Beer successfully updated.");
@@ -214,7 +199,7 @@ namespace Website.ContentAdmin
                             }
                             Console.WriteLine();
 
-                            if (name.Equals(beerToUpdate, StringComparison.CurrentCultureIgnoreCase))
+                            if (name.Equals(beerName, StringComparison.CurrentCultureIgnoreCase))
                             {
                                 return; // Updated the specified beer so exit
                             }
@@ -226,62 +211,86 @@ namespace Website.ContentAdmin
             // TODO: sort beers for each country
         }
 
-        private static void UpdateBeerImageDate(IContentTypeService contentTypeService, IContentService contentService, IMediaService mediaService)
+        // Take media image associated with beer(s) and update the image taken date from the file if exists.
+        private static void UpdateBeerImageDate(IContentTypeService contentTypeService, IContentService contentService, IMediaService mediaService, string beerName = null)
         {
             var beerContentType = contentTypeService.GetContentType("Beer");
             foreach (var beer in contentService.GetContentOfContentType(beerContentType.Id))
             {
-                Console.WriteLine();
-                Console.WriteLine("Updating image date for " + beer.Name + "..");
-
-                var country = beer.Parent();
-                if (country == null)
+                if (beerName == null || beer.Name == beerName)
                 {
-                    Console.WriteLine("Parent node not found.");
-                    continue;
-                }
+                    Console.WriteLine();
+                    Console.WriteLine("Updating image date for " + beer.Name + "..");
 
-                var mediaId = beer.Properties["image"].Value;
-                if (mediaId == null)
-                {
-                    Console.WriteLine("No image associated with beer.");
-                    continue;
-                }
+                    var country = beer.Parent();
+                    if (country == null)
+                    {
+                        Console.WriteLine("Parent node not found.");
+                        continue;
+                    }
 
-                var media = mediaService.GetById(Convert.ToInt32(mediaId));
-                if (media == null)
-                {
-                    Console.WriteLine("Image media of id " + mediaId + " is missing.");
-                    continue;
-                }
+                    var mediaId = beer.Properties["image"].Value;
+                    if (mediaId == null)
+                    {
+                        Console.WriteLine("No image associated with beer.");
+                        continue;
+                    }
 
-                var mediaFilePath = media.Properties["umbracoFile"].Value;
-                if (mediaFilePath == null)
-                {
-                    Console.WriteLine("Image media path is missing.");
-                    continue;
-                }
+                    var media = mediaService.GetById(Convert.ToInt32(mediaId));
+                    if (media == null)
+                    {
+                        Console.WriteLine("Image media of id " + mediaId + " is missing.");
+                        continue;
+                    }
 
-                var imageFileName = Path.GetFileName(mediaFilePath.ToString());
-                var imageFilePath = Path.Combine(BeerImagesRootDirectory, country.Name, imageFileName);
-                if (!System.IO.File.Exists(imageFilePath))
-                {
-                    Console.WriteLine("Image file " + imageFilePath + " doesn't exist.");
-                    continue;
-                }
+                    var mediaFilePath = media.Properties["umbracoFile"].Value;
+                    if (mediaFilePath == null)
+                    {
+                        Console.WriteLine("Image media path is missing.");
+                        continue;
+                    }
 
-                var imageDate = GetDateTakenFromImage(imageFilePath);
-                var beerImageDate = beer.Properties["imageDate"].Value;
-                Console.WriteLine("Image date taken: " + imageDate);
-                Console.WriteLine("Date in CMS: " + beerImageDate ?? "Unspecified");
-                if (imageDate != DateTime.MinValue && (beerImageDate == null || Convert.ToDateTime(beerImageDate) != imageDate))
-                {
-                    beer.Properties["imageDate"].Value = imageDate;
-                    contentService.Save(beer);
-                    Console.WriteLine("Image date updated in CMS.");
+                    var imageFileName = Path.GetFileName(mediaFilePath.ToString());
+                    var imageFilePath = Path.Combine(BeerImagesRootDirectory, country.Name, imageFileName);
+                    if (!System.IO.File.Exists(imageFilePath))
+                    {
+                        Console.WriteLine("Image file " + imageFilePath + " doesn't exist.");
+                        continue;
+                    }
+
+                    var imageDate = GetDateTakenFromImage(imageFilePath);
+                    var beerImageDate = beer.Properties["imageDate"].Value;
+                    Console.WriteLine("Image date taken: " + imageDate);
+                    Console.WriteLine("Date in CMS: " + beerImageDate ?? "Unspecified");
+                    if (imageDate != DateTime.MinValue && (beerImageDate == null || Convert.ToDateTime(beerImageDate) != imageDate))
+                    {
+                        beer.Properties["imageDate"].Value = imageDate;
+                        contentService.Save(beer);
+                        Console.WriteLine("Image date updated in CMS.");
+                    }
                 }
             }
         }
+
+        private static void DeleteMedia(IMediaService mediaService)
+        {
+            var beerMediaRoot = mediaService.GetRootMedia().SingleOrDefault(x => x.Name == "Beers");
+            if (beerMediaRoot == null)
+            {
+                Console.WriteLine("Couldn't find media folder with name \"Beers\".");
+                return;
+            }
+
+            foreach (var countryMediaParent in mediaService.GetChildren(beerMediaRoot.Id))
+            {
+                Console.WriteLine("Deleting media for " + countryMediaParent.Name + "..");
+                foreach (var beerImageMedia in mediaService.GetChildren(countryMediaParent.Id))
+                {
+                    Console.WriteLine("Deleting media: " + beerImageMedia.Name + "..");
+                    mediaService.Delete(beerImageMedia);
+                }
+            }
+        }            
 
         private static string FindImage(string beerName, string country, out string candidates)
         {
@@ -316,7 +325,7 @@ namespace Website.ContentAdmin
             return possibleMatches.Count() > 0 ? possibleMatches.First().Value[0] : null;
         }
 
-        private static int UploadImage(string imageName, string country, IMediaService mediaService)
+        private static int UploadImage(string imageName, string country, bool overwriteExisting, IMediaService mediaService)
         {
             var imageDirectory = BeerImagesRootDirectory;
             var imageFileName = Path.ChangeExtension(imageName, ".jpg");
@@ -348,7 +357,15 @@ namespace Website.ContentAdmin
                 if (existingMedia != null)
                 {
                     Console.WriteLine("Image media " + imageFileName + " already exists.");
-                    return existingMedia.Id;
+                    if (overwriteExisting)
+                    {
+                        mediaService.Delete(existingMedia);
+                        Console.WriteLine("Replacing image media..");
+                    }
+                    else
+                    {
+                        return existingMedia.Id;
+                    }                    
                 }
 
                 var image = mediaService.CreateMedia(imageFileName, countryMediaParent, "Image");
@@ -358,7 +375,7 @@ namespace Website.ContentAdmin
             }
         }
 
-        private static int UploadBeer(string name, string brewer, string country, string notes, short rating, int imageId, DateTime imageDateTaken, IContentService contentService, bool updateExisting = false)
+        private static int UploadBeer(string name, string brewer, string country, string notes, short rating, int imageId, DateTime imageDateTaken, IContentService contentService, bool updateExisting, bool overwriteNotes)
         {
             var rootContent = contentService.GetRootContent().SingleOrDefault();
             var beersRoot = contentService.GetChildren(rootContent.Id).SingleOrDefault(x => x.Name == "Beer Reviews");
@@ -399,7 +416,7 @@ namespace Website.ContentAdmin
             beerToUpdate.Properties["image"].Value = imageId;
             beerToUpdate.Properties["imageDate"].Value = imageDateTaken;
             beerToUpdate.Properties["review"].Value =
-                string.IsNullOrWhiteSpace(existingNotes) ? newNotes : existingNotes + Environment.NewLine + newNotes;
+                overwriteNotes || string.IsNullOrWhiteSpace(existingNotes) ? newNotes : existingNotes + Environment.NewLine + newNotes;
             beerToUpdate.Properties["rating"].Value = rating;
 
             //Save the Content
