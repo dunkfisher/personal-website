@@ -1,0 +1,69 @@
+﻿ 2016-09-30 22:56:21,177 [P5840/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DESKTOP-T0DVK24
+ 2016-09-30 22:56:21,205 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-09-30 22:56:21,250 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 44ms)
+ 2016-09-30 22:56:21,496 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-09-30 22:56:22,098 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 601ms)
+ 2016-09-30 22:56:22,301 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-09-30 22:56:22,303 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+ 2016-09-30 22:56:22,303 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-09-30 22:56:22,305 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2016-09-30 22:56:22,335 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-09-30 22:56:22,337 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+ 2016-09-30 22:56:22,337 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-09-30 22:56:22,366 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 28ms)
+ 2016-09-30 22:56:22,641 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-09-30 22:56:22,642 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2016-09-30 22:56:22,643 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-09-30 22:56:22,643 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-09-30 22:56:24,416 [P5840/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-30 22:56:24,806 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2016-09-30 22:56:24,807 [P5840/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 1ms)
+ 2016-09-30 22:56:24,985 [P5840/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-30 22:56:25,148 [P5840/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-30 22:56:25,307 [P5840/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-09-30 22:56:25,745 [P5840/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-09-30 22:56:25,745 [P5840/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-09-30 22:56:25,771 [P5840/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 4733ms)
+ 2016-09-30 22:56:33,202 [P5840/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51084/umbraco (UmbracoModule request)
+ 2016-09-30 22:56:34,795 [P5840/D2/T7] INFO  umbraco.content - Load Xml from file...
+ 2016-09-30 22:56:34,813 [P5840/D2/T7] INFO  umbraco.content - Loaded Xml from file.
+ 2016-09-30 22:56:36,203 [P5840/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-09-30 22:56:36,205 [P5840/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2016-09-30 22:56:53,167 [P5840/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-09-30 22:56:53,169 [P5840/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2016-09-30 22:56:53,748 [P5840/D2/T16] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username dunc1981@gmail.com from IP address ::1
+ 2016-09-30 22:56:53,751 [P5840/D2/T16] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: dunc1981@gmail.com logged in from IP address ::1
+ 2016-09-30 22:56:54,255 [P5840/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-30 22:56:54,257 [P5840/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2016-09-30 22:56:54,514 [P5840/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-09-30 22:56:54,516 [P5840/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 1ms)
+ 2016-09-30 22:56:54,783 [P5840/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-30 22:56:54,784 [P5840/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-30 22:56:54,789 [P5840/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-09-30 22:56:54,792 [P5840/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 2ms)
+ 2016-09-30 22:56:54,898 [P5840/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-09-30 22:56:54,899 [P5840/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 1ms)
+ 2016-09-30 22:57:35,037 [P5840/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-09-29 22:57:34
+ 2016-09-30 22:57:39,975 [P5840/D2/T17] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Bad Day At the Office' with Id '2336' has been published.
+ 2016-09-30 22:57:40,129 [P5840/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-09-30 22:57:40,131 [P5840/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 1ms)
+ 2016-09-30 22:57:44,230 [P5840/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-30 22:57:44,323 [P5840/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-30 22:58:06,593 [P5840/D2/T20] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Barney's IPA' with Id '1827' has been published.
+ 2016-09-30 22:58:10,672 [P5840/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2016-09-30 22:58:10,719 [P5840/D2/T17] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-30 22:58:19,016 [P5840/D2/T16] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Barney's Red Rye' with Id '1825' has been published.
+ 2016-09-30 22:58:23,078 [P5840/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2016-09-30 22:58:23,140 [P5840/D2/T17] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-30 22:58:37,970 [P5840/D2/T8] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Beer & Skittles Lager' with Id '2039' has been published.
+ 2016-09-30 22:58:42,077 [P5840/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2016-09-30 22:58:42,124 [P5840/D2/T17] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-30 23:01:01,562 [P5840/D2/T8] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Betty & the Gardens' with Id '2090' has been published.
+ 2016-09-30 23:01:05,642 [P5840/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2016-09-30 23:01:05,689 [P5840/D2/T17] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-30 23:01:16,563 [P5840/D2/T8] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Bia'5 Bière' with Id '1747' has been published.
+ 2016-09-30 23:01:20,640 [P5840/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2016-09-30 23:01:20,687 [P5840/D2/T17] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-30 23:01:29,204 [P5840/D2/T8] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Bill's' with Id '2127' has been published.
+ 2016-09-30 23:01:33,254 [P5840/D2/T17] INFO  umbraco.content - Save Xml to file...
+ 2016-09-30 23:01:33,301 [P5840/D2/T17] INFO  umbraco.content - Saved Xml to file.

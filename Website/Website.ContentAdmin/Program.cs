@@ -39,7 +39,7 @@ namespace Website.ContentAdmin
 
             if (commandSettings.Command == Command.LoadBeerData)
             {
-                UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.UpdateExisting, commandSettings.OverwriteNotes, commandSettings.OverwriteImage, commandSettings.BeerFile, commandSettings.BeerName);
+                UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.UpdateExisting, commandSettings.UpdateNotes, commandSettings.OverwriteImage, commandSettings.BeerFile, commandSettings.BeerName);
             }
             else if (commandSettings.Command == Command.RefreshImageDate)
             {
@@ -299,6 +299,8 @@ namespace Website.ContentAdmin
             if (!Directory.Exists(imageCountryPath))
             {
                 Console.WriteLine("Images folder " + imageCountryPath + " doesn't exist.");
+                candidates = null;
+                return null;
             }
 
             var possibleMatches = new SortedDictionary<int, List<string>>();
@@ -415,8 +417,10 @@ namespace Website.ContentAdmin
             beerToUpdate.Properties["brewer"].Value = brewer;
             beerToUpdate.Properties["image"].Value = imageId;
             beerToUpdate.Properties["imageDate"].Value = imageDateTaken;
-            beerToUpdate.Properties["review"].Value =
-                overwriteNotes || string.IsNullOrWhiteSpace(existingNotes) ? newNotes : existingNotes + Environment.NewLine + newNotes;
+            if (overwriteNotes)
+            {
+                beerToUpdate.Properties["review"].Value = newNotes;
+            }
             beerToUpdate.Properties["rating"].Value = rating;
 
             //Save the Content

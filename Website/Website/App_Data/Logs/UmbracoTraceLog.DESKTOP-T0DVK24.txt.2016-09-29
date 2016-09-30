@@ -1,0 +1,1321 @@
+﻿ 2016-09-29 00:02:02,114 [P13684/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DESKTOP-T0DVK24
+ 2016-09-29 00:02:02,143 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-09-29 00:02:02,159 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 16ms)
+ 2016-09-29 00:02:02,363 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-09-29 00:02:02,750 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 399ms)
+ 2016-09-29 00:02:02,919 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-09-29 00:02:02,919 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+ 2016-09-29 00:02:02,919 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-09-29 00:02:02,919 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2016-09-29 00:02:02,935 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-09-29 00:02:02,935 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+ 2016-09-29 00:02:02,935 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-09-29 00:02:02,982 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 43ms)
+ 2016-09-29 00:02:03,261 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-09-29 00:02:03,263 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 1ms)
+ 2016-09-29 00:02:03,263 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-09-29 00:02:03,264 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-09-29 00:02:05,630 [P13684/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 00:02:06,166 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2016-09-29 00:02:06,169 [P13684/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 2ms)
+ 2016-09-29 00:02:06,378 [P13684/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 00:02:06,541 [P13684/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 00:02:06,705 [P13684/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-09-29 00:02:07,159 [P13684/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-09-29 00:02:07,159 [P13684/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-09-29 00:02:07,199 [P13684/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 5228ms)
+ 2016-09-29 00:02:11,657 [P13684/D2/T6] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51084/umbraco (UmbracoModule request)
+ 2016-09-29 00:02:13,159 [P13684/D2/T6] INFO  umbraco.content - Load Xml from file...
+ 2016-09-29 00:02:13,174 [P13684/D2/T6] INFO  umbraco.content - Loaded Xml from file.
+ 2016-09-29 00:02:14,487 [P13684/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-09-29 00:02:14,498 [P13684/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 11ms)
+ 2016-09-29 00:02:19,476 [P13684/D2/T16] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-09-29 00:02:33,773 [P13684/D2/T6] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Listing matches a locally declared controller of type Website.Controllers.ListingController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2016-09-29 00:02:34,355 [P13684/D2/T17] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-09-29 00:02:46,084 [P13684/D2/T17] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Website.UI.BL.DocumentTypes.Beer.GetImageUrl(UmbracoHelper umbraco) in C:\Users\dunc1\Source\personal-website\Website\Website\BL\DocumentTypes\Beer.cs:line 37
+   at ASP._Page_Views_Listing__ListItems_cshtml.Execute() in c:\Users\dunc1\Source\personal-website\Website\Website\Views\Listing\_ListItems.cshtml:line 8
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2016-09-29 00:03:08,106 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-09-29 00:03:08,106 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2016-09-29 00:03:08,538 [P13684/D2/T17] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username dunc1981@gmail.com from IP address ::1
+ 2016-09-29 00:03:08,544 [P13684/D2/T17] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: dunc1981@gmail.com logged in from IP address ::1
+ 2016-09-29 00:03:09,075 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 00:03:09,077 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2016-09-29 00:03:09,578 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-09-29 00:03:09,579 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 1ms)
+ 2016-09-29 00:03:10,100 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 00:03:10,100 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 00:03:10,105 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-09-29 00:03:10,108 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 2ms)
+ 2016-09-29 00:03:11,127 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-09-29 00:03:11,128 [P13684/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 1ms)
+ 2016-09-29 00:03:13,658 [P13684/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-09-28 00:03:13
+ 2016-09-29 18:41:47,203 [P13688/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DESKTOP-T0DVK24
+ 2016-09-29 18:41:47,250 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-09-29 18:41:47,265 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 19ms)
+ 2016-09-29 18:41:47,403 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-09-29 18:41:47,921 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 512ms)
+ 2016-09-29 18:41:48,037 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-09-29 18:41:48,037 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+ 2016-09-29 18:41:48,037 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-09-29 18:41:48,037 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2016-09-29 18:41:48,059 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-09-29 18:41:48,059 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+ 2016-09-29 18:41:48,059 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-09-29 18:41:48,059 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 9ms)
+ 2016-09-29 18:41:48,237 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-09-29 18:41:48,237 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2016-09-29 18:41:48,237 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-09-29 18:41:48,237 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-09-29 18:41:49,260 [P13688/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 18:41:49,509 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2016-09-29 18:41:49,509 [P13688/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 0ms)
+ 2016-09-29 18:41:49,609 [P13688/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 18:41:49,709 [P13688/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 18:41:49,809 [P13688/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-09-29 18:41:50,077 [P13688/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-09-29 18:41:50,077 [P13688/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-09-29 18:41:50,093 [P13688/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2972ms)
+ 2016-09-29 18:41:54,311 [P13688/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51084/umbraco (UmbracoModule request)
+ 2016-09-29 18:41:55,265 [P13688/D2/T7] INFO  umbraco.content - Load Xml from file...
+ 2016-09-29 18:41:55,280 [P13688/D2/T7] INFO  umbraco.content - Loaded Xml from file.
+ 2016-09-29 18:41:56,018 [P13688/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-09-29 18:41:56,019 [P13688/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2016-09-29 18:41:59,471 [P13688/D2/T16] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-09-29 18:42:20,192 [P13688/D2/T7] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Listing matches a locally declared controller of type Website.Controllers.ListingController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2016-09-29 18:42:20,640 [P13688/D2/T17] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-09-29 18:42:30,614 [P13688/D2/T7] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Listing matches a locally declared controller of type Website.Controllers.ListingController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2016-09-29 18:42:48,063 [P13688/D2/T7] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Website.UI.BL.DocumentTypes.Beer.GetImageUrl(UmbracoHelper umbraco) in C:\Users\dunc1\Source\personal-website\Website\Website\BL\DocumentTypes\Beer.cs:line 37
+   at ASP._Page_Views_Listing__ListItems_cshtml.Execute() in c:\Users\dunc1\Source\personal-website\Website\Website\Views\Listing\_ListItems.cshtml:line 8
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2016-09-29 18:42:55,429 [P13688/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-09-28 18:42:55
+ 2016-09-29 18:42:55,494 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-09-29 18:42:55,496 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2016-09-29 18:43:04,442 [P13688/D2/T17] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username dunc1981@gmail.com from IP address ::1
+ 2016-09-29 18:43:04,444 [P13688/D2/T17] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: dunc1981@gmail.com logged in from IP address ::1
+ 2016-09-29 18:43:04,641 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 18:43:04,643 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2016-09-29 18:43:05,066 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-09-29 18:43:05,067 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 1ms)
+ 2016-09-29 18:43:05,282 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 18:43:05,283 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 18:43:05,286 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-09-29 18:43:05,287 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 1ms)
+ 2016-09-29 18:43:05,594 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-09-29 18:43:05,595 [P13688/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 0ms)
+ 2016-09-29 18:43:17,275 [P13688/D2/T16] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Fosters' with Id '1739' has been published.
+ 2016-09-29 18:43:17,406 [P13688/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-09-29 18:43:17,406 [P13688/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 4ms)
+ 2016-09-29 18:43:21,467 [P13688/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 18:43:21,489 [P13688/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 18:43:23,524 [P13688/D2/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Freshie' with Id '2034' has been published.
+ 2016-09-29 18:43:27,676 [P13688/D2/T16] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 18:43:27,698 [P13688/D2/T16] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 18:43:30,390 [P13688/D2/T7] ERROR ImageProcessor.Web.HttpModules.ImageProcessingModule - 
+ImageProcessor.Common.Exceptions.ImageProcessingException: ProcessImageAsync 597 : No image exists at C:\Users\dunc1\Source\personal-website\Website\Website\media\1493\au.png
+ 2016-09-29 18:43:40,553 [P13688/D2/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Australia' with Id '1540' has been published.
+ 2016-09-29 18:43:44,619 [P13688/D2/T16] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 18:43:44,641 [P13688/D2/T16] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 18:43:54,415 [P13688/D2/T7] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Listing matches a locally declared controller of type Website.Controllers.ListingController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2016-09-29 18:47:22,799 [P13688/D2/T17] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Website.UI.BL.DocumentTypes.Beer.GetImageUrl(UmbracoHelper umbraco) in C:\Users\dunc1\Source\personal-website\Website\Website\BL\DocumentTypes\Beer.cs:line 37
+   at ASP._Page_Views_Listing__ListItems_cshtml.Execute() in c:\Users\dunc1\Source\personal-website\Website\Website\Views\Listing\_ListItems.cshtml:line 8
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.Mvc.WebViewPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at System.Web.Mvc.RazorView.RenderView(ViewContext viewContext, TextWriter writer, Object instance)
+   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   at Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2016-09-29 18:47:29,059 [P13688/D2/T28] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-09-29 18:47:29,991 [P13688/D2/T14] INFO  umbraco.content - Loading content from database...
+ 2016-09-29 18:47:30,458 [P13688/D2/T26] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-09-29 18:47:34,079 [P13688/D2/T26] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 18:47:34,094 [P13688/D2/T26] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 18:49:27,526 [P9792/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DESKTOP-T0DVK24
+ 2016-09-29 18:49:27,556 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-09-29 18:49:27,580 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 23ms)
+ 2016-09-29 18:49:27,671 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-09-29 18:49:28,075 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 403ms)
+ 2016-09-29 18:49:28,095 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-09-29 18:49:28,106 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 11ms)
+ 2016-09-29 18:49:28,106 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-09-29 18:49:28,120 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 13ms)
+ 2016-09-29 18:49:28,135 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-09-29 18:49:28,149 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 14ms)
+ 2016-09-29 18:49:28,149 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-09-29 18:49:28,163 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 13ms)
+ 2016-09-29 18:49:28,222 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-09-29 18:49:28,238 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 15ms)
+ 2016-09-29 18:49:28,238 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-09-29 18:49:28,252 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 13ms)
+ 2016-09-29 18:49:29,220 [P9792/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 18:49:29,500 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2016-09-29 18:49:29,513 [P9792/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 13ms)
+ 2016-09-29 18:49:29,620 [P9792/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 18:49:29,666 [P9792/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 18:49:29,768 [P9792/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-09-29 18:49:29,886 [P9792/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-09-29 18:49:29,886 [P9792/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-09-29 18:49:29,907 [P9792/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2521ms)
+ 2016-09-29 18:49:30,049 [P9792/D2/T6] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51084/umbraco (UmbracoModule request)
+ 2016-09-29 18:49:30,669 [P9792/D2/T6] INFO  umbraco.content - Load Xml from file...
+ 2016-09-29 18:49:30,677 [P9792/D2/T6] INFO  umbraco.content - Loaded Xml from file.
+ 2016-09-29 18:49:31,379 [P9792/D2/T6] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-09-29 18:49:31,410 [P9792/D2/T6] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 31ms)
+ 2016-09-29 18:49:39,610 [P9792/D2/T6] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-09-29 18:50:13,077 [P9792/D2/T16] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Listing matches a locally declared controller of type Website.Controllers.ListingController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderController' and inherit from 'System.Web.Mvc.ControllerBase'.
+ 2016-09-29 18:50:15,974 [P9792/D2/T18] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-09-29 18:50:30,794 [P9792/D2/T15] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-09-28 18:50:30
+ 2016-09-29 18:50:30,794 [P9792/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-09-29 18:50:30,810 [P9792/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 16ms)
+ 2016-09-29 19:05:36,247 [P9792/D2/T6] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-09-29 20:45:37,938 [P6772/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.2 application starting on DESKTOP-T0DVK24
+ 2016-09-29 20:45:37,969 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-09-29 20:45:37,985 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 16ms)
+ 2016-09-29 20:45:38,154 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-09-29 20:45:38,601 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 451ms)
+ 2016-09-29 20:45:38,754 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-09-29 20:45:38,754 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+ 2016-09-29 20:45:38,754 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-09-29 20:45:38,754 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2016-09-29 20:45:38,770 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-09-29 20:45:38,770 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+ 2016-09-29 20:45:38,770 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-09-29 20:45:38,786 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 10ms)
+ 2016-09-29 20:45:39,101 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-09-29 20:45:39,102 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2016-09-29 20:45:39,103 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-09-29 20:45:39,104 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-09-29 20:45:40,344 [P6772/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 20:45:40,599 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+ 2016-09-29 20:45:40,599 [P6772/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 1ms)
+ 2016-09-29 20:45:40,761 [P6772/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 20:45:40,871 [P6772/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-09-29 20:45:40,955 [P6772/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-09-29 20:45:41,224 [P6772/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-09-29 20:45:41,224 [P6772/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-09-29 20:45:41,240 [P6772/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3374ms)
+ 2016-09-29 20:45:46,313 [P6772/D2/T7] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://localhost:51084/umbraco (UmbracoModule request)
+ 2016-09-29 20:45:47,415 [P6772/D2/T7] INFO  umbraco.content - Load Xml from file...
+ 2016-09-29 20:45:47,415 [P6772/D2/T7] INFO  umbraco.content - Loaded Xml from file.
+ 2016-09-29 20:45:48,340 [P6772/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-09-29 20:45:48,340 [P6772/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2016-09-29 20:46:01,083 [P6772/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-09-29 20:46:01,099 [P6772/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2016-09-29 20:46:01,416 [P6772/D2/T16] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username dunc1981@gmail.com from IP address ::1
+ 2016-09-29 20:46:01,431 [P6772/D2/T16] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: dunc1981@gmail.com logged in from IP address ::1
+ 2016-09-29 20:46:01,701 [P6772/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 20:46:01,716 [P6772/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 18ms)
+ 2016-09-29 20:46:01,870 [P6772/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-09-29 20:46:01,901 [P6772/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 29ms)
+ 2016-09-29 20:46:01,973 [P6772/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 20:46:01,973 [P6772/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 20:46:01,976 [P6772/D2/T17] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-09-29 20:46:02,047 [P6772/D2/T17] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 70ms)
+ 2016-09-29 20:46:02,049 [P6772/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-09-29 20:46:02,078 [P6772/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 29ms)
+ 2016-09-29 20:46:31,173 [P6772/D2/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Fosters' with Id '1739' has been published.
+ 2016-09-29 20:46:31,574 [P6772/D2/T7] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-09-29 20:46:31,596 [P6772/D2/T7] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 23ms)
+ 2016-09-29 20:46:35,679 [P6772/D2/T12] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:46:35,695 [P6772/D2/T12] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:46:47,741 [P6772/D2/T14] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-09-28 20:46:47
+ 2016-09-29 20:47:21,126 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Freshie' with Id '2034' has been published.
+ 2016-09-29 20:47:25,221 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:47:25,251 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:48:21,981 [P6772/D2/T27] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Achel Blonde' with Id '2075' has been published.
+ 2016-09-29 20:48:26,026 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:48:26,042 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:48:39,218 [P6772/D2/T27] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Affligem Dubbel' with Id '1964' has been published.
+ 2016-09-29 20:48:43,276 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:48:43,282 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:49:06,832 [P6772/D2/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Affligem Tripel' with Id '2097' has been published.
+ 2016-09-29 20:49:10,886 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:49:10,902 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:49:21,531 [P6772/D2/T16] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Arend Dubbel' with Id '2056' has been published.
+ 2016-09-29 20:49:25,564 [P6772/D2/T15] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:49:25,585 [P6772/D2/T15] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:50:00,102 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Barbar Bok' with Id '2212' has been published.
+ 2016-09-29 20:50:04,183 [P6772/D2/T34] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:50:04,183 [P6772/D2/T34] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:50:20,860 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Bersalis Kadet' with Id '2295' has been published.
+ 2016-09-29 20:50:24,940 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:50:24,956 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:50:36,145 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Blanche de Namur' with Id '1740' has been published.
+ 2016-09-29 20:50:40,210 [P6772/D2/T27] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:50:40,226 [P6772/D2/T27] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:51:15,157 [P6772/D2/T13] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 20:51:15,157 [P6772/D2/T13] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 20:51:29,411 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Cantillon Kriek' with Id '2030' has been published.
+ 2016-09-29 20:51:33,500 [P6772/D2/T27] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:51:33,516 [P6772/D2/T27] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:52:07,503 [P6772/D2/T13] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Carolus Christmas' with Id '2133' has been published.
+ 2016-09-29 20:52:11,635 [P6772/D2/T27] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:52:11,635 [P6772/D2/T27] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:52:25,403 [P6772/D2/T16] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Chimay Triple/Cinq Cents' with Id '2087' has been published.
+ 2016-09-29 20:52:29,464 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:52:29,470 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:52:43,997 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Contreras Mars' with Id '2352' has been published.
+ 2016-09-29 20:52:48,054 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:52:48,070 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:52:55,714 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Corsendonk Agnus Tripel' with Id '2317' has been published.
+ 2016-09-29 20:52:59,781 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:52:59,797 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:53:07,624 [P6772/D2/T13] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Corsendonk Dubbel' with Id '2009' has been published.
+ 2016-09-29 20:53:11,730 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:53:11,761 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:53:17,722 [P6772/D2/T10] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Corsendonk Xmas' with Id '2057' has been published.
+ 2016-09-29 20:53:21,751 [P6772/D2/T15] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:53:21,782 [P6772/D2/T15] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:53:32,107 [P6772/D2/T13] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'De Koninck' with Id '2138' has been published.
+ 2016-09-29 20:53:36,156 [P6772/D2/T15] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:53:36,193 [P6772/D2/T15] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:53:48,717 [P6772/D2/T10] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Duvel Tripel Hop' with Id '1742' has been published.
+ 2016-09-29 20:53:52,787 [P6772/D2/T34] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:53:52,819 [P6772/D2/T34] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:53:59,673 [P6772/D2/T13] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Fantome Dark White' with Id '2120' has been published.
+ 2016-09-29 20:54:03,710 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:54:03,726 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:54:12,018 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Fantome de Tous Les D'Iables' with Id '2264' has been published.
+ 2016-09-29 20:54:16,062 [P6772/D2/T16] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:54:16,093 [P6772/D2/T16] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:54:22,697 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Fantome Tonka' with Id '2153' has been published.
+ 2016-09-29 20:54:26,732 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:54:26,748 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:54:47,509 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Faro Girardin' with Id '2041' has been published.
+ 2016-09-29 20:54:51,564 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:54:51,602 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:55:03,252 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Gauloise Brune' with Id '2260' has been published.
+ 2016-09-29 20:55:07,311 [P6772/D2/T26] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:55:07,333 [P6772/D2/T26] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:55:17,823 [P6772/D2/T13] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 20:55:17,823 [P6772/D2/T13] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 20:55:57,413 [P6772/D2/T13] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Grimbergen Noel' with Id '2109' has been published.
+ 2016-09-29 20:56:01,471 [P6772/D2/T26] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:56:01,509 [P6772/D2/T26] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:56:16,277 [P6772/D2/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Hoegaarden Grand Cru' with Id '2101' has been published.
+ 2016-09-29 20:56:20,315 [P6772/D2/T26] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:56:20,346 [P6772/D2/T26] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:56:39,076 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Imperialist' with Id '2309' has been published.
+ 2016-09-29 20:56:43,142 [P6772/D2/T26] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:56:43,158 [P6772/D2/T26] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:56:51,882 [P6772/D2/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Judas' with Id '1995' has been published.
+ 2016-09-29 20:56:55,939 [P6772/D2/T26] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:56:56,019 [P6772/D2/T26] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:57:07,165 [P6772/D2/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Jupiler' with Id '2058' has been published.
+ 2016-09-29 20:57:11,219 [P6772/D2/T35] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:57:11,276 [P6772/D2/T35] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:57:22,069 [P6772/D2/T13] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kasteel Donker' with Id '1991' has been published.
+ 2016-09-29 20:57:26,093 [P6772/D2/T35] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:57:26,115 [P6772/D2/T35] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:57:39,948 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kasteel Tripel' with Id '2418' has been published.
+ 2016-09-29 20:57:44,007 [P6772/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:57:44,029 [P6772/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:57:50,002 [P6772/D2/T7] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kriek Lambic' with Id '1951' has been published.
+ 2016-09-29 20:57:54,065 [P6772/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:57:54,112 [P6772/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:58:10,476 [P6772/D2/T10] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kriek Mariage Parfait (2014)' with Id '2081' has been published.
+ 2016-09-29 20:58:14,523 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:58:14,561 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:58:58,700 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Dalmatienne' with Id '2163' has been published.
+ 2016-09-29 20:59:02,754 [P6772/D2/T15] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:59:02,769 [P6772/D2/T15] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:59:18,929 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Rulles Blonde' with Id '2229' has been published.
+ 2016-09-29 20:59:22,973 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:59:22,995 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 20:59:36,901 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Rulles Brune' with Id '2275' has been published.
+ 2016-09-29 20:59:40,958 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 20:59:40,974 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:00:01,469 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Rulles Estivale' with Id '2218' has been published.
+ 2016-09-29 21:00:05,529 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:00:05,529 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:00:22,652 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Leffe Brune' with Id '2342' has been published.
+ 2016-09-29 21:00:26,704 [P6772/D2/T35] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:00:26,725 [P6772/D2/T35] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:00:39,892 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Liefmans Cuvée Brut' with Id '2051' has been published.
+ 2016-09-29 21:00:43,946 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:00:43,962 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:01:00,571 [P6772/D2/T10] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Lindemans Cassis' with Id '2038' has been published.
+ 2016-09-29 21:01:04,629 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:01:04,661 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:01:11,625 [P6772/D2/T10] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Lindemans Kriek' with Id '2042' has been published.
+ 2016-09-29 21:01:15,685 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:01:15,701 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:01:28,676 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Maredsous Brune' with Id '2043' has been published.
+ 2016-09-29 21:01:32,745 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:01:32,761 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:02:03,625 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'McChouffe' with Id '1736' has been published.
+ 2016-09-29 21:02:07,687 [P6772/D2/T15] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:02:07,718 [P6772/D2/T15] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:02:11,887 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mea Culpa Blonde' with Id '2054' has been published.
+ 2016-09-29 21:02:15,928 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:02:15,943 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:02:26,335 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Moeder Overste' with Id '2216' has been published.
+ 2016-09-29 21:02:30,426 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:02:30,493 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:02:39,905 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Moinette Biologique' with Id '1949' has been published.
+ 2016-09-29 21:02:43,956 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:02:43,971 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:02:48,108 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Moinette Brune' with Id '2053' has been published.
+ 2016-09-29 21:02:52,159 [P6772/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:02:52,175 [P6772/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:03:20,023 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mongozo Buckwheat' with Id '2301' has been published.
+ 2016-09-29 21:03:24,081 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:03:24,081 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:03:31,357 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Monks Stout' with Id '2149' has been published.
+ 2016-09-29 21:03:35,420 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:03:35,436 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:03:49,395 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Orval' with Id '1797' has been published.
+ 2016-09-29 21:03:53,466 [P6772/D2/T25] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:03:53,497 [P6772/D2/T25] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:03:59,787 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Oud Beersel Framboise' with Id '2119' has been published.
+ 2016-09-29 21:04:03,833 [P6772/D2/T25] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:04:03,847 [P6772/D2/T25] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:04:11,736 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Pere Noel' with Id '2111' has been published.
+ 2016-09-29 21:04:15,855 [P6772/D2/T25] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:04:15,907 [P6772/D2/T25] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:04:28,640 [P6772/D2/T10] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Petrus Brune' with Id '2419' has been published.
+ 2016-09-29 21:04:32,696 [P6772/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:04:32,715 [P6772/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:04:47,287 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Piraat' with Id '2389' has been published.
+ 2016-09-29 21:04:51,310 [P6772/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:04:51,326 [P6772/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:05:22,789 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Pissenlit' with Id '2322' has been published.
+ 2016-09-29 21:05:26,827 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:05:26,843 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:05:33,779 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Qantelaar MM' with Id '2247' has been published.
+ 2016-09-29 21:05:37,869 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:05:37,884 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:05:45,145 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Quetsche Tilquin' with Id '2222' has been published.
+ 2016-09-29 21:05:49,223 [P6772/D2/T26] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:05:49,239 [P6772/D2/T26] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:06:03,260 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Rochefort 6' with Id '2449' has been published.
+ 2016-09-29 21:06:07,298 [P6772/D2/T15] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:06:07,326 [P6772/D2/T15] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:06:30,971 [P6772/D2/T36] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sainte-Colombe Blonde' with Id '2233' has been published.
+ 2016-09-29 21:06:35,022 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:06:35,022 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:06:57,645 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Saison Cazeau' with Id '2360' has been published.
+ 2016-09-29 21:07:01,687 [P6772/D2/T32] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:07:01,687 [P6772/D2/T32] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:07:16,774 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Saison Dupont Biologique' with Id '1743' has been published.
+ 2016-09-29 21:07:20,812 [P6772/D2/T31] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:07:20,834 [P6772/D2/T31] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:07:26,119 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Saison Voisin' with Id '2014' has been published.
+ 2016-09-29 21:07:30,176 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:07:30,192 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:07:39,057 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sineke' with Id '2244' has been published.
+ 2016-09-29 21:07:43,104 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:07:43,104 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:07:57,258 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'St Bernardus Triple' with Id '2076' has been published.
+ 2016-09-29 21:08:01,327 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:08:01,327 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:08:11,780 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'St Feuillien Blonde' with Id '2055' has been published.
+ 2016-09-29 21:08:15,896 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:08:15,918 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:08:21,369 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'St Feuillien Brune' with Id '2084' has been published.
+ 2016-09-29 21:08:25,415 [P6772/D2/T7] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:08:25,543 [P6772/D2/T7] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:08:35,103 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'St Feuillien Cuvée de Noel' with Id '2088' has been published.
+ 2016-09-29 21:08:39,151 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:08:39,151 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:09:47,979 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'St Feuillien Saison' with Id '2210' has been published.
+ 2016-09-29 21:09:52,036 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:09:52,051 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:09:57,775 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Stella Artois' with Id '1757' has been published.
+ 2016-09-29 21:10:01,836 [P6772/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:10:01,858 [P6772/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:11:03,902 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Straffe Hendrik Quad' with Id '2147' has been published.
+ 2016-09-29 21:11:07,945 [P6772/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:11:07,961 [P6772/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:11:14,608 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Super des Fagnines' with Id '2239' has been published.
+ 2016-09-29 21:11:18,675 [P6772/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:11:18,718 [P6772/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:11:31,744 [P6772/D2/T28] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Tongerlo' with Id '1990' has been published.
+ 2016-09-29 21:11:35,768 [P6772/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:11:35,775 [P6772/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:11:54,071 [P6772/D2/T27] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Troubadour Magma' with Id '2364' has been published.
+ 2016-09-29 21:11:58,119 [P6772/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:11:58,150 [P6772/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:12:05,378 [P6772/D2/T27] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ultramour' with Id '2077' has been published.
+ 2016-09-29 21:12:09,400 [P6772/D2/T38] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:12:09,406 [P6772/D2/T38] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:12:29,164 [P6772/D2/T21] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Vedett Extra White' with Id '1963' has been published.
+ 2016-09-29 21:12:33,220 [P6772/D2/T38] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:12:33,252 [P6772/D2/T38] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:12:40,023 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Vichtenaar' with Id '2151' has been published.
+ 2016-09-29 21:12:44,150 [P6772/D2/T21] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:12:44,250 [P6772/D2/T21] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:12:50,744 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Waitrose Belgian Blonde' with Id '2036' has been published.
+ 2016-09-29 21:12:54,844 [P6772/D2/T30] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:12:54,875 [P6772/D2/T30] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:13:25,542 [P6772/D2/T41] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Maibock' with Id '2130' has been published.
+ 2016-09-29 21:13:29,589 [P6772/D2/T30] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:13:29,605 [P6772/D2/T30] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:13:49,480 [P6772/D2/T42] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Bud Strong' with Id '2436' has been published.
+ 2016-09-29 21:13:53,559 [P6772/D2/T30] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:13:53,565 [P6772/D2/T30] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:13:58,916 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Chodovar Skalni Lezak' with Id '2447' has been published.
+ 2016-09-29 21:14:02,971 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:14:02,985 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:14:09,051 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Czech Craft Lager' with Id '2448' has been published.
+ 2016-09-29 21:14:13,111 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:14:13,127 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:14:26,034 [P6772/D2/T19] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kozel Cerny' with Id '2442' has been published.
+ 2016-09-29 21:14:30,084 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:14:30,100 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:14:38,810 [P6772/D2/T19] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Krosovice Wheat' with Id '2439' has been published.
+ 2016-09-29 21:14:42,864 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:14:42,884 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:15:06,465 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Krusovice' with Id '2434' has been published.
+ 2016-09-29 21:15:10,522 [P6772/D2/T30] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:15:10,537 [P6772/D2/T30] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:15:50,923 [P6772/D2/T10] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Krusovice Malvaz' with Id '2437' has been published.
+ 2016-09-29 21:15:55,084 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:15:55,107 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:16:06,832 [P6772/D2/T38] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Krusovice Musketyr' with Id '2438' has been published.
+ 2016-09-29 21:16:10,877 [P6772/D2/T38] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:16:10,892 [P6772/D2/T38] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:16:26,775 [P6772/D2/T31] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 21:16:26,775 [P6772/D2/T31] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 21:16:50,537 [P6772/D2/T13] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Staropramen' with Id '2432' has been published.
+ 2016-09-29 21:16:54,592 [P6772/D2/T41] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:16:54,608 [P6772/D2/T41] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:17:24,464 [P6772/D2/T32] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Staropramen 11' with Id '2441' has been published.
+ 2016-09-29 21:17:28,498 [P6772/D2/T26] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:17:28,498 [P6772/D2/T26] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:17:36,858 [P6772/D2/T32] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Velkopopovicky Kozel' with Id '2430' has been published.
+ 2016-09-29 21:17:40,939 [P6772/D2/T29] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:17:40,939 [P6772/D2/T29] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:17:59,147 [P6772/D2/T39] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Cannabia' with Id '2630' has been published.
+ 2016-09-29 21:18:03,203 [P6772/D2/T29] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:18:03,242 [P6772/D2/T29] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:18:29,227 [P6772/D2/T22] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Krusovice 11' with Id '3189' has been published.
+ 2016-09-29 21:18:33,298 [P6772/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:18:33,386 [P6772/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:18:39,339 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Krusovice 13' with Id '3190' has been published.
+ 2016-09-29 21:18:43,393 [P6772/D2/T46] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:18:43,424 [P6772/D2/T46] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:18:55,852 [P6772/D2/T26] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Richnov Marzen (1)' with Id '3191' has been published.
+ 2016-09-29 21:18:59,916 [P6772/D2/T41] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:18:59,916 [P6772/D2/T41] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:19:33,783 [P6772/D2/T35] ERROR ImageProcessor.Web.HttpModules.ImageProcessingModule - 
+ImageProcessor.Common.Exceptions.ImageProcessingException: ProcessImageAsync 597 : No image exists at C:\Users\dunc1\Source\personal-website\Website\Website\media\1496\cz.png
+ 2016-09-29 21:20:15,310 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Brown/Jackie' with Id '1994' has been published.
+ 2016-09-29 21:20:19,387 [P6772/D2/T30] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:20:19,403 [P6772/D2/T30] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:20:28,720 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Brown/Jackie' with Id '1994' has been published.
+ 2016-09-29 21:20:32,766 [P6772/D2/T41] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:20:32,781 [P6772/D2/T41] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:20:47,170 [P6772/D2/T35] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Green Gold' with Id '2137' has been published.
+ 2016-09-29 21:20:51,202 [P6772/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:20:51,202 [P6772/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:21:01,999 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mikkeller Berliner' with Id '2008' has been published.
+ 2016-09-29 21:21:06,050 [P6772/D2/T30] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:21:06,072 [P6772/D2/T30] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:21:11,825 [P6772/D2/T45] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mikkeller Milk Stout' with Id '2135' has been published.
+ 2016-09-29 21:21:15,885 [P6772/D2/T29] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:21:15,901 [P6772/D2/T29] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:21:23,647 [P6772/D2/T45] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Vanilla Shake' with Id '2325' has been published.
+ 2016-09-29 21:21:27,701 [P6772/D2/T30] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:21:27,717 [P6772/D2/T30] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:21:46,547 [P6772/D2/T45] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '13 Guns' with Id '2128' has been published.
+ 2016-09-29 21:21:50,584 [P6772/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:21:50,607 [P6772/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:21:58,343 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Amuse Bouche' with Id '2015' has been published.
+ 2016-09-29 21:22:02,409 [P6772/D2/T23] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:22:02,424 [P6772/D2/T23] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:22:18,209 [P6772/D2/T22] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Beavertown Smog Rocket' with Id '2142' has been published.
+ 2016-09-29 21:22:22,293 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:22:22,308 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:22:47,658 [P6772/D2/T22] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Beer 2014' with Id '1741' has been published.
+ 2016-09-29 21:22:51,730 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:22:51,752 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:23:10,430 [P6772/D2/T23] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Bethnal Pale Ale' with Id '1950' has been published.
+ 2016-09-29 21:23:14,500 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:23:14,500 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:23:22,758 [P6772/D2/T27] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Big Ben' with Id '2040' has been published.
+ 2016-09-29 21:23:26,803 [P6772/D2/T51] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:23:26,819 [P6772/D2/T51] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:23:44,222 [P6772/D2/T54] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Black Friday' with Id '1759' has been published.
+ 2016-09-29 21:23:48,257 [P6772/D2/T53] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:23:48,354 [P6772/D2/T53] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:24:13,306 [P6772/D2/T54] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Byron Lager' with Id '2315' has been published.
+ 2016-09-29 21:24:17,396 [P6772/D2/T53] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:24:17,443 [P6772/D2/T53] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:24:25,467 [P6772/D2/T54] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Camden Pilsner' with Id '2421' has been published.
+ 2016-09-29 21:24:29,550 [P6772/D2/T53] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:24:29,588 [P6772/D2/T53] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:24:33,932 [P6772/D2/T51] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Camden Stout' with Id '1763' has been published.
+ 2016-09-29 21:24:37,992 [P6772/D2/T53] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:24:38,023 [P6772/D2/T53] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:24:45,270 [P6772/D2/T22] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Camden vs Petrus Stout' with Id '1998' has been published.
+ 2016-09-29 21:24:49,313 [P6772/D2/T51] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:24:49,398 [P6772/D2/T51] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:25:02,935 [P6772/D2/T15] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Cloudwater Keywoth's Mid Lager' with Id '2381' has been published.
+ 2016-09-29 21:25:06,986 [P6772/D2/T36] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:25:07,001 [P6772/D2/T36] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:25:33,293 [P6772/D2/T53] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Epic Saison' with Id '2362' has been published.
+ 2016-09-29 21:25:37,342 [P6772/D2/T36] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:25:37,357 [P6772/D2/T36] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:25:47,835 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Gentleman's Wit' with Id '1758' has been published.
+ 2016-09-29 21:25:51,881 [P6772/D2/T36] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:25:51,897 [P6772/D2/T36] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:26:41,009 [P6772/D2/T43] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ghost Ship' with Id '2376' has been published.
+ 2016-09-29 21:26:45,074 [P6772/D2/T22] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:26:45,090 [P6772/D2/T22] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:27:28,323 [P6772/D2/T36] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Hiver Honey Beer' with Id '1954' has been published.
+ 2016-09-29 21:27:32,374 [P6772/D2/T36] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:27:32,395 [P6772/D2/T36] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:27:35,821 [P6772/D2/T55] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Housman Ale' with Id '2365' has been published.
+ 2016-09-29 21:27:39,868 [P6772/D2/T36] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:27:39,884 [P6772/D2/T36] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:27:49,729 [P6772/D2/T29] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'India Hells Lager' with Id '1761' has been published.
+ 2016-09-29 21:27:53,787 [P6772/D2/T16] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:27:53,787 [P6772/D2/T16] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:28:11,978 [P6772/D2/T36] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 21:28:11,978 [P6772/D2/T36] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 21:28:24,645 [P6772/D2/T36] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Island Oyster' with Id '2355' has been published.
+ 2016-09-29 21:28:28,708 [P6772/D2/T16] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:28:28,724 [P6772/D2/T16] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:28:49,816 [P6772/D2/T55] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'London Porter' with Id '2398' has been published.
+ 2016-09-29 21:28:53,864 [P6772/D2/T16] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:28:53,895 [P6772/D2/T16] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:29:06,235 [P6772/D2/T55] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Maule Lucky IPA' with Id '2368' has been published.
+ 2016-09-29 21:29:10,293 [P6772/D2/T43] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:29:10,315 [P6772/D2/T43] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:29:23,499 [P6772/D2/T28] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Meantime African Queen(?)' with Id '2256' has been published.
+ 2016-09-29 21:29:27,553 [P6772/D2/T33] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:29:27,553 [P6772/D2/T33] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:29:56,665 [P6772/D2/T39] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Meantime Lager' with Id '2254' has been published.
+ 2016-09-29 21:30:00,727 [P6772/D2/T51] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:30:00,743 [P6772/D2/T51] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:30:05,868 [P6772/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Meantime Pale Ale' with Id '2255' has been published.
+ 2016-09-29 21:30:09,939 [P6772/D2/T51] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:30:09,939 [P6772/D2/T51] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:30:15,511 [P6772/D2/T9] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Meantime Raspberry Wheat' with Id '2251' has been published.
+ 2016-09-29 21:30:19,549 [P6772/D2/T51] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:30:19,609 [P6772/D2/T51] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:30:24,010 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Meantime Wheat' with Id '2252' has been published.
+ 2016-09-29 21:30:28,051 [P6772/D2/T31] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:30:28,067 [P6772/D2/T31] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:30:37,678 [P6772/D2/T51] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Milk Stout' with Id '2012' has been published.
+ 2016-09-29 21:30:42,342 [P6772/D2/T51] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:30:42,396 [P6772/D2/T51] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:31:01,329 [P6772/D2/T28] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mytholm Mist' with Id '2406' has been published.
+ 2016-09-29 21:31:05,418 [P6772/D2/T43] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:31:05,424 [P6772/D2/T43] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:31:35,184 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Old Speckled Hen' with Id '1756' has been published.
+ 2016-09-29 21:31:39,236 [P6772/D2/T43] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:31:39,252 [P6772/D2/T43] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:31:47,603 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Peckham Pils' with Id '2372' has been published.
+ 2016-09-29 21:31:51,636 [P6772/D2/T31] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:31:51,652 [P6772/D2/T31] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:32:05,117 [P6772/D2/T9] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Plum Porter' with Id '2126' has been published.
+ 2016-09-29 21:32:09,179 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:32:09,194 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:32:31,624 [P6772/D2/T22] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Rhubarbe de Saison' with Id '2358' has been published.
+ 2016-09-29 21:32:35,701 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:32:35,701 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:32:40,370 [P6772/D2/T30] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sam Smith's Imperial Stout' with Id '2062' has been published.
+ 2016-09-29 21:32:44,419 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:32:44,434 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:32:50,259 [P6772/D2/T19] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sam Smith's Nut Brown Ale' with Id '2063' has been published.
+ 2016-09-29 21:32:54,300 [P6772/D2/T19] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:32:54,307 [P6772/D2/T19] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:33:06,230 [P6772/D2/T36] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sam Smith's Wheat' with Id '2074' has been published.
+ 2016-09-29 21:33:10,284 [P6772/D2/T19] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:33:10,299 [P6772/D2/T19] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:33:24,258 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Samuel Smith Extra Stout' with Id '2347' has been published.
+ 2016-09-29 21:33:28,289 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:33:28,305 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:33:33,375 [P6772/D2/T19] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Samuel Smith IPA' with Id '2346' has been published.
+ 2016-09-29 21:33:37,423 [P6772/D2/T40] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:33:37,454 [P6772/D2/T40] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:33:41,964 [P6772/D2/T19] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Samuel Smith Lager' with Id '2345' has been published.
+ 2016-09-29 21:33:46,031 [P6772/D2/T34] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:33:46,069 [P6772/D2/T34] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:33:57,865 [P6772/D2/T19] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Samuel Smith Pale Ale' with Id '2006' has been published.
+ 2016-09-29 21:34:01,916 [P6772/D2/T29] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:34:01,916 [P6772/D2/T29] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:34:09,580 [P6772/D2/T9] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sharp's Pilsner' with Id '2069' has been published.
+ 2016-09-29 21:34:13,635 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:34:13,682 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:34:40,247 [P6772/D2/T36] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Shoreditch Blonde' with Id '1772' has been published.
+ 2016-09-29 21:34:44,314 [P6772/D2/T31] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:34:44,330 [P6772/D2/T31] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:35:17,729 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Siren Vanilla' with Id '2383' has been published.
+ 2016-09-29 21:35:21,771 [P6772/D2/T38] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:35:21,787 [P6772/D2/T38] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:35:29,968 [P6772/D2/T31] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'So Solid Brew' with Id '1768' has been published.
+ 2016-09-29 21:35:34,040 [P6772/D2/T40] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:35:34,056 [P6772/D2/T40] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:35:56,180 [P6772/D2/T38] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Thornbridge Imperial Stout' with Id '2044' has been published.
+ 2016-09-29 21:36:00,234 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:36:00,269 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:36:06,338 [P6772/D2/T23] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Tilting Ale' with Id '2249' has been published.
+ 2016-09-29 21:36:10,394 [P6772/D2/T34] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:36:10,394 [P6772/D2/T34] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:36:27,065 [P6772/D2/T44] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Wildcard Blonde' with Id '2061' has been published.
+ 2016-09-29 21:36:31,109 [P6772/D2/T34] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:36:31,109 [P6772/D2/T34] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:36:35,965 [P6772/D2/T44] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Yardbird IPA' with Id '2141' has been published.
+ 2016-09-29 21:36:40,016 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:36:40,016 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:49:36,563 [P6772/D2/T94] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '3 Monts' with Id '2105' has been published.
+ 2016-09-29 21:49:40,628 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:49:40,675 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:49:52,528 [P6772/D2/T94] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Akerbeltz Ambrée' with Id '1965' has been published.
+ 2016-09-29 21:49:56,579 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:49:56,600 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:51:01,943 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Akerbeltz Blanche' with Id '1966' has been published.
+ 2016-09-29 21:51:05,986 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:51:06,022 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:51:10,978 [P6772/D2/T42] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Akerbeltz Blonde' with Id '1967' has been published.
+ 2016-09-29 21:51:15,020 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:51:15,036 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:51:21,836 [P6772/D2/T42] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Apocalypse Now' with Id '2033' has been published.
+ 2016-09-29 21:51:25,884 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:51:25,899 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:51:47,256 [P6772/D2/T92] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Bellerose' with Id '2420' has been published.
+ 2016-09-29 21:51:51,318 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:51:51,340 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:52:10,467 [P6772/D2/T72] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 21:52:10,476 [P6772/D2/T72] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 8ms)
+ 2016-09-29 21:53:01,616 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Bière Ovalie' with Id '2113' has been published.
+ 2016-09-29 21:53:05,669 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:53:05,691 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:53:12,185 [P6772/D2/T96] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Blanche' with Id '2415' has been published.
+ 2016-09-29 21:53:16,228 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:53:16,328 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:53:27,983 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Bonnets Rouges' with Id '2232' has been published.
+ 2016-09-29 21:53:32,032 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:53:32,053 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:53:35,318 [P6772/D2/T102] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 21:53:35,318 [P6772/D2/T102] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 21:53:49,801 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Brigantine' with Id '2103' has been published.
+ 2016-09-29 21:53:53,872 [P6772/D2/T96] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:53:53,887 [P6772/D2/T96] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:54:06,042 [P6772/D2/T72] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Brigantine Ambrée' with Id '2237' has been published.
+ 2016-09-29 21:54:10,099 [P6772/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:54:10,121 [P6772/D2/T9] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:54:17,851 [P6772/D2/T96] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Captain Moore IPA' with Id '1751' has been published.
+ 2016-09-29 21:54:21,895 [P6772/D2/T96] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:54:21,917 [P6772/D2/T96] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:54:33,820 [P6772/D2/T88] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Colomba' with Id '2045' has been published.
+ 2016-09-29 21:54:37,864 [P6772/D2/T88] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:54:37,880 [P6772/D2/T88] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:55:30,699 [P6772/D2/T84] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Cuvee des Jonquilles' with Id '1961' has been published.
+ 2016-09-29 21:55:34,759 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:55:34,781 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:56:04,854 [P6772/D2/T84] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Dramm Hud' with Id '1732' has been published.
+ 2016-09-29 21:56:08,944 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:56:08,976 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:56:14,253 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Duchess Anne Triple' with Id '1795' has been published.
+ 2016-09-29 21:56:18,308 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:56:18,346 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:56:33,416 [P6772/D2/T100] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 21:56:33,416 [P6772/D2/T100] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 21:56:53,538 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Duchesse Anne Triple Hops' with Id '2099' has been published.
+ 2016-09-29 21:56:57,579 [P6772/D2/T84] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:56:57,595 [P6772/D2/T84] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:57:05,241 [P6772/D2/T88] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'EKI' with Id '1968' has been published.
+ 2016-09-29 21:57:09,289 [P6772/D2/T84] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:57:09,305 [P6772/D2/T84] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:57:39,560 [P6772/D2/T96] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Gallia?' with Id '2167' has been published.
+ 2016-09-29 21:57:43,637 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:57:43,653 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:57:50,434 [P6772/D2/T96] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Gallia' with Id '2167' has been published.
+ 2016-09-29 21:57:54,513 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:57:54,529 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:58:05,765 [P6772/D2/T72] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 21:58:05,765 [P6772/D2/T72] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 21:58:21,858 [P6772/D2/T72] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Jenlain Ambrée' with Id '2224' has been published.
+ 2016-09-29 21:58:25,905 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:58:25,937 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:58:30,776 [P6772/D2/T84] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Jenlain Ambrée' with Id '2224' has been published.
+ 2016-09-29 21:58:34,856 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:58:34,856 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:58:43,900 [P6772/D2/T88] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Jenlain Blonde' with Id '2106' has been published.
+ 2016-09-29 21:58:47,962 [P6772/D2/T86] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:58:47,962 [P6772/D2/T86] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:59:17,440 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kronenbourg 1664' with Id '1793' has been published.
+ 2016-09-29 21:59:21,484 [P6772/D2/T98] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:59:21,484 [P6772/D2/T98] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 21:59:37,987 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Goudale' with Id '2100' has been published.
+ 2016-09-29 21:59:42,076 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 21:59:42,110 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:00:07,674 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Rose Des Vents' with Id '1755' has been published.
+ 2016-09-29 22:00:11,723 [P6772/D2/T94] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:00:11,776 [P6772/D2/T94] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:00:21,984 [P6772/D2/T85] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Saint Malo' with Id '2001' has been published.
+ 2016-09-29 22:00:26,019 [P6772/D2/T29] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:00:26,019 [P6772/D2/T29] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:00:43,553 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mor Braz Blonde' with Id '1738' has been published.
+ 2016-09-29 22:00:47,605 [P6772/D2/T40] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:00:47,627 [P6772/D2/T40] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:00:54,689 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Morgane' with Id '2323' has been published.
+ 2016-09-29 22:00:58,744 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:00:58,760 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:01:20,904 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ours Miel' with Id '2114' has been published.
+ 2016-09-29 22:01:24,947 [P6772/D2/T20] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:01:24,954 [P6772/D2/T20] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:01:33,492 [P6772/D2/T19] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ours Miel' with Id '2114' has been published.
+ 2016-09-29 22:01:37,556 [P6772/D2/T20] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:01:37,654 [P6772/D2/T20] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:02:19,914 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ours Pale Ale' with Id '2108' has been published.
+ 2016-09-29 22:02:23,976 [P6772/D2/T20] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:02:23,992 [P6772/D2/T20] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:02:42,157 [P6772/D2/T105] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ours Stout' with Id '2110' has been published.
+ 2016-09-29 22:02:46,250 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:02:46,266 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:03:21,398 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Pale Ale' with Id '2414' has been published.
+ 2016-09-29 22:03:25,434 [P6772/D2/T89] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:03:25,434 [P6772/D2/T89] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:03:31,845 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Pelforth Brune' with Id '2235' has been published.
+ 2016-09-29 22:03:35,892 [P6772/D2/T89] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:03:35,908 [P6772/D2/T89] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:03:40,260 [P6772/D2/T105] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Pie Noir' with Id '2160' has been published.
+ 2016-09-29 22:03:44,307 [P6772/D2/T89] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:03:44,329 [P6772/D2/T89] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:03:52,677 [P6772/D2/T20] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Pietra' with Id '2214' has been published.
+ 2016-09-29 22:03:56,713 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:03:56,744 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:04:15,586 [P6772/D2/T20] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Saint Colombe Ambrée' with Id '2107' has been published.
+ 2016-09-29 22:04:19,632 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:04:19,648 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:05:10,284 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sainte-Colombe Blanche' with Id '2240' has been published.
+ 2016-09-29 22:05:14,386 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:05:14,407 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:05:18,471 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sainte-Colombe Dorée' with Id '2236' has been published.
+ 2016-09-29 22:05:22,513 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:05:22,528 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:05:28,657 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sans Culottes L'Ambrée' with Id '2427' has been published.
+ 2016-09-29 22:05:32,750 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:05:32,756 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:05:59,588 [P6772/D2/T8] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Skumenn Amber' with Id '2279' has been published.
+ 2016-09-29 22:06:04,207 [P6772/D2/T95] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:06:04,229 [P6772/D2/T95] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:06:08,791 [P6772/D2/T105] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Skumenn Pale Ale' with Id '2262' has been published.
+ 2016-09-29 22:06:12,858 [P6772/D2/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:06:12,873 [P6772/D2/T28] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:06:20,186 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Skumenn Rye IPA' with Id '2281' has been published.
+ 2016-09-29 22:06:24,236 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:06:24,258 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:06:33,691 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Skumenn Wheat IPA' with Id '2242' has been published.
+ 2016-09-29 22:06:36,576 [P6772/D2/T108] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:06:36,576 [P6772/D2/T108] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:06:37,941 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:06:37,965 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:07:26,235 [P6772/D2/T29] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Spoum' with Id '2098' has been published.
+ 2016-09-29 22:07:30,293 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:07:30,331 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:07:36,466 [P6772/D2/T51] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'St Colombe Grand Cru' with Id '2118' has been published.
+ 2016-09-29 22:07:40,512 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:07:40,519 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:07:47,645 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Super U Blonde' with Id '2104' has been published.
+ 2016-09-29 22:07:51,690 [P6772/D2/T29] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:07:51,706 [P6772/D2/T29] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:08:02,832 [P6772/D2/T42] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Terenez Blonde' with Id '1744' has been published.
+ 2016-09-29 22:08:06,884 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:08:06,906 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:08:15,525 [P6772/D2/T29] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Trompe Souris' with Id '1750' has been published.
+ 2016-09-29 22:08:19,570 [P6772/D2/T34] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:08:19,586 [P6772/D2/T34] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:08:28,467 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'X.XI' with Id '2072' has been published.
+ 2016-09-29 22:08:32,546 [P6772/D2/T89] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:08:32,578 [P6772/D2/T89] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:08:52,517 [P6772/D2/T24] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Aventinus Eisbock' with Id '2299' has been published.
+ 2016-09-29 22:08:56,563 [P6772/D2/T34] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:08:56,585 [P6772/D2/T34] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:09:19,033 [P6772/D2/T90] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:09:19,033 [P6772/D2/T90] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:09:50,127 [P6772/D2/T9] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Celebrator' with Id '2426' has been published.
+ 2016-09-29 22:09:54,172 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:09:54,188 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:10:12,025 [P6772/D2/T42] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Erdinger Dunkel' with Id '2392' has been published.
+ 2016-09-29 22:10:16,080 [P6772/D2/T33] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:10:16,209 [P6772/D2/T33] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:10:44,778 [P6772/D2/T9] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Flensburger Pilsener' with Id '2377' has been published.
+ 2016-09-29 22:10:48,818 [P6772/D2/T24] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:10:48,844 [P6772/D2/T24] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:11:21,565 [P6772/D2/T90] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Gilden Kolsch' with Id '2161' has been published.
+ 2016-09-29 22:11:25,625 [P6772/D2/T102] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:11:25,641 [P6772/D2/T102] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:11:31,762 [P6772/D2/T90] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Hacker-Pschorr Weisse' with Id '2411' has been published.
+ 2016-09-29 22:11:35,820 [P6772/D2/T102] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:11:35,836 [P6772/D2/T102] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:11:41,285 [P6772/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Hofbrau Dunkel' with Id '2289' has been published.
+ 2016-09-29 22:11:45,346 [P6772/D2/T102] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:11:45,346 [P6772/D2/T102] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:11:49,581 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Hofbrau Muncher Weisse' with Id '2277' has been published.
+ 2016-09-29 22:11:53,649 [P6772/D2/T102] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:11:53,701 [P6772/D2/T102] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:12:57,110 [P6772/D2/T107] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Hofbrau Schwarze Weisse' with Id '2290' has been published.
+ 2016-09-29 22:13:01,189 [P6772/D2/T102] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:13:01,205 [P6772/D2/T102] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:13:37,816 [P6772/D2/T25] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Holsten Alcohol Free' with Id '2408' has been published.
+ 2016-09-29 22:13:41,877 [P6772/D2/T25] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:13:41,915 [P6772/D2/T25] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:13:53,926 [P6772/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Jever Pilsner' with Id '2004' has been published.
+ 2016-09-29 22:13:57,981 [P6772/D2/T25] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:13:57,997 [P6772/D2/T25] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:14:16,580 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kellerbier' with Id '2083' has been published.
+ 2016-09-29 22:14:20,643 [P6772/D2/T99] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:14:20,696 [P6772/D2/T99] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:14:41,783 [P6772/D2/T34] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Maisel's Weisse' with Id '2356' has been published.
+ 2016-09-29 22:14:45,835 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:14:45,851 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:14:53,090 [P6772/D2/T107] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Paulaner Muncher Dunkel' with Id '2231' has been published.
+ 2016-09-29 22:14:55,999 [P6772/D2/T29] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:14:55,999 [P6772/D2/T29] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:14:57,166 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:14:57,199 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:15:47,001 [P6772/D2/T39] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Reissdorf Kolsch' with Id '2116' has been published.
+ 2016-09-29 22:15:51,059 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:15:51,075 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:16:01,873 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Rochmodis Kolsch' with Id '2386' has been published.
+ 2016-09-29 22:16:05,912 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:16:05,912 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:18:08,916 [P6772/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Schneider Weisse Tap 5' with Id '2287' has been published.
+ 2016-09-29 22:18:12,977 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:18:12,993 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:19:37,303 [P6772/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Alfa' with Id '1958' has been published.
+ 2016-09-29 22:19:41,348 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:19:41,364 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:19:46,158 [P6772/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Alfa Weiss' with Id '1960' has been published.
+ 2016-09-29 22:19:50,194 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:19:50,217 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:19:56,801 [P6772/D2/T25] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Crazy Donkey' with Id '2258' has been published.
+ 2016-09-29 22:20:00,865 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:20:00,912 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:20:17,510 [P6772/D2/T39] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Fix Dark' with Id '1749' has been published.
+ 2016-09-29 22:20:21,559 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:20:21,559 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:20:31,456 [P6772/D2/T39] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Fix Hellas' with Id '1956' has been published.
+ 2016-09-29 22:20:35,517 [P6772/D2/T99] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:20:35,533 [P6772/D2/T99] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:20:43,740 [P6772/D2/T39] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Fix Royale Weiss' with Id '1959' has been published.
+ 2016-09-29 22:20:47,791 [P6772/D2/T39] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:20:47,807 [P6772/D2/T39] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:20:54,532 [P6772/D2/T25] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'KEO' with Id '2423' has been published.
+ 2016-09-29 22:20:58,587 [P6772/D2/T106] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:20:58,602 [P6772/D2/T106] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:20:59,466 [P6772/D2/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:20:59,466 [P6772/D2/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:21:13,328 [P6772/D2/T33] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mythos' with Id '1957' has been published.
+ 2016-09-29 22:21:17,380 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:21:17,396 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:21:24,445 [P6772/D2/T39] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Vergina' with Id '1955' has been published.
+ 2016-09-29 22:21:28,497 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:21:28,544 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:21:43,233 [P6772/D2/T39] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Angelo Poretti' with Id '2330' has been published.
+ 2016-09-29 22:21:47,300 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:21:47,369 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:21:57,240 [P6772/D2/T107] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Moretti La Rossa' with Id '2050' has been published.
+ 2016-09-29 22:22:01,323 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:22:01,338 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:22:09,990 [P6772/D2/T31] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Peroni Double Malt' with Id '1936' has been published.
+ 2016-09-29 22:22:14,057 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:22:14,073 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:22:28,907 [P6772/D2/T95] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Spaghetti Western' with Id '2121' has been published.
+ 2016-09-29 22:22:32,973 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:22:32,973 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:23:36,415 [P6772/D2/T19] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Asahi' with Id '2166' has been published.
+ 2016-09-29 22:23:40,482 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:23:40,482 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:24:11,433 [P6772/D2/T101] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Hitachino Red Rice' with Id '2385' has been published.
+ 2016-09-29 22:24:15,493 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:24:15,562 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:24:28,249 [P6772/D2/T101] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kagua Red' with Id '2303' has been published.
+ 2016-09-29 22:24:32,376 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:24:32,392 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:24:40,806 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kagua White' with Id '2305' has been published.
+ 2016-09-29 22:24:44,860 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:24:44,915 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:24:54,611 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Nest Beer White Ale' with Id '2131' has been published.
+ 2016-09-29 22:24:58,679 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:24:58,764 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:25:04,488 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Nest Pale Ale' with Id '2156' has been published.
+ 2016-09-29 22:25:08,567 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:25:08,609 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:25:10,242 [P6772/D2/T108] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:25:10,242 [P6772/D2/T108] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:25:49,498 [P6772/D2/T95] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Dia De Los Muertos Pay the Ferryman Porter' with Id '2016' has been published.
+ 2016-09-29 22:25:53,539 [P6772/D2/T35] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:25:53,555 [P6772/D2/T35] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:26:07,021 [P6772/D2/T99] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mexicali' with Id '2401' has been published.
+ 2016-09-29 22:26:11,086 [P6772/D2/T35] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:26:11,101 [P6772/D2/T35] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:26:29,230 [P6772/D2/T95] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Pacifico' with Id '2400' has been published.
+ 2016-09-29 22:26:33,270 [P6772/D2/T35] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:26:33,339 [P6772/D2/T35] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:26:40,532 [P6772/D2/T95] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Queen of the Night' with Id '2112' has been published.
+ 2016-09-29 22:26:45,407 [P6772/D2/T99] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:26:45,460 [P6772/D2/T99] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:26:53,318 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Red Pig' with Id '2399' has been published.
+ 2016-09-29 22:26:57,422 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:26:57,469 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:28:04,042 [P6772/D2/T10] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Monteith IPA' with Id '2374' has been published.
+ 2016-09-29 22:28:08,106 [P6772/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:28:08,175 [P6772/D2/T10] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:28:26,854 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Renaissance Abundance' with Id '2002' has been published.
+ 2016-09-29 22:28:30,979 [P6772/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:28:30,979 [P6772/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:29:15,369 [P6772/D2/T85] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Nogne O Imperial Brown' with Id '2152' has been published.
+ 2016-09-29 22:29:19,411 [P6772/D2/T85] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:29:19,495 [P6772/D2/T85] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:29:34,479 [P6772/D2/T13] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Nogne O Imperial Stout' with Id '2080' has been published.
+ 2016-09-29 22:29:38,521 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:29:38,572 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:29:59,899 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Sagres' with Id '2000' has been published.
+ 2016-09-29 22:30:04,000 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:30:04,000 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:30:29,364 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Efes Draft' with Id '2059' has been published.
+ 2016-09-29 22:30:33,419 [P6772/D2/T13] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:30:33,456 [P6772/D2/T13] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:30:45,178 [P6772/D2/T13] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:30:45,178 [P6772/D2/T13] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:31:06,288 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Efes Pilsner' with Id '2402' has been published.
+ 2016-09-29 22:31:10,359 [P6772/D2/T40] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:31:10,375 [P6772/D2/T40] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:31:12,815 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Efes Pilsner' with Id '2402' has been published.
+ 2016-09-29 22:31:16,879 [P6772/D2/T100] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:31:16,901 [P6772/D2/T100] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:31:58,886 [P6772/D2/T93] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'All Day Session IPA' with Id '2387' has been published.
+ 2016-09-29 22:32:02,969 [P6772/D2/T98] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:32:02,985 [P6772/D2/T98] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:32:10,755 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Blue Moon' with Id '1823' has been published.
+ 2016-09-29 22:32:14,817 [P6772/D2/T98] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:32:14,832 [P6772/D2/T98] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:32:50,850 [P6772/D2/T40] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:32:50,850 [P6772/D2/T40] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:33:00,054 [P6772/D2/T97] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Brooklyn Lager' with Id '1780' has been published.
+ 2016-09-29 22:33:04,121 [P6772/D2/T98] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:33:04,137 [P6772/D2/T98] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:33:13,814 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Budweiser' with Id '1790' has been published.
+ 2016-09-29 22:33:17,891 [P6772/D2/T98] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:33:17,906 [P6772/D2/T98] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:33:22,752 [P6772/D2/T93] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Goose Island IPA' with Id '2428' has been published.
+ 2016-09-29 22:33:26,801 [P6772/D2/T98] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:33:26,823 [P6772/D2/T98] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:33:37,239 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Lagunitas IPA' with Id '2144' has been published.
+ 2016-09-29 22:33:41,287 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:33:41,303 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:33:51,617 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Nitro Milk Stout' with Id '2297' has been published.
+ 2016-09-29 22:33:55,674 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:33:55,694 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:34:05,766 [P6772/D2/T100] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Torpedo' with Id '2370' has been published.
+ 2016-09-29 22:34:09,812 [P6772/D2/T98] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:34:09,827 [P6772/D2/T98] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:34:41,887 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '1906 Red Vintage' with Id '1996' has been published.
+ 2016-09-29 22:34:45,937 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:34:45,961 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:34:51,165 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '1906 Reserva Especial' with Id '1977' has been published.
+ 2016-09-29 22:34:55,238 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:34:55,275 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:35:08,831 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '1923 Red' with Id '2208' has been published.
+ 2016-09-29 22:35:12,889 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:35:12,904 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:35:30,460 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Alhambra Negra' with Id '2195' has been published.
+ 2016-09-29 22:35:34,587 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:35:34,603 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:35:42,014 [P6772/D2/T98] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Alhambra Reserva' with Id '2344' has been published.
+ 2016-09-29 22:35:46,050 [P6772/D2/T93] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:35:46,072 [P6772/D2/T93] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:36:20,310 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ambar 1900 Pale Ale' with Id '1987' has been published.
+ 2016-09-29 22:36:24,364 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:36:24,380 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:36:34,076 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ambar Export' with Id '1992' has been published.
+ 2016-09-29 22:36:38,116 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:36:38,169 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:36:44,543 [P6772/D2/T108] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:36:44,543 [P6772/D2/T108] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:37:06,246 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Argus' with Id '2184' has been published.
+ 2016-09-29 22:37:10,315 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:37:10,362 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:37:15,985 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Black Virtus' with Id '2172' has been published.
+ 2016-09-29 22:37:20,046 [P6772/D2/T42] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:37:20,069 [P6772/D2/T42] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:37:30,472 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Brew Indie American Golden Ale' with Id '2191' has been published.
+ 2016-09-29 22:37:34,618 [P6772/D2/T11] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:37:34,634 [P6772/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:37:43,201 [P6772/D2/T72] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Brew Indie Brown Ale' with Id '2190' has been published.
+ 2016-09-29 22:37:47,239 [P6772/D2/T88] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:37:47,270 [P6772/D2/T88] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:37:58,154 [P6772/D2/T93] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ceriux' with Id '2031' has been published.
+ 2016-09-29 22:38:02,204 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:38:02,219 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:38:08,698 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Cerveza Mica' with Id '2179' has been published.
+ 2016-09-29 22:38:12,735 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:38:12,835 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:38:22,448 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Cruzcampo' with Id '1989' has been published.
+ 2016-09-29 22:38:26,511 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:38:26,517 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:38:37,422 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Cruzcampo (Draught)' with Id '2390' has been published.
+ 2016-09-29 22:38:41,468 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:38:41,485 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:38:52,678 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Dark Side of Wheat' with Id '2129' has been published.
+ 2016-09-29 22:38:56,744 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:38:56,759 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:39:00,908 [P6772/D2/T52] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:39:00,908 [P6772/D2/T52] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:39:17,723 [P6772/D2/T11] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Dia Lager' with Id '1988' has been published.
+ 2016-09-29 22:39:21,811 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:39:21,826 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:39:31,191 [P6772/D2/T97] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Dolina' with Id '2037' has been published.
+ 2016-09-29 22:39:35,278 [P6772/D2/T97] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:39:35,294 [P6772/D2/T97] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:39:53,646 [P6772/D2/T72] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Er Boqueron' with Id '1938' has been published.
+ 2016-09-29 22:39:57,787 [P6772/D2/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:39:57,803 [P6772/D2/T28] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:40:07,545 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Estrella Damm' with Id '2293' has been published.
+ 2016-09-29 22:40:11,609 [P6772/D2/T28] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:40:11,640 [P6772/D2/T28] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:40:17,318 [P6772/D2/T100] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Estrella Galicia' with Id '1973' has been published.
+ 2016-09-29 22:40:21,366 [P6772/D2/T100] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:40:21,412 [P6772/D2/T100] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:41:02,616 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Four Lions Brown Ale' with Id '2201' has been published.
+ 2016-09-29 22:41:06,655 [P6772/D2/T100] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:41:06,679 [P6772/D2/T100] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:41:15,568 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Four Lions Coffee Stout' with Id '2189' has been published.
+ 2016-09-29 22:41:19,630 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:41:19,715 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:41:27,315 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Four Lions IPA' with Id '2187' has been published.
+ 2016-09-29 22:41:31,378 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:41:31,516 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:41:37,453 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Four Lions Lager' with Id '2200' has been published.
+ 2016-09-29 22:41:41,500 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:41:41,559 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:41:49,903 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Four Lions Wheat' with Id '2188' has been published.
+ 2016-09-29 22:41:53,951 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:41:53,973 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:42:03,420 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Gary & Esti' with Id '1979' has been published.
+ 2016-09-29 22:42:07,501 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:42:07,523 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:42:22,614 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Happy Otter' with Id '2174' has been published.
+ 2016-09-29 22:42:26,663 [P6772/D2/T40] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:42:26,685 [P6772/D2/T40] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:42:32,876 [P6772/D2/T82] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:42:32,876 [P6772/D2/T82] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:42:53,917 [P6772/D2/T72] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kadabra Belgian White' with Id '2199' has been published.
+ 2016-09-29 22:42:58,075 [P6772/D2/T40] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:42:58,144 [P6772/D2/T40] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:43:07,942 [P6772/D2/T72] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kadabra IPA' with Id '2206' has been published.
+ 2016-09-29 22:43:11,985 [P6772/D2/T108] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:43:12,007 [P6772/D2/T108] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:43:23,719 [P6772/D2/T72] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Keler Lager' with Id '1969' has been published.
+ 2016-09-29 22:43:27,785 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:43:27,801 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:43:33,890 [P6772/D2/T72] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Kiskale Brown Ale' with Id '1981' has been published.
+ 2016-09-29 22:43:37,948 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:43:37,979 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:43:46,256 [P6772/D2/T72] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Koperwiek' with Id '2182' has been published.
+ 2016-09-29 22:43:50,301 [P6772/D2/T89] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:43:50,317 [P6772/D2/T89] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:44:02,990 [P6772/D2/T103] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-09-29 22:44:02,990 [P6772/D2/T103] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-09-29 22:44:19,294 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Loca Juana' with Id '2171' has been published.
+ 2016-09-29 22:44:23,378 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:44:23,447 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:44:33,664 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Maricantana' with Id '2393' has been published.
+ 2016-09-29 22:44:37,740 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:44:37,789 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:44:43,281 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Socarrada' with Id '1983' has been published.
+ 2016-09-29 22:44:47,358 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:44:47,405 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:44:54,198 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'La Vache Folle' with Id '2178' has been published.
+ 2016-09-29 22:44:58,407 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:44:58,454 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:45:05,069 [P6772/D2/T28] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mahou Cinq Estrellas' with Id '1984' has been published.
+ 2016-09-29 22:45:09,146 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:45:09,215 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:45:18,494 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mahou Clasica' with Id '1982' has been published.
+ 2016-09-29 22:45:22,568 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:45:22,601 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:45:33,315 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mahou Maestra' with Id '2180' has been published.
+ 2016-09-29 22:45:37,391 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:45:37,454 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:45:46,156 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Marbel' with Id '1978' has been published.
+ 2016-09-29 22:45:50,217 [P6772/D2/T105] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:45:50,264 [P6772/D2/T105] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:45:57,112 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Marlen' with Id '1986' has been published.
+ 2016-09-29 22:46:01,195 [P6772/D2/T52] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:46:01,264 [P6772/D2/T52] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:46:09,530 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Mateo & Bernabé 21' with Id '1999' has been published.
+ 2016-09-29 22:46:13,623 [P6772/D2/T52] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:46:13,670 [P6772/D2/T52] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:46:23,842 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Padrino Porter' with Id '2005' has been published.
+ 2016-09-29 22:46:27,956 [P6772/D2/T52] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:46:27,992 [P6772/D2/T52] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:46:35,776 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Parking Beer C' with Id '2032' has been published.
+ 2016-09-29 22:46:39,866 [P6772/D2/T52] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:46:39,903 [P6772/D2/T52] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:46:46,005 [P6772/D2/T89] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Payesa' with Id '2115' has been published.
+ 2016-09-29 22:46:50,096 [P6772/D2/T52] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:46:50,149 [P6772/D2/T52] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:46:59,078 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Peregrina Blonde' with Id '2197' has been published.
+ 2016-09-29 22:47:03,165 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:47:03,203 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:47:14,369 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Ribada' with Id '2203' has been published.
+ 2016-09-29 22:47:18,427 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:47:18,480 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:47:23,189 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'San Fermin' with Id '1974' has been published.
+ 2016-09-29 22:47:27,254 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:47:27,327 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:47:35,879 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'San Miguel' with Id '1976' has been published.
+ 2016-09-29 22:47:39,975 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:47:40,045 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:47:47,559 [P6772/D2/T82] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'San Miguel Selecta' with Id '1985' has been published.
+ 2016-09-29 22:47:51,629 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:47:51,654 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:47:57,851 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Stellae Session IPA' with Id '1997' has been published.
+ 2016-09-29 22:48:01,906 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:48:01,990 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:48:14,299 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Torquemada 25' with Id '2185' has been published.
+ 2016-09-29 22:48:18,361 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:48:18,445 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:48:25,133 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Turia' with Id '1970' has been published.
+ 2016-09-29 22:48:29,243 [P6772/D2/T103] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:48:29,274 [P6772/D2/T103] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:48:34,355 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'UnaRubia' with Id '2169' has been published.
+ 2016-09-29 22:48:38,425 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:48:38,496 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:48:45,470 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Virtus' with Id '2047' has been published.
+ 2016-09-29 22:48:49,545 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:48:49,603 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:48:59,183 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Voll-Damm Doble Malta' with Id '1993' has been published.
+ 2016-09-29 22:49:03,253 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:49:03,365 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:49:11,333 [P6772/D2/T83] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Zerep Tostada' with Id '2193' has been published.
+ 2016-09-29 22:49:15,483 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:49:15,556 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:49:21,977 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'ZZ+' with Id '2176' has been published.
+ 2016-09-29 22:49:26,045 [P6772/D2/T72] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:49:26,091 [P6772/D2/T72] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:50:11,098 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content '85 Shilling' with Id '2333' has been published.
+ 2016-09-29 22:50:15,236 [P6772/D2/T97] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:50:15,351 [P6772/D2/T97] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:50:24,220 [P6772/D2/T40] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Alba Scots Pine Ale' with Id '1754' has been published.
+ 2016-09-29 22:50:28,283 [P6772/D2/T97] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:50:28,342 [P6772/D2/T97] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:50:44,668 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Archerfield Golden Ale' with Id '1786' has been published.
+ 2016-09-29 22:50:48,736 [P6772/D2/T97] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:50:48,789 [P6772/D2/T97] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:50:55,513 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Archerfield IPA' with Id '2022' has been published.
+ 2016-09-29 22:50:59,641 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:50:59,694 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:51:11,379 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Arran Black IPA' with Id '2268' has been published.
+ 2016-09-29 22:51:15,478 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:51:15,540 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:51:30,768 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Arran Blonde (Draught)' with Id '2271' has been published.
+ 2016-09-29 22:51:34,859 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:51:34,933 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:51:52,569 [P6772/D2/T103] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Arran Guid Ale' with Id '2283' has been published.
+ 2016-09-29 22:51:56,630 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:51:56,730 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.
+ 2016-09-29 22:52:06,800 [P6772/D2/T108] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Arran Milestone' with Id '2282' has been published.
+ 2016-09-29 22:52:10,899 [P6772/D2/T83] INFO  umbraco.content - Save Xml to file...
+ 2016-09-29 22:52:10,973 [P6772/D2/T83] INFO  umbraco.content - Saved Xml to file.

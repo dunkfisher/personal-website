@@ -1,0 +1,9 @@
+﻿@model IEnumerable<string>
+
+<select name="country">
+    @foreach (var country in Model)
+    {
+        <option>@country</option>    
+    }                   
+</select>
+
