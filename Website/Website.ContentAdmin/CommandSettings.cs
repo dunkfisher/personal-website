@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Website.ContentAdmin
 {
-    public enum Command { Unknown, LoadBeerData, RefreshImageDate, DeleteMedia }
+    public enum Command { Unknown, LoadBeerData, UpdateMissingImages, RefreshImageDate, DeleteMedia }
 
     class CommandSettings
     {
@@ -26,7 +26,14 @@ namespace Website.ContentAdmin
         public bool UpdateNotes { get { return _args[2] == "true"; } }
         public bool OverwriteImage { get { return _args[3] == "true"; } }
         public string BeerFile { get { return _args.Length > 4 ? _args[4] : null; } }
-        public string BeerName { get { return Command == Command.LoadBeerData && _args.Length > 5 ? _args[5] : (Command == Command.RefreshImageDate && _args.Length > 1 ? _args[1] : null); } }
+
+        public string BeerName
+        {
+            get
+            {
+                return Command == Command.LoadBeerData && _args.Length > 5 ? _args[5] : (_args.Length > 1 ? _args[1] : null);                
+            }
+        }
 
         public CommandSettings(string[] args)
         {

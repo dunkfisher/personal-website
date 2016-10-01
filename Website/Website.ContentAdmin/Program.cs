@@ -41,10 +41,14 @@ namespace Website.ContentAdmin
             {
                 UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.UpdateExisting, commandSettings.UpdateNotes, commandSettings.OverwriteImage, commandSettings.BeerFile, commandSettings.BeerName);
             }
+            else if (commandSettings.Command == Command.UpdateMissingImages)
+            {
+                UpdateMissingImage(umbracoAccess.Services.ContentTypeService, umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.BeerName);
+            }
             else if (commandSettings.Command == Command.RefreshImageDate)
             {
                 UpdateBeerImageDate(umbracoAccess.Services.ContentTypeService, umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.BeerName);
-            }
+            }            
             else if (commandSettings.Command == Command.DeleteMedia)
             {
                 DeleteMedia(umbracoAccess.Services.MediaService);
@@ -209,6 +213,86 @@ namespace Website.ContentAdmin
             }
 
             // TODO: sort beers for each country
+        }
+
+        private static void UpdateMissingImage(IContentTypeService contentTypeService, IContentService contentService, IMediaService mediaService, string beerName = null)
+        {
+            var beerContentType = contentTypeService.GetContentType("Beer");
+            foreach (var beer in contentService.GetContentOfContentType(beerContentType.Id))
+            {
+                if (beerName == null || beer.Name == beerName)
+                {
+                    var mediaId = beer.Properties["image"].Value;
+                    if (mediaId != null)
+                    {
+                        var media = mediaService.GetById(Convert.ToInt32(mediaId));
+                        if (media != null)
+                        {
+                            var mediaFilePath = media.Properties["umbracoFile"].Value;
+                            if (mediaFilePath != null)
+                            {
+                                Console.WriteLine("Beer " + beer.Name + " appears to have an image associated.");
+                                if (beer.Name == beerName)
+                                {
+                                    return;
+                                }
+                                if (beerName == null)
+                                {
+                                    continue;
+                                }
+                            }
+                        }
+                    }
+
+                    Console.WriteLine("Beer " + beer.Name + " is missing image. Trying to update..");
+                    var country = beer.Parent();
+                    if (country == null)
+                    {
+                        Console.WriteLine("Country for beer " + beer.Name + " not found.");
+                        if (beer.Name == beerName)
+                        {
+                            return;
+                        }
+                        if (beerName == null)
+                        {
+                            continue;
+                        }
+                    }
+
+                    var countryName = country.Name; 
+                    string candidates = null;       
+                    var imageChosen = FindImage(beer.Name, countryName, out candidates);                
+
+                    if (!string.IsNullOrWhiteSpace(imageChosen))
+                    {
+                        Console.WriteLine("Uploading image: " + imageChosen + "..");
+                        var imageId = UploadImage(imageChosen, countryName, true, mediaService);
+                        if (imageId >= 0)
+                        {
+                            var imageChosenPath = Path.Combine(BeerImagesRootDirectory, countryName, Path.ChangeExtension(imageChosen, ".jpg"));
+                            var imageDate = GetDateTakenFromImage(imageChosenPath);
+                            var beerImageDate = beer.Properties["imageDate"].Value;
+                            Console.WriteLine("Image date taken: " + imageDate);
+                            Console.WriteLine("Date in CMS: " + beerImageDate ?? "Unspecified");
+                            if (imageDate != DateTime.MinValue && (beerImageDate == null || Convert.ToDateTime(beerImageDate) != imageDate))
+                            {
+                                beer.Properties["imageDate"].Value = imageDate;                                
+                                Console.WriteLine("Image date updated in CMS.");
+                            }
+
+                            beer.Properties["image"].Value = imageId;
+                            contentService.Save(beer);
+                            Console.WriteLine("Saved beer with updated image.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("No matching image was found.");
+                    }                    
+                }
+
+                //Console.WriteLine();
+            }
         }
 
         // Take media image associated with beer(s) and update the image taken date from the file if exists.
