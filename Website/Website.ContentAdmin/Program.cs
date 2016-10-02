@@ -18,7 +18,7 @@ namespace Website.ContentAdmin
     {
         private static string _beerImagesRootDirectory;
         private static Regex _dateTakenRegex = new Regex(":");
-        
+
         private static string BeerImagesRootDirectory
         {
             get
@@ -48,7 +48,7 @@ namespace Website.ContentAdmin
             else if (commandSettings.Command == Command.RefreshImageDate)
             {
                 UpdateBeerImageDate(umbracoAccess.Services.ContentTypeService, umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.BeerName);
-            }            
+            }
             else if (commandSettings.Command == Command.DeleteMedia)
             {
                 DeleteMedia(umbracoAccess.Services.MediaService);
@@ -58,8 +58,8 @@ namespace Website.ContentAdmin
             Console.ReadKey();
         }
 
-        private static void UploadBeersFromFile(IContentService contentService, 
-            IMediaService mediaService, 
+        private static void UploadBeersFromFile(IContentService contentService,
+            IMediaService mediaService,
             bool updateExisting = false,
             bool overwriteNotes = false,
             bool overwriteImage = false,
@@ -217,6 +217,7 @@ namespace Website.ContentAdmin
 
         private static void UpdateMissingImage(IContentTypeService contentTypeService, IContentService contentService, IMediaService mediaService, string beerName = null)
         {
+            var beersMissingImages = new SortedList<string, string>();
             var beerContentType = contentTypeService.GetContentType("Beer");
             foreach (var beer in contentService.GetContentOfContentType(beerContentType.Id))
             {
@@ -229,7 +230,7 @@ namespace Website.ContentAdmin
                         if (media != null)
                         {
                             var mediaFilePath = media.Properties["umbracoFile"].Value;
-                            if (mediaFilePath != null)
+                            if (mediaFilePath != null && System.IO.File.Exists(mediaFilePath.ToString()))
                             {
                                 Console.WriteLine("Beer " + beer.Name + " appears to have an image associated.");
                                 if (beer.Name == beerName)
@@ -259,9 +260,9 @@ namespace Website.ContentAdmin
                         }
                     }
 
-                    var countryName = country.Name; 
-                    string candidates = null;       
-                    var imageChosen = FindImage(beer.Name, countryName, out candidates);                
+                    var countryName = country.Name;
+                    string candidates = null;
+                    var imageChosen = FindImage(beer.Name, countryName, out candidates);
 
                     if (!string.IsNullOrWhiteSpace(imageChosen))
                     {
@@ -276,7 +277,7 @@ namespace Website.ContentAdmin
                             Console.WriteLine("Date in CMS: " + beerImageDate ?? "Unspecified");
                             if (imageDate != DateTime.MinValue && (beerImageDate == null || Convert.ToDateTime(beerImageDate) != imageDate))
                             {
-                                beer.Properties["imageDate"].Value = imageDate;                                
+                                beer.Properties["imageDate"].Value = imageDate;
                                 Console.WriteLine("Image date updated in CMS.");
                             }
 
@@ -288,10 +289,21 @@ namespace Website.ContentAdmin
                     else
                     {
                         Console.WriteLine("No matching image was found.");
-                    }                    
+                        beersMissingImages.Add(beer.Name, beer.Name);
+                    }
                 }
 
-                //Console.WriteLine();
+                //Console.WriteLine();                
+            }
+
+            using (var fileWriter = new StreamWriter(string.Format("{0}_{1}.csv",
+                    Path.Combine(ConfigurationManager.AppSettings["BeerFileDirectory"], "Beers_Missing_Images"),
+                    DateTime.Now.ToString("yyyyMMddhhmmss"))))
+            {
+                foreach (var beer in beersMissingImages.Keys)
+                {
+                    fileWriter.WriteLine(beer);
+                }
             }
         }
 
@@ -391,8 +403,8 @@ namespace Website.ContentAdmin
             foreach (var filePath in Directory.GetFiles(imageCountryPath))
             {
                 var fileName = Path.GetFileNameWithoutExtension(filePath);
-                var beerNameMatchArray = beerName.ToLower().Split(' ');
-                var fileNameMatchArray = fileName.ToLower().Split('-');
+                var beerNameMatchArray = beerName.ToLower().Split(' ', '-', '/', '\\', '\'');
+                var fileNameMatchArray = fileName.ToLower().Split(' ', '-', '/', '\\', '\'');
                 var matchingWords = beerNameMatchArray.Intersect(fileNameMatchArray).Count();
                 var difference = Math.Abs(beerNameMatchArray.Count() - matchingWords);
                 if (matchingWords > 0)
