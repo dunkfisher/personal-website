@@ -15,12 +15,12 @@
                         <h3 class="beer-name" data-name="@beer.FullName">@beer.FullName</h3>
                     </div>
                 </div>
-                <div class="summary-content">
+                <div class="summary-content" style="position: relative">
                     <h4 class="beer-brewer" data-brewer="@beer.Brewer">@beer.Brewer</h4>
                     <img class="beer-country-flag" src="@flagPath" alt="Flag" data-country-flag-path="@flagPath" />
                     <span class="beer-country" data-country="@beer.CountryOfOrigin" />
-                    <span class="beer-image-taken" data-image-taken="@beer.ImageDate.ToString("dd/MM/yyyy")" />
-                    <span class="beer-last-tasted" data-last-tasted="@beer.LastTastedDate.ToString("dd/MM/yyyy")" />
+                    <strong class="beer-image-taken" data-image-taken="">@beer.ImageDate.ToString("dd/MM/yyyy")</strong>
+                    <span class="beer-last-tasted" style="position: absolute; bottom: 0" data-last-tasted="@beer.LastTastedDate.ToString("dd/MM/yyyy")" />
                     <span class="beer-review" data-review="@beer.Review" />
                     <span class="beer-rating" data-rating="@beer.Rating" />
                     <span class="beer-image" data-image-path="@imagePath" />

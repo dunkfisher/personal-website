@@ -1,8 +1,25 @@
-# Folders to exclude from website project
-packages/
-App_Data/cache/
-App_Data/Logs/ 
-App_Data/[Pp]review/
-App_Data/TEMP
-App_Data/umbraco.config
-obj/
+# Folders/files to exclude from website project
+
+Beer Files/
+Beer Images/
+
+*.suo
+*.user
+
+.vs/
+**/packages/*
+!**/packages/build/
+
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+![Bb]in/umbracoCourierExpress.lic
+[Oo]bj/
+
+[Aa]pp_Data/
+![Aa]pp_Data/Umbraco.sdf
+[Aa]pp_Plugins/
+[Uu]mbraco/
+[Uu]mbraco_client/
+
+Website.ContentAdmin/media

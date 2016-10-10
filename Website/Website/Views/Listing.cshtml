@@ -5,12 +5,7 @@
 
 @using (Ajax.BeginForm("ListBeers", "Listing", new AjaxOptions { UpdateTargetId = "listing-wrapper" }))
 {
-    <label>Country of Origin:</label>
-    @*<select name="country">
-        <option>Belgium</option>
-        <option>Canada</option>
-        <option>Scotland</option>
-    </select>*@
+    <label style="padding-left: 10px">Country of Origin:</label> 
     @Html.Action("CountryFilter", "Listing");
     <input type="submit" value="Filter" />
 
