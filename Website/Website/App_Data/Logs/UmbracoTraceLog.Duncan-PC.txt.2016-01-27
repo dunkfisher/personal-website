@@ -1,6 +1,0 @@
-﻿ 2016-01-27 21:24:04,887 [P8244/D2/T87] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-01-26 21:24:03
- 2016-01-27 21:24:11,356 [P8244/D2/T55] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://localhost:51083/umbraco").
-System.Threading.Tasks.TaskCanceledException: A task was canceled.
-   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
-   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-   at Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__5.MoveNext()

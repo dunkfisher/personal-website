@@ -1,4 +1,0 @@
-﻿ 2015-12-07 21:12:37,420 [P12492/D2/T9] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2015-12-06 21:12:35
- 2015-12-07 21:13:52,214 [P12492/D2/T59] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
- 2015-12-07 21:23:16,345 [P12492/D2/T61] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
- 2015-12-07 21:30:55,298 [P12492/D2/T65] WARN  Umbraco.Web.Mvc.RenderRouteHandler - The current Document Type Home matches a locally declared controller of type Website.Controllers.HomeController. Custom Controllers for Umbraco routing must implement 'Umbraco.Web.Mvc.IRenderMvcController' and inherit from 'System.Web.Mvc.ControllerBase'.

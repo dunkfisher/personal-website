@@ -1,8 +1,0 @@
-﻿ 2016-02-05 17:28:26,911 [P7052/D2/T16] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-02-04 17:28:25
- 2016-02-05 17:28:52,798 [P7052/D2/T115] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
- 2016-02-05 17:37:41,409 [P7052/D2/T117] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
- 2016-02-05 18:28:06,239 [P7052/D2/T172] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://localhost:51083/umbraco").
-System.Threading.Tasks.TaskCanceledException: A task was canceled.
-   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
-   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-   at Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__5.MoveNext()

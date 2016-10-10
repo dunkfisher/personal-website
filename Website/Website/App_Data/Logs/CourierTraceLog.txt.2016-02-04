@@ -1,8 +1,0 @@
-﻿2016-02-04 00:04:57,765 [20] DEBUG Umbraco.Courier.Core.EventManager - [Thread 5] Unloading (count: 0)
-2016-02-04 00:04:57,919 [20] DEBUG Umbraco.Courier.Core.EventManager - [Thread 5] Unloading (count: 0)
-2016-02-04 00:13:15,043 [20] DEBUG Umbraco.Courier.Core.EventManager - [Thread 70] Unloading (count: 0)
-2016-02-04 00:13:15,092 [20] DEBUG Umbraco.Courier.Core.EventManager - [Thread 70] Unloading (count: 0)
-2016-02-04 00:16:49,781 [20] DEBUG Umbraco.Courier.Core.EventManager - [Thread 70] Unloading (count: 0)
-2016-02-04 00:16:49,830 [20] DEBUG Umbraco.Courier.Core.EventManager - [Thread 70] Unloading (count: 0)
-2016-02-04 00:22:12,875 [20] DEBUG Umbraco.Courier.Core.EventManager - [Thread 70] Unloading (count: 0)
-2016-02-04 00:22:12,921 [20] DEBUG Umbraco.Courier.Core.EventManager - [Thread 70] Unloading (count: 0)
