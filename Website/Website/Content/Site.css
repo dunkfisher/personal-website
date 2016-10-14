@@ -34,13 +34,13 @@ a {
 
 nav {
     height: 40px;
-    padding: 0 20px;
+    margin-bottom: 8px;
+    padding: 0 10px;
     line-height: 40px;
     background-color: black;
 }
 
 nav a {
-    vertical-align: middle;
     margin-right: 20px;
     color: white;
 }
@@ -147,7 +147,8 @@ nav a {
     height: 14px;
 }
 
-#beer-detail-wrapper {    
+#beer-detail-wrapper {
+    /*display: none;*/    
     position: fixed;
     top: 20px;
     bottom: 20px;
@@ -158,30 +159,30 @@ nav a {
     padding: 20px;
     background-color: white;
     z-index: 1;
-    /*transform: scale(0);
+    transform: scale(0);
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     -moz-transform: scale(0);
     transition: transform, 1s;
     -webkit-transition: -webkit-transform, 1s;
-    -moz-transition: -moz-transform, 1s;*/
+    -moz-transition: -moz-transform, 1s;
 }
 
-#beer-detail-wrapper > div {
+/*#beer-detail-wrapper > div {
     display: none;
-}
+}*/
 
-#beer-detail-wrapper > div.visible {
+/*#beer-detail-wrapper > div.visible {
     display: block;
-}
+}*/
 
-/*#beer-detail-wrapper.visible {
+#beer-detail-wrapper.visible {
     transform: scale(1);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     -moz-transform: scale(1);
     display: block;
-}*/
+}
 
 #beer-detail-wrapper .top {
     height: 80px;

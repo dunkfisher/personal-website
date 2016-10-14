@@ -1,5 +1,6 @@
 # Folders/files to exclude from website project
 
+~$Tasks.ods
 Beer Files/
 Beer Images/
 
@@ -19,7 +20,3 @@ Beer Images/
 [Aa]pp_Data/
 ![Aa]pp_Data/Umbraco.sdf
 [Aa]pp_Plugins/
-[Uu]mbraco/
-[Uu]mbraco_client/
-
-Website.ContentAdmin/media
