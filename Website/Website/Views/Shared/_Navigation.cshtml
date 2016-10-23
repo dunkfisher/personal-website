@@ -3,23 +3,41 @@
     var home = Model.AncestorOrSelf<IPublishedContent>(1);
 }
 <nav>
-    @if (Model.Id == home.Id)
-    {
-        <a href="/"><strong>Home</strong></a>
-    }
-    else
-    {
-        <a href="/">Home</a>
-    }
-    @foreach (var topLevelPage in home.Children<IPublishedContent>())
-    {
-        if (topLevelPage.Id == Model.Id)
+    <div>
+        @if (Model.Id == home.Id)
         {
-            <a href="@topLevelPage.Url"><strong>@topLevelPage.Name</strong></a>
+            <a href="/"><strong>Home</strong></a>
         }
         else
         {
-            <a href="@topLevelPage.Url">@topLevelPage.Name</a>
+            <a href="/">Home</a>
         }
+        @foreach (var topLevelPage in home.Children<IPublishedContent>())
+        {
+            if (topLevelPage.Id == Model.Id)
+            {
+                <a href="@topLevelPage.Url"><strong>@topLevelPage.Name</strong></a>
+            }
+            else
+            {
+                <a href="@topLevelPage.Url">@topLevelPage.Name</a>
+            }
+        }
+    </div>
+    <div class="mobile">
+        <!-- TODO: make dynamic -->
+        <a class="fa fa-home" href="/"></a>
+        <a class="fa fa-beer" href="/beer-reviews"></a>
+    </div>   
+        
+    @*@{
+        var beers = Umbraco.TypedContentAtXPath("//Beer");        
     }
+    <div style="position: absolute;
+        right: 8px;
+        top: 8px;
+        color: white;
+        font-size: 0.8em;">
+        Total Beers: @beers.Count()
+    </div>*@ 
 </nav>

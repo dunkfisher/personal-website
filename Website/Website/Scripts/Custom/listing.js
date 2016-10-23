@@ -1,5 +1,9 @@
 ﻿var viewportScrollPos;
 
+var clearResults = function () {
+    $('#listing-wrapper').empty();
+}
+
 var setupPopup = function () {
     $('#listing-wrapper li').click(function () {
         var beername = $(this).find('.beer-name').data('name');
@@ -35,9 +39,11 @@ $(document).ready(function () {
     });
     
     $('#beer-detail-wrapper .close').click(function() {
-        $('#beer-detail-wrapper').removeClass('visible');        
-        $('#overlay').removeClass('visible');
-        $('body').removeClass('no-scroll');
-        window.scrollTo(0, viewportScrollPos);
+        $('#beer-detail-wrapper').removeClass('visible');
+        setTimeout(function () {
+            $('#overlay').removeClass('visible');
+            $('body').removeClass('no-scroll');
+            window.scrollTo(0, viewportScrollPos);
+        }, 1000);                
     });
 });

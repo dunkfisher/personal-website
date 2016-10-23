@@ -2,7 +2,7 @@
     Layout = "Master.cshtml";
 }
 
-@using (Ajax.BeginForm("ListBeers", "Listing", new AjaxOptions { UpdateTargetId = "listing-wrapper", OnSuccess="setupPopup();" }))
+@using (Ajax.BeginForm("ListBeers", "Listing", new AjaxOptions { UpdateTargetId = "listing-wrapper", LoadingElementId="loading-indicator", OnBegin= "clearResults();", OnSuccess="setupPopup();" }))
 {
     <label style="padding-left: 10px">Country of Origin:</label> 
     @Html.Action("CountryFilter", "Listing");
@@ -11,6 +11,10 @@
     <div id="listing-wrapper" class="clearfix">
     </div>
 }
+
+<div id="loading-indicator" class="fa fa-spinner">
+    Brewing. Please wait...
+</div>
 
 <div id="beer-detail-wrapper">
     <div>

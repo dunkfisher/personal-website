@@ -81,6 +81,17 @@ nav a {
     padding: 8px 0 0 8px;
 }
 
+#loading-indicator {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 20px;
+    margin-left: -100px;
+    margin-top: -10px;
+}
+
 #listing-wrapper {
     height: auto;
 }
@@ -259,6 +270,14 @@ nav a {
 }
 
 @media(max-width: 800px) {
+    nav div {
+        display: none;
+    }
+
+    nav div.mobile {
+        display: block;
+    }
+
     #listing-wrapper li {
         width: calc(100% / 4);
     }

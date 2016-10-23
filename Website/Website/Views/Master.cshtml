@@ -17,6 +17,7 @@
     <!-- Fonts -->
     <link href="//fonts.googleapis.com/css?family=Merriweather:400,700,300,900" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="~/css/font-awesome.css" rel="stylesheet">
 
     @*@Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/custom")*@
@@ -53,29 +54,7 @@
     }
 </head>
 
-<body style="background-image: @(Model.HasBackgroundImage ? string.Format("url({0})", Model.GetBackGroundImageUrl(Umbraco)) : "none")">
-    
-    <!-- Temporary display -->
-    @{        
-        var beers = Umbraco.TypedContentAtXPath("//Beer");
-        IPublishedContent latestAdded = null;
-        foreach (var beer in beers)
-        {
-            if (latestAdded == null || beer.CreateDate > latestAdded.CreateDate)
-            {
-                latestAdded = beer;
-            }
-        }
-    }
-    <div style="position: absolute;
-        right: 8px;
-        top: 8px;
-        color: white;
-        font-size: 0.8em;">
-        Total Beers: @beers.Count()<br />
-        Last Added: @latestAdded.Name
-    </div>
-
+<body style="background-image: @(Model.HasBackgroundImage ? string.Format("url({0})", Model.GetBackGroundImageUrl(Umbraco)) : "none")">   
     @Html.Partial("_Navigation", Model)
     @RenderBody()
 
