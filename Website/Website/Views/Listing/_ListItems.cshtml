@@ -8,17 +8,16 @@
         var flagPath = beer.GetCountryFlag(ViewBag.Umbraco);
         var reviewSummary = beer.Review != null ? (beer.Review.Length <= 184 ? beer.Review : beer.Review.Substring(0, 180) + " ...") : string.Empty;
         <li>
-            <div class="summary-wrapper">
-                <div class="summary-heading-background" style="background-image: url(@imagePath)">
-                    <div class="summary-heading">
-                        <h3 class="beer-name" data-name="@beer.FullName">@beer.FullName</h3>
+            <div class="summary-wrapper" style="background-image: url(@imagePath)">
+                <div class="inner">
+                    <div class="header">
+                        <strong class="beer-image-taken" data-image-taken="">@beer.ImageDate.ToString("dd/MM/yyyy")</strong>
+                        <img class="beer-country-flag" src="@flagPath" alt="Flag" data-country-flag-path="@flagPath" />
                     </div>
-                </div>
-                <div class="summary-content" style="position: relative">
-                    <h4 class="beer-brewer" data-brewer="@beer.Brewer">@beer.Brewer</h4>
-                    <img class="beer-country-flag" src="@flagPath" alt="Flag" data-country-flag-path="@flagPath" />
+                    <h2 class="beer-brewer" data-brewer="@beer.Brewer">@beer.Brewer</h2>
+                    <h2 class="beer-name" data-name="@beer.FullName">@beer.FullName</h2>                
+
                     <span class="beer-country" data-country="@beer.CountryOfOrigin" />
-                    <strong class="beer-image-taken" data-image-taken="">@beer.ImageDate.ToString("dd/MM/yyyy")</strong>
                     <span class="beer-last-tasted" style="position: absolute; bottom: 0" data-last-tasted="@beer.LastTastedDate.ToString("dd/MM/yyyy")" />
                     <span class="beer-review" data-review="@beer.Review" />
                     <span class="beer-rating" data-rating="@beer.Rating" />

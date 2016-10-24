@@ -17,14 +17,26 @@ namespace Website.Controllers
                 .Select(x => x.Name)
                 .OrderBy(x => x);
             return PartialView("_CountryFilter", countries);
-        }        
-              
-        public PartialViewResult ListBeers(string country)
+        }
+
+        [HttpPost]
+        public PartialViewResult Filter(string country)
         {
             var beers = Umbraco.TypedContentAtXPath(string.Format("//Country[@nodeName=\"{0}\"]/Beer", country))
                 .OfType<Beer>()
                 .OrderByDescending(x => x.ImageDate);
                         
+            ViewBag.Umbraco = Umbraco; // TODO: Refactor
+            return PartialView("_ListItems", beers);
+        }
+
+        [HttpPost]
+        public PartialViewResult Search(string searchTerm)
+        {
+            var beers = Umbraco.TypedSearch(searchTerm)
+                .OfType<Beer>()
+                .OrderByDescending(x => x.ImageDate);
+
             ViewBag.Umbraco = Umbraco; // TODO: Refactor
             return PartialView("_ListItems", beers);
         }

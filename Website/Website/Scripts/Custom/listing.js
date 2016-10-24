@@ -29,8 +29,19 @@ var setupPopup = function () {
 }
 
 $(document).ready(function () {
+    $('#filterToggle').click(function () {
+        $('#searchOptions').removeClass('visible');
+        $('#filterOptions').toggleClass('visible');
+    });
+
+    $('#searchToggle').click(function () {
+        $('#filterOptions').removeClass('visible');
+        $('#searchOptions').toggleClass('visible');
+    });
+
     $('input#filter').click(function () {
         ga('send', 'event', 'filter', 'apply', $('#countrySelect').val());
+        $('#filterOptions').toggleClass('visible');
     });
 
     $('#listing-wrapper li').mouseenter(function () {
@@ -44,6 +55,6 @@ $(document).ready(function () {
             $('#overlay').removeClass('visible');
             $('body').removeClass('no-scroll');
             window.scrollTo(0, viewportScrollPos);
-        }, 1000);                
+        }, 500);                
     });
 });

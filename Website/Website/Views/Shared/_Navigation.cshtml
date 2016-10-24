@@ -1,10 +1,11 @@
 ﻿@model IPublishedContent
 @{ 
     var home = Model.AncestorOrSelf<IPublishedContent>(1);
+    var isHomePage = Model.Id == home.Id; <!-- TODO: only show filter/search on listing page -->
 }
 <nav>
-    <div>
-        @if (Model.Id == home.Id)
+    <span>
+        @if (isHomePage)
         {
             <a href="/"><strong>Home</strong></a>
         }
@@ -23,13 +24,21 @@
                 <a href="@topLevelPage.Url">@topLevelPage.Name</a>
             }
         }
-    </div>
-    <div class="mobile">
+    </span>
+    <span class="mobile">
         <!-- TODO: make dynamic -->
         <a class="fa fa-home" href="/"></a>
         <a class="fa fa-beer" href="/beer-reviews"></a>
-    </div>   
-        
+    </span>
+
+    @if (!isHomePage)
+    {
+        <span class="buttons-wrapper">
+            <button id="filterToggle">Filter<i class="fa fa-filter"></i></button>
+            <button id="searchToggle">Search<i class="fa fa-search"></i></button>
+        </span>
+    }
+
     @*@{
         var beers = Umbraco.TypedContentAtXPath("//Beer");        
     }

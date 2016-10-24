@@ -33,16 +33,34 @@ a {
 }
 
 nav {
+    /*position: fixed;*/
     height: 40px;
-    margin-bottom: 8px;
     padding: 0 10px;
     line-height: 40px;
     background-color: black;
 }
 
+nav span.mobile {
+    display: none;
+}
+
 nav a {
     margin-right: 20px;
     color: white;
+}
+
+nav .buttons-wrapper {
+    float: right;
+}
+
+nav .buttons-wrapper button {
+    width: 90px;
+    background-color: white;
+    cursor: pointer;
+}
+
+nav .buttons-wrapper i {
+    padding-left: 10px;
 }
 			
 #overlay {
@@ -81,6 +99,24 @@ nav a {
     padding: 8px 0 0 8px;
 }
 
+#filterOptions, #searchOptions {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    height: 18px;
+    padding: 10px;
+    border: 2px solid black;
+    border-top-width: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+#filterOptions.visible, #searchOptions.visible {
+    display: block;
+    /*height: 18px;*/    
+}
+
 #loading-indicator {
     display: none;
     position: absolute;
@@ -98,47 +134,66 @@ nav a {
 
 #listing-wrapper li {
     float: left;
-    width: calc(100% / 7);
+    width: calc(100% / 7);    
 }
 
 #listing-wrapper .summary-wrapper {
     position: relative;
-    height: 240px;
-    margin: 0 8px 8px 0;    
+    height: 232px;
+    margin: 0 8px 8px 0;
+    /*padding: 8px;*/   
     border: 1px solid black;
-    /*background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
-	background-size: cover;*/
+	background-size: cover;
     cursor: pointer;    
 }
 
-#listing-wrapper .summary-heading-background {
+#listing-wrapper .summary-wrapper .inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;    
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#listing-wrapper .summary-wrapper .header {
+    margin-bottom: 6px;
+}
+
+#listing-wrapper .summary-wrapper .inner:hover {    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*#listing-wrapper .summary-heading-background {
     height: 120px;
     background-repeat: no-repeat;
     background-position: center center;
 	background-size: cover;
-}
+}*/
 
-#listing-wrapper .summary-heading {
+/*#listing-wrapper .summary-heading {
     position: relative;
     height: 100px;
     padding: 10px 32px 10px 10px;    
     color: white;
     background-color: rgba(0, 0, 0, 0.5);    
-}
+}*/
 
-#listing-wrapper .summary-wrapper:hover .summary-heading {
+/*#listing-wrapper .summary-wrapper:hover .summary-heading {
     background-color: rgba(0, 0, 0, 0.2);    
-}
+}*/
 
 #listing-wrapper .summary-content {
     height: 160px;
     padding: 10px;
 }
 
-#listing-wrapper .summary-wrapper-inner:hover {
+/*#listing-wrapper .summary-wrapper-inner:hover {
     background-color: rgba(0, 0, 0, 0.5);
-}
+}*/
 
 #listing-wrapper img {
     width: 200px;
@@ -150,12 +205,33 @@ nav a {
     padding-top: 10px;
 }*/
 
+#listing-wrapper .beer-image-taken {
+    color: white;
+}
+
 #listing-wrapper .beer-country-flag {
     position: absolute;
     right: 10px;
     top: 10px;
     width: 22px;
     height: 14px;
+}
+
+h2.beer-brewer, h2.beer-name {
+    font-size: 2em;
+}
+
+h2.beer-brewer {
+    color: red;
+}
+
+h2.beer-name {
+    color: blue;
+}
+
+.inner:hover h2.beer-brewer,
+.inner:hover h2.beer-name {
+    color: white;
 }
 
 #beer-detail-wrapper {
@@ -270,12 +346,12 @@ nav a {
 }
 
 @media(max-width: 800px) {
-    nav div {
+    nav span:first-child {
         display: none;
     }
 
-    nav div.mobile {
-        display: block;
+    nav span.mobile {
+        display: inline;
     }
 
     #listing-wrapper li {

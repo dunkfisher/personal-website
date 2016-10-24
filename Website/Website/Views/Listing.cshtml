@@ -2,18 +2,29 @@
     Layout = "Master.cshtml";
 }
 
-@using (Ajax.BeginForm("ListBeers", "Listing", new AjaxOptions { UpdateTargetId = "listing-wrapper", LoadingElementId="loading-indicator", OnBegin= "clearResults();", OnSuccess="setupPopup();" }))
-{
-    <label style="padding-left: 10px">Country of Origin:</label> 
-    @Html.Action("CountryFilter", "Listing");
-    <input id="filter" type="submit" value="Filter" />
+<div id="filterOptions">
+    @using (Ajax.BeginForm("Filter", "Listing", new AjaxOptions { UpdateTargetId = "listing-wrapper", LoadingElementId="loading-indicator", OnBegin= "clearResults();", OnSuccess="setupPopup();" }))
+    {
+        <label >Country of Origin:</label> 
+        @Html.Action("CountryFilter", "Listing");
+        <input id="filter" type="submit" value="Filter" />        
+    }
+</div>
 
-    <div id="listing-wrapper" class="clearfix">
-    </div>
-}
+<div id="searchOptions">
+    @using (Ajax.BeginForm("Search", "Listing", new AjaxOptions { UpdateTargetId = "listing-wrapper", LoadingElementId = "loading-indicator", OnBegin = "clearResults();", OnSuccess = "setupPopup();" }))
+    {
+        <label>Search for:</label>
+        <input name="searchTerm" type="text" />
+        <input id="search" type="submit" value="Search" />
+    }
+</div>
 
 <div id="loading-indicator" class="fa fa-spinner">
     Brewing. Please wait...
+</div>
+
+<div id="listing-wrapper" class="clearfix">
 </div>
 
 <div id="beer-detail-wrapper">
