@@ -15,6 +15,7 @@ body {
 
 body.no-scroll {
     position: fixed; /* Fix iOS issue. */
+    width: 100%;
     overflow: hidden;
 }
 
@@ -160,50 +161,22 @@ nav .buttons-wrapper i {
 }
 
 #listing-wrapper .summary-wrapper .header {
-    margin-bottom: 6px;
+    /*margin-bottom: 6px;*/
+    height: 14%;
 }
 
 #listing-wrapper .summary-wrapper .inner:hover {    
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/*#listing-wrapper .summary-heading-background {
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center center;
-	background-size: cover;
-}*/
-
-/*#listing-wrapper .summary-heading {
-    position: relative;
-    height: 100px;
-    padding: 10px 32px 10px 10px;    
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);    
-}*/
-
-/*#listing-wrapper .summary-wrapper:hover .summary-heading {
-    background-color: rgba(0, 0, 0, 0.2);    
-}*/
-
 #listing-wrapper .summary-content {
     height: 160px;
     padding: 10px;
 }
 
-/*#listing-wrapper .summary-wrapper-inner:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-}*/
-
 #listing-wrapper img {
     width: 200px;
 }
-
-/*#listing-wrapper h2 {
-    height: 64px;
-    margin-top: 0;
-    padding-top: 10px;
-}*/
 
 #listing-wrapper .beer-image-taken {
     color: white;
@@ -218,15 +191,21 @@ nav .buttons-wrapper i {
 }
 
 h2.beer-brewer, h2.beer-name {
-    font-size: 2em;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    margin-bottom: 0;
+    word-wrap: break-word;
+    /*text-overflow: ellipsis;*/
+    font-size: 1.8em;
 }
 
 h2.beer-brewer {
-    color: red;
+    color: #CD5B45;
 }
 
 h2.beer-name {
-    color: blue;
+    color: #318CE7;
 }
 
 .inner:hover h2.beer-brewer,
@@ -235,13 +214,11 @@ h2.beer-name {
 }
 
 #beer-detail-wrapper {
-    /*display: none;*/    
     position: fixed;
     top: 20px;
     bottom: 20px;
     left: calc(50% - 400px);
     right: calc(50% - 400px);
-    /*width: 0;*/
     max-width: 760px;
     padding: 20px;
     background-color: white;
@@ -255,14 +232,6 @@ h2.beer-name {
     -moz-transition: -moz-transform, 1s;
 }
 
-/*#beer-detail-wrapper > div {
-    display: none;
-}*/
-
-/*#beer-detail-wrapper > div.visible {
-    display: block;
-}*/
-
 #beer-detail-wrapper.visible {
     transform: scale(1);
     -webkit-transform: scale(1);
@@ -272,7 +241,6 @@ h2.beer-name {
 }
 
 #beer-detail-wrapper .top {
-    height: 80px;
     border-bottom: 1px solid black;
 }
 
