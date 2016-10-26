@@ -15,6 +15,14 @@ namespace Website.UI.BL.DocumentTypes
         public string CountryOfOrigin { get { return Content.Parent<Country>().Name; } }
         public DateTime ImageDate { get { return Content.GetProperty<DateTime>("imageDate"); } }
 
+        public string ImageDateDisplay
+        {
+            get
+            {
+                return ImageDate > DateTime.MinValue ? ImageDate.ToString("dd/MM/yyyy") : "--/--/----";
+            }
+        }
+
         public DateTime LastTastedDate
         {
             get
@@ -24,8 +32,25 @@ namespace Website.UI.BL.DocumentTypes
             }
         }
 
+        public string LastTastedDateDisplay
+        {
+            get
+            {
+                return LastTastedDate > DateTime.MinValue ? LastTastedDate.ToString("dd/MM/yyyy") : "--/--/----";
+            }
+        }
+
         public string Review { get { return Content.GetProperty<string>("review"); } }
         public int Rating { get { return Content.GetProperty<int>("rating"); } }
+
+        public string RatingDisplay
+        {
+            get
+            {
+                var rating = Content.GetProperty<int>("rating");
+                return rating > 0 ? rating.ToString() : "Unrated";
+            }
+        }
 
         public Beer(IPublishedContent content) : base(content)
         {

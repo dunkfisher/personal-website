@@ -215,8 +215,8 @@ h2.beer-name {
 
 #beer-detail-wrapper {
     position: fixed;
-    top: 20px;
-    bottom: 20px;
+    top: 60px;
+    bottom: 60px;
     left: calc(50% - 400px);
     right: calc(50% - 400px);
     max-width: 760px;

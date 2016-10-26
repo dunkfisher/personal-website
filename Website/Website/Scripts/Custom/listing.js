@@ -7,7 +7,7 @@ var clearResults = function () {
 var setupPopup = function () {
     $('#listing-wrapper li').click(function () {
         var beername = $(this).find('.beer-name').data('name');
-        ga('send', 'event', 'beer listing', 'item view', beername);
+        ga('send', 'event', 'Beer Listing', 'Item View', beername);
 
         $('#beer-name').text(beername);
         $('#beer-brewer').text($(this).find('.beer-brewer').data('brewer'));
@@ -40,8 +40,13 @@ $(document).ready(function () {
     });
 
     $('input#filter').click(function () {
-        ga('send', 'event', 'filter', 'apply', $('#countrySelect').val());
+        ga('send', 'event', 'Beer Listing', 'Filter', $('#countrySelect').val());
         $('#filterOptions').toggleClass('visible');
+    });
+
+    $('input#search').click(function () {
+        ga('send', 'event', 'Beer Listing', 'Search', $('#search').val());
+        $('#searchOptions').toggleClass('visible');
     });
 
     $('#listing-wrapper li').mouseenter(function () {
