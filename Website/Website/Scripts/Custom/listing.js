@@ -45,7 +45,8 @@ $(document).ready(function () {
     });
 
     $('input#search').click(function () {
-        ga('send', 'event', 'Beer Listing', 'Search', $('#search').val());
+        ga('send', 'event', 'Beer Listing', 'Search', $('#searchTerm').val());
+        console.log($('#searchTerm').val());
         $('#searchOptions').toggleClass('visible');
     });
 

@@ -48,7 +48,7 @@ namespace Website.UI.BL.DocumentTypes
             get
             {
                 var rating = Content.GetProperty<int>("rating");
-                return rating > 0 ? rating.ToString() : "Unrated";
+                return rating > 0 ? rating.ToString() + "/10" : "Unrated";
             }
         }
 

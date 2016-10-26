@@ -15,7 +15,7 @@
     @using (Ajax.BeginForm("Search", "Listing", new AjaxOptions { UpdateTargetId = "listing-wrapper", LoadingElementId = "loading-indicator", OnBegin = "clearResults();", OnSuccess = "setupPopup();" }))
     {
         <label>Search for:</label>
-        <input name="searchTerm" type="text" />
+        <input id="searchTerm" name="searchTerm" type="text" />
         <input id="search" type="submit" value="Search" />
     }
 </div>
@@ -53,7 +53,7 @@
                     </tr>
                     <tr>
                         <th>Rating</th>
-                        <td><span id="beer-rating"></span>/10</td>
+                        <td id="beer-rating"></td>
                     </tr>
                 </tbody>
             </table>
