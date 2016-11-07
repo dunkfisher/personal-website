@@ -75,7 +75,7 @@
                 closeWindowButton: jQuery("#closeWindowButton"),
                 dateTimeFormat: "<%=CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern%> <%=CultureInfo.CurrentCulture.DateTimeFormat.ShortTimePattern%>",
                 currentId: "<%=Request.CleanForXss("ID")%>",
-                serviceUrl: "<%= IOHelper.ResolveUrl(SystemDirectories.Umbraco)%>/WebServices/NodeSorter.asmx/UpdateSortOrder?app=<%=Request.CleanForXss("app")%>"
+                serviceUrl: "<%= IOHelper.ResolveUrl(SystemDirectories.Umbraco)%>/WebServices/nodesorter.asmx/UpdateSortOrder?app=<%=Request.CleanForXss("app")%>"
             });
 
             sortDialog.init();
