@@ -10,9 +10,13 @@ namespace Website.UI.BL.DocumentTypes
 {
     public class Beer : Base
     {
-        public string FullName { get { return Content.GetProperty<string>("fullName"); } }
-        public string Brewer { get { return Content.GetProperty<string>("brewer"); } }
+        public string BeerName { get { return Content.GetProperty<string>("name"); } }
         public string CountryOfOrigin { get { return Content.Parent<Country>().Name; } }
+        public string Style { get { return Content.GetProperty<string>("style"); } }
+        public int Abv { get { return Content.GetProperty<int>("abv"); } }
+        public string Brewer { get { return Content.GetProperty<string>("brewer"); } }
+        public string Type { get { return Content.GetProperty<string>("type"); } }
+        public string Source { get { return Content.GetProperty<string>("source"); } }
         public DateTime ImageDate { get { return Content.GetProperty<DateTime>("imageDate"); } }
 
         public string ImageDateDisplay

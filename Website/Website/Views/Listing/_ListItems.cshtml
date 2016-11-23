@@ -14,11 +14,15 @@
                         <strong class="beer-image-taken" data-image-taken="@beer.ImageDateDisplay">@beer.ImageDateDisplay</strong>
                         <img class="beer-country-flag" src="@flagPath" alt="Flag" data-country-flag-path="@flagPath" />
                     </div>                    
-                    <h2 class="beer-name" data-name="@beer.FullName">@beer.FullName</h2>
+                    <h2 class="beer-name" data-name="@beer.BeerName">@beer.BeerName</h2>
                     <h2 class="beer-brewer" data-brewer="@beer.Brewer">@beer.Brewer</h2>               
 
                     <span class="beer-country" data-country="@beer.CountryOfOrigin" />
-                    <span class="beer-last-tasted" style="position: absolute; bottom: 0" data-last-tasted="@beer.LastTastedDateDisplay" />
+                    <span class="beer-style" data-style="@beer.Style" />
+                    <span class="beer-abv" data-abv="@beer.Abv" />
+                    <span class="beer-type" data-type="@beer.Type" />
+                    <span class="beer-source" data-source="@beer.Source" />
+                    <span class="beer-last-tasted" data-last-tasted="@beer.LastTastedDateDisplay" />
                     <span class="beer-review" data-review="@beer.Review" />
                     <span class="beer-rating" data-rating="@beer.RatingDisplay" />
                     <span class="beer-image" data-image-path="@imagePath" />

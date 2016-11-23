@@ -11,14 +11,20 @@ var setupPopup = function () {
 
         $('#beer-name').text(beername);
         $('#beer-brewer').text($(this).find('.beer-brewer').data('brewer'));
+        $('#beer-image').attr('src', $(this).find('.beer-image').data('image-path'));
         $('#beer-country').text($(this).find('.beer-country').data('country'));
         $('#beer-country-flag-path').attr('src', $(this).find('.beer-country-flag').data('country-flag-path'));
+        $('#beer-style').text($(this).find('.beer-style').data('style'));
+        //$('#beer-brewer').text($(this).find('.beer-brewer').data('brewer'));
+        $('#beer-type').text($(this).find('.beer-type').data('type'));
+        $('#beer-source').text($(this).find('.beer-source').data('source'));
         $('#beer-image-taken').text($(this).find('.beer-image-taken').data('image-taken'));
-        $('#beer-last-tasted').text($(this).find('.beer-last-tasted').data('last-tasted'));
+        //$('#beer-last-tasted').text($(this).find('.beer-last-tasted').data('last-tasted'));
+        $('#beer-abv').text($(this).find('.beer-abv').data('abv'));
+
         $('#beer-review').text($(this).find('.beer-review').data('review'));
         $('#beer-rating').text($(this).find('.beer-rating').data('rating'));
-        $('#beer-country-flag').attr('src', $(this).find('.beer-country-flag').data('country-flag-path'));
-        $('#beer-image').attr('src', $(this).find('.beer-image').data('image-path'));
+        $('#beer-country-flag').attr('src', $(this).find('.beer-country-flag').data('country-flag-path'));        
 
         viewportScrollPos = window.scrollY;
         $('body').addClass('no-scroll');
