@@ -39,7 +39,7 @@ namespace Website.ContentAdmin
 
             if (commandSettings.Command == Command.LoadBeerData)
             {
-                UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.UpdateExisting, commandSettings.UpdateNotes, commandSettings.OverwriteImage, commandSettings.BeerFile, commandSettings.BeerName);
+                UploadBeersFromFile(umbracoAccess.Services.ContentService, umbracoAccess.Services.MediaService, commandSettings.UpdateExisting, commandSettings.BeerFile, commandSettings.BeerName);
             }
             else if (commandSettings.Command == Command.UpdateMissingImages)
             {
@@ -61,8 +61,6 @@ namespace Website.ContentAdmin
         private static void UploadBeersFromFile(IContentService contentService,
             IMediaService mediaService,
             bool updateExisting = false,
-            bool overwriteNotes = false,
-            bool overwriteImage = false,
             string beerFile = null,
             string beerName = null)
         {
@@ -70,6 +68,10 @@ namespace Website.ContentAdmin
             var nameIndex = -1;
             var countryIndex = -1;
             var brewerIndex = -1;
+            var typeIndex = -1;
+            var styleIndex = -1;
+            var sourceIndex = -1;
+            var abvIndex = -1;
             var notesIndex = -1;
             var ratingIndex = -1;
             var imageCandidateIndex = -1;
@@ -79,6 +81,10 @@ namespace Website.ContentAdmin
             string name = null;
             string country = null;
             string brewer = null;
+            string type = null;
+            string style = null;
+            string source = null;
+            decimal abv = 0m;
             string notes = null;
             short rating = 0;
             string imageCandidates = null;
@@ -98,7 +104,7 @@ namespace Website.ContentAdmin
             using (var fileReader = new StreamReader(inputFilePath))
             {
                 var outputFilePath = string.Format("{0}_{1}.csv",
-                    Path.Combine(Path.GetDirectoryName(inputFilePath), Path.GetFileNameWithoutExtension(inputFilePath)),
+                    Path.Combine(Path.GetDirectoryName(inputFilePath), "BeerUploadResult"),
                     DateTime.Now.ToString("yyyyMMddhhmmss"));
                 using (var fileWriter = new StreamWriter(outputFilePath))
                 {
@@ -106,18 +112,21 @@ namespace Website.ContentAdmin
                     var firstRow = true;
                     while (!fileReader.EndOfStream)
                     {
-                        currentRow = fileReader.ReadLine().Split(new[] { ',' }, 7);
+                        var minorFieldsMissing = false;
+
+                        currentRow = fileReader.ReadLine().Split(new[] { ',' }, 9);
                         if (firstRow)
                         {
                             nameIndex = currentRow.IndexOf("Beer");
                             countryIndex = currentRow.IndexOf("Country");
                             brewerIndex = currentRow.IndexOf("Brewer");
+                            typeIndex = currentRow.IndexOf("Type");
+                            styleIndex = currentRow.IndexOf("Style");
+                            sourceIndex = currentRow.IndexOf("Source");
+                            abvIndex = currentRow.IndexOf("ABV");
                             notesIndex = currentRow.IndexOf("Notes");
                             ratingIndex = currentRow.IndexOf("Rating");
-                            imageCandidateIndex = currentRow.IndexOf("Matched Images");
-                            imageChosenIndex = currentRow.IndexOf("Used Image");
-
-                            if (notesIndex != 6 || new[] { nameIndex, countryIndex, brewerIndex, notesIndex, ratingIndex, imageCandidateIndex, imageChosenIndex }.Any(x => x < 0))
+                            if (notesIndex != 8 || new[] { nameIndex, countryIndex, brewerIndex, typeIndex, styleIndex, sourceIndex, abvIndex, notesIndex, ratingIndex }.Any(x => x < 0))
                             {
                                 Console.WriteLine("Columns are incorrectly present in the input file.");
                                 return;
@@ -126,7 +135,7 @@ namespace Website.ContentAdmin
                             // Write to output
                             Console.WriteLine("Writing headers to output file: " + outputFilePath + "..");
                             Console.WriteLine();
-                            fileWriter.WriteLine("Beer,Country,Brewer,Rating,Matched Images,Used Image,Notes");
+                            fileWriter.WriteLine("Result Code,Beer,Country,Brewer,Type,Style,Source,ABV,Rating,Matched Images,Used Image,Notes");
 
                             firstRow = false;
                             continue;
@@ -149,34 +158,19 @@ namespace Website.ContentAdmin
                             {
                                 Console.WriteLine("Missing country of origin.");
                                 Console.WriteLine();
+                                fileWriter.WriteLine(string.Join(",", UpdateStatus.N_NO_COUNTRY, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
                                 continue;
                             }
 
                             Console.WriteLine(string.Format("Country of origin: " + country));
 
-                            brewer = currentRow[brewerIndex];
-                            Console.WriteLine("No brewer specified.");
-
-                            notes = currentRow[notesIndex];
-
-                            if (!short.TryParse(currentRow[ratingIndex], out rating))
-                            {
-                                Console.WriteLine("No rating given.");
-                            }
-
-                            imageCandidates = currentRow[imageCandidateIndex];
-                            imageChosen = currentRow[imageChosenIndex];
-
-                            if (string.IsNullOrWhiteSpace(imageChosen))
-                            {
-                                Console.WriteLine("No image specified. Searching..");
-                                imageChosen = FindImage(name, country, out imageCandidates);
-                            }
+                            Console.WriteLine("Searching for image..");
+                            imageChosen = FindImage(name, country, out imageCandidates);
 
                             if (!string.IsNullOrWhiteSpace(imageChosen))
                             {
                                 Console.WriteLine("Uploading image: " + imageChosen + "..");
-                                imageId = UploadImage(imageChosen, country, overwriteImage, mediaService);
+                                imageId = UploadImage(imageChosen, country, updateExisting, mediaService);
                                 if (imageId >= 0)
                                 {
                                     var imageChosenPath = Path.Combine(BeerImagesRootDirectory, country, Path.ChangeExtension(imageChosen, ".jpg"));
@@ -186,13 +180,37 @@ namespace Website.ContentAdmin
                             else
                             {
                                 Console.WriteLine("No matching image was found.");
+                                fileWriter.WriteLine(string.Join(",", UpdateStatus.N_NO_IMAGE, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
+                                continue;
                             }
 
-                            Console.WriteLine("Writing beer info to output file..");
-                            fileWriter.WriteLine(string.Join(",", name, country, brewer, rating, imageCandidates, imageChosen, notes));
+                            type = currentRow[typeIndex];
+                            if (string.IsNullOrWhiteSpace(type))
+                            {
+                                Console.WriteLine("No vessel type specified.");
+                                fileWriter.WriteLine(string.Join(",", UpdateStatus.N_NO_TYPE, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
+                                continue;
+                            }
+
+                            brewer = currentRow[brewerIndex];
+                            if (string.IsNullOrWhiteSpace(brewer))
+                            {
+                                Console.WriteLine("No brewer specified.");
+                            }
+
+                            // TODO: ABV
+
+                            if (!short.TryParse(currentRow[ratingIndex], out rating))
+                            {
+                                Console.WriteLine("No rating given.");
+                            }
+
+                            notes = currentRow[notesIndex];
+
+                            // Write output
 
                             Console.WriteLine("Proceeding to upload beer to CMS..");
-                            var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService, updateExisting, overwriteNotes);
+                            var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService, updateExisting);
                             if (beerId >= 0)
                             {
                                 Console.WriteLine("Beer successfully updated.");
@@ -473,7 +491,7 @@ namespace Website.ContentAdmin
             }
         }
 
-        private static int UploadBeer(string name, string brewer, string country, string notes, short rating, int imageId, DateTime imageDateTaken, IContentService contentService, bool updateExisting, bool overwriteNotes)
+        private static int UploadBeer(string name, string brewer, string country, string notes, short rating, int imageId, DateTime imageDateTaken, IContentService contentService, bool updateExisting)
         {
             var rootContent = contentService.GetRootContent().SingleOrDefault();
             var beersRoot = contentService.GetChildren(rootContent.Id).SingleOrDefault(x => x.Name == "Beer Reviews");
@@ -507,16 +525,12 @@ namespace Website.ContentAdmin
                 }
             }
 
-            var existingNotes = beerToUpdate.Properties["review"].Value as string;
             var newNotes = notes.Trim('"', ',');
             beerToUpdate.Properties["fullName"].Value = name;
             beerToUpdate.Properties["brewer"].Value = brewer;
             beerToUpdate.Properties["image"].Value = imageId;
             beerToUpdate.Properties["imageDate"].Value = imageDateTaken;
-            if (overwriteNotes)
-            {
-                beerToUpdate.Properties["review"].Value = newNotes;
-            }
+            beerToUpdate.Properties["review"].Value = newNotes;            
             beerToUpdate.Properties["rating"].Value = rating;
 
             //Save the Content
