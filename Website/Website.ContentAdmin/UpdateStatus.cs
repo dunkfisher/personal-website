@@ -8,6 +8,7 @@ namespace Website.ContentAdmin
 {
     enum UpdateStatus
     {
+        N_UPLOAD_ERROR,
         N_EXISTS,        
         N_NO_COUNTRY,
         N_NO_IMAGE,
@@ -15,6 +16,7 @@ namespace Website.ContentAdmin
         Y_NO_BREWER,
         Y_NO_ABV,
         Y_NO_RATING,
-        Y_INCOMPLETE
+        Y_INCOMPLETE,
+        Y_COMPLETE
     }
 }

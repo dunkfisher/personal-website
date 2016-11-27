@@ -112,8 +112,6 @@ namespace Website.ContentAdmin
                     var firstRow = true;
                     while (!fileReader.EndOfStream)
                     {
-                        var minorFieldsMissing = false;
-
                         currentRow = fileReader.ReadLine().Split(new[] { ',' }, 9);
                         if (firstRow)
                         {
@@ -151,7 +149,7 @@ namespace Website.ContentAdmin
 
                         if (beerName == null || name.Equals(beerName, StringComparison.CurrentCultureIgnoreCase))
                         {
-                            Console.WriteLine(string.Format("Loading data for {0}", name, country));
+                            UpdateStatus? status = null;
 
                             country = currentRow[countryIndex];
                             if (string.IsNullOrWhiteSpace(country))
@@ -162,7 +160,7 @@ namespace Website.ContentAdmin
                                 continue;
                             }
 
-                            Console.WriteLine(string.Format("Country of origin: " + country));
+                            Console.WriteLine(string.Format("Loading data for {0} ({1})", name, country));
 
                             Console.WriteLine("Searching for image..");
                             imageChosen = FindImage(name, country, out imageCandidates);
@@ -196,28 +194,65 @@ namespace Website.ContentAdmin
                             if (string.IsNullOrWhiteSpace(brewer))
                             {
                                 Console.WriteLine("No brewer specified.");
+                                status = UpdateStatus.Y_NO_BREWER;
                             }
 
-                            // TODO: ABV
+                            if (!decimal.TryParse(currentRow[abvIndex], out abv))
+                            {
+                                Console.WriteLine("No ABV given.");
+                                if (!status.HasValue)
+                                {
+                                    status = UpdateStatus.Y_NO_ABV;
+                                }
+                            }
 
                             if (!short.TryParse(currentRow[ratingIndex], out rating))
                             {
                                 Console.WriteLine("No rating given.");
+                                if (!status.HasValue)
+                                {
+                                    status = UpdateStatus.Y_NO_RATING;
+                                }
                             }
 
-                            notes = currentRow[notesIndex];
-
-                            // Write output
+                            style = currentRow[styleIndex];
+                            source = currentRow[sourceIndex];
+                            if (string.IsNullOrWhiteSpace(style) || string.IsNullOrWhiteSpace(source))
+                            {
+                                Console.WriteLine("Not all fields were specified.");
+                                if (!status.HasValue)
+                                {
+                                    status = UpdateStatus.Y_INCOMPLETE;
+                                }
+                            }
 
                             Console.WriteLine("Proceeding to upload beer to CMS..");
-                            var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService, updateExisting);
+                            var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService, updateExisting, ref status);
                             if (beerId >= 0)
                             {
-                                Console.WriteLine("Beer successfully updated.");
+                                if (status == UpdateStatus.N_EXISTS)
+                                {
+                                    Console.WriteLine("Beer already exists - no update.");
+                                    fileWriter.WriteLine(string.Join(",", UpdateStatus.N_EXISTS, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
+                                } 
+                                else
+                                {
+                                    Console.WriteLine("Beer successfully updated.");
+                                    fileWriter.WriteLine(string.Join(",", status ?? UpdateStatus.Y_COMPLETE, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
+                                }
                             }
                             else
                             {
-                                Console.WriteLine("Couldn't update beer.");
+                                if (status == UpdateStatus.N_NO_COUNTRY)
+                                {
+                                    Console.WriteLine("Country " + country + " not found in CMS.");
+                                    fileWriter.WriteLine(string.Join(",", UpdateStatus.N_NO_COUNTRY, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Couldn't update beer.");
+                                    fileWriter.WriteLine(string.Join(",", UpdateStatus.N_UPLOAD_ERROR, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
+                                }
                             }
                             Console.WriteLine();
 
@@ -229,8 +264,6 @@ namespace Website.ContentAdmin
                     }
                 }
             }
-
-            // TODO: sort beers for each country
         }
 
         private static void UpdateMissingImage(IContentTypeService contentTypeService, IContentService contentService, IMediaService mediaService, string beerName = null)
@@ -309,9 +342,7 @@ namespace Website.ContentAdmin
                         Console.WriteLine("No matching image was found.");
                         beersMissingImages.Add(beer.Name, beer.Name);
                     }
-                }
-
-                //Console.WriteLine();                
+                }          
             }
 
             using (var fileWriter = new StreamWriter(string.Format("{0}_{1}.csv",
@@ -491,13 +522,14 @@ namespace Website.ContentAdmin
             }
         }
 
-        private static int UploadBeer(string name, string brewer, string country, string notes, short rating, int imageId, DateTime imageDateTaken, IContentService contentService, bool updateExisting)
+        private static int UploadBeer(string name, string brewer, string country, string notes, short rating, int imageId, DateTime imageDateTaken, IContentService contentService, bool updateExisting, ref UpdateStatus? status)
         {
             var rootContent = contentService.GetRootContent().SingleOrDefault();
             var beersRoot = contentService.GetChildren(rootContent.Id).SingleOrDefault(x => x.Name == "Beer Reviews");
             if (beersRoot == null)
             {
                 Console.WriteLine("Couldn't find node with name \"Beer Reviews\".");
+                status = UpdateStatus.N_UPLOAD_ERROR;
                 return -1;
             }
 
@@ -505,6 +537,7 @@ namespace Website.ContentAdmin
             if (countryItem == null)
             {
                 Console.WriteLine("Couldn't find country node with name " + country + ".");
+                status = UpdateStatus.N_NO_COUNTRY;
                 return -1;
             }
 
@@ -521,6 +554,7 @@ namespace Website.ContentAdmin
                 Console.WriteLine("Beer " + name + " already exists.");
                 if (!updateExisting)
                 {
+                    status = UpdateStatus.N_EXISTS;
                     return beerToUpdate.Id;
                 }
             }
