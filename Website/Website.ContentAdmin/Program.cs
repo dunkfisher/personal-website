@@ -74,8 +74,6 @@ namespace Website.ContentAdmin
             var abvIndex = -1;
             var notesIndex = -1;
             var ratingIndex = -1;
-            var imageCandidateIndex = -1;
-            var imageChosenIndex = -1;
 
             // Values of columns
             string name = null;
@@ -186,6 +184,7 @@ namespace Website.ContentAdmin
                             if (string.IsNullOrWhiteSpace(type))
                             {
                                 Console.WriteLine("No vessel type specified.");
+                                Console.WriteLine();
                                 fileWriter.WriteLine(string.Join(",", UpdateStatus.N_NO_TYPE, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
                                 continue;
                             }
@@ -559,12 +558,12 @@ namespace Website.ContentAdmin
                 }
             }
 
-            var newNotes = notes.Trim('"', ',');
-            beerToUpdate.Properties["fullName"].Value = name;
+            notes = !string.IsNullOrWhiteSpace(notes) ? notes.Trim('"', ',') : null;
+            beerToUpdate.Properties["name"].Value = name;
             beerToUpdate.Properties["brewer"].Value = brewer;
             beerToUpdate.Properties["image"].Value = imageId;
             beerToUpdate.Properties["imageDate"].Value = imageDateTaken;
-            beerToUpdate.Properties["review"].Value = newNotes;            
+            beerToUpdate.Properties["review"].Value = notes;            
             beerToUpdate.Properties["rating"].Value = rating;
 
             //Save the Content

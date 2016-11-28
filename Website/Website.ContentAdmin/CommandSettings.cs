@@ -29,7 +29,7 @@ namespace Website.ContentAdmin
         {
             get
             {
-                return Command == Command.LoadBeerData && _args.Length > 3 ? _args[3] : (_args.Length > 1 ? _args[1] : null);                
+                return Command == Command.LoadBeerData && _args.Length > 3 ? _args[3] : null;               
             }
         }
 
