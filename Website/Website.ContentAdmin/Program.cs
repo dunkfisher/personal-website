@@ -147,6 +147,8 @@ namespace Website.ContentAdmin
 
                         if (beerName == null || name.Equals(beerName, StringComparison.CurrentCultureIgnoreCase))
                         {
+                            Console.WriteLine("Next up: " + name + ".");
+
                             UpdateStatus? status = null;
 
                             country = currentRow[countryIndex];
@@ -225,8 +227,10 @@ namespace Website.ContentAdmin
                                 }
                             }
 
+                            notes = currentRow[notesIndex];
+
                             Console.WriteLine("Proceeding to upload beer to CMS..");
-                            var beerId = UploadBeer(name, brewer, country, notes, rating, imageId, imageDateTaken, contentService, updateExisting, ref status);
+                            var beerId = UploadBeer(name, country, brewer, type, style, source, abv, notes, rating, imageId, imageDateTaken, contentService, updateExisting, ref status);
                             if (beerId >= 0)
                             {
                                 if (status == UpdateStatus.N_EXISTS)
@@ -521,7 +525,7 @@ namespace Website.ContentAdmin
             }
         }
 
-        private static int UploadBeer(string name, string brewer, string country, string notes, short rating, int imageId, DateTime imageDateTaken, IContentService contentService, bool updateExisting, ref UpdateStatus? status)
+        private static int UploadBeer(string name, string country, string brewer, string type, string style, string source, decimal abv, string notes, short rating, int imageId, DateTime imageDateTaken, IContentService contentService, bool updateExisting, ref UpdateStatus? status)
         {
             var rootContent = contentService.GetRootContent().SingleOrDefault();
             var beersRoot = contentService.GetChildren(rootContent.Id).SingleOrDefault(x => x.Name == "Beer Reviews");
@@ -561,10 +565,14 @@ namespace Website.ContentAdmin
             notes = !string.IsNullOrWhiteSpace(notes) ? notes.Trim('"', ',') : null;
             beerToUpdate.Properties["name"].Value = name;
             beerToUpdate.Properties["brewer"].Value = brewer;
-            beerToUpdate.Properties["image"].Value = imageId;
-            beerToUpdate.Properties["imageDate"].Value = imageDateTaken;
+            beerToUpdate.Properties["type"].Value = type;
+            beerToUpdate.Properties["style"].Value = style;
+            beerToUpdate.Properties["source"].Value = source;
+            beerToUpdate.Properties["abv"].Value = abv;
             beerToUpdate.Properties["review"].Value = notes;            
             beerToUpdate.Properties["rating"].Value = rating;
+            beerToUpdate.Properties["image"].Value = imageId;
+            beerToUpdate.Properties["imageDate"].Value = imageDateTaken;
 
             //Save the Content
             contentService.Save(beerToUpdate);
