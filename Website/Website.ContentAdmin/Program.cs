@@ -113,15 +113,15 @@ namespace Website.ContentAdmin
                         currentRow = fileReader.ReadLine().Split(new[] { ',' }, 9);
                         if (firstRow)
                         {
-                            nameIndex = currentRow.IndexOf("Beer");
-                            countryIndex = currentRow.IndexOf("Country");
-                            brewerIndex = currentRow.IndexOf("Brewer");
-                            typeIndex = currentRow.IndexOf("Type");
-                            styleIndex = currentRow.IndexOf("Style");
-                            sourceIndex = currentRow.IndexOf("Source");
-                            abvIndex = currentRow.IndexOf("ABV");
-                            notesIndex = currentRow.IndexOf("Notes");
-                            ratingIndex = currentRow.IndexOf("Rating");
+                            nameIndex = currentRow.IndexOf("\"Beer\"");
+                            countryIndex = currentRow.IndexOf("\"Country\"");
+                            brewerIndex = currentRow.IndexOf("\"Brewer\"");
+                            typeIndex = currentRow.IndexOf("\"Type\"");
+                            styleIndex = currentRow.IndexOf("\"Style\"");
+                            sourceIndex = currentRow.IndexOf("\"Source\"");
+                            abvIndex = currentRow.IndexOf("\"ABV\"");
+                            notesIndex = currentRow.IndexOf("\"Notes\"");
+                            ratingIndex = currentRow.IndexOf("\"Rating\"");
                             if (notesIndex != 8 || new[] { nameIndex, countryIndex, brewerIndex, typeIndex, styleIndex, sourceIndex, abvIndex, notesIndex, ratingIndex }.Any(x => x < 0))
                             {
                                 Console.WriteLine("Columns are incorrectly present in the input file.");
@@ -137,7 +137,7 @@ namespace Website.ContentAdmin
                             continue;
                         }
 
-                        name = currentRow[nameIndex];
+                        name = (currentRow[nameIndex] ?? string.Empty).Trim('"', ',');
                         if (string.IsNullOrWhiteSpace(name))
                         {
                             Console.WriteLine("Missing beer name.");
@@ -151,7 +151,7 @@ namespace Website.ContentAdmin
 
                             UpdateStatus? status = null;
 
-                            country = currentRow[countryIndex];
+                            country = (currentRow[countryIndex] ?? string.Empty).Trim('"', ',');
                             if (string.IsNullOrWhiteSpace(country))
                             {
                                 Console.WriteLine("Missing country of origin.");
@@ -182,7 +182,15 @@ namespace Website.ContentAdmin
                                 continue;
                             }
 
-                            type = currentRow[typeIndex];
+                            if (!decimal.TryParse((currentRow[abvIndex] ?? string.Empty).Trim('"', ','), out abv))
+                            {
+                                Console.WriteLine("No ABV given.");
+                                Console.WriteLine();
+                                fileWriter.WriteLine(string.Join(",", UpdateStatus.N_NO_ABV, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
+                                continue;
+                            }
+
+                            type = (currentRow[typeIndex] ?? string.Empty).Trim('"', ',');
                             if (string.IsNullOrWhiteSpace(type))
                             {
                                 Console.WriteLine("No vessel type specified.");
@@ -191,23 +199,14 @@ namespace Website.ContentAdmin
                                 continue;
                             }
 
-                            brewer = currentRow[brewerIndex];
+                            brewer = (currentRow[brewerIndex] ?? string.Empty).Trim('"', ',');
                             if (string.IsNullOrWhiteSpace(brewer))
                             {
                                 Console.WriteLine("No brewer specified.");
                                 status = UpdateStatus.Y_NO_BREWER;
-                            }
+                            }                            
 
-                            if (!decimal.TryParse(currentRow[abvIndex], out abv))
-                            {
-                                Console.WriteLine("No ABV given.");
-                                if (!status.HasValue)
-                                {
-                                    status = UpdateStatus.Y_NO_ABV;
-                                }
-                            }
-
-                            if (!short.TryParse(currentRow[ratingIndex], out rating))
+                            if (!short.TryParse((currentRow[ratingIndex] ?? string.Empty).Trim('"', ','), out rating))
                             {
                                 Console.WriteLine("No rating given.");
                                 if (!status.HasValue)
@@ -216,8 +215,8 @@ namespace Website.ContentAdmin
                                 }
                             }
 
-                            style = currentRow[styleIndex];
-                            source = currentRow[sourceIndex];
+                            style = (currentRow[styleIndex] ?? string.Empty).Trim('"', ',');
+                            source = (currentRow[sourceIndex] ?? string.Empty).Trim('"', ',');
                             if (string.IsNullOrWhiteSpace(style) || string.IsNullOrWhiteSpace(source))
                             {
                                 Console.WriteLine("Not all fields were specified.");
@@ -227,7 +226,7 @@ namespace Website.ContentAdmin
                                 }
                             }
 
-                            notes = currentRow[notesIndex];
+                            notes = (currentRow[notesIndex] ?? string.Empty).Trim('"', ',');
 
                             Console.WriteLine("Proceeding to upload beer to CMS..");
                             var beerId = UploadBeer(name, country, brewer, type, style, source, abv, notes, rating, imageId, imageDateTaken, contentService, updateExisting, ref status);
@@ -561,8 +560,7 @@ namespace Website.ContentAdmin
                     return beerToUpdate.Id;
                 }
             }
-
-            notes = !string.IsNullOrWhiteSpace(notes) ? notes.Trim('"', ',') : null;
+                        
             beerToUpdate.Properties["name"].Value = name;
             beerToUpdate.Properties["brewer"].Value = brewer;
             beerToUpdate.Properties["type"].Value = type;
