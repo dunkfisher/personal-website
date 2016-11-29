@@ -339,10 +339,6 @@ h2.beer-name {
         float: none;
         width: 100%;
     }
-
-    #beer-image {
-        margin: 0;
-    }
 }
 
 @media(max-width: 600px) {
@@ -351,7 +347,6 @@ h2.beer-name {
     }
 
     #beer-detail-wrapper {
-        display: none;
         top: 0;
         bottom: 0;
         left: 0;
@@ -367,7 +362,8 @@ h2.beer-name {
         float: none;
         width: 100%;
         max-width: 360px;
-        margin: 20px auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #beer-detail-wrapper table {
