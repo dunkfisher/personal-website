@@ -191,13 +191,13 @@ namespace Website.ContentAdmin
                             }
 
                             type = (currentRow[typeIndex] ?? string.Empty).Trim('"', ',');
-                            if (string.IsNullOrWhiteSpace(type))
-                            {
-                                Console.WriteLine("No vessel type specified.");
-                                Console.WriteLine();
-                                fileWriter.WriteLine(string.Join(",", UpdateStatus.N_NO_TYPE, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
-                                continue;
-                            }
+                            //if (string.IsNullOrWhiteSpace(type))
+                            //{
+                            //    Console.WriteLine("No vessel type specified.");
+                            //    Console.WriteLine();
+                            //    fileWriter.WriteLine(string.Join(",", UpdateStatus.N_NO_TYPE, name, country, brewer, type, style, source, abv, rating, imageCandidates, imageChosen, notes));
+                            //    continue;
+                            //}
 
                             brewer = (currentRow[brewerIndex] ?? string.Empty).Trim('"', ',');
                             if (string.IsNullOrWhiteSpace(brewer))

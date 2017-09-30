@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Umbraco.Core.Models;
 using Umbraco.Core.Models.PublishedContent;
-using Website.UI.BL.DocumentTypes;
+using Website.BL.DocumentTypes;
 
 namespace Website.App_Start
 {

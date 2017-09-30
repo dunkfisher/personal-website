@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Umbraco.Web.Mvc;
-using Website.UI.BL.DocumentTypes;
+using Website.BL.DocumentTypes;
 
 namespace Website.Controllers
 {
