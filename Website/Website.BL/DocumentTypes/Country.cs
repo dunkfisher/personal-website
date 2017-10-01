@@ -6,6 +6,7 @@ using Umbraco.Core.Models;
 using Umbraco.Web;
 using Umbraco.Core.Models.PublishedContent;
 using Website.BL.Extensions;
+using Website.BL.MediaTypes;
 
 namespace Website.BL.DocumentTypes
 {
@@ -19,8 +20,8 @@ namespace Website.BL.DocumentTypes
 
         public string GetFlagImageUrl(UmbracoHelper umbraco)
         {
-            var mediaId = Content.GetProperty<int>("flag");
-            return umbraco.TypedMedia(mediaId).Url;
+            var image = Content.GetProperty<Image>("flag");
+            return image.Url;
         }
     }
 }

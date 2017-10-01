@@ -9,11 +9,8 @@ namespace Website.BL.DocumentTypes
 {
     public class Base : PublishedContentModel
     {
-        //protected IPublishedContent Content;
-
         public Base(IPublishedContent content) : base(content)
         {
-            //Content = content;
         }
     }
 }

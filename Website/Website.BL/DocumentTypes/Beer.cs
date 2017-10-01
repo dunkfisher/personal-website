@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Slimsy;
 using Umbraco.Core.Models;
 using Umbraco.Web;
 using Website.BL.Extensions;
+using Website.BL.MediaTypes;
 
 namespace Website.BL.DocumentTypes
 {
@@ -60,10 +62,11 @@ namespace Website.BL.DocumentTypes
         {
         }
 
-        public string GetImageUrl(UmbracoHelper umbraco)
+        public string GetImageUrl(UmbracoHelper umbraco, bool small = false)
         {
-            var image = Content.GetProperty<Base>("image");
-            return image.Url;
+            var image = Content.GetProperty<Image>("image");
+            //return image?.Url.GetCropUrl(600, imageCropMode: Umbraco.Web.Models.ImageCropMode.Crop);
+            return image?.GetResponsiveImageUrl(600, 0);
         }
 
         public string GetCountryFlag(UmbracoHelper umbraco)

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Slimsy;
 using Umbraco.Core.Models;
 using Umbraco.Web;
 using Website.BL.Extensions;
+using Website.BL.MediaTypes;
 
 namespace Website.BL.DocumentTypes
 {
@@ -22,8 +24,9 @@ namespace Website.BL.DocumentTypes
 
         public string GetBackGroundImageUrl(UmbracoHelper umbraco)
         {
-            var image = Content.GetProperty<Base>("backgroundImage");
-            return image.Url;
+            var image = Content.GetProperty<Image>("backgroundImage");
+            //return image?.Url.GetCropUrl(2000, imageCropMode: Umbraco.Web.Models.ImageCropMode.Crop);
+            return image?.GetResponsiveImageUrl(2000, 0);
         }
     }
 }
