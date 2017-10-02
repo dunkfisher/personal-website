@@ -26,7 +26,17 @@
                 <% if(!this.LinkList){ %>
                 checkbox: true,
                 selectMode: 2,
-                onCreate: function(dtNode, nodeSpan) {
+                onRender: function (dtNode, nodeSpan) {
+                    //move the icon class to an icon element
+                    var iconMatch = nodeSpan.className.match(/(icon[\-\w]+)\s/);
+                    if (iconMatch && iconMatch.length === 2) {
+                        var iconClass = iconMatch[1];
+                        nodeSpan.className = nodeSpan.className.replace(/(icon[\-\w]+)\s/, "");
+                        $(nodeSpan).find("a").before("<i class='icon " + iconClass + "'></i>");    
+                    }
+                },
+                onCreate: function (dtNode, nodeSpan) {
+                    
                     var parent = dtNode.getParent();
                     if(parent != null){
                         dtNode.select(parent.isSelected());

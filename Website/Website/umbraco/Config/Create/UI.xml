@@ -386,4 +386,12 @@
       <delete assembly="Umbraco.Courier.UI" type="Tasks.RevisionTasks" />
     </tasks>
   </nodeType>
+  <nodeType alias="revisions">
+    <header>Revisions</header>
+    <usercontrol>/create/simple.ascx</usercontrol>
+    <tasks>
+      <create assembly="Umbraco.Courier.UI" type="Tasks.RevisionTasks" />
+      <delete assembly="Umbraco.Courier.UI" type="Tasks.RevisionTasks" />
+    </tasks>
+  </nodeType>
 </createUI>

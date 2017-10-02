@@ -17,7 +17,7 @@
         var latest = '';
 
         function showError(message) {
-            var div = jQuery("deploy-error");
+            var div = jQuery(".deploy-error");
             div.show();
             if (message) {
                 div.find("div.details").html(message);
@@ -82,13 +82,13 @@
 
                 },
                 error: function (x, t, e) {
-
+                    
                     var msg = "<p>Unhandled exception occurred.</p><p>Status: " + x.status + "</p><p>Message: " + x.statusText + "</p>";
                     if (x.responseText && x.responseText.length > 0 && x.responseText[0] === "{") {
                         var jsonError = JSON.parse(x.responseText);
                         msg += "<p>ExceptionType: " + jsonError.ExceptionType + "</p>";
                         msg += "<p>Message: " + jsonError.Message + "</p>";
-                        msg += "<p>StackTrace: " + jsonError.StackTrace + "</p>";
+                        msg += "<p>StackTrace: <pre><code>" + jsonError.StackTrace + "</code></pre></p>";
                     }
                     else {
                         msg += x.responseText;

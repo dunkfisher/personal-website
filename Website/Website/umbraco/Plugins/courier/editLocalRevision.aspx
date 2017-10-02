@@ -18,6 +18,7 @@
     </style>
 
     <script type="text/javascript">
+        var maxInt = <%= int.MaxValue %>;
         var currentManifest = <%= ManifestJson %>;
         jQuery(document).ready(function () {
             
@@ -68,28 +69,37 @@
         });
 
 
-        function BuildExistingContents()
-        {
-            if(currentManifest.Providers.length > 0)
+        function BuildExistingContents() {
+            
+            if(currentManifest.providers.length > 0)
             {
-                for (var p = 0; p < currentManifest.Providers.length; p++) { 
+                for (var p = 0; p < currentManifest.providers.length; p++) { 
 
-                    if(currentManifest.Providers[p].Items.length > 0)
+                    if(currentManifest.providers[p].Items.length > 0)
                     {
-                        var provId = currentManifest.Providers[p].Id;
+                        var provId = currentManifest.providers[p].Id;
 
-                        jQuery(".WhatToPackage",jQuery("#"+provId)).val(currentManifest.Providers[p].DependecyLevel);
+                        //The DependecyLevel will be saved as int.MaxValue! Here we need to convert it back to -1 so the value is selected :/
+                        var depLevel = currentManifest.providers[p].DependecyLevel === maxInt
+                            ? -1
+                            : currentManifest.providers[p].DependecyLevel;
 
-                        for (var i = 0; i < currentManifest.Providers[p].Items.length; i++) { 
+                        jQuery(".WhatToPackage",jQuery("#"+provId)).val(depLevel);
+
+                        for (var i = 0; i < currentManifest.providers[p].Items.length; i++) { 
                        
-                            var item =  currentManifest.Providers[p].Items[i];
+                            var item =  currentManifest.providers[p].Items[i];
                             var name = item.Name;
                             var id = item.Id;
                             
-                            var cur = jQuery('<tr/>').attr("id",item.Id).attr("class", "selectedItem").attr("includeChildren",item.IncludeChildren).appendTo(jQuery("#"+provId +'providerItems'));
+                            var cur = jQuery('<tr/>')
+                                .attr("id", id)
+                                .attr("class", "selectedItem")
+                                .attr("includeChildren", item.IncludeChildren)
+                                .appendTo(jQuery("#" + provId + 'providerItems'));
                             
 
-                            jQuery('<td/>').attr("class", "name").text(item.Name).appendTo(cur);
+                            jQuery('<td/>').attr("class", "name").text(name).appendTo(cur);
                             var td = jQuery("<td/>").appendTo(cur);
                             td.width(70);
                             jQuery('<a/>').attr("class", "deleteItem").attr("href", "#").text("remove").appendTo(td);
@@ -150,15 +160,23 @@
         function AddItemsToPackage(providerId,selectAll,items) {
             
             for (var i = 0; i < items.length; i++) { 
-               
-                var elem = jQuery("div [itemId = '" + items[i].Id + "']"); 
+
+                //TODO: What does this select? I cannot figure out if this would ever select anything
+                var elem = jQuery("div [id = '" + items[i].Id + "']");
+
+                
 
                 if(elem == null || jQuery(elem,"#"+providerId).size() == 0)
                 {
                     
                     var parentElem = jQuery("#" + providerId + "providerItems");
                    
-                    var cur = jQuery('<tr/>').attr("class", "selectedItem").attr("itemId",items[i].Id).attr("includeChildren",items[i].IncludeChildren).appendTo(parentElem);
+                    var cur = jQuery('<tr/>')
+                        .attr("class", "selectedItem")
+                        .attr("id", items[i].Id)
+                        .attr("includeChildren", items[i].IncludeChildren)
+                        .appendTo(parentElem);
+
                     jQuery('<td/>').attr("class", "name").text(items[i].Name).appendTo(cur);
                     var td = jQuery("<td/>").appendTo(cur);
                     td.width(70);
@@ -194,7 +212,7 @@
 
             jQuery(".selectedItem").each(function () {
 
-                ids += jQuery(this).attr("itemId") + ";";
+                ids += jQuery(this).attr("id") + ";";
 
             });
 
@@ -234,10 +252,11 @@
             UmbClientMgr.openModalWindow('plugins/courier/pages/status.aspx?statusId='+id +"&message="+message, title, true, 500, 450);
         }
 
-        function buildManifestJson()
-        {
+        function buildManifestJson() {
+            
+
             var Manifest = {};
-            Manifest.Providers = [];
+            Manifest.providers = [];
 
             var providers = new Array();
             var c = 0;
@@ -251,7 +270,7 @@
                 var Items = [];
 
                 jQuery(".selectedItem",this).each(function () {
-                    var itemID = jQuery(this).attr("itemId");
+                    var itemID = jQuery(this).attr("id");
 
                     if(itemID !== ""){
                         var itemName = jQuery(".name",this).html();
@@ -268,7 +287,7 @@
 
                 if(Items.length > 0)
                 {  
-                    Manifest.Providers.push({
+                    Manifest.providers.push({
                         "Id": provId,
                         "IncludeAll": provIncludeAll,
                         "DependecyLevel":provDependencyLevel,
@@ -353,7 +372,13 @@
                 <td style="border-top: none;"></td>
                 <td style="border-top: none;width: 250px;">
                     <div id="addProviderContents">
-                        <select style="background-color:#DDD;border:1px solid #999" onchange="$('.WhatToPackage').val($(this).val())"><option value="-1">Added + Dependencies</option><option value="0">Selected items only</option><option value="1">Selected + 1 Dependency level</option><option value="2">Selected + 2 Dependency levels</option><option value="3">Selected + 3 Dependency levels</option></select>
+                        <select style="background-color:#DDD;border:1px solid #999" onchange="$('.WhatToPackage').val($(this).val())">
+                            <option value="-1">Added + Dependencies</option>
+                            <option value="0">Selected items only</option>
+                            <option value="1">Selected + 1 Dependency level</option>
+                            <option value="2">Selected + 2 Dependency levels</option>
+                            <option value="3">Selected + 3 Dependency levels</option>
+                        </select>
                     </div>
                 </td>
             </tr>
@@ -361,7 +386,8 @@
     <ItemTemplate>
          <tr class="providerContentsDetails" id="<%#((Umbraco.Courier.Core.ItemProvider)Container.DataItem).Id %>">
             <td class="providerName">
-                <%#"<img style='position:relative;top:2px;left:-2px;' src='" + umbraco.IO.IOHelper.ResolveUrl(((Umbraco.Courier.Core.ItemProvider)Container.DataItem).ProviderIcon) + "' /> " + ((Umbraco.Courier.Core.ItemProvider)Container.DataItem).Name %>
+                <i class="icon <%#(((Umbraco.Courier.Core.ItemProvider)Container.DataItem).ProviderIcon) %>"></i>
+                <%#((Umbraco.Courier.Core.ItemProvider)Container.DataItem).Name %>
                 <span class="itemCount"></span>
                 
                 <table 
@@ -376,7 +402,13 @@
                  <button class="addItems" rel="<%# ((Umbraco.Courier.Core.ItemProvider)Container.DataItem).Id %>" onclick="return false;">Add</button>
              </td>
              <td style="width: 250px;">
-                 <select name="whatToPackage<%# ((Umbraco.Courier.Core.ItemProvider)Container.DataItem).Id %>" style="background-color:#EEE;border:1px solid #AAA" class="WhatToPackage"><option value="-1">Added + Dependencies</option><option value="0">Selected items only</option><option value="1">Selected + 1 Dependency level</option><option value="2">Selected + 2 Dependency levels</option><option value="3">Selected + 3 Dependency levels</option></select>
+                 <select name="whatToPackage<%# ((Umbraco.Courier.Core.ItemProvider)Container.DataItem).Id %>" style="background-color:#EEE;border:1px solid #AAA" class="WhatToPackage">
+                     <option value="-1">Added + Dependencies</option>
+                     <option value="0">Selected items only</option>
+                     <option value="1">Selected + 1 Dependency level</option>
+                     <option value="2">Selected + 2 Dependency levels</option>
+                     <option value="3">Selected + 3 Dependency levels</option>
+                 </select>
              </td>            
          </tr>
             

@@ -230,10 +230,11 @@ function renderProvider(provider, parentList, revisionAlias, isLast) {
     if (provider.Mandatory == "true")
         typeClass = "mandatoryProvider";
 
-    var html = '<div id="' + provider.Id + '_holder" class="revisionItemGroup group' + provider.Status + ' ' + typeClass + '">';
-    html += '<h3 style="background-image: url(' + provider.Icon + ');">' + provider.Name + " (" + provider.Items + ") <span><img src='../images/loading.gif' /></span>";
-    html += '<img src="/umbraco/images/expand.png" class="expand" onclick="expand(this);" style="FLOAT: right"/>';
-    html += '<img src="/umbraco/images/collapse.png" class="collapse" onclick="collapse(this);" style="FLOAT: right; display: none;"/>';
+    var html = '<div id="' + provider.Id + '_holder" class="revisionItemGroup group ' + provider.Status + ' ' + typeClass + '">';
+    html += '<h3><i class="icon "' + provider.Icon + '"></i>' + provider.Name + " (" + provider.Items + ") <span><img src='../images/loading.gif' /></span>";
+    html += '<div class="expand" onclick="expand(this);" style="FLOAT: right"><i class="icon icon-navigation-down"></i></div>';
+    html += '<div class="collapse" onclick="collapse(this);" style="FLOAT: right; display: none;"><i class="icon icon-navigation-up"></i></div>';
+
     html += '</h3>';
 
     html += '<ul class="revisionItems" id="' + provider.Id + '">';
@@ -320,17 +321,6 @@ function getHashFromElement(items, index, target) {
 
         var element = jQuery("#li_" + id);
         var providerElement = jQuery("#" + provider + "_holder");
-
-        //var id = element.find("input").attr("id");
-        
-        //var parent = element.parents("div.mandatoryProvider");
-        
-        /*
-        var indicator = parent.find("h3 span");
-        indicator.html("<img src='../images/loading.gif' />");
-        */
-
-        //jQuery("#" + providerId + "_holder h3 span").html("<img src='../images/loading.gif' title='loading...' />");
         
         providerElement.find("h3 span").html("<img src='../images/loading.gif' title='loading...' />");
         element.find("span").html("<img src='../images/loading.gif' title='loading...' />");

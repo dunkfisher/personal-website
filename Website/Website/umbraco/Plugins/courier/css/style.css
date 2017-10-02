@@ -32,15 +32,18 @@
 }
 
 /* HELP LINK */
-a.courierHelpLink
+.courierHelpLink {
+    color: black;
+}
+.courierHelpLink a
 {
-        font-size: 11px !Important; font-weight : normal !Important; color: #1541A9 !Important;
-        background: no-repeat right center url(../../../images/help.gif);
-        padding: 2px;
-        padding-right: 20px;
+    font-size: 11px !Important; 
+    font-weight : normal !Important;         
+    padding: 2px;
+    padding-right: 20px;
 }
 
-h2 a.courierHelpLink{float: right;}
+h2 .courierHelpLink{float: right;}
 
 
 .error, .notice, .success {padding:.8em; padding-top: 0em; padding-bottom: 0em; margin-bottom:.5em;border:2px solid #ddd;}
@@ -60,8 +63,14 @@ h2 a.courierHelpLink{float: right;}
         border-bottom: 1px solid #d9d9d9;
         margin-bottom: 3px;
     }
+    .revisionItemGroup i {
+        font-size: 20px;
+        vertical-align: middle;
+    }
     .revisionItemGroup h3, .revisionItemBox h3{
-    	font-size: 12px; line-height: 17px; font-weight: bold; padding: 0px 0px 0px 25px; margin: 0px; background: 0px 0px no-repeat;}
+    	font-size: 12px; line-height: 17px; font-weight: bold; 
+        
+        margin: 0px; background: 0px 0px no-repeat;}
     
     ul.revisionItems
     {
@@ -80,8 +89,7 @@ h2 a.courierHelpLink{float: right;}
     li.revisionItem .toggleDependencies{font-size: 10px; color: #999; display: block;}
     
     li.revisionItem .clickLink{background:no-repeat 2px 0px; padding-left: 15px; color: #666}
-    li.revisionItem .showItemDependencies{background-image: url(/umbraco_client/tree/themes/umbraco/fplus.gif)}
-    li.revisionItem .hideItemDependencies{background-image: url(/umbraco_client/tree/themes/umbraco/fminus.gif)}
+    
     
      
      .dependencies

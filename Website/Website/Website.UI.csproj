@@ -513,6 +513,7 @@
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="umbracoCourierExpress.lic" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

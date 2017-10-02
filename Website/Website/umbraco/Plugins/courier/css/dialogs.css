@@ -21,7 +21,7 @@
         
 .resourcePicker{text-decoration: none; color: #333; display: block; padding: 10px; height: 16px; padding-left: 25px; background: no-repeat 3px 7px url(/umbraco/images/new.png); }
         
-    #loadingMsg{display: none; !Important};
+    #loadingMsg{ display: none !important;}
 .bar{text-align: center; padding-top: 10px;}
 .bar small{color: #999; display: block; padding: 10px; padding-top: 5px; text-align: center;}
 

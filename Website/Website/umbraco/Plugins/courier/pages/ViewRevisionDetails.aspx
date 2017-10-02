@@ -146,6 +146,7 @@
             display:inline-block;
             font-weight:bold;
             line-height:10px;
+            cursor: pointer
         }
         
     .clickLink
@@ -166,13 +167,6 @@
          margin-bottom:7px;
          margin-left: 15px;
          margin-top: 2px;
-    }
-    .dependImage
-    {
-        position:relative;
-        top:2px; 
-        padding:0px 1px 1px 0px;
-        width:10px;
     }
     
     small.dependTitle
@@ -212,7 +206,7 @@
         border-bottom: 1px solid #d9d9d9;
         margin-bottom: 3px;
     }
-    .revisionItemGroup h3{font-size: 12px; font-weight: bold; padding: 0px 0px 0px 25px; margin: 0px; background: 3px 2px no-repeat;}
+    .revisionItemGroup h3{font-size: 12px; font-weight: bold; margin: 0px; }
     
     ul.revisionItems
     {
@@ -229,8 +223,6 @@
     li.revisionItem .toggleDependencies{font-size: 10px; color: #999; display: block;}
     
     li.revisionItem .clickLink{background:no-repeat 2px 0px; padding-left: 15px; color: #666}
-    li.revisionItem .showItemDependencies{background-image: url(/umbraco_client/tree/themes/umbraco/fplus.gif)}
-    li.revisionItem .hideItemDependencies{background-image: url(/umbraco_client/tree/themes/umbraco/fminus.gif)}
     
         div.action{width: 31%; float: left; padding: 0 1% 0 1%; position: relative}
         div.action p{line-height: 20px; margin-bottom: 25px}
@@ -244,7 +236,7 @@
         a.install{background-image: url(../images/install.png); margin-right: 15px;}
         a.edit{background-image: url(../images/edit.png)}
                 
-        #compareOptions{background: url("../../../images/expand.png") no-repeat center center; width: 15px; position: absolute; top: 0px; right: 20px; height: 32px; display: block}
+        #compareOptions{width: 15px; position: absolute; top: 0px; right: 20px; height: 32px; display: block}
         #compareOptions ul{z-index: 999; display: none; list-style: none; border: 1px solid #efefef; background: #fff; padding: 10px; margin: 0px; position: absolute; top: 32px; right: 0px;}
         #compareOptions ul li{display: block; margin: 0px; padding: 0px;}
         #compareOptions ul li a{z-index: 999; color: #333; display: block; with: auto !Important; height: auto !Important; border-bottom: 1px solid #efefef; padding: 7px 7px 7px 25px; background: url(../../../images/umbraco/repository.gif) no-repeat left center;}
@@ -291,9 +283,9 @@
         <asp:Repeater runat="server" ID="RevisionProviderRepeater">
             <ItemTemplate>
                     <div class="revisionItemGroup">
-                        <h3 style='background-image: url(<%# GetProviderIcon((Guid)Eval("Provider.Id")) %>);'><%# Eval("Provider.Name") + " ("+Eval("Items.Length")+")"%> 
-                        <img src="/umbraco/images/expand.png" class="openProvider" style="FLOAT: right"/>
-                        <img src="/umbraco/images/collapse.png" class="closeProvider" style="FLOAT: right"/>
+                        <h3><i class="icon <%# GetProviderIcon((Guid)Eval("Provider.Id")) %>"></i><%# Eval("Provider.Name") + " ("+Eval("Items.Length")+")"%> 
+                        <div class="openProvider" style="FLOAT: right"><i class="icon icon-navigation-down"></i></div>
+                        <div class="closeProvider" style="FLOAT: right"><i class="icon icon-navigation-up"></i></div>
                         </h3>
                         
                         
@@ -307,8 +299,8 @@
                                         <%#Eval("Item.Name") %> 
                                         
                                         <span class="toggleDependencies" runat="server" visible=<%# IsVisible(Eval("DependsOn")) || IsVisible(Eval("Dependents")) %>>
-                                                <span title="Show dependencies" class="clickLink showItemDependencies">Show dependencies</span>
-                                                <span title="Hide dependencies" class="clickLink hideItemDependencies">Hide dependencies</span>
+                                                <span title="Show dependencies" class="clickLink showItemDependencies"><i class="icon icon-navigation-right"></i>Show dependencies</span>
+                                                <span title="Hide dependencies" class="clickLink hideItemDependencies"><i class="icon icon-navigation-up"></i>Hide dependencies</span>
                                         </span>        
 
                                          <span class="toggleDependencies" runat="server" visible=<%# !IsVisible(Eval("DependsOn")) && !IsVisible(Eval("Dependents")) %>>
@@ -322,7 +314,7 @@
                                                     <div><small class="dependTitle">Depends on: (<%#Eval("DependsOn.Length") %>)</small></div>
                                                     <asp:Repeater runat="server" DataSource=<%#Eval("DependsOn")%>>
                                                         <ItemTemplate>
-                                                            <div><%#(HasProviderIcon((Guid)Eval("Item.Provider.Id")) ? ("<img title='" + Eval("Item.Provider.Name") + "' class='dependImage' src='" + GetProviderIcon((Guid)Eval("Item.Provider.Id")) + "' />") : "")%> <%#Eval("Item.Name") %> <small><%#((bool)Eval("Dependency.IsChild")) ? "[child]" : "" %></small></div>
+                                                            <div><%#(HasProviderIcon((Guid)Eval("Item.Provider.Id")) ? ("<i title='" + Eval("Item.Provider.Name") + "' class='icon " + GetProviderIcon((Guid)Eval("Item.Provider.Id")) + "'></i>") : "")%> <%#Eval("Item.Name") %> <small><%#((bool)Eval("Dependency.IsChild")) ? "[child]" : "" %></small></div>
                                                         </ItemTemplate>
                                                     </asp:Repeater>
                                                 </div>
@@ -331,7 +323,7 @@
                                                     <div><small class="dependTitle">Is depended on by: (<%#Eval("Dependents.Length") %>)</small></div>
                                                     <asp:Repeater runat="server" DataSource=<%#Eval("Dependents")%>>
                                                         <ItemTemplate>
-                                                            <div><%#(HasProviderIcon((Guid)Eval("Item.Provider.Id")) ? ("<img title='" + Eval("Item.Provider.Name") + "' class='dependImage' src='" + GetProviderIcon((Guid)Eval("Item.Provider.Id")) + "' />") : "")%> <%#Eval("Item.Name") %> <small><%#((bool)Eval("Dependency.IsChild")) ? "[child]" : "" %></small></div>
+                                                            <div><%#(HasProviderIcon((Guid)Eval("Item.Provider.Id")) ? ("<i title='" + Eval("Item.Provider.Name") + "' class='icon " + GetProviderIcon((Guid)Eval("Item.Provider.Id")) + "'></i>") : "")%> <%#Eval("Item.Name") %> <small><%#((bool)Eval("Dependency.IsChild")) ? "[child]" : "" %></small></div>
                                                         </ItemTemplate>
                                                     </asp:Repeater>
                                                 </div>

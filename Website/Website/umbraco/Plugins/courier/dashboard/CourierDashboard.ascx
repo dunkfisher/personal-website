@@ -205,7 +205,7 @@
 
 <umb:Pane ID="register" runat="server" Visible="false">  
     <div class="cour-dash">
-    <h2>Thank you for trying out Umbraco Courier 2</h2>
+    <h2>Thank you for trying out Umbraco Courier</h2>
         
     <!-- <h3>To purchase a license</h3> -->
         <p class="cour-dash-info"> To purchase this product, simply go to the <a target="_blank" href="http://umbraco.org/redir/<%= Umbraco.Courier.Core.Licensing.InfralutionLicensing.LICENSE_PRODUCTNAME %>">
@@ -270,7 +270,7 @@
 <umb:Pane ID="welcome" runat="server" Visible="true">
 
     <div class="cour-dash-res">
-    <h2>Courier 2 Resources</h2>
+    <h2>Courier Resources</h2>
 
     <div class="row">
     <div class="span4">        
@@ -281,9 +281,9 @@
                 <ul>
                     <li><a href="http://nightly.umbraco.org/UmbracoCourier/Installation%20and%20Configuration.pdf" target="_blank">Initial setup and configuration</a></li>
                     
-                    <li><a href="http://umbraco.com/help-and-support/customer-area/courier-2-support-and-download" target="_blank">Support area on Umbraco.com</a></li>
+                    <li><a href="https://shop.umbraco.com/profile/options/manage-licenses/license-support/" target="_blank">Support area on Umbraco.com</a></li>
                                         
-                    <li><a href="<%= Umbraco.Courier.UI.UIConfiguration.BugSubmissionURL %>" target="_blank">Report issues</a></li>
+                    <li><a href="http://issues.umbraco.org/issues/COU" target="_blank">Report issues</a></li>
                 </ul>
         </div>
     </div>
@@ -296,9 +296,9 @@
 
                     <li><a href="http://umbraco.com/pro-downloads/courier2/Sample%20Itemprovider.pdf" target="_blank">Sample ItemProvider API documentation</a></li>
 
-                    <li><a href="http://umbraco.com/help-and-support/customer-area/courier-2-support-download/developer-documentation" target="_blank">Sample Sourcecode</a></li>
+                    <li><a href="https://our.umbraco.org/documentation/Add-ons/UmbracoCourier/" target="_blank">Sample Sourcecode</a></li>
 
-                    <li><a href="http://nightly.umbraco.org/?container=umbraco-deploy-release" target="_blank">Courier 2, nightly builds</a></li>
+                    <li><a href="http://nightly.umbraco.org/?container=umbraco-courier-release" target="_blank">Courier, nightly builds</a></li>
                                         
                     <li><a href="https://our.umbraco.org/projects/umbraco-pro/umbraco-courier-2/" target="_blank">List of recent changes</a></li>
                 </ul>
@@ -309,11 +309,11 @@
             <h4>Licensing and product info</h4>
         <div>
                 <ul>
-                    <li><a href="http://umbraco.com/products-and-support/courier" target="_blank">Courier 2 on umbraco.com</a></li>
+                    <li><a href="http://umbraco.com/products-and-support/courier" target="_blank">Courier on umbraco.com</a></li>
 
-                    <li><a href="http://umbraco.com/profile/options/manage-licenses" target="_blank">Your product licenses</a></li>
+                    <li><a href="https://shop.umbraco.com/profile/options/manage-licenses/" target="_blank">Your product licenses</a></li>
 
-                    <li><a href="http://umbraco.com/profile/options/manage-licenses/license-support" target="_blank">License helpdesk</a></li>
+                    <li><a href="https://shop.umbraco.com/profile/options/manage-licenses/license-support/" target="_blank">License helpdesk</a></li>
                 </ul>
         </div>        
     </div>
@@ -323,11 +323,11 @@
 
     <div class="cour-dash-chap">
     
-    <umb:Pane ID="p_info" runat="server" Text="More Courier 2 TV Chapters">
+    <umb:Pane ID="p_info" runat="server" Text="More Courier TV Chapters">
         <p>
-            With Courier 2, you simply right-click any piece of content or data in the Umbraco tree
-            and click "courier" to deploy it. Watch the videos below on deployment with Courier 2 Express, or
-            dive into the many additional options the full version of Courier 2 gives you.
+            With Courier, you simply right-click any piece of content or data in the Umbraco tree
+            and click "courier" to deploy it. Watch the videos below on deployment with Courier Express, or
+            dive into the many additional options the full version of Courier gives you.
         </p>
     
     <div id="latestCourierVideos">Loading...</div> 

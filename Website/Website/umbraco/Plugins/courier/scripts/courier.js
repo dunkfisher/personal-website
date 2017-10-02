@@ -3,7 +3,7 @@
     if (title == null)
         title = "Video tutorial";
 
-    var link = "<a target='_blank' onclick='OpenHelp(this); return false;' class='courierHelpLink' href='http://umbraco.com/help-and-support/video-tutorials" + url + "'>" + title + "</a>";
+    var link = "<div class='courierHelpLink'><a target='_blank' onclick='OpenHelp(this); return false;' href='http://umbraco.com/help-and-support/video-tutorials" + url + "'>" + title + "<i class='icon icon-help-alt'></i></a>";
     var parent = jQuery(parentObj).first();
     parent.append(link);
 }

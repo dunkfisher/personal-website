@@ -44,7 +44,7 @@
 <umb:Pane ID="p_deploy" runat="server" Text="Available locations">
 
 <umb:propertypanel runat="server">
-   <p> Your Courier 2 installation has access to the following locations</p>
+   <p> Your Courier installation has access to the following locations</p>
    <p>Use the deploy option in the tree to left or right the items you wish to deploy to one of the below locations.</p>
 </umb:propertypanel>
 
@@ -94,11 +94,11 @@
 </umb:Pane>
 
 
-<umb:Pane ID="p_info" runat="server" Text="You are using Courier 2 Express version">
+<umb:Pane ID="p_info" runat="server" Text="You are using Courier Express version">
     <p>
-        Courier 2 Express, allows you to connect to any other umbraco website, with Courier 2 installed, and deploy
+        Courier Express, allows you to connect to any other umbraco website, with Courier installed, and deploy
         any content (as well as macros, templates, stylesheets and so on) to it. Watch the videos below for 
-        more insight into how you configure and use Courier locations, as well as how the full version of Courier 2 
+        more insight into how you configure and use Courier locations, as well as how the full version of Courier 
         can connect to other locations such as SVN repositories or network directories.
     </p>
     

@@ -71,7 +71,7 @@
 <asp:Literal ID="status" runat="server" />
 <h3>Add a location</h3>
 <p>
-	To move changes from one location to another, please enter the domain of another umbraco installation, running Courier 2
+	To move changes from one location to another, please enter the domain of another umbraco installation, running Courier
 </p>
 <p>
 	<asp:TextBox runat="server" ID="tb_domain" />
@@ -86,8 +86,8 @@
 <asp:PlaceHolder ID="done" runat="server" Visible="false">
 <h3>Installation Complete</h3>
 <p>
-    Courier 2 is now configured on your website. To get the most out of it, we recommend that you
-    watch our videos on how to work with Courier 2, available for free on <a href="http://umbraco.tv">umbraco.tv</a>.
+    Courier is now configured on your website. To get the most out of it, we recommend that you
+    watch our videos on how to work with Courier, available for free on <a href="http://umbraco.tv">umbraco.tv</a>.
 </p>
 
 <p>
@@ -95,7 +95,7 @@
 </p>
 
 
-<h3>Learn how to use Courier 2</h3>
+<h3>Learn how to use Courier</h3>
 <div id="latestCourierVideos">Loading...</div>
 </asp:PlaceHolder>
 

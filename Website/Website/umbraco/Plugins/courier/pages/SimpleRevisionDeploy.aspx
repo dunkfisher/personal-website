@@ -77,7 +77,7 @@
 
     <umb:PropertyPanel runat="server">
         <p>
-        Courier 2 Express, enables you to pick any kind of umbraco content, and deploy it to antoher umbraco website,
+        Courier Express, enables you to pick any kind of umbraco content, and deploy it to antoher umbraco website,
         without you worrying about files, links or missing components
         </p>
         <p>
@@ -99,11 +99,11 @@
     </umb:Pane>
 
 
-    <umb:Pane ID="p_info" runat="server" Text="You are using Courier 2 Express">
+    <umb:Pane ID="p_info" runat="server" Text="You are using Courier Express">
     <p>
-        With Courier 2 Express, you simply right-click any piece of content or data in the Umbraco tree
-        and click "courier" to deploy it. Watch the videos below on deployment with Courier 2 Express, or
-        dive into the many additional options the full version of Courier 2 gives you.
+        With Courier Express, you simply right-click any piece of content or data in the Umbraco tree
+        and click "courier" to deploy it. Watch the videos below on deployment with Courier Express, or
+        dive into the many additional options the full version of Courier gives you.
     </p>
     
     <div id="latestCourierVideos">Loading...</div> 
