@@ -14,31 +14,13 @@
 
     <title>@Model.Title</title>
 
-    <!-- Fonts -->
-    <link href="//fonts.googleapis.com/css?family=Merriweather:400,700,300,900" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
-    <link href="~/css/font-awesome.css" rel="stylesheet">
-
-    @*@Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/custom")*@
-    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
-    @*<script type="text/javascript" src="~/Scripts/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
-    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
-    <script type="text/javascript" src="~/Scripts/Custom/listing.js"></script>    
-
-    <script type="text/javascript">
-        window.slimmage = { verbose: false };
-    </script>
-    <script type="text/javascript" src="~/Scripts/slimmage.min.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryajax")
+    @*@Scripts.Render("~/scripts/libraries/jquery.unobtrusive-ajax.js")*@
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/slimmage")
+    @Scripts.Render("~/bundles/sitejs")    
+    
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -51,7 +33,11 @@
         ga('send', 'pageview');
     </script>
 
-    @Styles.Render("~/Content/css")
+    <script type="text/javascript">
+        window.slimmage = { verbose: false };
+    </script> 
+
+    @Styles.Render("~/bundles/sitecss")
 
     @if (IsSectionDefined("Head"))
     {
@@ -62,7 +48,6 @@
 <body style="background-image: @(Model.HasBackgroundImage ? string.Format("url({0})", Model.GetBackGroundImageUrl(Umbraco)) : "none")">   
     @Html.Partial("_Navigation", Model)
     @RenderBody()
-
     <div id="overlay"></div>
 </body>
 </html>

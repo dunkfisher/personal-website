@@ -415,16 +415,17 @@
     <Content Include="Config\Lang\ru-RU.user.xml" />
     <Content Include="Config\Lang\sv-SE.user.xml" />
     <Content Include="Config\Lang\zh-CN.user.xml" />
-    <Content Include="Content\reset.css" />
     <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\reset.css" />
     <Content Include="default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\site.css" />
+    <Content Include="css\site.css" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="scripts\libraries\bootstrap.js" />
+    <Content Include="scripts\libraries\bootstrap.min.js" />
     <Content Include="Config\trees.config" />
     <Content Include="Config\Dashboard.config" />
     <Content Include="Config\ClientDependency.config">
@@ -464,25 +465,25 @@
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\404handlers.config" />
     <None Include="Properties\PublishProfiles\TSO-Host.pubxml" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\Custom\listing.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\slimmage.js" />
-    <Content Include="Scripts\slimmage.min.js" />
-    <Content Include="Scripts\slimmage.settings.js" />
-    <Content Include="Scripts\slimmage.settings.min.js" />
-    <Content Include="Scripts\_references.js" />
+    <None Include="scripts\libraries\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\listing.js" />
+    <Content Include="scripts\libraries\jquery-1.10.2.js" />
+    <Content Include="scripts\libraries\jquery-1.10.2.min.js" />
+    <None Include="scripts\libraries\jquery.validate-vsdoc.js" />
+    <Content Include="scripts\libraries\jquery.unobtrusive-ajax.js" />
+    <Content Include="scripts\libraries\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="scripts\libraries\jquery.validate.js" />
+    <Content Include="scripts\libraries\jquery.validate.min.js" />
+    <Content Include="scripts\libraries\jquery.validate.unobtrusive.js" />
+    <Content Include="scripts\libraries\jquery.validate.unobtrusive.min.js" />
+    <Content Include="scripts\libraries\modernizr-2.6.2.js" />
+    <Content Include="scripts\libraries\respond.js" />
+    <Content Include="scripts\libraries\respond.min.js" />
+    <Content Include="scripts\libraries\slimmage.js" />
+    <Content Include="scripts\libraries\slimmage.min.js" />
+    <Content Include="scripts\libraries\slimmage.settings.js" />
+    <Content Include="scripts\libraries\slimmage.settings.min.js" />
+    <Content Include="scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -517,6 +518,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -527,7 +529,7 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Project_Readme.html" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="scripts\libraries\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

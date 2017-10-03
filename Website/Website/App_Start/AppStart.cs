@@ -13,9 +13,10 @@ namespace Website.App_Start
         protected override void ApplicationStarting(UmbracoApplicationBase umbracoApplication, ApplicationContext applicationContext)
         {
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            //BundleTable.EnableOptimizations = true;
 
             var types = PluginManager.Current.ResolveTypes<PublishedContentModel>();
-            var factory = new MyPublishedContentModelFactory(types); //new MyPublishedContentModelFactory(types);
+            var factory = new MyPublishedContentModelFactory(types);
             PublishedContentModelFactoryResolver.Current.SetFactory(factory);
         }
     }
