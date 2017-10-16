@@ -14,9 +14,7 @@ body {
 }
 
 body.no-scroll {
-    position: fixed; /* Fix iOS issue. */
-    width: 100%;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 h2 {
@@ -76,6 +74,8 @@ nav .buttons-wrapper i {
 
 #overlay.visible {
     display: block;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 #brand {

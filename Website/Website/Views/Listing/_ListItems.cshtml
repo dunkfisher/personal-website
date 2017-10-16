@@ -6,6 +6,7 @@
     {
         var imagePath = beer.GetImageUrl(ViewBag.Umbraco);
         var flagPath = beer.GetCountryFlag(ViewBag.Umbraco);
+        var reviewHtml = library.ReplaceLineBreaks(beer.Review);
         var reviewSummary = beer.Review != null ? (beer.Review.Length <= 184 ? beer.Review : beer.Review.Substring(0, 180) + " ...") : string.Empty;
         <li>
             <div class="summary-wrapper" style="background-image: url(@imagePath)">
@@ -23,7 +24,7 @@
                     <span class="beer-type" data-type="@beer.Type" />
                     <span class="beer-source" data-source="@beer.Source" />
                     <span class="beer-last-tasted" data-last-tasted="@beer.LastTastedDateDisplay" />
-                    <span class="beer-review" data-review="@beer.Review" />
+                    <span class="beer-review" data-review="@reviewHtml" />
                     <span class="beer-rating" data-rating="@beer.RatingDisplay" />
                     <span class="beer-image" data-image-path="@imagePath" />
                 </div>
