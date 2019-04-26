@@ -1,0 +1,20 @@
+﻿@using Website.Models
+@model FilterViewModel
+
+<label>Country of Origin:</label>
+<select id="countrySelect" name="country">
+    @foreach (var country in Model.Countries)
+    {
+        <option>@country</option>    
+    }                   
+</select>
+
+<br />
+
+<label>Brewer:</label>
+<select id="brewerSelect" name="brewer">
+    @foreach (var brewer in Model.Brewers)
+    {
+        <option>@brewer</option>
+    }
+</select>

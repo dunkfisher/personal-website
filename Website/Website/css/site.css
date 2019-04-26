@@ -105,7 +105,6 @@ nav .buttons-wrapper i {
     position: absolute;
     right: 0;
     top: 40px;
-    height: 18px;
     padding: 10px;
     border: 2px solid black;
     border-top-width: 0;
@@ -114,8 +113,7 @@ nav .buttons-wrapper i {
 }
 
 #filterOptions.visible, #searchOptions.visible {
-    display: block;
-    /*height: 18px;*/    
+    display: block;  
 }
 
 #loading-indicator {

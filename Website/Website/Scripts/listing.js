@@ -22,7 +22,7 @@ var setupPopup = function () {
         //$('#beer-last-tasted').text($(this).find('.beer-last-tasted').data('last-tasted'));
         $('#beer-abv').text($(this).find('.beer-abv').data('abv'));
 
-        $('#beer-review').text($(this).find('.beer-review').data('review'));
+        $('#beer-review').html($(this).find('.beer-review').data('review'));
         $('#beer-rating').text($(this).find('.beer-rating').data('rating'));
         $('#beer-country-flag').attr('src', $(this).find('.beer-country-flag').data('country-flag-path'));        
 

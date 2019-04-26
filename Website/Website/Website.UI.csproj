@@ -387,6 +387,7 @@
     <Compile Include="App_Start\AppStart.cs" />
     <Compile Include="App_Start\MyPublishedContentModelFactory.cs" />
     <Compile Include="Controllers\ListingController.cs" />
+    <Compile Include="Models\FilterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -503,7 +504,7 @@
     <Content Include="Views\Listing.cshtml" />
     <Content Include="Views\Map.cshtml" />
     <Content Include="Views\Listing\_ListItems.cshtml" />
-    <Content Include="Views\Listing\_CountryFilter.cshtml" />
+    <Content Include="Views\Listing\_Filter.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
@@ -519,7 +520,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

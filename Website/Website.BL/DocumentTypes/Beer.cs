@@ -65,7 +65,6 @@ namespace Website.BL.DocumentTypes
         public string GetImageUrl(UmbracoHelper umbraco, bool small = false)
         {
             var image = Content.GetProperty<Image>("image");
-            //return image?.Url.GetCropUrl(600, imageCropMode: Umbraco.Web.Models.ImageCropMode.Crop);
             return image?.GetResponsiveImageUrl(600, 0);
         }
 

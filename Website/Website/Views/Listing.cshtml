@@ -4,9 +4,8 @@
 
 <div id="filterOptions">
     @using (Ajax.BeginForm("Filter", "Listing", new AjaxOptions { UpdateTargetId = "listing-wrapper", LoadingElementId="loading-indicator", OnBegin= "clearResults();", OnSuccess="setupPopup();" }))
-    {
-        <label >Country of Origin:</label> 
-        @Html.Action("CountryFilter", "Listing");
+    {         
+        @Html.Action("Filter", "Listing");
         <input id="filter" type="submit" value="Filter" />        
     }
 </div>
